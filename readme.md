@@ -2,7 +2,7 @@
 This is a list of free llm providers and their rate usage limits.
 
 You may also want to read: 
-- [How to choose your LLM?](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/README_en.md)
+- [**How to Choose Your LLM?**](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/README_en.md)
 
 ## Global Platform
 
