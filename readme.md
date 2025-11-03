@@ -1,4 +1,4 @@
-# LLM API Provider
+# Free LLM API Provider
 This is a list of free llm providers and their rate usage limits.
 
 ## Global Platform
@@ -122,14 +122,38 @@ https://docs.z.ai/guides/overview/pricing
 > No offical rate usage limits
 -------
 
-</br>
-
 ### Groq </br>
 https://console.groq.com/docs/rate-limits
+
+| Model ID                                   | Request/Minute | Request/Day | Token/Minuite  | Token/Day   |
+|-------------------------------------------|-----|-------|------|-------|
+| allam-2-7b                                | 30  | 7K    | 6K   | 500K  | 
+| groq/compound & groq/compound-mini        | 30  | 250   | 70K  | -     | 
+| llama-3.1-8b-instant                      | 30  | 14.4K | 6K   | 500K  |
+| llama-3.3-70b-versatile                   | 30  | 1K    | 12K  | 100K  | 
+| meta-llama/llama-4-maverick-17b-128e-instruct | 30  | 1K    | 6K   | 500K  | 
+| meta-llama/llama-4-scout-17b-16e-instruct | 30  | 1K    | 30K  | 500K  |
+| moonshotai/kimi-k2-instruct </br> moonshotai/kimi-k2-instruct-0905  | 60  | 1K    | 10K  | 300K  |
+| openai/gpt-oss-20b & gpt-oss-120b        | 30  | 1K    | 8K   | 200K  | 
+| qwen/qwen3-32b                           | 60  | 1K    | 6K   | 500K  |
+
+
+-------
 
 **Celebras** </br>
 https://inference-docs.cerebras.ai/quickstart
 
+| Model                                | Requests/Minute | Requests/Hour | Requests/Day | Tokens/Minute | Tokens/Hour | Tokens/Day |
+|--------------------------------------|-----------------|---------------|--------------|---------------|-------------|------------|
+| gpt-oss-120b                         | 30              | 90            | 14.4K        | 60K           | 1M          | 1M         |
+| llama3.1-8b                          | 30              | 90            | 14.4K        | 60K           | 1M          | 1M         |
+| llama-3.3-70b                        | 30              | 90            | 14.4K        | 60K           | 1M          | 1M         |
+| qwen-3-32b                           | 30              | 90            | 14.4K        | 60K           | 1M          | 1M         |
+| qwen-3-235b-a22b-instruct-2507       | 30              | 90            | 14.4K        | 60K           | 1M          | 1M         |
+| qwen-3-235b-a22b-thinking-2507       | 30              | 90            | 14.4K        | 60K           | 1M          | 1M         |
+| qwen-3-coder-480b                    | 10              | 100           | 100          | 150K          | 1M          | 1M         |
+
+---------
 
 **Together AI** (free-endpoint: search in the model)</br>
 https://www.together.ai/models/llama-3-3-70b-free    
