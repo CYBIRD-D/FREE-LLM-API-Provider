@@ -1,41 +1,130 @@
-## LLM API Provider
+# LLM API Provider
+This is a list of free llm providers and their rate usage limits.
 
-**Google Gemini**</br>
+## Global Platform
+
+### Google Gemini
 https://ai.google.dev/gemini-api/docs/rate-limits#free-tier   
+> Last updated: **2025-10-27 UTC** </BR>
+> **RPM**: Requests per minute </BR>
+> **TPM**: Tokens per minute</BR>
+> **RPD** Requests per day</BR>
 
-**Nvidia** </br>
+| Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
+|---------------------------|---------------------------|--------------------------|-------------------------|
+| Gemini 2.5 Pro            | 2                         | 125,000                  | 50                      |
+| Gemini 2.5 Flash          | 10                        | 250,000                  | 250                     |
+| Gemini 2.5 Flash Preview  | 10                        | 250,000                  | 250                     |
+| Gemini 2.5 Flash-Lite     | 15                        | 250,000                  | 1,000                   |
+| Gemini 2.5 Flash-Lite Preview | 15                    | 250,000                  | 1,000                   |
+| Gemini 2.0 Flash          | 15                        | 1,000,000                | 200                     |
+| Gemini 2.0 Flash-Lite     | 30                        | 1,000,000                | 200                     |
+
+</br>
+
+-------
+
+### Nvidia
 https://build.nvidia.com/explore/discover
 
-**OpenRouter**</br>
+**Rate limit**: Usually up to **`40`** Requests per minute(RPM)</br>
+> Nvidia: Maximum API requests accepted in a given timeframe. </br>
+Rate limits may vary by model and traffic from other users may cause throttling. </br>
+> For dedicated availability, deploy models as a dedicated endpoint with NVIDIA NIM.
+
+</br>
+
+--------
+
+### OpenRouter</br>
 https://openrouter.ai/models?q=free
 
-**Z.ai (GLM-4.5-Flash)** </br>
-https://docs.z.ai/guides/overview/pricing
+**Models**: Based on what OpenRouter provide as Free
+- **Free usage limits**: If you’re using a free model variant (with an ID ending in `:free`), you can make up to **`20`** requests/minute.</br>
+  The following per-day limits apply:
+  - If you have purchased less than **`10 credits`**, you’re limited to **`50`** `free` model requests/Day.
+  - If you purchase at least **`10 credits`** , your daily limit is increased to **`1000`** `free` model requests/Day.
 
-**Ollama**</br>
+
+
+--------
+
+### Ollama </br>
 https://ollama.com/cloud
 
+- **Models**：So far Ollama cloud support:
+  - deepseek-v3.1:671b-cloud
+  - gpt-oss:20b-cloud
+  - gpt-oss:120b-cloud
+  - kimi-k2:1t-cloud
+  - qwen3-coder:480b-cloud
+  - glm-4.6:cloud
+  - minimax-m2:cloud
+ 
+> "Ollama's cloud includes hourly and daily limits to avoid capacity issues. Usage-based pricing will soon be available to consume models in a metered fashion. "</br>
+> No exact rate limit number.
 
 </br>
-</br>
 
-**Github(limited)** </br>
+---------
+
+### Github(limited) </br>
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
-**Mistral** </br>
+| Tier / Model                                             | Request/Mintute </br> (Copilot Free) | Request/Day </br> (Copilot Free) | Tokens/request </br> (in/out) | Concurrent requests </br> (Copilot Free) |
+|----------------------------------------------------------------|--------------------|--------------------|-----------------------------|------------------------------------|
+| Low tier models                                                | 15                 | 150                | 8000 in / 4000 out          | 5                                  |
+| High tier models                                               | 10                 | 50                 | 8000 in / 4000 out          | 2                                  |
+| DeepSeek-R1 / DeepSeek-R1-0528 / MAI-DS-R1                     | 1                  | 8                  | 4000 in / 4000 out          | 1                                  |
+| xAI Grok-3                                                     | 1                  | 15                 | 4000 in / 4000 out          | 1                                  |
+| xAI Grok-3-Mini                                                | 2                  | 30                 | 4000 in / 8000 out          | 1                                  |
+
+---------
+
+### Mistral </br>
 https://docs.mistral.ai/deployment/laplateforme/tier/
 
-**IBM**</br>
+- From community&reports; **No offcial list**
+
+| Plan / Tier         | Requests/second (RPS) | Tokens/minute (TPM) | Tokens/month      |
+|---------------------|---------------------------|--------------------------|------------------------|
+| Mistral API Free    | 1                         | 500k                 | 1 billion     |
+
+
+----------
+
+### IBM </br>
 https://www.ibm.com/products/watsonx-ai/pricing
 
-**Cohere** </br>
+| Plan / Tier         | Requests/second (RPS) |  Tokens/month      |
+|---------------------|---------------------------|------------------------|
+| Mistral API Free    | 2                         | 300k     |
+
+
+-----------
+
+### Cohere </br>
 https://docs.cohere.com/docs/rate-limits
 
-</br>
+| Endpoint            | Trial rate limit (requests/min) | Trial monthly cap (calls/month) |
+|---------------------|----------------------------------|----------------------------------|
+| Chat                | 20                               | 1000                             |
+| Generate (legacy)   | 5                                | 1000                             |
+| Default (anything not covered above)  | 	500                                | 1000                             |
+
+> All endpoints are limited to 1,000 calls per month with a trial key
+
+--------
+
+### Z.ai (GLM-4.5-Flash) </br>
+https://docs.z.ai/guides/overview/pricing
+
+> No offical rate usage limits
+-------
+
 </br>
 
-**Others** </br>
-**Groq** </br>
+### Groq </br>
 https://console.groq.com/docs/rate-limits
 
 **Celebras** </br>
@@ -50,7 +139,7 @@ https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing
 
 </br>
 
-**CN Model** </br>
+## CN Platform </br>
 **ModelScope(魔搭社区）** </br>
 https://modelscope.cn/docs/model-service/API-Inference/intro
 
