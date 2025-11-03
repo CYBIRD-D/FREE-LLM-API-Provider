@@ -57,13 +57,13 @@ https://openrouter.ai/models?q=free
 https://ollama.com/cloud
 
 - **Models**：So far Ollama cloud support:
-  - deepseek-v3.1:671b-cloud
-  - gpt-oss:20b-cloud
-  - gpt-oss:120b-cloud
-  - kimi-k2:1t-cloud
-  - qwen3-coder:480b-cloud
-  - glm-4.6:cloud
-  - minimax-m2:cloud
+  - deepseek-v3.1: 671b-cloud
+  - gpt-oss: 20b-cloud
+  - gpt-oss: 120b-cloud
+  - kimi-k2: 1t-cloud
+  - qwen3-coder: 480b-cloud
+  - glm-4.6: cloud
+  - minimax-m2: cloud
  
 > "Ollama's cloud includes hourly and daily limits to avoid capacity issues. Usage-based pricing will soon be available to consume models in a metered fashion. "</br>
 > No exact rate limit number.
