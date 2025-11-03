@@ -45,6 +45,10 @@ https://openrouter.ai/models?q=free
   - If you have purchased less than **`10 credits`**, you’re limited to **`50`** `free` model requests/Day.
   - If you purchase at least **`10 credits`** , your daily limit is increased to **`1000`** `free` model requests/Day.
 
+| Model variant (ID) | Credits purchased        | Rate limit (requests/min) | Daily limit (requests/day) |
+|--------------------|--------------------------|---------------------------|----------------------------|
+| *:free             | < 10 credits             | 20                        | 50                         |
+| *:free             | ≥ 10 credits             | 20                        | 1000                       |
 
 
 --------
