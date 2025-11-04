@@ -147,7 +147,7 @@ https://console.groq.com/docs/rate-limits
 
 -------
 
-**Celebras** </br>
+### Celebras </br>
 https://inference-docs.cerebras.ai/quickstart
 
 | Model                                | Requests/Minute | Requests/Hour | Requests/Day | Tokens/Minute | Tokens/Hour | Tokens/Day |
@@ -162,16 +162,18 @@ https://inference-docs.cerebras.ai/quickstart
 
 ---------
 
-**Together AI** (free-endpoint: search in the model)</br>
+### Together AI (certain free-endpoint: search in the model)</br>
+- Llama3-70b
 https://www.together.ai/models/llama-3-3-70b-free    
-https://www.together.ai/models/deepseek-r1-distilled-llama-70b-free   
-**NO FREE TIER** for now </br>
+https://www.together.ai/models/deepseek-r1-distilled-llama-70b-free  </br>
+
+**NO FREE TIER** Now </br>
 https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing-july-2025
 
 </br>
 
 ## CN Platform </br>
-**ModelScope(魔搭社区）** </br>
+### ModelScope(魔搭社区） </br>
 https://modelscope.cn/docs/model-service/API-Inference/intro
 
 **Tencent-Hunyuan 腾讯混元** </br>
