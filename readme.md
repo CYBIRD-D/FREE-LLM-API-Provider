@@ -105,7 +105,7 @@ https://www.ibm.com/products/watsonx-ai/pricing
 
 | Plan / Tier         | Requests/second (RPS) |  Tokens/month      |
 |---------------------|---------------------------|------------------------|
-| watsonx.ai Free tier    | 2                         | 300k     |
+| watsonx.ai Free tier </br> (Foundation Models)| 2                         | 300k     |
 
 
 -----------
