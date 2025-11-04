@@ -1,5 +1,6 @@
 # Free LLM API Provider
-This is a list of free llm providers and their rate usage limits.
+This is a list of free llm providers and their rate usage limits.</br>
+免费llm api平台（包括cn平台）
 
 You may also want to read: 
 - [**How to Choose Your LLM?**](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/README_en.md)
@@ -170,11 +171,13 @@ https://www.together.ai/models/deepseek-r1-distilled-llama-70b-free  </br>
 **NO FREE TIER** Now </br>
 https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing-july-2025
 
+--------
+
 </br>
 
 ## CN Platform </br>
 ### ModelScope(魔搭社区） </br>
-https://modelscope.cn/docs/model-service/API-Inference/intro
+https://modelscope.cn/docs/model-service/API-Inference/limits
 
 **Tencent-Hunyuan 腾讯混元** </br>
 (Hunyuan-lite free; 1 M free token for other models/per account) </br>
