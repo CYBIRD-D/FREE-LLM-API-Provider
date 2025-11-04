@@ -199,7 +199,7 @@ Tongyi Qwen free (no point cost; 100 time/day)</br>
 https://www.volcengine.com/docs/84458/1585102   
 https://www.volcengine.com/docs/84458/1585097
 
--个人免费版为 **`500资源点/天`**
+- 个人免费版为 **`500资源点/天`**
 - 目前（2025.11.03），扣子模型中仅豆包模型、DeepSeek 模型和 Kimi-K2 模型收费。使用 Kimi（8K）等其他扣子提供的模型暂不收取费用，但每日调用次数有一定限制 **`（100次/天）`**
 
 | 模型名称 | 条件</br>（千tokens） | 输入单价</br>(资源点/ktok) | 输出单价</br>(资源点/ktok) | 合计单价</br>(资源点/ktok) | 500资源点可用总tokens (ktok) |
