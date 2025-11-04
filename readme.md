@@ -177,11 +177,21 @@ https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing
 
 ## CN Platform </br>
 ### ModelScope(魔搭社区） </br>
-https://modelscope.cn/docs/model-service/API-Inference/limits
+https://modelscope.cn/docs/model-service/API-Inference/limits </br>
+- 需要须首先绑定阿里云账号。对应云账号需已通过实名认证后，才可正常使用API-Inference
+- 每位魔搭注册用户，当前每天允许进行总数为**2000次的API-Inference**调用，其中每**单个模型上限不超过500次**，具体每个模型的限制可能随时动态调整。
+- 在每个模型每天不超过500次调用的基础上，平台可能对于部分模型再进行**单独的限制**
+  - 例如，deepseek-ai/DeepSeek-R1-0528，deepseek-ai/DeepSeek-V3.2-Exp等**规格较大模型**，当前限制**单模型每天100次调用额度**。其他模型的API调用，也可能会有类似的限制并进行动态调整
 
-**Tencent-Hunyuan 腾讯混元** </br>
+-------
+
+### Tencent-Hunyuan 腾讯混元** </br>
 (Hunyuan-lite free; 1 M free token for other models/per account) </br>
+- 首次开通腾讯混元大模型服务后，混元生文将发放一定量级的免费调用额度（100M tokens）
+  - 资源包有效期为1年，自开通服务之日起1年内若免费资源包次数未使用完，则过期作废
 https://cloud.tencent.com/document/product/1729/97731
+
+-----------
 
 **Volcengine 火山引擎** （500 point 资源点/day） </br>
 Tongyi Qwen free (no point cost; 100 time/day)</br>
