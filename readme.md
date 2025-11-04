@@ -1,6 +1,6 @@
 # Free LLM API Provider
 This is a list of free llm providers and their rate usage limits.</br>
-免费llm api平台（包括cn平台）
+免费LLM api平台（包括cn平台）
 
 You may also want to read: 
 - [**How to Choose Your LLM?**](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/README_en.md)
