@@ -79,6 +79,7 @@ https://ollama.com/cloud
 ### Cloundflare </br>
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
 - Workers Free	**`10,000 Neurons`** per day
+> Last updated: **Oct 27, 2025**
 > "Neurons are our way of measuring AI outputs across different models, representing the GPU compute needed to perform your request. Our serverless model allows you to pay only for what you use without having to worry about renting, managing, or scaling GPUs."
 
 | Model | Neurons/1M Input token | Neurons/1M Output token | Input:Output=1:1（Overall/k token） |
@@ -107,7 +108,6 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 | `@cf/openai/gpt-oss-20b` | 18182 | 27273  | 440  |
 | `@cf/aisingapore/gemma-sea-lion-v4-27b-it` | 31876 | 50488  | 243  |
 | `@cf/ibm-granite/granite-4.0-h-micro` | 1542  | 10158  | 1709 |
-
 
 
 
