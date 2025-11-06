@@ -200,8 +200,8 @@ https://inference-docs.cerebras.ai/quickstart
 ---------
 
 ### Together AI (certain free-endpoint: search in the model)</br>
-- Llama3-70b
-https://www.together.ai/models/llama-3-3-70b-free    
+- Llama3-70b </br>
+https://www.together.ai/models/llama-3-3-70b-free </br>  
 https://www.together.ai/models/deepseek-r1-distilled-llama-70b-free  </br>
 
 **NO FREE TIER** Now </br>
@@ -225,7 +225,7 @@ https://modelscope.cn/docs/model-service/API-Inference/limits </br>
 (Hunyuan-lite free; 1 M free token for other models/per account) </br>
 - 首次开通腾讯混元大模型服务后，混元生文将发放一定量级的免费调用额度（100M tokens）
   - 资源包有效期为1年，自开通服务之日起1年内若免费资源包次数未使用完，则过期作废
-- Hunyuan-lite 为免费模型
+- Hunyuan-lite 为免费模型 </br>
 https://cloud.tencent.com/document/product/1729/97731
 
 -----------
