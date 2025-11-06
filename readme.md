@@ -76,7 +76,46 @@ https://ollama.com/cloud
 
 ---------
 
-### Github(limited) </br>
+### Cloundflare </br>
+https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
+- Workers Free	**`10,000 Neurons`** per day
+> "Neurons are our way of measuring AI outputs across different models, representing the GPU compute needed to perform your request. Our serverless model allows you to pay only for what you use without having to worry about renting, managing, or scaling GPUs."
+
+| Model | Neurons/1M Input token | Neurons/1M Output token | Input:Output=1:1（Overall/k token） |
+|------|-----------------------|-----------------------|-------------------------------|
+| `@cf/meta/llama-3.2-1b-instruct` | 2457  | 18252  | 966  |
+| `@cf/meta/llama-3.2-3b-instruct` | 4625  | 30475  | 570  |
+| `@cf/meta/llama-3.1-8b-instruct-fp8-fast` | 4119  | 34868  | 513  |
+| `@cf/meta/llama-3.2-11b-vision-instruct` | 4410  | 61493  | 303  |
+| `@cf/meta/llama-3.1-70b-instruct-fp8-fast` | 26668 | 204805 | 86   |
+| `@cf/meta/llama-3.3-70b-instruct-fp8-fast` | 26668 | 204805 | 86   |
+| `@cf/deepseek-ai/deepseek-r1-distill-qwen-32b` | 45170 | 443756 | 41   |
+| `@cf/mistral/mistral-7b-instruct-v0.1` | 10000 | 17300  | 733  |
+| `@cf/mistralai/mistral-small-3.1-24b-instruct` | 31876 | 50488  | 243  |
+| `@cf/meta/llama-3.1-8b-instruct` | 25608 | 75147  | 199  |
+| `@cf/meta/llama-3.1-8b-instruct-fp8` | 13778 | 26128  | 501  |
+| `@cf/meta/llama-3.1-8b-instruct-awq` | 11161 | 24215  | 565  |
+| `@cf/meta/llama-3-8b-instruct` | 25608 | 75147  | 199  |
+| `@cf/meta/llama-3-8b-instruct-awq` | 11161 | 24215  | 565  |
+| `@cf/meta/llama-2-7b-chat-fp16` | 50505 | 606061 | 30   |
+| `@cf/meta/llama-guard-3-8b` | 44003 | 2730   | 428  |
+| `@cf/meta/llama-4-scout-17b-16e-instruct` | 24545 | 77273  | 196  |
+| `@cf/google/gemma-3-12b-it` | 31371 | 50560  | 244  |
+| `@cf/qwen/qwq-32b` | 60000 | 90909  | 133  |
+| `@cf/qwen/qwen2.5-coder-32b-instruct` | 60000 | 90909  | 133  |
+| `@cf/openai/gpt-oss-120b` | 31818 | 68182  | 200  |
+| `@cf/openai/gpt-oss-20b` | 18182 | 27273  | 440  |
+| `@cf/aisingapore/gemma-sea-lion-v4-27b-it` | 31876 | 50488  | 243  |
+| `@cf/ibm-granite/granite-4.0-h-micro` | 1542  | 10158  | 1709 |
+
+
+
+
+
+
+---------
+
+### Github </br>
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
 | Tier / Model                                             | Request/Mintute </br> (Copilot Free) | Request/Day </br> (Copilot Free) | Tokens/request </br> (in/out) | Concurrent requests </br> (Copilot Free) |
