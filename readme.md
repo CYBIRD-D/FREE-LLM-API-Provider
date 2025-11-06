@@ -93,13 +93,10 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 | `@cf/deepseek-ai/deepseek-r1-distill-qwen-32b` | 45170 | 443756 | 41   |
 | `@cf/mistral/mistral-7b-instruct-v0.1` | 10000 | 17300  | 733  |
 | `@cf/mistralai/mistral-small-3.1-24b-instruct` | 31876 | 50488  | 243  |
-| `@cf/meta/llama-3.1-8b-instruct` | 25608 | 75147  | 199  |
+| `@cf/meta/llama-3.1-8b-instruct` </br> `@cf/meta/llama-3-8b-instruct` | 25608 | 75147  | 199  |
 | `@cf/meta/llama-3.1-8b-instruct-fp8` | 13778 | 26128  | 501  |
-| `@cf/meta/llama-3.1-8b-instruct-awq` | 11161 | 24215  | 565  |
-| `@cf/meta/llama-3-8b-instruct` | 25608 | 75147  | 199  |
-| `@cf/meta/llama-3-8b-instruct-awq` | 11161 | 24215  | 565  |
+| `@cf/meta/llama-3.1-8b-instruct-awq` </br> `@cf/meta/llama-3-8b-instruct-awq` | 11161 | 24215  | 565  |
 | `@cf/meta/llama-2-7b-chat-fp16` | 50505 | 606061 | 30   |
-| `@cf/meta/llama-guard-3-8b` | 44003 | 2730   | 428  |
 | `@cf/meta/llama-4-scout-17b-16e-instruct` | 24545 | 77273  | 196  |
 | `@cf/google/gemma-3-12b-it` | 31371 | 50560  | 244  |
 | `@cf/qwen/qwq-32b` | 60000 | 90909  | 133  |
