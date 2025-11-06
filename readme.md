@@ -9,10 +9,10 @@ You may also want to read:
 
 ### Google Gemini
 https://ai.google.dev/gemini-api/docs/rate-limits#free-tier   
-> Last updated: **2025-10-27 UTC** </BR>
-> **RPM**: Requests per minute </BR>
-> **TPM**: Tokens per minute</BR>
-> **RPD** Requests per day</BR>
+> Last updated: **2025-10-27 UTC** </br>
+> **RPM**: Requests per minute </br>
+> **TPM**: Tokens per minute</br>
+> **RPD** Requests per day</br>
 
 | Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
 |---------------------------|---------------------------|--------------------------|-------------------------|
@@ -78,8 +78,8 @@ https://ollama.com/cloud
 
 ### Cloundflare </br>
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
-- Workers Free	**`10,000 Neurons`** per day
-> Last updated: **Oct 27, 2025**
+- Workers Free	**`10,000 Neurons`** per day </br>
+> Last updated: **Oct 27, 2025** </br>
 > "Neurons are our way of measuring AI outputs across different models, representing the GPU compute needed to perform your request. Our serverless model allows you to pay only for what you use without having to worry about renting, managing, or scaling GPUs."
 
 | Model | Neurons/1M Input token | Neurons/1M Output token | Input:Output=1:1（Overall/k token） |
