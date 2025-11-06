@@ -82,7 +82,7 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 > Last updated: **Oct 27, 2025** </br>
 > "Neurons are our way of measuring AI outputs across different models, representing the GPU compute needed to perform your request. Our serverless model allows you to pay only for what you use without having to worry about renting, managing, or scaling GPUs."
 
-| Model | Neurons/1M Input token | Neurons/1M Output token | Input:Output=1:1（Overall/k token） |
+| Model | Neurons/1M Input token | Neurons/1M Output token | Input:Output=1:1 </br>（Overall/k token） |
 |------|-----------------------|-----------------------|-------------------------------|
 | `@cf/meta/llama-3.2-1b-instruct` | 2457  | 18252  | 966  |
 | `@cf/meta/llama-3.2-3b-instruct` | 4625  | 30475  | 570  |
