@@ -36,6 +36,8 @@ https://build.nvidia.com/explore/discover
 Rate limits may vary by model and traffic from other users may cause throttling. </br>
 > For dedicated availability, deploy models as a dedicated endpoint with NVIDIA NIM.
 
+- usually open-weight models
+
 </br>
 
 --------
@@ -43,8 +45,8 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 ### OpenRouter</br>
 https://openrouter.ai/models?q=free
 
-**Models**: Based on what OpenRouter provide as Free
-- **Free usage limits**: If you’re using a free model variant (with an ID ending in `:free`), you can make up to **`20`** requests/minute.</br>
+**Models**: Based on what OpenRouter (the platform) provide as **Free**
+- **Free usage limits**: If you’re using a free model variant (with an ID ending in **`:free`**), you can make up to **`20`** requests/minute.</br>
   The following per-day limits apply:
   - If you have purchased less than **`10 credits`**, you’re limited to **`50`** `free` model requests/Day.
   - If you purchase at least **`10 credits`** , your daily limit is increased to **`1000`** `free` model requests/Day.
