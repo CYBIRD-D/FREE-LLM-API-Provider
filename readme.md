@@ -117,7 +117,7 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 | `google/gemma-3-12b-it` | 31371 | 50560  | 244  |
 | `qwen/qwq-32b` | 60000 | 90909  | 133  |
 | `qwen/qwen2.5-coder-32b-instruct` | 60000 | 90909  | 133  |
-| `qwen/qwen3-30b-a3b-fp8| 4625 | 30475  | 570  |
+| `qwen/qwen3-30b-a3b-fp8`  | 4625 | 30475  | 570  |
 | `openai/gpt-oss-120b` | 31818 | 68182  | 200  |
 | `openai/gpt-oss-20b` | 18182 | 27273  | 440  |
 | `aisingapore/gemma-sea-lion-v4-27b-it` | 31876 | 50488  | 243  |
