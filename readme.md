@@ -1,4 +1,7 @@
 # Free LLM API Provider
+> Last updated: **2025-11-17**
+
+
 This is a list of free llm providers and their rate usage limits.</br>
 免费LLM api平台（包括cn平台）
 
@@ -62,13 +65,15 @@ https://openrouter.ai/pricing </br>
 --------
 
 ### Ollama </br>
+> Last updated: **2025-11-17**
 https://ollama.com/cloud
 
 - **Models**：So far Ollama cloud support:
   - deepseek-v3.1: 671b-cloud
-  - gpt-oss: 20b-cloud
-  - gpt-oss: 120b-cloud
+  - gpt-oss: 20b/120b-cloud
   - kimi-k2: 1t-cloud
+  - kimi-k2-thinking: cloud
+  - qwen3-vl: 235b/instruct-cloud
   - qwen3-coder: 480b-cloud
   - glm-4.6: cloud
   - minimax-m2: cloud
