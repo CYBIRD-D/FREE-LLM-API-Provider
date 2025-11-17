@@ -43,6 +43,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### OpenRouter</br>
+> Last updated: **2025-11-17** </br>
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
 **Models**: Based on what OpenRouter (the platform) provide as **Free**
