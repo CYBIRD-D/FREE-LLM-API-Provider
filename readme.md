@@ -47,6 +47,8 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 ### OpenRouter</br>
 > Last updated: **2025-11-17** </br>
+
+
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
 **Models**: Based on what OpenRouter (the platform) provide as **Free**
@@ -66,6 +68,8 @@ https://openrouter.ai/pricing </br>
 
 ### Ollama </br>
 > Last updated: **2025-11-17**
+
+
 https://ollama.com/cloud
 
 - **Models**：So far Ollama cloud support:
@@ -86,6 +90,9 @@ https://ollama.com/cloud
 ---------
 
 ### Cloundflare </br>
+> Last updated: **2025-11-13**
+
+
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
 - Workers Free	**`10,000 Neurons`** per day </br>
 > Last updated: **Oct 27, 2025** </br>
@@ -93,27 +100,28 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 
 | Model | Neurons/1M Input token | Neurons/1M Output token | Input:Output=1:1 </br>（Overall/k token） |
 |------|-----------------------|-----------------------|-------------------------------|
-| `@cf/meta/llama-3.2-1b-instruct` | 2457  | 18252  | 966  |
-| `@cf/meta/llama-3.2-3b-instruct` | 4625  | 30475  | 570  |
-| `@cf/meta/llama-3.1-8b-instruct-fp8-fast` | 4119  | 34868  | 513  |
-| `@cf/meta/llama-3.2-11b-vision-instruct` | 4410  | 61493  | 303  |
-| `@cf/meta/llama-3.1-70b-instruct-fp8-fast` | 26668 | 204805 | 86   |
-| `@cf/meta/llama-3.3-70b-instruct-fp8-fast` | 26668 | 204805 | 86   |
-| `@cf/deepseek-ai/deepseek-r1-distill-qwen-32b` | 45170 | 443756 | 41   |
-| `@cf/mistral/mistral-7b-instruct-v0.1` | 10000 | 17300  | 733  |
-| `@cf/mistralai/mistral-small-3.1-24b-instruct` | 31876 | 50488  | 243  |
-| `@cf/meta/llama-3.1-8b-instruct` </br> `@cf/meta/llama-3-8b-instruct` | 25608 | 75147  | 199  |
-| `@cf/meta/llama-3.1-8b-instruct-fp8` | 13778 | 26128  | 501  |
-| `@cf/meta/llama-3.1-8b-instruct-awq` </br> `@cf/meta/llama-3-8b-instruct-awq` | 11161 | 24215  | 565  |
-| `@cf/meta/llama-2-7b-chat-fp16` | 50505 | 606061 | 30   |
-| `@cf/meta/llama-4-scout-17b-16e-instruct` | 24545 | 77273  | 196  |
-| `@cf/google/gemma-3-12b-it` | 31371 | 50560  | 244  |
-| `@cf/qwen/qwq-32b` | 60000 | 90909  | 133  |
-| `@cf/qwen/qwen2.5-coder-32b-instruct` | 60000 | 90909  | 133  |
-| `@cf/openai/gpt-oss-120b` | 31818 | 68182  | 200  |
-| `@cf/openai/gpt-oss-20b` | 18182 | 27273  | 440  |
-| `@cf/aisingapore/gemma-sea-lion-v4-27b-it` | 31876 | 50488  | 243  |
-| `@cf/ibm-granite/granite-4.0-h-micro` | 1542  | 10158  | 1709 |
+| `meta/llama-3.2-1b-instruct` | 2457  | 18252  | 966  |
+| `meta/llama-3.2-3b-instruct` | 4625  | 30475  | 570  |
+| `meta/llama-3.1-8b-instruct-fp8-fast` | 4119  | 34868  | 513  |
+| `meta/llama-3.2-11b-vision-instruct` | 4410  | 61493  | 303  |
+| `meta/llama-3.1-70b-instruct-fp8-fast` | 26668 | 204805 | 86   |
+| `meta/llama-3.3-70b-instruct-fp8-fast` | 26668 | 204805 | 86   |
+| `deepseek-ai/deepseek-r1-distill-qwen-32b` | 45170 | 443756 | 41   |
+| `mistral/mistral-7b-instruct-v0.1` | 10000 | 17300  | 733  |
+| `mistralai/mistral-small-3.1-24b-instruct` | 31876 | 50488  | 243  |
+| `meta/llama-3.1-8b-instruct` </br> `@cf/meta/llama-3-8b-instruct` | 25608 | 75147  | 199  |
+| `meta/llama-3.1-8b-instruct-fp8` | 13778 | 26128  | 501  |
+| `meta/llama-3.1-8b-instruct-awq` </br> `@cf/meta/llama-3-8b-instruct-awq` | 11161 | 24215  | 565  |
+| `meta/llama-2-7b-chat-fp16` | 50505 | 606061 | 30   |
+| `meta/llama-4-scout-17b-16e-instruct` | 24545 | 77273  | 196  |
+| `google/gemma-3-12b-it` | 31371 | 50560  | 244  |
+| `qwen/qwq-32b` | 60000 | 90909  | 133  |
+| `qwen/qwen2.5-coder-32b-instruct` | 60000 | 90909  | 133  |
+| `qwen/qwen3-30b-a3b-fp8| 4625 | 30475  | 570  |
+| `openai/gpt-oss-120b` | 31818 | 68182  | 200  |
+| `openai/gpt-oss-20b` | 18182 | 27273  | 440  |
+| `aisingapore/gemma-sea-lion-v4-27b-it` | 31876 | 50488  | 243  |
+| `ibm-granite/granite-4.0-h-micro` | 1542  | 10158  | 1709 |
 
 
 
@@ -122,6 +130,9 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 ---------
 
 ### Github </br>
+> Last updated: **2025-11-17**
+
+
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
 | Tier / Model                                             | Request/Mintute </br> (Copilot Free) | Request/Day </br> (Copilot Free) | Tokens/request </br> (in/out) | Concurrent requests </br> (Copilot Free) |
@@ -141,29 +152,35 @@ https://docs.mistral.ai/deployment/laplateforme/tier/
 
 | Plan / Tier         | Requests/second (RPS) | Tokens/minute (TPM) | Tokens/month      |
 |---------------------|---------------------------|--------------------------|------------------------|
-| Mistral API Free    | 1                         | 500k                 | 1 billion     |
+| Mistral API Free    | 1/sec                         | 500k                 | 1 billion     |
 
 
 ----------
 
 ### IBM </br>
+> Last updated: **2025-11-17**
+
+
 https://www.ibm.com/products/watsonx-ai/pricing
 
 | Plan / Tier         | Requests/second (RPS) |  Tokens/month      |
 |---------------------|---------------------------|------------------------|
-| watsonx.ai Free tier </br> (Foundation Models)| 2                         | 300k     |
+| watsonx.ai Free tier </br> (Foundation Models)| 2/sec                        | 300k     |
 
 
 -----------
 
 ### Cohere </br>
+> Last updated: **2025-11-17**
+
+
 https://docs.cohere.com/docs/rate-limits
 
 | Endpoint            | Trial rate limit (requests/min) | Trial monthly cap (calls/month) |
 |---------------------|----------------------------------|----------------------------------|
-| Chat                | 20                               | 1000                             |
+| Chat                | 20/min                               | 1000/month                           |
 | Generate (legacy)   | 5                                | 1000                             |
-| Default (anything not covered above)  | 	500                                | 1000                             |
+| Default (anything not covered above)  | 	500          | 1000                             |
 
 > All endpoints are limited to 1,000 calls per month with a trial key
 
@@ -176,6 +193,9 @@ https://docs.z.ai/guides/overview/pricing
 -------
 
 ### Groq </br>
+> Last updated: **2025-11-17**
+
+
 https://console.groq.com/docs/rate-limits
 
 | Model ID                                   | Request/Minute | Request/Day | Token/Minuite  | Token/Day   |
@@ -194,24 +214,30 @@ https://console.groq.com/docs/rate-limits
 -------
 
 ### Celebras </br>
-https://inference-docs.cerebras.ai/quickstart
+> Last updated: **2025-11-17**
+
+https://inference-docs.cerebras.ai/support/rate-limits
 
 | Model                                | Requests/Minute | Requests/Hour | Requests/Day | Tokens/Minute | Tokens/Hour | Tokens/Day |
 |--------------------------------------|-----------------|---------------|--------------|---------------|-------------|------------|
-| gpt-oss-120b                         | 30              | 90            | 14.4K        | 60K           | 1M          | 1M         |
-| llama3.1-8b                          | 30              | 90            | 14.4K        | 60K           | 1M          | 1M         |
-| llama-3.3-70b                        | 30              | 90            | 14.4K        | 60K           | 1M          | 1M         |
-| qwen-3-32b                           | 30              | 90            | 14.4K        | 60K           | 1M          | 1M         |
-| qwen-3-235b-a22b-instruct-2507       | 30              | 90            | 14.4K        | 60K           | 1M          | 1M         |
-| qwen-3-235b-a22b-thinking-2507       | 30              | 90            | 14.4K        | 60K           | 1M          | 1M         |
-| qwen-3-coder-480b                    | 10              | 100           | 100          | 150K          | 1M          | 1M         |
+| gpt-oss-120b                         | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
+| llama3.1-8b                          | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
+| llama-3.3-70b                        | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
+| qwen-3-32b                           | 30              | 090*?            | 14.4K        | 60K           | 1M          | 1M         |
+| qwen-3-235b-a22b-instruct-2507       | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
+| zai-glm-4.6                          | 10              | 100           | 100          | 150K          | 1M          | 1M         |
+
+*offcial list shows "090", could be typo
 
 ---------
 
-### Together AI (certain free-endpoint: search in the model)</br>
-- Llama3-70b </br>
-https://www.together.ai/models/llama-3-3-70b-free </br>  
-https://www.together.ai/models/deepseek-r1-distilled-llama-70b-free  </br>
+### Together AI (certain free-endpoint:no text models now)</br>
+> Last updated: **2025-11-17**
+
+~~https://www.together.ai/models~~
+~~- Llama3-70b </br>~~
+~~https://www.together.ai/models/llama-3-3-70b-free </br>~~
+~~https://www.together.ai/models/deepseek-r1-distilled-llama-70b-free  </br>~~
 
 **NO FREE TIER** Now </br>
 https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing-july-2025
@@ -221,7 +247,7 @@ https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing
 </br>
 
 ## CN Platform </br>
-### ModelScope(魔搭社区） </br>
+### ModelScope(魔搭社区）(仅限cn/only cn） </br>
 https://modelscope.cn/docs/model-service/API-Inference/limits </br>
 - 需要须首先绑定阿里云账号。对应云账号需已通过实名认证后，才可正常使用API-Inference
 - 每位魔搭注册用户，当前每天允许进行总数为**2000次的API-Inference**调用，其中每**单个模型上限不超过500次**，具体每个模型的限制可能随时动态调整。
@@ -266,7 +292,6 @@ https://www.volcengine.com/docs/84458/1585097
 | 豆包·1.5·Pro·32k（Doubao-1.5-pro-32k） | 默认 | 0.8 | 2 | 2.8 | 178.57 |
 | 豆包·1.5·Pro·256k（Doubao-1.5-pro-256k） | 默认 | 5 | 9 | 14 | 35.71 |
 | 豆包·1.5·Lite·32k（Doubao-1.5-lite-32k） | 默认 | 0.3 | 0.6 | 0.9 | 555.56 |
-| 豆包·GUI·Agent模型（Doubao-1.5-UI-TARS） | 默认 | 3.5 | 12 | 15.5 | 32.26 |
 | 豆包·通用模型·Lite（Doubao-lite-32k） | 默认 | 0.3 | 0.6 | 0.9 | 555.56 |
 | 豆包·工具调用 / 豆包·角色扮演·Pro（Doubao-pro-32k） | 默认 | 0.8 | 2 | 2.8 | 178.57 |
 | DeepSeek-V3.1 | 默认 | 4 | 12 | 16 | 31.25 |
