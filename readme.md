@@ -12,10 +12,13 @@ You may also want to read:
 
 ### Google Gemini
 https://ai.google.dev/gemini-api/docs/rate-limits#free-tier   
-> Last updated: **2025-10-27 UTC** </br>
+> Last updated: **2025-11-18 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
 > **RPD** Requests per day</br>
+
+- No free api for Gemini 3 Pro for now, only in Ai Studio </br>
+https://ai.google.dev/gemini-api/docs/gemini-3?thinking=high#faq
 
 | Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
 |---------------------------|---------------------------|--------------------------|-------------------------|
@@ -26,6 +29,8 @@ https://ai.google.dev/gemini-api/docs/rate-limits#free-tier
 | Gemini 2.5 Flash-Lite Preview | 15                    | 250,000                  | 1,000                   |
 | Gemini 2.0 Flash          | 15                        | 1,000,000                | 200                     |
 | Gemini 2.0 Flash-Lite     | 30                        | 1,000,000                | 200                     |
+
+
 
 </br>
 
