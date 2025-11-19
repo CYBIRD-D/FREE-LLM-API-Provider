@@ -72,7 +72,7 @@ https://openrouter.ai/pricing </br>
 --------
 
 ### Ollama </br>
-> Last updated: **2025-11-17**
+> Last updated: **2025-11-20**
 
 
 https://ollama.com/cloud
@@ -86,6 +86,7 @@ https://ollama.com/cloud
   - qwen3-coder: 480b-cloud
   - glm-4.6: cloud
   - minimax-m2: cloud
+  - gemini-3-pro-preview:latest
  
 > "Ollama's cloud includes hourly and daily limits to avoid capacity issues. Usage-based pricing will soon be available to consume models in a metered fashion. "</br>
 > No exact rate limit number.
