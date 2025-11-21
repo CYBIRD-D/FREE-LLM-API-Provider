@@ -95,7 +95,7 @@ https://ollama.com/cloud
 
 ---------
 
-### Cloundflare </br>
+### Cloudflare </br>
 > Last updated: **2025-11-13**
 
 
