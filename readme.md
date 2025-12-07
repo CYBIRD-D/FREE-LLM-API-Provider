@@ -11,13 +11,13 @@ You may also want to read:
 ## Global Platform
 
 ### ~~Google Gemini~~
-https://ai.google.dev/gemini-api/docs/rate-limits#free-tier   
+~~https://ai.google.dev/gemini-api/docs/rate-limits#free-tier~~ 
 ~~> Last updated: **2025-12-07 UTC** </br>~~
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
 > **RPD** Requests per day</br>
 
-- No free api for Gemini 3 Pro for now, only in Ai Studio </br>
+- No free api for Gemini 3 Pro, only in Ai Studio </br>
 https://ai.google.dev/gemini-api/docs/gemini-3?thinking=high#faq
 
 
@@ -79,18 +79,24 @@ https://openrouter.ai/pricing </br>
 https://ollama.com/cloud
 
 - **Models**：So far Ollama cloud support:
-  - deepseek-v3.1: 671b-cloud
-  - gpt-oss: 20b/120b-cloud
-  - kimi-k2: 1t-cloud
-  - kimi-k2-thinking: cloud
-  - qwen3-vl: 235b/instruct-cloud
-  - qwen3-coder: 480b-cloud
-  - glm-4.6: cloud
-  - minimax-m2: cloud
+  - deepseek-v3.1: 671b
+  - gpt-oss: 20b/120b
+  - kimi-k2: 1t
+  - kimi-k2-thinking
+  - qwen3-vl: 235b/instruct
+  - qwen3-coder: 480b
+  - glm-4.6
+  - minimax-m2
+  - Gemma 3 4b/12b/27b
+  - ministral-3 3b/8b/14b
+  - mistral-large-3 675b
+  - cogito-2.1 671b
   - gemini-3-pro-preview:latest
  
 > "Ollama's cloud includes hourly and daily limits to avoid capacity issues. Usage-based pricing will soon be available to consume models in a metered fashion. "</br>
 > No exact rate limit number.
+
+
 
 </br>
 
@@ -183,11 +189,20 @@ https://www.ibm.com/products/watsonx-ai/pricing
 
 https://docs.cohere.com/docs/rate-limits
 
-| Endpoint            | Trial rate limit (requests/min) | Trial monthly cap (calls/month) |
+| Endpoint            | Trial rate limit (requests/min)  | Trial monthly cap (calls/month)   |
 |---------------------|----------------------------------|----------------------------------|
-| Chat                | 20/min                               | 1000/month                           |
+| Chat                | 20/min (per model)               | 1000/month                       |
 | Generate (legacy)   | 5                                | 1000                             |
-| Default (anything not covered above)  | 	500          | 1000                             |
+
+- Chat model includes
+  - Command A Reasoning
+  - Command A Translate
+  - Command A Vision
+  - Command A
+  - Command R+
+  - Command R
+  - Command R7B
+
 
 > All endpoints are limited to 1,000 calls per month with a trial key
 
