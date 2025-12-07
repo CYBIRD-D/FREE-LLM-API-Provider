@@ -253,7 +253,7 @@ https://inference-docs.cerebras.ai/support/rate-limits
 
 ---------
 
-### Together AI (certain free-endpoint:no text models now)</br>
+### ~~Together AI (certain free-endpoint:no text models now)~~ </br>
 > Last updated: **2025-11-17**
 
 ~~https://www.together.ai/models~~
