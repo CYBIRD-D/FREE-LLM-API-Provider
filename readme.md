@@ -8,6 +8,11 @@ This is a list of free llm providers and their rate usage limits.</br>
 You may also want to read: 
 - [**How to Choose Your LLM?**](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/README_en.md)
 
+- **Easy guide** to deploy online LLM api:
+  - sign up/register;
+  - get api key and endpoint address in your account/setting etc
+  - put it in luna or the softwware support it.
+
 ## Global Platform
 
 ### ~~Google Gemini~~ 
