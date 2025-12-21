@@ -30,8 +30,9 @@ https://ai.google.dev/gemini-api/docs/gemini-3?thinking=high#faq
 | ~~Gemini 2.5 Flash-Lite Preview~~ | 15                    | 250,000                  | 1,000                   |
 | ~~Gemini 2.0 Flash~~          | 15                        | 1,000,000                | 200                     |
 | ~~Gemini 2.0 Flash-Lite~~     | 30                        | 1,000,000                | 200                     |
+| **Gemma 3**                       | 30                        | 1,000,000                | 200                     |
 
-**Google has set limit to usuable rate**.
+**Google has set gemini limit to usuable rate; only gemma 3 works now**.
 
 
 
