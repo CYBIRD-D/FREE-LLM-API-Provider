@@ -90,6 +90,7 @@ https://ollama.com/search?c=cloud
   - glm-4.6
   - minimax-m2
   - nemotron-3-nano:30b
+  - rnj-1:8b
   - KIMI
       - kimi-k2: 1t
       - kimi-k2-thinking
