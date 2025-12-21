@@ -10,7 +10,8 @@ You may also want to read:
 
 ## Global Platform
 
-### ~~Google Gemini~~ Community reports that Gemma 3 is now working properly.
+### ~~Google Gemini~~ 
+Community reports that Gemma 3 is now working properly. </br>
 ~~https://ai.google.dev/gemini-api/docs/rate-limits#free-tier~~ 
 ~~> Last updated: **2025-12-07 UTC** </br>~~
 > **RPM**: Requests per minute </br>
@@ -79,22 +80,33 @@ https://openrouter.ai/pricing </br>
 > Last updated: **2025-12-07**
 
 
-https://ollama.com/cloud
+https://ollama.com/cloud </br>
+https://ollama.com/search?c=cloud
 
 - **Models**：So far Ollama cloud support:
   - deepseek-v3.1: 671b
   - gpt-oss: 20b/120b
-  - kimi-k2: 1t
-  - kimi-k2-thinking
-  - qwen3-vl: 235b/instruct
-  - qwen3-coder: 480b
+  - cogito-2.1 671b
   - glm-4.6
   - minimax-m2
-  - Gemma 3 4b/12b/27b
-  - ministral-3 3b/8b/14b
-  - mistral-large-3 675b
-  - cogito-2.1 671b
-  - gemini-3-pro-preview:latest
+  - nemotron-3-nano:30b
+  - KIMI
+      - kimi-k2: 1t
+      - kimi-k2-thinking
+  - Qwen
+      - qwen3-vl: 235b/instruct
+      - qwen3-coder: 480b
+      - qwen3-next:80b(A3B)
+  
+  - Google
+      - gemini-3-pro-preview
+      - gemini-3-flash-preview
+      - Gemma 3 4b/12b/27b
+  - Mistral
+      - ministral-3 3b/8b/14b
+      - mistral-large-3 675b
+      - devstral-small-2:24b
+      - devstral-2:123b
  
 > "Ollama's cloud includes hourly and daily limits to avoid capacity issues. Usage-based pricing will soon be available to consume models in a metered fashion. "</br>
 > No exact rate limit number.
