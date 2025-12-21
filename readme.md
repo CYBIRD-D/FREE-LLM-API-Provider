@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2025-12-08**
+> Last updated: **2025-12-22**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -77,7 +77,7 @@ https://openrouter.ai/pricing </br>
 --------
 
 ### Ollama </br>
-> Last updated: **2025-12-07**
+> Last updated: **2025-12-22**
 
 
 https://ollama.com/cloud </br>
