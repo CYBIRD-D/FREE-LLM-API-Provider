@@ -10,7 +10,7 @@ You may also want to read:
 
 ## Global Platform
 
-### ~~Google Gemini~~
+### ~~Google Gemini~~ Community reports that Gemma 3 is now working properly.
 ~~https://ai.google.dev/gemini-api/docs/rate-limits#free-tier~~ 
 ~~> Last updated: **2025-12-07 UTC** </br>~~
 > **RPM**: Requests per minute </br>
@@ -32,6 +32,8 @@ https://ai.google.dev/gemini-api/docs/gemini-3?thinking=high#faq
 | ~~Gemini 2.0 Flash-Lite~~     | 30                        | 1,000,000                | 200                     |
 
 **Google has set limit to usuable rate**.
+
+
 
 </br>
 
