@@ -247,11 +247,11 @@ https://inference-docs.cerebras.ai/support/rate-limits
 | gpt-oss-120b                         | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
 | llama3.1-8b                          | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
 | llama-3.3-70b                        | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| qwen-3-32b                           | 30              | 090*?            | 14.4K        | 60K           | 1M          | 1M         |
+| qwen-3-32b                           | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
 | qwen-3-235b-a22b-instruct-2507       | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| zai-glm-4.6                          | 10              | 100           | 100          | 150K          | 1M          | 1M         |
+| zai-glm-4.6                          | 10              | 100            | 100          | 150K          | 1M          | 1M         |
 
-*offcial list shows "090", could be typo
+
 
 ---------
 
