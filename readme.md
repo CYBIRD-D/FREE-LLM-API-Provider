@@ -56,8 +56,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### OpenRouter</br>
-> Last updated: **2025-11-17** </br>
-
+> Last Check: **2025-12-22** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -77,7 +76,7 @@ https://openrouter.ai/pricing </br>
 --------
 
 ### Ollama </br>
-> Last updated: **2025-12-22**
+> Last Check: **2025-12-22** </br>
 
 
 https://ollama.com/cloud </br>
@@ -116,10 +115,49 @@ https://ollama.com/search?c=cloud
 
 </br>
 
+-------
+
+### Groq </br>
+> Last updated: **2025-11-17**
+
+
+https://console.groq.com/docs/rate-limits
+
+| Model ID                                   | Request/Minute | Request/Day | Token/Minuite  | Token/Day   |
+|-------------------------------------------|-----|-------|------|-------|
+| allam-2-7b                                | 30  | 7K    | 6K   | 500K  | 
+| groq/compound & groq/compound-mini        | 30  | 250   | 70K  | -     | 
+| llama-3.1-8b-instant                      | 30  | 14.4K | 6K   | 500K  |
+| llama-3.3-70b-versatile                   | 30  | 1K    | 12K  | 100K  | 
+| meta-llama/llama-4-maverick-17b-128e-instruct | 30  | 1K    | 6K   | 500K  | 
+| meta-llama/llama-4-scout-17b-16e-instruct | 30  | 1K    | 30K  | 500K  |
+| moonshotai/kimi-k2-instruct </br> moonshotai/kimi-k2-instruct-0905  | 60  | 1K    | 10K  | 300K  |
+| openai/gpt-oss-20b & gpt-oss-120b        | 30  | 1K    | 8K   | 200K  | 
+| qwen/qwen3-32b                           | 60  | 1K    | 6K   | 500K  |
+
+
+---------
+
+### Celebras </br>
+> Last Check: **2025-12-22**
+
+https://inference-docs.cerebras.ai/support/rate-limits
+
+| Model                                | Requests/Minute | Requests/Hour | Requests/Day | Tokens/Minute | Tokens/Hour | Tokens/Day |
+|--------------------------------------|-----------------|---------------|--------------|---------------|-------------|------------|
+| gpt-oss-120b                         | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
+| llama3.1-8b                          | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
+| llama-3.3-70b                        | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
+| qwen-3-32b                           | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
+| qwen-3-235b-a22b-instruct-2507       | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
+| zai-glm-4.6                          | 10              | 100            | 100          | 150K          | 1M          | 1M         |
+
+
 ---------
 
 ### Cloudflare </br>
-> Last updated: **2025-11-13**
+> Last web updated: **2025-12-03** </br>
+> Last Check: **2025-12-22** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -153,51 +191,8 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 | `ibm-granite/granite-4.0-h-micro` | 1542  | 10158  | 1709 |
 
 
-
-
-
 ---------
 
-### Github </br>
-> Last updated: **2025-11-17**
-
-
-https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
-
-| Tier / Model                                             | Request/Mintute </br> (Copilot Free) | Request/Day </br> (Copilot Free) | Tokens/request </br> (in/out) | Concurrent requests </br> (Copilot Free) |
-|----------------------------------------------------------------|--------------------|--------------------|-----------------------------|------------------------------------|
-| Low tier models                                                | 15                 | 150                | 8000 in / 4000 out          | 5                                  |
-| High tier models                                               | 10                 | 50                 | 8000 in / 4000 out          | 2                                  |
-| DeepSeek-R1 / DeepSeek-R1-0528 / MAI-DS-R1                     | 1                  | 8                  | 4000 in / 4000 out          | 1                                  |
-| xAI Grok-3                                                     | 1                  | 15                 | 4000 in / 4000 out          | 1                                  |
-| xAI Grok-3-Mini                                                | 2                  | 30                 | 4000 in / 8000 out          | 1                                  |
-
----------
-
-### Mistral </br>
-https://docs.mistral.ai/deployment/laplateforme/tier/
-
-- From community&reports; **No offcial list**
-
-| Plan / Tier         | Requests/second (RPS) | Tokens/minute (TPM) | Tokens/month      |
-|---------------------|---------------------------|--------------------------|------------------------|
-| Mistral API Free    | 1/sec                         | 500k                 | 1 billion     |
-
-
-----------
-
-### IBM </br>
-> Last updated: **2025-11-17**
-
-
-https://www.ibm.com/products/watsonx-ai/pricing
-
-| Plan / Tier         | Requests/second (RPS) |  Tokens/month      |
-|---------------------|---------------------------|------------------------|
-| watsonx.ai Free tier </br> (Foundation Models)| 2/sec                        | 300k     |
-
-
------------
 
 ### Cohere </br>
 > Last updated: **2025-11-17**
@@ -228,46 +223,52 @@ https://docs.cohere.com/docs/rate-limits
 https://docs.z.ai/guides/overview/pricing
 
 > No offical rate usage limits
--------
-
-### Groq </br>
-> Last updated: **2025-11-17**
-
-
-https://console.groq.com/docs/rate-limits
-
-| Model ID                                   | Request/Minute | Request/Day | Token/Minuite  | Token/Day   |
-|-------------------------------------------|-----|-------|------|-------|
-| allam-2-7b                                | 30  | 7K    | 6K   | 500K  | 
-| groq/compound & groq/compound-mini        | 30  | 250   | 70K  | -     | 
-| llama-3.1-8b-instant                      | 30  | 14.4K | 6K   | 500K  |
-| llama-3.3-70b-versatile                   | 30  | 1K    | 12K  | 100K  | 
-| meta-llama/llama-4-maverick-17b-128e-instruct | 30  | 1K    | 6K   | 500K  | 
-| meta-llama/llama-4-scout-17b-16e-instruct | 30  | 1K    | 30K  | 500K  |
-| moonshotai/kimi-k2-instruct </br> moonshotai/kimi-k2-instruct-0905  | 60  | 1K    | 10K  | 300K  |
-| openai/gpt-oss-20b & gpt-oss-120b        | 30  | 1K    | 8K   | 200K  | 
-| qwen/qwen3-32b                           | 60  | 1K    | 6K   | 500K  |
-
 
 -------
 
-### Celebras </br>
-> Last updated: **2025-11-17**
 
-https://inference-docs.cerebras.ai/support/rate-limits
+### Github </br>
+> Last web updated: **2025-08-11** </br>
+> Last Check: **2025-12-22** </br>
 
-| Model                                | Requests/Minute | Requests/Hour | Requests/Day | Tokens/Minute | Tokens/Hour | Tokens/Day |
-|--------------------------------------|-----------------|---------------|--------------|---------------|-------------|------------|
-| gpt-oss-120b                         | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| llama3.1-8b                          | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| llama-3.3-70b                        | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| qwen-3-32b                           | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| qwen-3-235b-a22b-instruct-2507       | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| zai-glm-4.6                          | 10              | 100            | 100          | 150K          | 1M          | 1M         |
+https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
-
+| Tier / Model                                             | Request/Mintute </br> (Copilot Free) | Request/Day </br> (Copilot Free) | Tokens/request </br> (in/out) | Concurrent requests </br> (Copilot Free) |
+|----------------------------------------------------------------|--------------------|--------------------|-----------------------------|------------------------------------|
+| Low tier models                                                | 15                 | 150                | 8000 in / 4000 out          | 5                                  |
+| High tier models                                               | 10                 | 50                 | 8000 in / 4000 out          | 2                                  |
+| DeepSeek-R1 / DeepSeek-R1-0528 / MAI-DS-R1                     | 1                  | 8                  | 4000 in / 4000 out          | 1                                  |
+| xAI Grok-3                                                     | 1                  | 15                 | 4000 in / 4000 out          | 1                                  |
+| xAI Grok-3-Mini                                                | 2                  | 30                 | 4000 in / 8000 out          | 1                                  |
 
 ---------
+
+### Mistral </br>
+https://docs.mistral.ai/deployment/laplateforme/tier/
+
+- From community&reports; **No offcial list**
+
+| Plan / Tier         | Requests/second (RPS) | Tokens/minute (TPM) | Tokens/month      |
+|---------------------|---------------------------|--------------------------|------------------------|
+| Mistral API Free    | 1/sec                         | 500k                 | 1 billion     |
+
+
+----------
+
+
+### IBM </br>
+> Last Check: **2025-12-22** </br>
+
+
+https://www.ibm.com/products/watsonx-ai/pricing
+
+| Plan / Tier         | Requests/second (RPS) |  Tokens/month      |
+|---------------------|---------------------------|------------------------|
+| watsonx.ai Free tier </br> (Foundation Models)| 2/sec                        | 300k     |
+
+
+-----------
+
 
 ### ~~Together AI (certain free-endpoint:no text models now)~~ </br>
 > Last updated: **2025-11-17**
