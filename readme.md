@@ -92,7 +92,7 @@ https://ollama.com/search?c=cloud
   - gpt-oss: 20b/120b
   - cogito-2.1 671b
   - glm-4.6
-  - minimax-m2
+  - minimax-m2/2.1
   - nemotron-3-nano:30b
   - rnj-1:8b
   - KIMI
