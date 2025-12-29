@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2025-12-22**
+> Last updated: **2025-12-29**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -61,7 +61,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### OpenRouter</br>
-> Last Check: **2025-12-22** </br>
+> Last Check: **2025-12-29** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -123,7 +123,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq </br>
-> Last updated: **2025-11-17**
+> Last updated: **2025-12-29**
 
 
 https://console.groq.com/docs/rate-limits
@@ -144,7 +144,7 @@ https://console.groq.com/docs/rate-limits
 ---------
 
 ### Celebras </br>
-> Last Check: **2025-12-22**
+> Last Check: **2025-12-29**
 
 https://inference-docs.cerebras.ai/support/rate-limits
 
@@ -157,6 +157,8 @@ https://inference-docs.cerebras.ai/support/rate-limits
 | qwen-3-235b-a22b-instruct-2507       | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
 | zai-glm-4.6                          | 10              | 100            | 100          | 150K          | 1M          | 1M         |
 
+
+</br>
 
 ---------
 
@@ -200,8 +202,8 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 
 
 ### Cohere </br>
-> Last updated: **2025-11-17**
-
+> Last updated: **2025-11-17**</br>
+> Last Check: **2025-12-29** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -225,7 +227,11 @@ https://docs.cohere.com/docs/rate-limits
 --------
 
 ### Z.ai (GLM-4.5-Flash) </br>
-https://docs.z.ai/guides/overview/pricing
+https://docs.z.ai/guides/overview/pricing </br>
+
+**Free Models :**
+- GLM-4.5-Flash
+- GLM-4.6V-Flash
 
 > No offical rate usage limits
 
