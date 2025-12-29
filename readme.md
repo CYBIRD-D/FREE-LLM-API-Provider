@@ -81,17 +81,17 @@ https://openrouter.ai/pricing </br>
 --------
 
 ### Ollama </br>
-> Last Check: **2025-12-22** </br>
+> Last Check: **2025-12-29** </br>
 
 
 https://ollama.com/cloud </br>
 https://ollama.com/search?c=cloud
 
 - **Models**：So far Ollama cloud support:
-  - deepseek-v3.1: 671b
+  - deepseek-v3.1/v3.2: 671b
   - gpt-oss: 20b/120b
   - cogito-2.1 671b
-  - glm-4.6
+  - glm-4.6/4.7
   - minimax-m2/2.1
   - nemotron-3-nano:30b
   - rnj-1:8b
