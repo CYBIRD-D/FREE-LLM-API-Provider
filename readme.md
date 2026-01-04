@@ -9,10 +9,10 @@ You may also want to read:
 - [**How to Choose Your LLM?**](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/README_en.md)
 - [**Model & Performance**](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/FAQ_EN.md#models--performance)
 
-- **Easy guide** to deploy online LLM api:
+- **Easy guide** to deploy online LLM api（luna）:
   - sign up/register;
   - get api key and endpoint address in your account/setting etc
-  - put it in luna or the software support it.
+  - put it in luna or the softwares support it.
 
 ## Global Platform
 
