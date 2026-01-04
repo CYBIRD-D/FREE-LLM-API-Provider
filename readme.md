@@ -12,7 +12,7 @@ You may also want to read:
 - **Easy guide** to deploy online LLM api:
   - sign up/register;
   - get api key and endpoint address in your account/setting etc
-  - put it in luna or the softwware support it.
+  - put it in luna or the software support it.
 
 ## Global Platform
 
