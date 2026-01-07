@@ -268,6 +268,11 @@ https://docs.mistral.ai/deployment/laplateforme/tier/
 
 ----------
 
+### SKT 
+Free Api for **A.X 4.0** (7B/72B, based on Qwen2.5) </br>
+**Korean⇌EN** </br>
+https://github.com/SKT-AI/A.X-4.0/blob/main/apis/README.md
+
 
 ### IBM </br>
 > Last Check: **2025-12-22** </br>
