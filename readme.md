@@ -18,7 +18,7 @@ You may also want to read:
 ## Global Platform
 
 ### ~~Google Gemini~~ 
-Community reports that **Gemma 3** is now working properly. </br>
+Community reports that **Gemma 3** is working properly. </br>
 ~~https://ai.google.dev/gemini-api/docs/rate-limits#free-tier~~ 
 ~~> Last updated: **2025-12-07 UTC** </br>~~
 > **RPM**: Requests per minute </br>
