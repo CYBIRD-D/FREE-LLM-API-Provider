@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2025-12-29**
+> Last updated: **2026-01-15**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -63,7 +63,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### OpenRouter</br>
-> Last Check: **2025-12-29** </br>
+> Last Check: **2026-01-15** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -83,7 +83,7 @@ https://openrouter.ai/pricing </br>
 --------
 
 ### Ollama </br>
-> Last Check: **2025-12-29** </br>
+> Last Check: **2026-01-15** </br>
 
 
 https://ollama.com/cloud </br>
@@ -125,7 +125,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq </br>
-> Last updated: **2025-12-29**
+> Last updated: **2026-01-15**
 
 
 https://console.groq.com/docs/rate-limits
@@ -146,7 +146,7 @@ https://console.groq.com/docs/rate-limits
 ---------
 
 ### Celebras </br>
-> Last Check: **2025-12-29**
+> Last Check: **2026-01-15**
 
 https://inference-docs.cerebras.ai/support/rate-limits
 
@@ -157,7 +157,7 @@ https://inference-docs.cerebras.ai/support/rate-limits
 | llama-3.3-70b                        | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
 | qwen-3-32b                           | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
 | qwen-3-235b-a22b-instruct-2507       | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| zai-glm-4.6                          | 10              | 100            | 100          | 150K          | 1M          | 1M         |
+| zai-glm-4.6/4.7                          | 10              | 100            | 100          | 150K          | 1M          | 1M         |
 
 
 </br>
@@ -166,7 +166,7 @@ https://inference-docs.cerebras.ai/support/rate-limits
 
 ### Cloudflare </br>
 > Last web updated: **2025-12-03** </br>
-> Last Check: **2025-12-22** </br>
+> Last Check: **2026-01-15** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -180,8 +180,7 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 | `meta/llama-3.2-3b-instruct` | 4625  | 30475  | 570  |
 | `meta/llama-3.1-8b-instruct-fp8-fast` | 4119  | 34868  | 513  |
 | `meta/llama-3.2-11b-vision-instruct` | 4410  | 61493  | 303  |
-| `meta/llama-3.1-70b-instruct-fp8-fast` | 26668 | 204805 | 86   |
-| `meta/llama-3.3-70b-instruct-fp8-fast` | 26668 | 204805 | 86   |
+| `meta/llama-3.1-70b-instruct-fp8-fast` </br> `meta/llama-3.3-70b-instruct-fp8-fast` | 26668 | 204805 | 86   |
 | `deepseek-ai/deepseek-r1-distill-qwen-32b` | 45170 | 443756 | 41   |
 | `mistral/mistral-7b-instruct-v0.1` | 10000 | 17300  | 733  |
 | `mistralai/mistral-small-3.1-24b-instruct` | 31876 | 50488  | 243  |
@@ -205,7 +204,7 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 
 ### Cohere </br>
 > Last updated: **2025-11-17**</br>
-> Last Check: **2025-12-29** </br>
+> Last Check: **2026-01-15** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -242,7 +241,7 @@ https://docs.z.ai/guides/overview/pricing </br>
 
 ### Github </br>
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2025-12-22** </br>
+> Last Check: **2026-01-15** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
@@ -258,7 +257,7 @@ https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-m
 
 ### Mistral </br>
 https://docs.mistral.ai/deployment/laplateforme/tier/
-
+（need to login)
 - From community&reports; **No offcial list**
 
 | Plan / Tier         | Requests/second (RPS) | Tokens/minute (TPM) | Tokens/month      |
@@ -275,7 +274,7 @@ https://github.com/SKT-AI/A.X-4.0/blob/main/apis/README.md
 
 
 ### IBM </br>
-> Last Check: **2025-12-22** </br>
+> Last Check: **2026-01-15** </br>
 
 
 https://www.ibm.com/products/watsonx-ai/pricing
@@ -289,7 +288,7 @@ https://www.ibm.com/products/watsonx-ai/pricing
 
 
 ### ~~Together AI (certain free-endpoint:no text models now)~~ </br>
-> Last updated: **2025-11-17**
+~~> Last updated: **2025-11-17**~~
 
 ~~https://www.together.ai/models~~
 ~~- Llama3-70b </br>~~
