@@ -300,6 +300,15 @@ https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing
 
 --------
 
+
+### Scaleway (1M free token/per account-no refresh)
+https://www.scaleway.com/en/docs/generative-apis/faq/#how-does-the-free-tier-work
+
+
+
+
+-----------
+
 </br>
 
 ## CN Platform </br>
