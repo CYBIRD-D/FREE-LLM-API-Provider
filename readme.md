@@ -316,6 +316,10 @@ https://modelscope.cn/docs/model-service/API-Inference/limits </br>
 - 在每个模型每天不超过500次调用的基础上，平台可能对于部分模型再进行**单独的限制**
   - 例如，deepseek-ai/DeepSeek-R1-0528，deepseek-ai/DeepSeek-V3.2-Exp等**规格较大模型**，当前限制**单模型每天100次调用额度**。其他模型的API调用，也可能会有类似的限制并进行动态调整
 
+### SilliconFlow 硅基流动
+**部分**小模型免费；新cn手机用户注册送**20M token** </br>
+https://siliconflow.cn/
+
 -------
 
 ### Tencent-Hunyuan 腾讯混元 </br>
