@@ -157,7 +157,7 @@ https://inference-docs.cerebras.ai/support/rate-limits
 | llama-3.3-70b                        | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
 | qwen-3-32b                           | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
 | qwen-3-235b-a22b-instruct-2507       | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| zai-glm-4.6/4.7                          | 10              | 100            | 100          | 150K          | 1M          | 1M         |
+| zai-glm-4.6/4.7                      | 10              | 100            | 100          | 150K          | 1M          | 1M         |
 
 
 </br>
@@ -227,11 +227,12 @@ https://docs.cohere.com/docs/rate-limits
 
 --------
 
-### Z.ai (GLM-4.5-Flash) </br>
+### Z.ai (GLM-4.5/4.7-Flash) </br>
 https://docs.z.ai/guides/overview/pricing </br>
 
 **Free Models :**
 - GLM-4.5-Flash
+- GLM-4.7-Flash
 - GLM-4.6V-Flash
 
 > No offical rate usage limits
@@ -368,6 +369,12 @@ https://www.volcengine.com/docs/84458/1585097
 - Doubao-Seedance-1.0-lite、Doubao-Seedance-1.0-pro 模型各自为每个扣子账号（主账号+子账号）提供累计 100 万tokens 免费额度。免费额度耗尽后如需继续使用，会从账号中扣减资源点。
 
 -----------
+
+### 心流 </br>
+https://platform.iflow.cn/docs
+
+-----------
+
 
 ### Spark 讯飞星火 </br>
 Spark-lite free </br>
