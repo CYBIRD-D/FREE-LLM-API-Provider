@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-01-15**
+> Last updated: **2026-01-21**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -20,25 +20,22 @@ You may also want to read:
 ### ~~Google Gemini~~ 
 Community reports that **Gemma 3** is working properly. </br>
 ~~https://ai.google.dev/gemini-api/docs/rate-limits#free-tier~~ 
-~~> Last updated: **2025-12-07 UTC** </br>~~
+> Last updated: **2026-01-21 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
 > **RPD** Requests per day</br>
 
-- No free api for Gemini 3 Pro, only in Ai Studio </br>
+- No free api for Gemini 3 Pro </br>
 https://ai.google.dev/gemini-api/docs/gemini-3?thinking=high#faq
 
 
 | Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
 |---------------------------|---------------------------|--------------------------|-------------------------|
-| ~~Gemini 2.5 Pro~~         | 2                         | 125,000                  | 50                      |
-| ~~Gemini 2.5 Flash~~          | 10                        | 250,000                  | 250                     |
-| ~~Gemini 2.5 Flash Preview~~  | 10                        | 250,000                  | 250                     |
-| ~~Gemini 2.5 Flash-Lite~~     | 15                        | 250,000                  | 1,000                   |
-| ~~Gemini 2.5 Flash-Lite Preview~~ | 15                    | 250,000                  | 1,000                   |
-| ~~Gemini 2.0 Flash~~          | 15                        | 1,000,000                | 200                     |
-| ~~Gemini 2.0 Flash-Lite~~     | 30                        | 1,000,000                | 200                     |
-| **Gemma 3**                       | 30                        | 1,000,000                | 200                     |
+| Gemini 2.5 Flash-Lite     | 10                        | 250,000                  | 20                      |
+| Gemini 2.5 Flash </br> Gemini 3 Flash         | 5             | 250,000          | 20                      |
+| **Gemma 3**                       | 30                        | 15,000           | 14,4000                 |
+
+
 
 **Google has set gemini limit to usuable rate; only gemma 3 works now**.
 
