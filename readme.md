@@ -190,8 +190,7 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 | `meta/llama-2-7b-chat-fp16` | 50505 | 606061 | 30   |
 | `meta/llama-4-scout-17b-16e-instruct` | 24545 | 77273  | 196  |
 | `google/gemma-3-12b-it` | 31371 | 50560  | 244  |
-| `qwen/qwq-32b` | 60000 | 90909  | 133  |
-| `qwen/qwen2.5-coder-32b-instruct` | 60000 | 90909  | 133  |
+| `qwen/qwq-32b` </br> `qwen/qwen2.5-coder-32b-instruct` | 60000 | 90909  | 133  |
 | `qwen/qwen3-30b-a3b-fp8`  | 4625 | 30475  | 570  |
 | `openai/gpt-oss-120b` | 31818 | 68182  | 200  |
 | `openai/gpt-oss-20b` | 18182 | 27273  | 440  |
