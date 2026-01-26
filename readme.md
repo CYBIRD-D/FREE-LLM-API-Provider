@@ -7,7 +7,7 @@ This is a list of free llm providers and their rate usage limits.</br>
 
 You may want to read: 
 - [**How to Choose Your LLM?**](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/README_en.md)
-- [**Model & Performance**](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/FAQ_EN.md#models--performance)
+- [**Model & Performance** FAQ](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/FAQ_EN.md#models--performance)
 - [**Local LLMs Collection For Translation**](https://github.com/CYBIRD-D/Local-LLMs-Collection-For-Translation/tree/main)
 
 - **Easy guide** to deploy online LLM api（luna）:
