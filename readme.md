@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-01-21**
+> Last updated: **2026-01-28**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -60,7 +60,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### OpenRouter</br>
-> Last Check: **2026-01-15** </br>
+> Last Check: **2026-01-28** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -80,7 +80,7 @@ https://openrouter.ai/pricing </br>
 --------
 
 ### Ollama </br>
-> Last Check: **2026-01-15** </br>
+> Last Check: **2026-01-28** </br>
 
 
 https://ollama.com/cloud </br>
@@ -123,7 +123,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq </br>
-> Last updated: **2026-01-15**
+> Last updated: **2026-01-28**
 
 
 https://console.groq.com/docs/rate-limits
@@ -144,7 +144,7 @@ https://console.groq.com/docs/rate-limits
 ---------
 
 ### Celebras </br>
-> Last Check: **2026-01-15**
+> Last Check: **2026-01-28**
 
 https://inference-docs.cerebras.ai/support/rate-limits
 
@@ -164,7 +164,7 @@ https://inference-docs.cerebras.ai/support/rate-limits
 
 ### Cloudflare </br>
 > Last web updated: **2025-12-03** </br>
-> Last Check: **2026-01-15** </br>
+> Last Check: **2026-01-28** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -201,7 +201,7 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 
 ### Cohere </br>
 > Last updated: **2025-11-17**</br>
-> Last Check: **2026-01-15** </br>
+> Last Check: **2026-01-28** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -239,7 +239,7 @@ https://docs.z.ai/guides/overview/pricing </br>
 
 ### Github </br>
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-01-15** </br>
+> Last Check: **2026-01-28** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
@@ -272,7 +272,7 @@ https://github.com/SKT-AI/A.X-4.0/blob/main/apis/README.md
 
 
 ### IBM </br>
-> Last Check: **2026-01-15** </br>
+> Last Check: **2026-01-28** </br>
 
 
 https://www.ibm.com/products/watsonx-ai/pricing
