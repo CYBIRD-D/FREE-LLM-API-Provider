@@ -97,6 +97,7 @@ https://ollama.com/search?c=cloud
   - KIMI
       - kimi-k2: 1t
       - kimi-k2-thinking
+      - kimi-k2.5
   - Qwen
       - qwen3-vl: 235b/instruct
       - qwen3-coder: 480b
