@@ -46,7 +46,8 @@ https://ai.google.dev/gemini-api/docs/gemini-3?thinking=high#faq
 -------
 
 ### Nvidia
-https://build.nvidia.com/explore/discover
+https://build.nvidia.com/explore/discover </br>
+Endpoint: https://integrate.api.nvidia.com
 
 **Rate limit**: Usually up to **`40`** Requests per minute(RPM)</br>
 > Nvidia: Maximum API requests accepted in a given timeframe. </br>
@@ -106,7 +107,10 @@ https://ollama.com/search?c=cloud
 > Last updated: **2026-01-28**
 
 
-https://console.groq.com/docs/rate-limits
+https://console.groq.com/docs/rate-limits</br>
+Endpoint: https://api.groq.com/openai
+
+
 
 | Model ID                                   | Request/Minute | Request/Day | Token/Minuite  | Token/Day   |
 |-------------------------------------------|-----|-------|------|-------|
@@ -126,7 +130,8 @@ https://console.groq.com/docs/rate-limits
 ### Celebras </br>
 > Last Check: **2026-01-28**
 
-https://inference-docs.cerebras.ai/support/rate-limits
+https://inference-docs.cerebras.ai/support/rate-limits</br>
+Endpoint: https://api.cerebras.ai
 
 | Model                                | Requests/Minute | Requests/Hour | Requests/Day | Tokens/Minute | Tokens/Hour | Tokens/Day |
 |--------------------------------------|-----------------|---------------|--------------|---------------|-------------|------------|
@@ -147,12 +152,14 @@ https://inference-docs.cerebras.ai/support/rate-limits
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
+
+Endpoint: https://openrouter.ai/api
+
 **Models**: Based on what OpenRouter (the platform) provide as **Free**
 - **Free usage limits**: If you’re using a free model variant (with an ID ending in **`:free`**/ **`(free)`** ) </br>
   you can make up to **`20`** requests/minute.</br>
-  The following **per-day** limits apply:
-  - If you have purchased less than **`10 credits`** ($10), you’re limited to **`50`** `free` model requests/Day.
-  - If you purchase at least **`10 credits`** , your daily limit is increased to **`1000`** `free` model requests/Day.
+  - If you have purchased less than **`10 credits`** ($10), you’re limited to **`50`** `free` model **requests/Day**.
+  - If you purchase at least **`10 credits`** , your daily limit is increased to **`1000`** `free` model **requests/Day**.
 
 | Model variant (ID) | Credits purchased        | Rate limit (requests/min) | Daily limit (requests/day) |
 |--------------------|--------------------------|---------------------------|----------------------------|
@@ -205,6 +212,8 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 
 https://docs.cohere.com/docs/rate-limits
 
+Endpoint: https://api.cohere.ai/compatibility
+
 | Endpoint            | Trial rate limit (requests/min)  | Trial monthly cap (calls/month)   |
 |---------------------|----------------------------------|----------------------------------|
 | Chat                | 20/min (per model)               | 1000/month                       |
@@ -255,7 +264,10 @@ https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-m
 
 ### Mistral </br>
 https://docs.mistral.ai/deployment/laplateforme/tier/
-（need to login)
+（need to login)</br>
+
+Endpoint: https://api.mistral.ai
+
 - From community&reports; **No offcial list**
 
 | Plan / Tier         | Requests/second (RPS) | Tokens/minute (TPM) | Tokens/month      |
