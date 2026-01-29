@@ -17,7 +17,7 @@ You may want to read:
 
 ## Global Platform
 
-### ~~Google Gemini~~ 
+### ~~Google Gemini~~ Google/Gemma 3
 Community reports that **Gemma 3** is working properly. </br>
 ~~https://ai.google.dev/gemini-api/docs/rate-limits#free-tier~~ 
 > Last updated: **2026-01-21 UTC** </br>
@@ -26,7 +26,9 @@ Community reports that **Gemma 3** is working properly. </br>
 > **RPD** Requests per day</br>
 
 - No free api for Gemini 3 Pro </br>
-https://ai.google.dev/gemini-api/docs/gemini-3?thinking=high#faq
+https://ai.google.dev/gemini-api/docs/gemini-3?thinking=high#faq </br>
+
+Endpoint: https://generativelanguage.googleapis.com
 
 
 | Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
