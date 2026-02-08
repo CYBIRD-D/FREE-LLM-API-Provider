@@ -17,6 +17,32 @@ You may want to read:
   - get **api key** and **endpoint address** in your account/setting etc
   - put it in luna or the softwares support it.
 
+## Content/目录
+- [Global Platform](#global-platform)
+  - [Google/Gemma 3](#google-gemini-googlegemma-3)
+  - [Nvidia](#nvidia)
+  - [Ollama](#ollama)
+  - [Groq](#groq)
+  - [Cerebras](#celebras)
+  - [OpenRouter](#openrouter)
+  - [Cloudflare](#cloudflare)
+  - [Cohere](#cohere)
+  - [Z.ai (GLM-4.5/4.7-Flash)](#zai-glm-4547-flash)
+  - [GitHub Models](#github)
+  - [Mistral](#mistral)
+  - [SKT](#skt)
+  - [IBM](#ibm)
+  - [Scaleway (1M free token/per account-no refresh)](#scaleway-1m-free-tokenper-account-no-refresh)
+- [CN Platform](#cn-platform)
+  - [ModelScope（魔搭社区）](#modelscope魔搭社区仅限cnonly-cn)
+  - [SilliconFlow 硅基流动](#silliconflow-硅基流动)
+  - [Tencent-Hunyuan 腾讯混元](#tencent-hunyuan-腾讯混元)
+  - [Volcengine 火山引擎（平台）](#volcengine-火山引擎平台-500-point-资源点day)
+  - [心流](#心流)
+  - [Spark 讯飞星火](#spark-讯飞星火)
+
+-----------
+
 ## Global Platform
 
 ### ~~Google Gemini~~ Google/Gemma 3
@@ -65,7 +91,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 --------
 
-### Ollama </br>
+### Ollama
 > Last Check: **2026-02-08** </br>
 
 
@@ -109,7 +135,7 @@ https://ollama.com/search?c=cloud
 
 -------
 
-### Groq </br>
+### Groq
 > Last updated: **2026-01-28**
 
 
@@ -133,7 +159,7 @@ Endpoint: https://api.groq.com/openai
 
 ---------
 
-### Celebras </br>
+### Celebras
 > Last Check: **2026-02-08**
 
 https://inference-docs.cerebras.ai/support/rate-limits</br>
@@ -153,7 +179,7 @@ Endpoint: https://api.cerebras.ai
 
 ---------
 
-### OpenRouter</br>
+### OpenRouter
 > Last Check: **2026-01-28** </br>
 
 https://openrouter.ai/models?q=free </br>
@@ -175,7 +201,7 @@ Endpoint: https://openrouter.ai/api
 
 --------
 
-### Cloudflare </br>
+### Cloudflare
 > Last web updated: **2025-12-03** </br>
 > Last Check: **2026-02-08** </br>
 
@@ -212,7 +238,7 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 ---------
 
 
-### Cohere </br>
+### Cohere
 > Last updated: **2025-11-17**</br>
 > Last Check: **2026-02-08** </br>
 
@@ -239,7 +265,7 @@ Endpoint: https://api.cohere.ai/compatibility
 
 --------
 
-### Z.ai (GLM-4.5/4.7-Flash) </br>
+### Z.ai (GLM-4.5/4.7-Flash)
 https://docs.z.ai/guides/overview/pricing </br>
 
 **Free Models :**
@@ -252,7 +278,7 @@ https://docs.z.ai/guides/overview/pricing </br>
 -------
 
 
-### Github </br>
+### Github
 > Last web updated: **2025-08-11** </br>
 > Last Check: **2026-02-08** </br>
 
@@ -268,7 +294,7 @@ https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-m
 
 ---------
 
-### Mistral </br>
+### Mistral
 https://docs.mistral.ai/deployment/laplateforme/tier/
 （need to login)</br>
 
@@ -289,7 +315,7 @@ Free Api for **A.X 4.0** (7B/72B, based on Qwen2.5) </br>
 https://github.com/SKT-AI/A.X-4.0/blob/main/apis/README.md
 
 
-### IBM </br>
+### IBM
 > Last Check: **2026-02-08** </br>
 
 
@@ -303,7 +329,7 @@ https://www.ibm.com/products/watsonx-ai/pricing
 -----------
 
 
-### ~~Together AI (certain free-endpoint:no text models now)~~ </br>
+### ~~Together AI (certain free-endpoint:no text models now)~~ 
 ~~> Last updated: **2025-11-17**~~
 
 ~~https://www.together.ai/models~~
@@ -325,8 +351,8 @@ https://www.scaleway.com/en/docs/generative-apis/faq/#how-does-the-free-tier-wor
 
 </br>
 
-## CN Platform </br>
-### ModelScope(魔搭社区）(仅限cn/only cn） </br>
+## CN Platform
+### ModelScope(魔搭社区）(仅限cn/only cn）
 https://modelscope.cn/docs/model-service/API-Inference/limits </br>
 - 需要须首先绑定阿里云账号。对应云账号需已通过实名认证后，才可正常使用API-Inference
 - 每位魔搭注册用户，当前每天允许进行总数为**2000次的API-Inference**调用，其中每**单个模型上限不超过500次**，具体每个模型的限制可能随时动态调整。
@@ -339,7 +365,7 @@ https://siliconflow.cn/
 
 -------
 
-### Tencent-Hunyuan 腾讯混元 </br>
+### Tencent-Hunyuan 腾讯混元
 (Hunyuan-lite free; 1 M free token for other models/per account) </br>
 - 首次开通腾讯混元大模型服务后，混元生文将发放一定量级的免费调用额度（100M tokens）
   - 资源包有效期为1年，自开通服务之日起1年内若免费资源包次数未使用完，则过期作废
@@ -348,7 +374,7 @@ https://cloud.tencent.com/document/product/1729/97731
 
 -----------
 
-### Volcengine 火山引擎(平台） （500 point 资源点/day） </br>
+### Volcengine 火山引擎(平台） （500 point 资源点/day）
 Tongyi Qwen free (no point cost; 100 time/day)</br>
 https://www.volcengine.com/docs/84458/1585102   
 https://www.volcengine.com/docs/84458/1585097
@@ -387,7 +413,7 @@ https://www.volcengine.com/docs/84458/1585097
 
 -----------
 
-### 心流 </br>
+### 心流
 https://platform.iflow.cn/docs
 
 阿里云服务器
@@ -395,7 +421,7 @@ https://platform.iflow.cn/docs
 -----------
 
 
-### Spark 讯飞星火 </br>
+### Spark 讯飞星火
 Spark-lite free </br>
 - 首次开通后，免费包（个人）有200k免费额度（所有模型),有效期为一年</br>
 https://www.xfyun.cn/doc/spark/HTTP调用文档.html   
