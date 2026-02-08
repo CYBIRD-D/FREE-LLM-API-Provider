@@ -59,7 +59,7 @@ Endpoint: https://integrate.api.nvidia.com
 Rate limits may vary by model and traffic from other users may cause throttling. </br>
 > For dedicated availability, deploy models as a dedicated endpoint with NVIDIA NIM.
 
-- usually open-weight models
+- mostly open-weight models
 
 </br>
 
