@@ -41,7 +41,8 @@ Endpoint: https://generativelanguage.googleapis.com
 
 **Google has set gemini limit to usuable rate; only gemma 3 works now**.
 
-
+Other solutions: </br>
+[Google AI Studio to API Adapter](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md)
 
 </br>
 
