@@ -10,7 +10,9 @@ You may want to read:
 - [**Model & Performance** FAQ](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/FAQ_EN.md#models--performance)
 - [**Local LLMs Collection For Translation**](https://github.com/CYBIRD-D/Local-LLMs-Collection-For-Translation/tree/main)
 
-- **Easy guide** to deploy online LLM api（luna）:
+---------
+
+**Easy guide** to deploy online LLM api（luna）:
   - sign up/register;
   - get **api key** and **endpoint address** in your account/setting etc
   - put it in luna or the softwares support it.
