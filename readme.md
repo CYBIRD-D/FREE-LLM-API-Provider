@@ -102,10 +102,13 @@ https://ollama.com/search?c=cloud
   - deepseek-v3.1/v3.2: 671b
   - gpt-oss: 20b/120b
   - cogito-2.1 671b
-  - glm-4.6/4.7/5
   - minimax-m2/2.1
   - nemotron-3-nano:30b
   - rnj-1:8b
+  - GLM
+      - GLM-4.6
+      - GLM-4.7
+      - GLM-5
   - KIMI
       - kimi-k2: 1t
       - kimi-k2-thinking
