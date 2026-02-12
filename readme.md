@@ -39,6 +39,7 @@ You may want to read:
   - [Tencent-Hunyuan 腾讯混元](#tencent-hunyuan-腾讯混元)
   - [Volcengine 火山引擎（平台）](#volcengine-火山引擎平台-500-point-资源点day)
   - [心流](#心流)
+  - [StreamLake 快手万擎Vanchin](#StreamLake-快手万擎Vanchin)
   - [Spark 讯飞星火](#spark-讯飞星火)
 
 -----------
@@ -422,6 +423,9 @@ https://platform.iflow.cn/docs
 阿里云服务器
 
 -----------
+
+### StreamLake 快手万擎Vanchin
+https://www.streamlake.com/document/WANQING/mdsor5767ob7s796sp6
 
 
 ### Spark 讯飞星火
