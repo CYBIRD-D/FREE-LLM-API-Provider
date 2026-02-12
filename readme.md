@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-02-08**
+> Last updated: **2026-02-12**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -136,7 +136,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last updated: **2026-01-28**
+> Last updated: **2026-02-12**
 
 
 https://console.groq.com/docs/rate-limits</br>
@@ -160,7 +160,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### Celebras
-> Last Check: **2026-02-08**
+> Last Check: **2026-02-12**
 
 https://inference-docs.cerebras.ai/support/rate-limits</br>
 Endpoint: https://api.cerebras.ai
@@ -172,7 +172,7 @@ Endpoint: https://api.cerebras.ai
 | llama-3.3-70b                        | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
 | qwen-3-32b                           | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
 | qwen-3-235b-a22b-instruct-2507       | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| zai-glm-4.6/4.7                      | 10              | 100            | 100          | 150K          | 1M          | 1M         |
+| zai-glm-4.7                          | 10              | 100            | 100          | 150K          | 1M          | 1M         |
 
 
 </br>
