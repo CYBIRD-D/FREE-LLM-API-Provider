@@ -92,7 +92,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-02-08** </br>
+> Last Check: **2026-02-12** </br>
 
 
 https://ollama.com/cloud </br>
@@ -102,7 +102,7 @@ https://ollama.com/search?c=cloud
   - deepseek-v3.1/v3.2: 671b
   - gpt-oss: 20b/120b
   - cogito-2.1 671b
-  - glm-4.6/4.7
+  - glm-4.6/4.7/5
   - minimax-m2/2.1
   - nemotron-3-nano:30b
   - rnj-1:8b
