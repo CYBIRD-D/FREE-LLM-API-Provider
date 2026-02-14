@@ -1,12 +1,12 @@
 # Free LLM API Provider
-> Last updated: **2026-02-12**
+> Last updated: **2026-02-15**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
 免费LLM api平台（包括cn平台）
 
 You may want to read: 
-- [**How to Choose Your LLM?**](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/README_en.md)
+- [**How to Choose Your LLM For Translation?**](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/tree/main)
 - [**Model & Performance** FAQ](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/FAQ_EN.md#models--performance)
 - [**Local LLMs Collection For Translation**](https://github.com/CYBIRD-D/Local-LLMs-Collection-For-Translation/tree/main)
 
@@ -93,42 +93,41 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-02-12** </br>
+> Last Check: **2026-02-15** </br>
 
 
 https://ollama.com/cloud </br>
 https://ollama.com/search?c=cloud
 
-- **Models**：So far Ollama cloud support:
-  - deepseek-v3.1/v3.2: 671b
-  - gpt-oss: 20b/120b
-  - cogito-2.1 671b
-  - minimax-m2/2.1
-  - nemotron-3-nano:30b
-  - rnj-1:8b
-  - GLM
-      - GLM-4.6
-      - GLM-4.7
-      - GLM-5
-  - KIMI
-      - kimi-k2: 1t
-      - kimi-k2-thinking
-      - kimi-k2.5
-  - Qwen
-      - qwen3-vl: 235b/instruct
-      - qwen3-coder: 480b
-      - qwen3-next:80b(A3B)
-      - qwen3-coder-next
-  
-  - Google
-      - gemini-3-pro-preview
-      - gemini-3-flash-preview
-      - Gemma 3 4b/12b/27b
-  - Mistral
-      - ministral-3 3b/8b/14b
-      - mistral-large-3 675b
-      - devstral-small-2:24b
-      - devstral-2:123b
+**Models**：So far Ollama cloud support:
+- deepseek-v3.1/v3.2: 671b
+- gpt-oss: 20b/120b
+- cogito-2.1 671b
+- minimax-m2/2.1/2.5
+- nemotron-3-nano:30b
+- rnj-1:8b
+- GLM
+  - GLM-4.6
+  - GLM-4.7
+  - GLM-5
+- KIMI
+  - kimi-k2: 1t
+  - kimi-k2-thinking
+  - kimi-k2.5
+- Qwen
+  - qwen3-vl: 235b/instruct
+  - qwen3-coder: 480b
+  - qwen3-next:80b(A3B)
+  - qwen3-coder-next
+- Google
+  - gemini-3-pro-preview
+  - gemini-3-flash-preview
+  - Gemma 3 4b/12b/27b
+- Mistral
+  - ministral-3 3b/8b/14b
+  - mistral-large-3 675b
+  - devstral-small-2:24b
+  - devstral-2:123b
  
 > "Ollama's cloud includes hourly and daily limits to avoid capacity issues. Usage-based pricing will soon be available to consume models in a metered fashion. "</br>
 > No exact rate limit number.
@@ -215,6 +214,28 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 > Last updated: **Nov 13, 2025** </br>
 > "Neurons are our way of measuring AI outputs across different models, representing the GPU compute needed to perform your request. Our serverless model allows you to pay only for what you use without having to worry about renting, managing, or scaling GPUs."
 
+Models list </br>
+- Llama
+    - Llama2-7b
+    - Llama3.1-8b/70b
+    - Llama3.2-1b/3b/11b(vision)
+    - Llama4-scout-17b-16e
+- Qwen
+    - qwq-32b
+    - qwen2.5-coder-32b
+    - qwen3-30b-a3b
+- Mistral
+    - Mistral-7b-intruct-v0.1
+    - Mistral-small-3.1b-24b
+- deepseek-r1-distill-qwen-32b
+- gemma-3-12b
+- gemma-sea-lion-v4-27b-it
+- granite-4.0-h-micro
+- glm-4.7-flash
+    
+ <details>
+  <summary>Full list with token cost</summary>  
+   
 | Model | Neurons/1M Input token | Neurons/1M Output token | Input:Output=1:1 </br>（Overall/k token） |
 |------|-----------------------|-----------------------|-------------------------------|
 | `meta/llama-3.2-1b-instruct` | 2457  | 18252  | 966  |
@@ -237,6 +258,9 @@ https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing
 | `openai/gpt-oss-20b` | 18182 | 27273  | 440  |
 | `aisingapore/gemma-sea-lion-v4-27b-it` | 31876 | 50488  | 243  |
 | `ibm-granite/granite-4.0-h-micro` | 1542  | 10158  | 1709 |
+| zai-org/glm-4.7-flash  | 5500 | 36400 |       |
+
+ </details>
 
 
 ---------
@@ -386,6 +410,9 @@ https://www.volcengine.com/docs/84458/1585097
 - 个人免费版为 **`500资源点/天`**
 - 目前（2025.11.03），扣子模型中仅豆包模型、DeepSeek 模型和 Kimi-K2 模型收费。使用 Kimi（8K）等其他扣子提供的模型暂不收取费用，但每日调用次数有一定限制 **`（100次/天）`**
 
+ <details>
+  <summary>模型表</summary>  
+
 | 模型名称 | 条件</br>（千tokens） | 输入单价</br>(资源点/ktok) | 输出单价</br>(资源点/ktok) | 合计单价</br>(资源点/ktok) | 500资源点可用总tokens (ktok) |
 | --- | --- | --- | --- | --- | --- |
 | 豆包·1.6·视觉理解·250815（Doubao-Seed-1.6-vision） | [0,32] | 0.8 | 8 | 8.8 | 56.82 |
@@ -411,6 +438,10 @@ https://www.volcengine.com/docs/84458/1585097
 | DeepSeek-V3 / DeepSeek-V3 工具调用 / DeepSeek-V3-0324 | 默认 | 2 | 8 | 10 | 50.00 |
 | DeepSeek-R1 / DeepSeek-R1 工具调用 / DeepSeek-R1-250528 | 默认 | 4 | 16 | 20 | 25.00 |
 | Kimi-K2 | 默认 | 4 | 16 | 20 | 25.00 |
+
+ </details>
+
+-------------
 
 - 使用豆包 1.6 模型时，输入 token 单价和输出 token 单价均由输入长度决定。例如调用豆包·1.6·自动深度思考模型时，当 1 个请求的输入长度为 200 千tokens，输出长度为 14 千token 时，满足条件输入长度 (128, 256]，将采用计费项 **Doubao-Seed-1.6-256k（输入）**和 Doubao-Seed-1.6-256k（输出）。
 - Doubao-Seedance-1.0-lite、Doubao-Seedance-1.0-pro 模型各自为每个扣子账号（主账号+子账号）提供累计 100 万tokens 免费额度。免费额度耗尽后如需继续使用，会从账号中扣减资源点。
