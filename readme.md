@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-02-15**
+> Last updated: **2026-02-18**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -93,7 +93,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-02-15** </br>
+> Last Check: **2026-02-18** </br>
 
 
 https://ollama.com/cloud </br>
@@ -104,21 +104,19 @@ https://ollama.com/search?c=cloud
 - gpt-oss: 20b/120b
 - cogito-2.1 671b
 - minimax-m2/2.1/2.5
+- kimi-k2: 1t/thinking/kimi-k2.5
 - nemotron-3-nano:30b
 - rnj-1:8b
 - GLM
   - GLM-4.6
   - GLM-4.7
   - GLM-5
-- KIMI
-  - kimi-k2: 1t
-  - kimi-k2-thinking
-  - kimi-k2.5
 - Qwen
   - qwen3-vl: 235b/instruct
   - qwen3-coder: 480b
   - qwen3-next:80b(A3B)
   - qwen3-coder-next
+  - qwen3.5-397B-A17B
 - Google
   - gemini-3-pro-preview
   - gemini-3-flash-preview
@@ -139,7 +137,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last updated: **2026-02-12**
+> Last updated: **2026-02-18**
 
 
 https://console.groq.com/docs/rate-limits</br>
@@ -163,7 +161,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### Celebras
-> Last Check: **2026-02-12**
+> Last Check: **2026-02-18**
 
 https://inference-docs.cerebras.ai/support/rate-limits</br>
 Endpoint: https://api.cerebras.ai
@@ -205,8 +203,8 @@ Endpoint: https://openrouter.ai/api
 --------
 
 ### Cloudflare
-> Last web updated: **2025-12-03** </br>
-> Last Check: **2026-02-08** </br>
+> Last web updated: **2026-02-13** </br>
+> Last Check: **2026-02-18** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -268,7 +266,7 @@ Models list </br>
 
 ### Cohere
 > Last updated: **2025-11-17**</br>
-> Last Check: **2026-02-08** </br>
+> Last Check: **2026-02-18** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
