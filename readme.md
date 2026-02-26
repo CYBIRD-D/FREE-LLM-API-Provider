@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-02-18**
+> Last updated: **2026-02-27**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -20,10 +20,10 @@ You may want to read:
 ## Content/目录
 - [Global Platform](#global-platform)
   - [Google/Gemma 3](#google-gemini-googlegemma-3)
-  - [Nvidia](#nvidia)
-  - [Ollama](#ollama)
-  - [Groq](#groq)
-  - [Cerebras](#celebras)
+  - [★Nvidia](#nvidia)
+  - [★Ollama](#ollama)
+  - [★Groq](#groq)
+  - [★Cerebras](#celebras)
   - [OpenRouter](#openrouter)
   - [Cloudflare](#cloudflare)
   - [Cohere](#cohere)
@@ -70,8 +70,8 @@ Endpoint: https://generativelanguage.googleapis.com
 
 **Google has set gemini limit to usuable rate; only gemma 3 works now**.
 
-Other solutions: </br>
-[Google AI Studio to API Adapter](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md)
+**★Other solutions:** </br>
+[**Google AI Studio to API Adapter**](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md)
 
 </br>
 
@@ -93,7 +93,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-02-18** </br>
+> Last Check: **2026-02-27** </br>
 
 
 https://ollama.com/cloud </br>
@@ -137,7 +137,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last updated: **2026-02-18**
+> Last updated: **2026-02-27**
 
 
 https://console.groq.com/docs/rate-limits</br>
@@ -161,19 +161,17 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### Celebras
-> Last Check: **2026-02-18**
+> Last Check: **2026-02-27**
 
 https://inference-docs.cerebras.ai/support/rate-limits</br>
 Endpoint: https://api.cerebras.ai
 
 | Model                                | Requests/Minute | Requests/Hour | Requests/Day | Tokens/Minute | Tokens/Hour | Tokens/Day |
 |--------------------------------------|-----------------|---------------|--------------|---------------|-------------|------------|
-| gpt-oss-120b                         | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| llama3.1-8b                          | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| llama-3.3-70b                        | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| qwen-3-32b                           | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| qwen-3-235b-a22b-instruct-2507       | 30              | 900            | 14.4K        | 60K           | 1M          | 1M         |
-| zai-glm-4.7                          | 10              | 100            | 100          | 150K          | 1M          | 1M         |
+| gpt-oss-120b                         | 30              | 900            | 14.4K        | 64K          | 1M          | 1M         |
+| llama3.1-8b                          | 30              | 900            | 14.4K        | 60K          | 1M          | 1M         |
+| qwen-3-235b-a22b-instruct-2507       | 30              | 900            | 14.4K        | 60K          | 1M          | 1M         |
+| zai-glm-4.7                          | 10              | 100            | 100          | 60k          | 1M          | 1M         |
 
 
 </br>
@@ -204,7 +202,7 @@ Endpoint: https://openrouter.ai/api
 
 ### Cloudflare
 > Last web updated: **2026-02-13** </br>
-> Last Check: **2026-02-18** </br>
+> Last Check: **2026-02-27** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -266,7 +264,7 @@ Models list </br>
 
 ### Cohere
 > Last updated: **2025-11-17**</br>
-> Last Check: **2026-02-18** </br>
+> Last Check: **2026-02-27** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
