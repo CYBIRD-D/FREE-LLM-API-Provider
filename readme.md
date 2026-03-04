@@ -93,7 +93,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-02-27** </br>
+> Last Check: **2026-03-04** </br>
 
 
 https://ollama.com/cloud </br>
@@ -161,7 +161,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### Celebras
-> Last Check: **2026-02-27**
+> Last Check: **2026-03-04**
 
 https://inference-docs.cerebras.ai/support/rate-limits</br>
 Endpoint: https://api.cerebras.ai
@@ -179,7 +179,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-01-28** </br>
+> Last Check: **2026-03-04** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -189,23 +189,24 @@ Endpoint: https://openrouter.ai/api
 **Models**: Based on what OpenRouter (the platform) provide as **Free**
 - **Free usage limits**: If you’re using a free model variant (with an ID ending in **`:free`**/ **`(free)`** ) </br>
   you can make up to **`20`** requests/minute.</br>
-  - If you have purchased less than **`10 credits`** ($10), you’re limited to **`50`** `free` model **requests/Day**.
-  - If you purchase at least **`10 credits`** , your daily limit is increased to **`1000`** `free` model **requests/Day**.
+  - If you have purchased less than **`$10 credits`**, you’re limited to **`50`** `free` model **requests/Day**.
+  - If you purchase at least **`$10 credits`** , your daily limit is increased to **`1000`** `free` model **requests/Day**.
 
 | Model variant (ID) | Credits purchased        | Rate limit (requests/min) | Daily limit (requests/day) |
 |--------------------|--------------------------|---------------------------|----------------------------|
-| *:free             | < 10 credits             | 20                        | 50                         |
-| *:free             | ≥ 10 credits             | 20                        | 1000                       |
+| *:free             | < $10 credits             | 20                        | 50                         |
+| *:free             | ≥ $10 credits             | 20                        | 1000                       |
 
 
 --------
 
 ### Cloudflare
 > Last web updated: **2026-02-13** </br>
-> Last Check: **2026-02-27** </br>
+> Last Check: **2026-03-04** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
+https://developers.cloudflare.com/workers/platform/pricing/ </br>
 - Workers Free	**`10,000 Neurons`** per day </br>
 > Last updated: **Nov 13, 2025** </br>
 > "Neurons are our way of measuring AI outputs across different models, representing the GPU compute needed to perform your request. Our serverless model allows you to pay only for what you use without having to worry about renting, managing, or scaling GPUs."
@@ -264,7 +265,7 @@ Models list </br>
 
 ### Cohere
 > Last updated: **2025-11-17**</br>
-> Last Check: **2026-02-27** </br>
+> Last Check: **2026-03-204** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -304,7 +305,7 @@ https://docs.z.ai/guides/overview/pricing </br>
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-02-08** </br>
+> Last Check: **2026-03-04** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
@@ -353,6 +354,12 @@ https://www.ibm.com/products/watsonx-ai/pricing
 -----------
 
 
+### Scaleway (1M free token/per account-no refresh)
+https://www.scaleway.com/en/docs/generative-apis/faq/#how-does-the-free-tier-work
+
+--------
+
+
 ### ~~Together AI (certain free-endpoint:no text models now)~~ 
 ~~> Last updated: **2025-11-17**~~
 
@@ -363,13 +370,6 @@ https://www.ibm.com/products/watsonx-ai/pricing
 
 **NO FREE TIER** Now </br>
 https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing-july-2025
-
---------
-
-
-### Scaleway (1M free token/per account-no refresh)
-https://www.scaleway.com/en/docs/generative-apis/faq/#how-does-the-free-tier-work
-
 
 -----------
 
