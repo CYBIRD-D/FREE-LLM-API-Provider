@@ -32,7 +32,7 @@ You may want to read:
   - [Mistral](#mistral)
   - [SKT](#skt)
   - [IBM](#ibm)
-  - [Scaleway (1M free token/per account-no refresh)](#scaleway-1m-free-tokenper-account-no-refresh)
+  - [Scaleway (1M free token/per account)](#scaleway-1m-free-tokenper-account-no-refresh)
 - [CN Platform](#cn-platform)
   - [ModelScope（魔搭社区）](#modelscope魔搭社区仅限cnonly-cn)
   - [SilliconFlow 硅基流动](#silliconflow-硅基流动)
