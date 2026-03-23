@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-03-19**
+> Last updated: **2026-03-23**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -93,7 +93,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-03-19** </br>
+> Last Check: **2026-03-23** </br>
 
 
 https://ollama.com/cloud </br>
@@ -103,7 +103,7 @@ https://ollama.com/search?c=cloud
 - deepseek-v3.1/v3.2: 671b
 - gpt-oss: 20b/120b
 - cogito-2.1 671b
-- minimax-m2/2.1/2.5
+- minimax-m2/2.1/2.5/2.7
 - kimi-k2: 1t/thinking/kimi-k2.5
 - nemotron-3-nano:30b
 - nemotron-3-super:120b
@@ -162,7 +162,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### Celebras
-> Last Check: **2026-03-19**
+> Last Check: **2026-03-23**
 
 https://inference-docs.cerebras.ai/support/rate-limits</br>
 Endpoint: https://api.cerebras.ai
@@ -180,7 +180,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-03-19** </br>
+> Last Check: **2026-03-23** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -202,8 +202,8 @@ Endpoint: https://openrouter.ai/api
 --------
 
 ### Cloudflare
-> Last web updated: **2026-03-11** </br>
-> Last Check: **2026-03-19** </br>
+> Last web updated: **2026-03-19** </br>
+> Last Check: **2026-03-23** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -221,7 +221,7 @@ Models list </br>
 - Qwen
     - qwq-32b
     - qwen2.5-coder-32b
-    - qwen3-30b-a3b
+    - **qwen3-30b-a3b**
 - Mistral
     - Mistral-7b-intruct-v0.1
     - Mistral-small-3.1b-24b
@@ -230,7 +230,8 @@ Models list </br>
 - gemma-sea-lion-v4-27b-it
 - granite-4.0-h-micro
 - glm-4.7-flash
-- nemotron-3-120b-a12b
+- **nemotron-3-120b-a12b**
+- **kimi-k2.5**
     
  <details>
   <summary>Full list with token cost</summary>  
@@ -259,6 +260,7 @@ Models list </br>
 | `ibm-granite/granite-4.0-h-micro` | 1542  | 10158  | 1709 |
 | zai-org/glm-4.7-flash  | 5500 | 36400 |       |
 | nemotron-3-120b-a12b   | 45455 | 136364 |       |
+| kimi-k2.5   | 54545 | 9091（cache）</br> 272727 |       |
 
  </details>
 
@@ -268,7 +270,7 @@ Models list </br>
 
 ### Cohere
 > Last updated: **2025-11-17**</br>
-> Last Check: **2026-03-19** </br>
+> Last Check: **2026-03-23** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -308,7 +310,7 @@ https://docs.z.ai/guides/overview/pricing </br>
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-03-19** </br>
+> Last Check: **2026-03-23** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
@@ -344,7 +346,7 @@ https://github.com/SKT-AI/A.X-4.0/blob/main/apis/README.md
 
 
 ### IBM
-> Last Check: **2026-03-19** </br>
+> Last Check: **2026-03-23** </br>
 
 
 https://www.ibm.com/products/watsonx-ai/pricing
