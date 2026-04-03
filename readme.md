@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-03-23**
+> Last updated: **2026-04-04**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -46,10 +46,10 @@ You may want to read:
 
 ## Global Platform
 
-### ~~Google Gemini~~ Google/Gemma 3
+### ~~Google Gemini~~ Google/Gemma 3/4
 Community reports that **Gemma 3** is working properly. </br>
 ~~https://ai.google.dev/gemini-api/docs/rate-limits#free-tier~~ 
-> Last updated: **2026-01-21 UTC** </br>
+> Last updated: **2026-04-04 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
 > **RPD** Requests per day</br>
@@ -62,9 +62,12 @@ Endpoint: https://generativelanguage.googleapis.com
 
 | Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
 |---------------------------|---------------------------|--------------------------|-------------------------|
-| Gemini 2.5 Flash-Lite     | 10                        | 250,000                  | 20                      |
-| Gemini 2.5 Flash </br> Gemini 3 Flash         | 5             | 250,000          | 20                      |
-| **Gemma 3**                       | 30                        | 15,000           | 14,400                  |
+| Gemini 2.5 Flash </br> Gemini 3 Flash         | 5             | 250k          | 20                      |
+| Gemini 2.5 Flash-Lite     | 10                        | 250k                  | 20                      |
+| Gemini 3.1 Flash Lite           | 15                        | 250k                 | 1,500                 |
+| Gemma 4 26B/31B           | 15                        | Unlimited                 | 1,500                 |
+| **Gemma 3**                       | 30                        | 15k           | 14,400                  |
+
 
 
 
@@ -93,13 +96,13 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-03-23** </br>
+> Last Check: **2026-04-04** </br>
 
 
 https://ollama.com/cloud </br>
 https://ollama.com/search?c=cloud
 
-**Models**：So far Ollama cloud support:
+**Models**：So far Ollama **cloud** support:
 - deepseek-v3.1/v3.2: 671b
 - gpt-oss: 20b/120b
 - cogito-2.1 671b
@@ -138,7 +141,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last updated: **2026-03-19**
+> Last updated: **2026-04-04**
 
 
 https://console.groq.com/docs/rate-limits</br>
@@ -162,7 +165,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### Celebras
-> Last Check: **2026-03-23**
+> Last Check: **2026-04-04**
 
 https://inference-docs.cerebras.ai/support/rate-limits</br>
 Endpoint: https://api.cerebras.ai
@@ -180,7 +183,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-03-23** </br>
+> Last Check: **2026-04-04** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -203,7 +206,7 @@ Endpoint: https://openrouter.ai/api
 
 ### Cloudflare
 > Last web updated: **2026-03-19** </br>
-> Last Check: **2026-03-23** </br>
+> Last Check: **2026-04-04** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -270,7 +273,7 @@ Models list </br>
 
 ### Cohere
 > Last updated: **2025-11-17**</br>
-> Last Check: **2026-03-23** </br>
+> Last Check: **2026-04-04** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -310,7 +313,7 @@ https://docs.z.ai/guides/overview/pricing </br>
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-03-23** </br>
+> Last Check: **2026-04-04** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
