@@ -5,7 +5,28 @@
 This is a list of free llm providers and their rate usage limits.</br>
 免费LLM api平台（包括cn平台）
 
-You may want to read: 
+<table align="center">
+  <tr>
+    <td align="center"><img src="./logo/gemini-color.png" alt="Google" height="50" /></td>
+    <td align="center"><img src="./logo/nvidia-logo-vert-blk.png" alt="NVIDIA NIM" height="50" /></td>
+    <td align="center"><img src="./logo/ollama.png" alt="Ollama" height="50" /></td>
+    <td align="center"><img src="./logo/groq.png" alt="Groq" height="50" /></td>
+    <td align="center"><img src="./logo/cerebras-color.png" alt="Cerebras" height="50" /></td>
+    <td align="center"><img src="./logo/openrouter.png" alt="OpenRouter" height="50" /></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./logo/cloudflarecolor.png" alt="Cloudflare" height="50" /></td>
+    <td align="center"><img src="./logo/zai.webp" alt="Z.ai" height="50" /></td>
+    <td align="center"><img src="./logo/github.png" alt="GitHub" height="50" /></td>
+    <td align="center"><img src="./logo/mistral-color.png" alt="Mistral" height="50" /></td>
+    <td align="center"><img src="./logo/modelscope-color.png" alt="ModelScope" height="50" /></td>
+    <td align="center"><img src="./logo/volcengine-color.png" alt="Volcengine" height="50" /></td>
+    </td>
+  </tr>
+</table>
+
+
+You may also want to read: 
 - [**How to Choose Your LLM For Translation?**](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/tree/main)
 - [Model & Performance FAQ](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/FAQ_EN.md#models--performance)
 - [**Local LLMs Collection For Translation**](https://github.com/CYBIRD-D/Local-LLMs-Collection-For-Translation/tree/main)
@@ -19,7 +40,7 @@ You may want to read:
 
 ## Content/目录
 - [Global Platform](#global-platform)
-  - [Google/Gemma 3](#google-gemini-googlegemma-3)
+  - [Google/Gemma 3](#google-gemma-3-4/)
   - [★Nvidia](#nvidia)
   - [★Ollama](#ollama)
   - [★Groq](#groq)
