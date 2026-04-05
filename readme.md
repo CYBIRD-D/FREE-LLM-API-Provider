@@ -40,7 +40,7 @@ You may also want to read:
 
 ## Content/目录
 - [Global Platform](#global-platform)
-  - [Google/Gemma 3](#google-gemma-3-4/)
+  - [Google/Gemma 3](#google-gemini-googlegemma-34)
   - [★Nvidia](#nvidia)
   - [★Ollama](#ollama)
   - [★Groq](#groq)
