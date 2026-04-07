@@ -117,7 +117,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-04-04** </br>
+> Last Check: **2026-04-08** </br>
 
 
 https://ollama.com/cloud </br>
@@ -135,7 +135,7 @@ https://ollama.com/search?c=cloud
 - GLM
   - GLM-4.6
   - GLM-4.7
-  - GLM-5
+  - GLM-5/5.1
 - Qwen
   - qwen3-vl: 235b/instruct
   - qwen3-coder: 480b
@@ -146,6 +146,7 @@ https://ollama.com/search?c=cloud
   - gemini-3-pro-preview
   - gemini-3-flash-preview
   - Gemma 3 4b/12b/27b
+  - Gemma 4 31b
 - Mistral
   - ministral-3 3b/8b/14b
   - mistral-large-3 675b
