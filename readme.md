@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-04-10**
+> Last updated: **2026-04-13**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -40,8 +40,8 @@ You may also want to read:
 
 ## Content/目录
 - [Global Platform](#global-platform)
-  - [Google/Gemma 3](#google-gemini-googlegemma-34)
-  - [★Nvidia](#nvidia)
+  - [Google/Gemma 3/4](#google-gemini-googlegemma-34)
+  - [★Nvidia/40RPM](#nvidia)
   - [★Ollama](#ollama)
   - [★Groq](#groq)
   - [★Cerebras](#celebras)
@@ -70,7 +70,7 @@ You may also want to read:
 ### ~~Google Gemini~~ Google/Gemma 3/4
 Community reports that **Gemma 3** is working properly. </br>
 ~~https://ai.google.dev/gemini-api/docs/rate-limits#free-tier~~ 
-> Last updated: **2026-04-04 UTC** </br>
+> Last updated: **2026-04-13 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
 > **RPD** Requests per day</br>
@@ -87,8 +87,9 @@ Endpoint: https://generativelanguage.googleapis.com
 | Gemini 2.5 Flash-Lite     | 10                        | 250k                  | 20                      |
 | Gemini 3.1 Flash Lite           | 15                        | 250k                 | 1,500                 |
 | Gemma 4 26B/31B           | 15                        | Unlimited                 | 1,500                 |
-| **Gemma 3**                       | 30                        | 15k           | 14,400                  |
-
+| **Gemma 3 (1B/2B/4B/12B/27B)**                       | 30                        | 15k           | 14,400                  |
+~~gemini 2 Flash/Lite~~
+~~gemini 2.5/3.1 Pro~~
 
 
 
@@ -602,32 +603,32 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-04-10** </br>
+> Last Check: **2026-04-13** </br>
 
 
 https://ollama.com/cloud </br>
 https://ollama.com/search?c=cloud
 
 **Models**：So far Ollama **cloud** support:
-- deepseek-v3.1/v3.2: 671b
+- **deepseek-v3.1/v3.2: 671b**
 - gpt-oss: 20b/120b
-- cogito-2.1 671b
-- minimax-m2/2.1/2.5/2.7
-- kimi-k2: 1t/thinking/kimi-k2.5
+- **cogito-2.1 671b**
+- **minimax-m2/2.1/2.5/2.7**
+- **kimi-k2: 1t/thinking/kimi-k2.5**
 - nemotron-3-nano:30b
 - nemotron-3-super:120b
 - rnj-1:8b
-- GLM
+- **GLM**
   - GLM-4.6
   - GLM-4.7
   - GLM-5/5.1
-- Qwen
+- **Qwen**
   - qwen3-vl: 235b/instruct
   - qwen3-coder: 480b
   - qwen3-next:80b(A3B)
   - qwen3-coder-next
   - qwen3.5-397B-A17B
-- Google
+- **Google**
   - gemini-3-pro-preview
   - gemini-3-flash-preview
   - Gemma 3 4b/12b/27b
@@ -648,7 +649,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last updated: **2026-04-10**
+> Last updated: **2026-04-13**
 
 
 https://console.groq.com/docs/rate-limits</br>
@@ -672,7 +673,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### Celebras
-> Last Check: **2026-04-04**
+> Last Check: **2026-04-13**
 
 https://inference-docs.cerebras.ai/support/rate-limits</br>
 Endpoint: https://api.cerebras.ai
@@ -690,7 +691,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-04-04** </br>
+> Last Check: **2026-04-13** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -712,8 +713,8 @@ Endpoint: https://openrouter.ai/api
 --------
 
 ### Cloudflare
-> Last web updated: **2026-03-19** </br>
-> Last Check: **2026-04-04** </br>
+> Last web updated: **2026-04-04** </br>
+> Last Check: **2026-04-13** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -737,9 +738,10 @@ Models list </br>
     - Mistral-small-3.1b-24b
 - deepseek-r1-distill-qwen-32b
 - gemma-3-12b
+- **gemma-4-26B-A4B**
 - gemma-sea-lion-v4-27b-it
 - granite-4.0-h-micro
-- glm-4.7-flash
+- **glm-4.7-flash**
 - **nemotron-3-120b-a12b**
 - **kimi-k2.5**
     
@@ -779,8 +781,8 @@ Models list </br>
 
 
 ### Cohere
-> Last updated: **2025-11-17**</br>
-> Last Check: **2026-04-04** </br>
+> Last updated: **2026-03-26**</br>
+> Last Check: **2026-04-13** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -788,8 +790,7 @@ Endpoint: https://api.cohere.ai/compatibility
 
 | Endpoint            | Trial rate limit (requests/min)  | Trial monthly cap (calls/month)   |
 |---------------------|----------------------------------|----------------------------------|
-| Chat                | 20/min (per model)               | 1000/month                       |
-| Generate (legacy)   | 5                                | 1000                             |
+| Chat API            | 20/min (per model)               | 1000/month                       |
 
 - Chat model includes
   - Command A Reasoning
@@ -820,7 +821,7 @@ https://docs.z.ai/guides/overview/pricing </br>
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-04-04** </br>
+> Last Check: **2026-04-13** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
@@ -856,7 +857,7 @@ https://github.com/SKT-AI/A.X-4.0/blob/main/apis/README.md
 
 
 ### IBM
-> Last Check: **2026-03-23** </br>
+> Last Check: **2026-04-13** </br>
 
 
 https://www.ibm.com/products/watsonx-ai/pricing
