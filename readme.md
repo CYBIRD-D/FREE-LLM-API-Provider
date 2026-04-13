@@ -41,7 +41,7 @@ You may also want to read my other posts:
 ## Content/目录
 - [Global Platform](#global-platform)
   - [Google/Gemma 3/4](#google-gemini-googlegemma-34)
-  - [★Nvidia/40RPM](#nvidia)
+  - [★Nvidia(40RPM)](#nvidia)
   - [★Ollama](#ollama)
   - [★Groq](#groq)
   - [★Cerebras](#celebras)
