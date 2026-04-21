@@ -103,7 +103,7 @@ Endpoint: https://generativelanguage.googleapis.com
 -------
 
 ### Nvidia
-> Last updated: **2026-04-10** </br>
+> Last updated: **2026-04-21** </br>
 
 https://build.nvidia.com/explore/discover </br>
 Endpoint: https://integrate.api.nvidia.com
@@ -113,9 +113,11 @@ Endpoint: https://integrate.api.nvidia.com
 Rate limits may vary by model and traffic from other users may cause throttling. </br>
 > For dedicated availability, deploy models as a dedicated endpoint with NVIDIA NIM.
 
-- **185** Models list
+- **129** Models list
   - OpenAI/Google/Meta/Microsoft/NVIDIA/IBM/Databricks/Mistral AI/AI21 Labs/DeepSeek/Moonshot AI/Z-ai/Minimax etc.
 <details>
+
+## Model List
 
 #### 01-ai
 <details>
@@ -143,10 +145,9 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 #### ai21labs
 <details>
-<summary>2 models</summary>
+<summary>1 model</summary>
 
 - `ai21labs/jamba-1.5-large-instruct`
-- `ai21labs/jamba-1.5-mini-instruct`
 
 </details>
 
@@ -166,20 +167,11 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 </details>
 
-#### baichuan-inc
+#### bigcode
 <details>
 <summary>1 model</summary>
 
-- `baichuan-inc/baichuan2-13b-chat`
-
-</details>
-
-#### bigcode
-<details>
-<summary>2 models</summary>
-
 - `bigcode/starcoder2-15b`
-- `bigcode/starcoder2-7b`
 
 </details>
 
@@ -201,14 +193,9 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 #### deepseek-ai
 <details>
-<summary>8 models</summary>
+<summary>3 models</summary>
 
 - `deepseek-ai/deepseek-coder-6.7b-instruct`
-- `deepseek-ai/deepseek-r1-distill-llama-8b`
-- `deepseek-ai/deepseek-r1-distill-qwen-14b`
-- `deepseek-ai/deepseek-r1-distill-qwen-32b`
-- `deepseek-ai/deepseek-r1-distill-qwen-7b`
-- `deepseek-ai/deepseek-v3.1`
 - `deepseek-ai/deepseek-v3.1-terminus`
 - `deepseek-ai/deepseek-v3.2`
 
@@ -216,87 +203,37 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 #### google
 <details>
-<summary>18 models</summary>
+<summary>12 models</summary>
 
 - `google/codegemma-1.1-7b`
 - `google/codegemma-7b`
 - `google/deplot`
-- `google/gemma-2-27b-it`
 - `google/gemma-2-2b-it`
-- `google/gemma-2-9b-it`
 - `google/gemma-2b`
 - `google/gemma-3-12b-it`
-- `google/gemma-3-1b-it`
 - `google/gemma-3-27b-it`
 - `google/gemma-3-4b-it`
 - `google/gemma-3n-e2b-it`
 - `google/gemma-3n-e4b-it`
 - `google/gemma-4-31b-it`
-- `google/gemma-7b`
-- `google/paligemma`
 - `google/recurrentgemma-2b`
-- `google/shieldgemma-9b`
-
-</details>
-
-#### gotocompany
-<details>
-<summary>1 model</summary>
-
-- `gotocompany/gemma-2-9b-cpt-sahabatai-instruct`
 
 </details>
 
 #### ibm
 <details>
-<summary>6 models</summary>
+<summary>4 models</summary>
 
 - `ibm/granite-3.0-3b-a800m-instruct`
 - `ibm/granite-3.0-8b-instruct`
-- `ibm/granite-3.3-8b-instruct`
 - `ibm/granite-34b-code-instruct`
 - `ibm/granite-8b-code-instruct`
-- `ibm/granite-guardian-3.0-8b`
-
-</details>
-
-#### igenius
-<details>
-<summary>2 models</summary>
-
-- `igenius/colosseum_355b_instruct_16k`
-- `igenius/italia_10b_instruct_16k`
-
-</details>
-
-#### institute-of-science-tokyo
-<details>
-<summary>2 models</summary>
-
-- `institute-of-science-tokyo/llama-3.1-swallow-70b-instruct-v0.1`
-- `institute-of-science-tokyo/llama-3.1-swallow-8b-instruct-v0.1`
-
-</details>
-
-#### marin
-<details>
-<summary>1 model</summary>
-
-- `marin/marin-8b-instruct`
-
-</details>
-
-#### mediatek
-<details>
-<summary>1 model</summary>
-
-- `mediatek/breeze-7b-instruct`
 
 </details>
 
 #### meta
 <details>
-<summary>15 models</summary>
+<summary>12 models</summary>
 
 - `meta/codellama-70b`
 - `meta/llama-3.1-405b-instruct`
@@ -308,30 +245,18 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 - `meta/llama-3.2-90b-vision-instruct`
 - `meta/llama-3.3-70b-instruct`
 - `meta/llama-4-maverick-17b-128e-instruct`
-- `meta/llama-4-scout-17b-16e-instruct`
 - `meta/llama-guard-4-12b`
 - `meta/llama2-70b`
-- `meta/llama3-70b-instruct`
-- `meta/llama3-8b-instruct`
 
 </details>
 
 #### microsoft
 <details>
-<summary>14 models</summary>
+<summary>5 models</summary>
 
 - `microsoft/kosmos-2`
-- `microsoft/phi-3-medium-128k-instruct`
-- `microsoft/phi-3-medium-4k-instruct`
-- `microsoft/phi-3-mini-128k-instruct`
-- `microsoft/phi-3-mini-4k-instruct`
-- `microsoft/phi-3-small-128k-instruct`
-- `microsoft/phi-3-small-8k-instruct`
 - `microsoft/phi-3-vision-128k-instruct`
-- `microsoft/phi-3.5-mini-instruct`
 - `microsoft/phi-3.5-moe-instruct`
-- `microsoft/phi-3.5-vision-instruct`
-- `microsoft/phi-4-mini-flash-reasoning`
 - `microsoft/phi-4-mini-instruct`
 - `microsoft/phi-4-multimodal-instruct`
 
@@ -339,31 +264,27 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 #### minimaxai
 <details>
-<summary>1 model</summary>
+<summary>2 models</summary>
 
 - `minimaxai/minimax-m2.5`
+- `minimaxai/minimax-m2.7`
 
 </details>
 
 #### mistralai
 <details>
-<summary>19 models</summary>
+<summary>14 models</summary>
 
 - `mistralai/codestral-22b-instruct-v0.1`
 - `mistralai/devstral-2-123b-instruct-2512`
 - `mistralai/magistral-small-2506`
-- `mistralai/mamba-codestral-7b-v0.1`
-- `mistralai/mathstral-7b-v0.1`
 - `mistralai/ministral-14b-instruct-2512`
-- `mistralai/mistral-7b-instruct-v0.2`
 - `mistralai/mistral-7b-instruct-v0.3`
 - `mistralai/mistral-large`
 - `mistralai/mistral-large-2-instruct`
 - `mistralai/mistral-large-3-675b-instruct-2512`
 - `mistralai/mistral-medium-3-instruct`
 - `mistralai/mistral-nemotron`
-- `mistralai/mistral-small-24b-instruct`
-- `mistralai/mistral-small-3.1-24b-instruct-2503`
 - `mistralai/mistral-small-4-119b-2603`
 - `mistralai/mixtral-8x22b-instruct-v0.1`
 - `mistralai/mixtral-8x22b-v0.1`
@@ -392,17 +313,16 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 #### nvidia
 <details>
-<summary>47 models</summary>
+<summary>42 models</summary>
 
 - `nvidia/cosmos-reason2-8b`
 - `nvidia/embed-qa-4`
 - `nvidia/gliner-pii`
+- `nvidia/ising-calibration-1-35b-a3b`
 - `nvidia/llama-3.1-nemoguard-8b-content-safety`
 - `nvidia/llama-3.1-nemoguard-8b-topic-control`
 - `nvidia/llama-3.1-nemotron-51b-instruct`
 - `nvidia/llama-3.1-nemotron-70b-instruct`
-- `nvidia/llama-3.1-nemotron-70b-reward`
-- `nvidia/llama-3.1-nemotron-nano-4b-v1.1`
 - `nvidia/llama-3.1-nemotron-nano-8b-v1`
 - `nvidia/llama-3.1-nemotron-nano-vl-8b-v1`
 - `nvidia/llama-3.1-nemotron-safety-guard-8b-v3`
@@ -416,15 +336,13 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 - `nvidia/llama-nemotron-embed-1b-v2`
 - `nvidia/llama-nemotron-embed-vl-1b-v2`
 - `nvidia/llama3-chatqa-1.5-70b`
-- `nvidia/llama3-chatqa-1.5-8b`
 - `nvidia/mistral-nemo-minitron-8b-8k-instruct`
-- `nvidia/mistral-nemo-minitron-8b-base`
 - `nvidia/nemoretriever-parse`
+- `nvidia/nemotron-3-content-safety`
 - `nvidia/nemotron-3-nano-30b-a3b`
 - `nvidia/nemotron-3-super-120b-a12b`
 - `nvidia/nemotron-4-340b-instruct`
 - `nvidia/nemotron-4-340b-reward`
-- `nvidia/nemotron-4-mini-hindi-4b-instruct`
 - `nvidia/nemotron-content-safety-reasoning-4b`
 - `nvidia/nemotron-mini-4b-instruct`
 - `nvidia/nemotron-nano-12b-v2-vl`
@@ -439,8 +357,6 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 - `nvidia/nvidia-nemotron-nano-9b-v2`
 - `nvidia/riva-translate-4b-instruct`
 - `nvidia/riva-translate-4b-instruct-v1.1`
-- `nvidia/streampetr`
-- `nvidia/vila`
 
 </details>
 
@@ -453,37 +369,16 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 </details>
 
-#### opengpt-x
-<details>
-<summary>1 model</summary>
-
-- `opengpt-x/teuken-7b-instruct-commercial-v0.4`
-
-</details>
-
 #### qwen
 <details>
-<summary>10 models</summary>
+<summary>6 models</summary>
 
-- `qwen/qwen2-7b-instruct`
-- `qwen/qwen2.5-7b-instruct`
 - `qwen/qwen2.5-coder-32b-instruct`
-- `qwen/qwen2.5-coder-7b-instruct`
 - `qwen/qwen3-coder-480b-a35b-instruct`
 - `qwen/qwen3-next-80b-a3b-instruct`
 - `qwen/qwen3-next-80b-a3b-thinking`
 - `qwen/qwen3.5-122b-a10b`
 - `qwen/qwen3.5-397b-a17b`
-- `qwen/qwq-32b`
-
-</details>
-
-#### rakuten
-<details>
-<summary>2 models</summary>
-
-- `rakuten/rakutenai-7b-chat`
-- `rakuten/rakutenai-7b-instruct`
 
 </details>
 
@@ -495,12 +390,11 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 </details>
 
-#### speakleash
+#### snowflake
 <details>
-<summary>2 models</summary>
+<summary>1 model</summary>
 
-- `speakleash/bielik-11b-v2.3-instruct`
-- `speakleash/bielik-11b-v2.6-instruct`
+- `snowflake/arctic-embed-l`
 
 </details>
 
@@ -520,43 +414,11 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 </details>
 
-#### thudm
-<details>
-<summary>1 model</summary>
-
-- `thudm/chatglm3-6b`
-
-</details>
-
-#### tiiuae
-<details>
-<summary>1 model</summary>
-
-- `tiiuae/falcon3-7b-instruct`
-
-</details>
-
-#### tokyotech-llm
-<details>
-<summary>1 model</summary>
-
-- `tokyotech-llm/llama-3-swallow-70b-instruct-v0.1`
-
-</details>
-
 #### upstage
 <details>
 <summary>1 model</summary>
 
 - `upstage/solar-10.7b-instruct`
-
-</details>
-
-#### utter-project
-<details>
-<summary>1 model</summary>
-
-- `utter-project/eurollm-9b-instruct`
 
 </details>
 
@@ -571,18 +433,11 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 </details>
 
-#### yentinglin
-<details>
-<summary>1 model</summary>
-
-- `yentinglin/llama-3-taiwan-70b-instruct`
-
-</details>
-
 #### z-ai
 <details>
-<summary>2 models</summary>
+<summary>3 models</summary>
 
+- `z-ai/glm-5.1`
 - `z-ai/glm4.7`
 - `z-ai/glm5`
 
@@ -673,7 +528,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### Celebras
-> Last Check: **2026-04-13**
+> Last Check: **2026-04-21**
 
 https://inference-docs.cerebras.ai/support/rate-limits</br>
 Endpoint: https://api.cerebras.ai
