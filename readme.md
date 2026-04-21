@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-04-13**
+> Last updated: **2026-04-21**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -603,7 +603,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-04-13** </br>
+> Last Check: **2026-04-21** </br>
 
 
 https://ollama.com/cloud </br>
@@ -614,7 +614,7 @@ https://ollama.com/search?c=cloud
 - gpt-oss: 20b/120b
 - **cogito-2.1 671b**
 - **minimax-m2/2.1/2.5/2.7**
-- **kimi-k2: 1t/thinking/kimi-k2.5**
+- **kimi-k2: 1t/thinking/kimi-k2.5/kimi-k2.6**
 - nemotron-3-nano:30b
 - nemotron-3-super:120b
 - rnj-1:8b
@@ -649,7 +649,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last updated: **2026-04-13**
+> Last updated: **2026-04-21**
 
 
 https://console.groq.com/docs/rate-limits</br>
@@ -691,7 +691,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-04-13** </br>
+> Last Check: **2026-04-21** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -714,7 +714,7 @@ Endpoint: https://openrouter.ai/api
 
 ### Cloudflare
 > Last web updated: **2026-04-04** </br>
-> Last Check: **2026-04-13** </br>
+> Last Check: **2026-04-21** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -743,7 +743,7 @@ Models list </br>
 - granite-4.0-h-micro
 - **glm-4.7-flash**
 - **nemotron-3-120b-a12b**
-- **kimi-k2.5**
+- **kimi-k2.5/k2.6**
     
  <details>
   <summary>Full list with token cost</summary>  
@@ -773,6 +773,7 @@ Models list </br>
 | zai-org/glm-4.7-flash  | 5500 | 36400 |       |
 | nemotron-3-120b-a12b   | 45455 | 136364 |       |
 | kimi-k2.5   | 54545 | 9091（cache）</br> 272727 |       |
+| kimi-k2.6   | 86364 | 14545（cache）</br> 363636 |       |
 
  </details>
 
@@ -782,7 +783,7 @@ Models list </br>
 
 ### Cohere
 > Last updated: **2026-03-26**</br>
-> Last Check: **2026-04-13** </br>
+> Last Check: **2026-04-21** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -821,7 +822,7 @@ https://docs.z.ai/guides/overview/pricing </br>
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-04-13** </br>
+> Last Check: **2026-04-21** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
@@ -857,7 +858,7 @@ https://github.com/SKT-AI/A.X-4.0/blob/main/apis/README.md
 
 
 ### IBM
-> Last Check: **2026-04-13** </br>
+> Last Check: **2026-04-21** </br>
 
 
 https://www.ibm.com/products/watsonx-ai/pricing
