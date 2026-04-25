@@ -458,14 +458,14 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-04-21** </br>
+> Last Check: **2026-04-25** </br>
 
 
 https://ollama.com/cloud </br>
 https://ollama.com/search?c=cloud
 
 **Models**：So far Ollama **cloud** support:
-- **deepseek-v3.1/v3.2: 671b**
+- **deepseek-v3.1/v3.2: 671b**/deepseek-v4-flash （284B A13B）
 - gpt-oss: 20b/120b
 - **cogito-2.1 671b**
 - **minimax-m2/2.1/2.5/2.7**
@@ -568,8 +568,8 @@ Endpoint: https://openrouter.ai/api
 --------
 
 ### Cloudflare
-> Last web updated: **2026-04-04** </br>
-> Last Check: **2026-04-21** </br>
+> Last web updated: **2026-04-22** </br>
+> Last Check: **2026-04-25** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
