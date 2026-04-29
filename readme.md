@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-04-21**
+> Last updated: **2026-04-30**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -458,14 +458,13 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-04-25** </br>
+> Last Check: **2026-04-30** </br>
 
 
 https://ollama.com/cloud </br>
 https://ollama.com/search?c=cloud
 
 **Models**：So far Ollama **cloud** support:
-- **deepseek-v3.1/v3.2: 671b**/deepseek-v4-flash （284B A13B）
 - gpt-oss: 20b/120b
 - **cogito-2.1 671b**
 - **minimax-m2/2.1/2.5/2.7**
@@ -473,6 +472,10 @@ https://ollama.com/search?c=cloud
 - nemotron-3-nano:30b
 - nemotron-3-super:120b
 - rnj-1:8b
+- **Deepseek**
+  - deepseek-v3.1/3.2: 671b
+  - deepseek-v4-flash （284B A13B）
+  - deepseek-v4-pro (1.6T A49B)
 - **GLM**
   - GLM-4.6
   - GLM-4.7
@@ -569,7 +572,7 @@ Endpoint: https://openrouter.ai/api
 
 ### Cloudflare
 > Last web updated: **2026-04-22** </br>
-> Last Check: **2026-04-25** </br>
+> Last Check: **2026-04-30** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
