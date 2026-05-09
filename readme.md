@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-04-30**
+> Last updated: **2026-05-09**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -198,6 +198,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 - `deepseek-ai/deepseek-coder-6.7b-instruct`
 - `deepseek-ai/deepseek-v3.1-terminus`
 - `deepseek-ai/deepseek-v3.2`
+- `deepseek-ai/deepseek-v4 flash/pro`
 
 </details>
 
@@ -458,7 +459,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-04-30** </br>
+> Last Check: **2026-05-09** </br>
 
 
 https://ollama.com/cloud </br>
@@ -490,7 +491,7 @@ https://ollama.com/search?c=cloud
   - gemini-3-pro-preview
   - gemini-3-flash-preview
   - Gemma 3 4b/12b/27b
-  - Gemma 4 31b
+  - Gemma 4 31b （+MTP）
 - Mistral
   - ministral-3 3b/8b/14b
   - mistral-large-3 675b
@@ -507,7 +508,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last updated: **2026-04-21**
+> Last updated: **2026-05-09**
 
 
 https://console.groq.com/docs/rate-limits</br>
@@ -531,7 +532,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### Celebras
-> Last Check: **2026-04-21**
+> Last Check: **2026-05-09**
 
 https://inference-docs.cerebras.ai/support/rate-limits</br>
 Endpoint: https://api.cerebras.ai
@@ -549,7 +550,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-04-21** </br>
+> Last Check: **2026-05-09** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -641,7 +642,7 @@ Models list </br>
 
 ### Cohere
 > Last updated: **2026-03-26**</br>
-> Last Check: **2026-04-21** </br>
+> Last Check: **2026-05-09** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
