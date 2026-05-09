@@ -70,7 +70,7 @@ You may also want to read my other posts:
 ### ~~Google Gemini~~ Google/Gemma 3/4
 Community reports that **Gemma 3** is working properly. </br>
 ~~https://ai.google.dev/gemini-api/docs/rate-limits#free-tier~~ 
-> Last updated: **2026-04-13 UTC** </br>
+> Last updated: **2026-05-09 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
 > **RPD** Requests per day</br>
@@ -82,18 +82,18 @@ Endpoint: https://generativelanguage.googleapis.com
 
 
 | Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
-|---------------------------|---------------------------|--------------------------|-------------------------|
-| Gemini 2.5 Flash </br> Gemini 3 Flash         | 5             | 250k          | 20                      |
-| Gemini 2.5 Flash-Lite     | 10                        | 250k                  | 20                      |
-| Gemini 3.1 Flash Lite           | 15                        | 250k                 | 1,500                 |
-| Gemma 4 26B/31B           | 15                        | Unlimited                 | 1,500                 |
-| **Gemma 3 (1B/2B/4B/12B/27B)**                       | 30                        | 15k           | 14,400                  |
+|---------------------------|---------------------------|--------------------------|-----------------|
+| Gemini 2.5 Flash </br> Gemini 3 Flash | 5             | 250k                     | 20              |
+| Gemini 2.5 Flash Lite     | 10                        | 250k                     | 20              |
+| Gemini 3.1 Flash Lite     | 15                        | 250k                     | 500             |
+| Gemma 4 26B/31B           | 15                        | Unlimited                | 1.5K            |
+| **Gemma 3 (1B/2B/4B/12B/27B)**  | 30                  | 15k                      | 14.4k           |
 ~~gemini 2 Flash/Lite~~
 ~~gemini 2.5/3.1 Pro~~
 
 
 
-**Google has set gemini limit to usuable rate; only gemma 3 works now**.
+**Google has set gemini limit to low rate**.
 
 **★Other solutions:** </br>
 [**Google AI Studio to API Adapter**](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md)
