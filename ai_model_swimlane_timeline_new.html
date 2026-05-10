@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Model Release Swimlane Timeline</title>
+<style>
+:root{--bg:#08111f;--panel:rgba(255,255,255,.055);--panel2:rgba(255,255,255,.085);--border:rgba(255,255,255,.13);--text:#f8fafc;--muted:#94a3b8;--muted2:#64748b;--cardW:94px}*{box-sizing:border-box}body{margin:0;color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top left,rgba(59,130,246,.16),transparent 34rem),radial-gradient(circle at top right,rgba(168,85,247,.12),transparent 30rem),var(--bg)}button,input{font:inherit}.app{width:min(1480px,calc(100vw - 28px));margin:0 auto;padding:22px 0 36px}.panel,.hero{border:1px solid var(--border);background:var(--panel);border-radius:28px;box-shadow:0 22px 70px rgba(0,0,0,.22);backdrop-filter:blur(14px)}.hero{padding:21px}.heroGrid{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:end}.eyebrow{display:inline-flex;border:1px solid var(--border);background:rgba(255,255,255,.06);padding:6px 10px;border-radius:999px;color:#cbd5e1;font-size:12px;margin-bottom:10px}h1{margin:0;font-size:clamp(30px,4vw,48px);line-height:1.06;letter-spacing:-.04em}.hero p{max-width:820px;margin:12px 0 0;color:#cbd5e1;line-height:1.65;font-size:14px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:var(--panel2);border-radius:18px;padding:13px 8px;text-align:center}.stat .v{font-size:24px;font-weight:780}.stat .l{margin-top:3px;font-size:12px;color:var(--muted)}.layout{display:grid;grid-template-columns:325px minmax(0,1fr);gap:16px;margin-top:16px}.filters{padding:17px;align-self:start}.sectionTitle{font-size:14px;font-weight:760;margin-bottom:16px}.labelRow{display:flex;justify-content:space-between;align-items:center;margin:17px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-size:10.5px;font-weight:760}.miniLink{border:0;background:transparent;color:#dbeafe;cursor:pointer;font-size:12px;padding:0}.searchBox{display:flex;gap:8px;align-items:center;border:1px solid var(--border);background:rgba(2,6,23,.58);border-radius:17px;padding:9px 11px}.searchBox input{width:100%;border:0;outline:0;background:transparent;color:var(--text);font-size:13px}.searchBox input::placeholder{color:#64748b}.companyGrid{display:grid;grid-template-columns:1fr 1fr;gap:7px}.chip,.companyChip{border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.035);color:#94a3b8;border-radius:16px;padding:8px 10px;cursor:pointer;transition:.14s ease;font-size:11.5px}.companyChip{display:flex;align-items:center;gap:7px;text-align:left;min-height:38px}.chip.active,.companyChip.active{background:rgba(255,255,255,.105);border-color:rgba(255,255,255,.2);color:#fff}.dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}.chipRow{display:flex;flex-wrap:wrap;gap:7px}.rangeWrap input{width:100%}.rangeValue{color:var(--muted2);font-size:12px;margin-top:4px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:19px}.primary,.secondary{border-radius:16px;padding:9px 10px;cursor:pointer;border:1px solid var(--border);font-size:13px;font-weight:700}.primary{background:#fff;color:#020617}.secondary{background:rgba(255,255,255,.035);color:#fff}.hint{margin-top:17px;color:var(--muted);background:rgba(2,6,23,.42);border:1px solid var(--border);border-radius:17px;padding:11px;font-size:11.5px;line-height:1.65}.timelineShell{overflow:hidden}.timelineTop{display:flex;justify-content:space-between;align-items:center;padding:11px 15px;border-bottom:1px solid var(--border);color:var(--muted);font-size:12px}.scroller{overflow-x:auto;overflow-y:hidden;cursor:grab;user-select:none;scrollbar-color:rgba(255,255,255,.25) transparent}.scroller.dragging{cursor:grabbing}.canvas{position:relative;min-height:360px}.axis{position:sticky;top:0;z-index:15;height:72px;margin-left:218px;background:rgba(8,17,31,.96);border-bottom:1px solid var(--border);backdrop-filter:blur(10px)}.quarter{position:absolute;top:0;height:34px;border-left:1px solid rgba(255,255,255,.15);border-right:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.1);padding:8px 7px 0;color:#e2e8f0;font-size:11.5px;font-weight:780;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.month{position:absolute;top:34px;height:38px;border-left:1px solid rgba(255,255,255,.08);padding:8px 5px 0;color:var(--muted);font-size:10.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lane{position:relative;border-bottom:1px solid var(--border)}.laneLabel{position:sticky;left:0;z-index:10;float:left;width:218px;display:flex;align-items:center;padding:12px 13px;background:rgba(8,17,31,.97);border-right:1px solid var(--border);backdrop-filter:blur(10px)}.laneCode{display:inline-flex;color:white;font-size:9.5px;font-weight:850;padding:4px 7px;border-radius:999px;margin-bottom:6px}.laneName{font-size:13px;font-weight:780}.subLane{margin-top:3px;font-size:11.5px;color:#cbd5e1}.laneCount{margin-top:4px;font-size:10.5px;color:var(--muted2)}.laneBody{position:relative;margin-left:218px}.gridline{position:absolute;top:0;height:100%;border-left:1px solid rgba(255,255,255,.045)}.gridline.q{border-left-color:rgba(255,255,255,.1)}.eventCard{position:absolute;width:var(--cardW);height:30px;border:1px solid rgba(255,255,255,.13);border-top-width:2px;background:rgba(15,23,42,.96);color:white;border-radius:10px;padding:4px 6px;text-align:left;cursor:pointer;box-shadow:0 10px 25px rgba(0,0,0,.22);transition:transform .12s ease,border-color .12s ease,background .12s ease}.eventCard:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.28);background:#1e293b}.eventCard.selected{outline:2px solid rgba(255,255,255,.65);z-index:4}.eventTitle{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:9.5px;line-height:1.08;font-weight:760}.eventDate{margin-top:3px;color:#cbd5e1;font-size:8.5px;line-height:1}.eventDot{position:absolute;left:-4px;top:50%;width:8px;height:8px;border-radius:50%;transform:translateY(-50%);outline:3px solid #08111f}.empty{height:300px;display:grid;place-items:center;color:var(--muted);font-size:14px}.detail{margin-top:16px;padding:20px}.detailGrid{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:start}.detailLabel{color:var(--muted2);font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:800}.detail h2{margin:5px 0 8px;font-size:28px;letter-spacing:-.03em}.detail p{margin:0;color:#cbd5e1;line-height:1.65;font-size:14px;max-width:900px}.modelList{margin:13px 0 0;padding-left:18px;color:#e2e8f0;font-size:13px;line-height:1.7;columns:2;column-gap:32px}.tagRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.tag{border:1px solid var(--border);border-radius:999px;color:#cbd5e1;padding:6px 10px;font-size:12px}.tag.strong{background:#fff;color:#020617;border-color:#fff;font-weight:780}@media(max-width:980px){.heroGrid,.layout,.detailGrid{grid-template-columns:1fr}.stats{max-width:420px}.filters{order:2}.timelineShell{order:1}}@media(max-width:640px){.app{width:min(100vw - 18px,1480px);padding-top:10px}.hero,.panel{border-radius:22px}.companyGrid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.laneLabel{width:168px}.laneBody,.axis{margin-left:168px}.modelList{columns:1}}
+</style>
+</head>
+<body>
+<div class="app"><header class="hero"><div class="heroGrid"><div><div class="eyebrow">Dataset built from the uploaded Excel release-date files</div><h1>AI Model Release Swimlane Timeline</h1><p>A horizontally draggable timeline that groups model releases by company, date, and availability. Compact cards show only a family label and date; the full model list appears in the detail panel after selection.</p></div><div class="stats"><div class="stat"><div class="v" id="stat-count">0</div><div class="l">Matching cards</div></div><div class="stat"><div class="v" id="stat-company">0</div><div class="l">Companies</div></div><div class="stat"><div class="v" id="stat-span">—</div><div class="l">Year span</div></div></div></div></header><section class="layout"><aside class="panel filters"><div class="sectionTitle">Filters and Search</div><div class="labelRow"><span>Search models / tags / companies</span></div><div class="searchBox"><span>⌕</span><input id="search" type="search" placeholder="e.g. Qwen3, reasoning, open weights" /></div><div class="labelRow"><span>Companies</span><button class="miniLink" id="selectCompanies">Select all</button></div><div class="companyGrid" id="companyFilters"></div><div class="labelRow"><span>Capability</span><button class="miniLink" id="selectCategories">Select all</button></div><div class="chipRow" id="categoryFilters"></div><div class="labelRow"><span>Availability</span><button class="miniLink" id="selectAvailability">Select all</button></div><div class="chipRow" id="availabilityFilters"></div><div class="labelRow"><span>Zoom</span></div><div class="rangeWrap"><input id="zoom" type="range" min="0.65" max="2.1" step="0.05" value="1" /><div class="rangeValue" id="zoomLabel">100%</div></div><div class="actions"><button class="primary" id="todayBtn">Jump to today</button><button class="secondary" id="resetBtn">Reset</button></div><div class="hint">Cards are intentionally small to reduce congestion. If a date group contains many variants, the card uses a family label. Click a card to view the complete model list below.</div></aside><main class="panel timelineShell"><div class="timelineTop"><span>Horizontal swimlane view</span><span id="rangeLabel"></span></div><div class="scroller" id="scroller"><div class="canvas" id="timelineCanvas"></div></div></main></section><section class="panel detail" id="detail"></section></div>
+<script>
+const companyMap={oai:{name:"OpenAI",short:"OAI",accent:"#111827"},anth:{name:"Anthropic",short:"ANT",accent:"#7c2d12"},goog:{name:"Google DeepMind",short:"GDM",accent:"#1d4ed8"},meta:{name:"Meta AI",short:"META",accent:"#4338ca"},mis:{name:"Mistral AI",short:"MIS",accent:"#c2410c"},deep:{name:"DeepSeek",short:"DS",accent:"#0f766e"},qwen:{name:"Alibaba Qwen",short:"QW",accent:"#b45309"},xai:{name:"xAI",short:"xAI",accent:"#475569"},glm:{name:"Zhipu AI / GLM",short:"GLM",accent:"#9333ea"},moon:{name:"Moonshot AI",short:"KIMI",accent:"#0e7490"},mini:{name:"MiniMax",short:"MM",accent:"#be123c"}};
+const companyOrder=["oai","anth","goog","meta","mis","deep","qwen","xai","glm","moon","mini"];
+const categoryLabels={chat:"Chat / Flagship",multimodal:"Multimodal",reasoning:"Reasoning",coding:"Coding / Agents"};
+const availabilityLabels={proprietary:"Proprietary / API",open:"Open weights"};
+const monthNames=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const rawData=`oai|p|2022-11-30|ChatGPT/GPT-3.5 series|chat|ChatGPT / GPT-3.5 series
+meta|o|2023-02-24|LLaMA|chat|LLaMA
+oai|p|2023-03-01|GPT-3.5 Turbo|chat|GPT-3.5 Turbo
+anth|p|2023-03-14|Claude 1.0 family|chat|Claude 1.0;;Claude 1.1;;Claude 1.2;;Claude Instant 1.0
+oai|p|2023-03-14|GPT-4|chat|GPT-4
+glm|o|2023-03-14|ChatGLM family|chat|ChatGLM-6B/130B
+anth|p|2023-03-31|Claude Instant 1.1|chat|Claude Instant 1.1
+anth|p|2023-04-18|Claude 1.3|chat|Claude 1.3
+oai|p|2023-06-13|GPT-4 0613 family|chat|GPT-4 0613;;GPT-3.5 Turbo 0613;;GPT-3.5 Turbo 16K
+glm|o|2023-06-25|ChatGLM2-6B|chat|ChatGLM2-6B
+anth|p|2023-07-11|Claude 2.0|chat|Claude 2.0
+meta|o|2023-07-18|Llama 2|chat|Llama 2
+glm|p|2023-08-01|CharacterGLM|chat|CharacterGLM
+qwen|o|2023-08-03|Qwen-7B|chat|Qwen-7B
+anth|p|2023-08-09|Claude Instant 1.2|chat|Claude Instant 1.2
+qwen|o|2023-08-22|Qwen-VL|multimodal|Qwen-VL
+meta|o|2023-08-24|Code Llama|coding|Code Llama
+qwen|o|2023-09-25|Qwen-14B|chat|Qwen-14B
+oai|p|2023-09-25|GPT-4V/GPT-4 with Vision|multimodal|GPT-4V / GPT-4 with Vision
+mis|o|2023-09-27|Mistral 7B 0.1|chat|Mistral 7B 0.1
+glm|o|2023-10-27|ChatGLM3-6B|chat|ChatGLM3-6B
+deep|o|2023-11-02|DeepSeek-Coder|coding|DeepSeek-Coder
+xai|p|2023-11-03|Grok-1 family|chat|Grok / Grok-1
+oai|p|2023-11-06|GPT-4 Turbo Previe… family|chat|GPT-4 Turbo Preview;;GPT-3.5 Turbo 1106
+anth|p|2023-11-21|Claude 2.1|chat|Claude 2.1
+qwen|p|2023-11-28|Qwen-VL-Plus|multimodal|Qwen-VL-Plus
+deep|o|2023-11-29|DeepSeek-LLM|chat|DeepSeek-LLM
+qwen|o|2023-11-30|Qwen-1.8B family|chat|Qwen-1.8B;;Qwen-72B
+goog|p|2023-12-06|Gemini 1.0 family|multimodal|Gemini 1.0(Ultra / Pro / Nano)
+mis|o|2023-12-11|Mixtral family|chat|Mistral 7B 0.2;;Mixtral 8x7B
+mis|p|2023-12-11|Mistral Medium 1.0|chat|Mistral Medium 1.0
+goog|p|2023-12-13|Gemini 1.0 Pro|multimodal|Gemini 1.0 Pro
+mini|p|2024-01-16|abab6/abab6-chat|chat|abab6 / abab6-chat
+glm|p|2024-01-16|GLM-4|chat|GLM-4
+qwen|p|2024-01-18|Qwen-VL-Max|multimodal|Qwen-VL-Max
+oai|p|2024-01-25|GPT-4 Turbo Preview 0125|chat|GPT-4 Turbo Preview 0125
+meta|o|2024-01-29|Code Llama 70B|coding|Code Llama 70B
+moon|p|2024-01-31|moonshot-v1|chat|moonshot-v1
+oai|p|2024-02-01|GPT-3.5 Turbo 0125|chat|GPT-3.5 Turbo 0125
+qwen|o|2024-02-04|Qwen1.5 family|chat|Qwen1.5-0.5B / 1.8B / 4B / 7B / 14B / 72B
+goog|p|2024-02-08|Gemini Ultra 1.0|multimodal|Gemini Ultra 1.0
+goog|o|2024-02-21|Gemma 1 family|multimodal|Gemma 1 (2B, 7B)
+mis|p|2024-02-26|Mistral Large|chat|Mistral Large 1.0;;Mistral Small 1.0;;Mistral Next
+anth|p|2024-03-04|Claude 3 family|chat|Claude 3 Opus;;Claude 3 Sonnet
+anth|p|2024-03-13|Claude 3 Haiku|chat|Claude 3 Haiku
+xai|o|2024-03-17|Grok-1 open weights|chat|Grok-1 open weights
+qwen|o|2024-03-28|Qwen1.5-MoE-A2.7B|chat|Qwen1.5-MoE-A2.7B
+xai|p|2024-03-28|Grok-1.5|chat|Grok-1.5
+qwen|o|2024-04-02|Qwen1.5-32B|chat|Qwen1.5-32B
+goog|o|2024-04-05|Gemma 1.1|multimodal|Gemma 1.1
+goog|o|2024-04-09|CodeGemma|multimodal|CodeGemma
+goog|p|2024-04-09|Gemini 1.5 Pro|multimodal|Gemini 1.5 Pro
+oai|p|2024-04-09|GPT-4 Turbo GA|chat|GPT-4 Turbo GA
+xai|p|2024-04-12|Grok-1.5V|multimodal|Grok-1.5V
+qwen|o|2024-04-16|CodeQwen1.5-7B|chat|CodeQwen1.5-7B
+mini|p|2024-04-17|abab6.5/abab6.5s|chat|abab6.5 / abab6.5s
+mis|o|2024-04-17|Mixtral 8x22B|chat|Mixtral 8x22B
+meta|o|2024-04-18|Llama 3|chat|Llama 3
+qwen|o|2024-04-25|Qwen1.5-110B|chat|Qwen1.5-110B
+goog|o|2024-05-03|CodeGemma v1.1|multimodal|CodeGemma v1.1
+deep|o|2024-05-06|DeepSeek-V2|chat|DeepSeek-V2
+goog|p|2024-05-10|Gemini 1.5 Flash|multimodal|Gemini 1.5 Flash
+oai|p|2024-05-13|GPT-4o|chat|GPT-4o
+goog|o|2024-05-14|PaliGemma|multimodal|PaliGemma
+deep|o|2024-05-16|DeepSeek-V2-Lite|chat|DeepSeek-V2-Lite
+glm|p|2024-05-20|GLM-4-0520|chat|GLM-4-0520
+mis|o|2024-05-22|Mistral 7B 0.3|chat|Mistral 7B 0.3
+goog|p|2024-05-23|Gemini 1.5 family|multimodal|Gemini 1.5 Pro;;Gemini 1.5 Flash
+mis|o|2024-05-29|Codestral 2405|coding|Codestral 2405
+glm|o|2024-06-05|GLM-4 family|chat|GLM-4-9B/Air/Flash
+qwen|o|2024-06-06|Qwen2 family|chat|Qwen2-0.5B / 1.5B / 7B / 57B-A14B / 72B
+goog|o|2024-06-11|RecurrentGemma 9B|multimodal|RecurrentGemma 9B
+deep|o|2024-06-17|DeepSeek-Coder-V2|coding|DeepSeek-Coder-V2
+meta|o|2024-06-18|Meta Chameleon 7B/34B|multimodal|Meta Chameleon 7B / 34B
+anth|p|2024-06-21|Claude 3.5 family|chat|Claude 3.5 Sonnet (20240620)
+goog|o|2024-06-27|Gemma 2 family|multimodal|Gemma 2 (9B, 27B)
+mis|o|2024-07-16|Codestral family|coding|Mathstral 7B;;Codestral Mamba 7B
+mis|o|2024-07-18|Mistral NeMo 12B|chat|Mistral NeMo 12B
+oai|p|2024-07-18|GPT-4o mini|chat|GPT-4o mini
+meta|o|2024-07-23|Llama 3.1|chat|Llama 3.1
+mis|p|2024-07-24|Mistral Large 2.0|chat|Mistral Large 2.0
+goog|o|2024-07-31|Gemma 2 family|multimodal|Gemma 2 (2B)
+qwen|o|2024-08-08|Qwen2 family|reasoning|Qwen2-Math-1.5B / 7B / 72B
+xai|p|2024-08-13|Grok-2 family|chat|Grok-2;;Grok-2 mini
+goog|p|2024-08-27|Gemini 1.5 Flash-8B|multimodal|Gemini 1.5 Flash-8B
+moon|p|2024-08-28|moonshot-v1-auto|chat|moonshot-v1-auto
+qwen|o|2024-08-30|Qwen2 family|multimodal|Qwen2-VL-2B/72B
+glm|p|2024-08-30|GLM-4-Plus|chat|GLM-4-Plus
+deep|o|2024-09-05|DeepSeek-V2.5|chat|DeepSeek-V2.5
+mis|o|2024-09-11|Pixtral 12B|multimodal|Pixtral 12B
+goog|o|2024-09-12|DataGemma|multimodal|DataGemma (2B)
+oai|p|2024-09-12|o1 family|reasoning|o1-preview;;o1-mini
+mis|p|2024-09-17|Mistral Small 2.0|chat|Mistral Small 2.0
+qwen|o|2024-09-19|Qwen2.5 family|chat|Qwen2.5-0.5B / 1.5B / 3B / 7B / 14B / 32B / 72B
+qwen|o|2024-09-19|Qwen2.5 family|coding|Qwen2.5-Coder-1.5B / 7B
+qwen|o|2024-09-19|Qwen2.5 family|reasoning|Qwen2.5-Math-1.5B / 7B / 72B
+goog|p|2024-09-24|Gemini 1.5 family|multimodal|Gemini 1.5 Pro 002;;Gemini 1.5 Flash 002
+meta|o|2024-09-25|Llama 3.2|chat|Llama 3.2
+goog|o|2024-10-03|Gemma 2 family|multimodal|Gemma 2 JPN (2B)
+goog|p|2024-10-03|Gemini 1.5 Flash-8B GA|multimodal|Gemini 1.5 Flash-8B GA
+mis|o|2024-10-09|Ministral family|chat|Ministral 1 - 3B;;Ministral 1 - 8B
+anth|p|2024-10-22|Claude 3.5 family|chat|Claude 3.5 Sonnet (20241022);;Claude 3.5 Haiku
+xai|p|2024-11-04|grok-beta family|multimodal|grok-beta;;grok-vision-beta
+qwen|o|2024-11-12|Qwen2.5 family|coding|Qwen2.5-Coder-0.5B / 3B / 14B / 32B
+moon|p|2024-11-16|k0-math|reasoning|k0-math
+mis|p|2024-11-18|Mistral Large 2|multimodal|Mistral Large 2.1;;Pixtral Large
+deep|o|2024-11-20|DeepSeek-R1 family|reasoning|DeepSeek-R1-Lite-Preview
+oai|p|2024-11-20|GPT-4o family|chat|GPT-4o update(1120)
+qwen|o|2024-11-28|QwQ-32B-Preview|reasoning|QwQ-32B-Preview
+goog|o|2024-12-05|Gemma 2 family|multimodal|PaliGemma 2 (3B, 10B, 28B)
+oai|p|2024-12-05|o1 family|reasoning|OpenAI o1;;o1 pro mode
+meta|o|2024-12-06|Llama 3.3 70B Instruct|chat|Llama 3.3 70B Instruct
+deep|o|2024-12-10|DeepSeek-V2.5-1210|chat|DeepSeek-V2.5-1210
+goog|p|2024-12-11|Gemini 2.0 family|multimodal|Gemini 2.0 Flash Experimental
+xai|p|2024-12-12|Grok-2 family|multimodal|grok-2-1212;;grok-2-vision-1212
+moon|p|2024-12-16|k1|chat|k1
+goog|p|2024-12-19|Gemini 2.0 family|reasoning|Gemini 2.0 Flash Thinking Mode
+qwen|o|2024-12-25|QVQ-72B-Preview|reasoning|QVQ-72B-Preview
+deep|o|2024-12-26|DeepSeek-V3|chat|DeepSeek-V3
+mis|o|2025-01-13|Codestral 2501|coding|Codestral 2501
+mini|p|2025-01-15|MiniMax-Text-01|chat|MiniMax-Text-01
+deep|o|2025-01-20|DeepSeek-R1 family|reasoning|DeepSeek-R1-Zero;;DeepSeek-R1;;DeepSeek-R1-Distill series
+moon|p|2025-01-20|Kimi k1.5|chat|Kimi k1.5
+qwen|o|2025-01-26|Qwen2.5 family|multimodal|Qwen2.5-VL-3B / 7B / 72B
+qwen|p|2025-01-28|Qwen2.5-Max|chat|Qwen2.5-Max
+oai|p|2025-01-29|GPT-4o family|chat|GPT-4o update(0129)
+mis|o|2025-01-30|Mistral Small 3.0|chat|Mistral Small 3.0
+oai|p|2025-01-31|o3-mini|reasoning|o3-mini
+goog|p|2025-02-05|Gemini 2.0 family|multimodal|Gemini 2.0 Flash;;Gemini 2.0 Pro Experimental;;Gemini 2.0 Flash-Lite Preview
+mis|p|2025-02-17|Mistral Saba|chat|Mistral Saba
+goog|o|2025-02-19|Gemma 2 family|multimodal|PaliGemma 2 mix (3B, 10B, 28B)
+xai|p|2025-02-19|Grok 3 family|chat|Grok 3;;Grok 3 mini
+moon|o|2025-02-23|Moonlight-16B-A3B|chat|Moonlight-16B-A3B
+anth|p|2025-02-24|Claude 3.7 Sonnet|chat|Claude 3.7 Sonnet
+goog|p|2025-02-25|Gemini 2.0 Flash-Lite|multimodal|Gemini 2.0 Flash-Lite
+oai|p|2025-02-27|GPT-4.5|chat|GPT-4.5
+qwen|o|2025-03-06|QwQ-32B|reasoning|QwQ-32B
+goog|o|2025-03-10|Gemma 3 family|multimodal|Gemma 3 (1B, 4B, 12B, 27B)
+mis|o|2025-03-17|Mistral Small 3.1|chat|Mistral Small 3.1
+oai|p|2025-03-19|o1-pro|reasoning|o1-pro
+qwen|o|2025-03-25|Qwen2.5 family|multimodal|Qwen2.5-VL-32B-Instruct
+deep|o|2025-03-25|DeepSeek-V3-0324|chat|DeepSeek-V3-0324
+goog|p|2025-03-25|Gemini 2.5 family|multimodal|Gemini 2.5 Pro Experimental
+qwen|o|2025-03-26|Qwen2.5-Omni-7B|multimodal|Qwen2.5-Omni-7B
+oai|p|2025-03-27|GPT-4o family|chat|GPT-4o update (0327)
+meta|o|2025-04-05|Llama 4 family|chat|Llama 4 Scout;;Llama 4 Maverick
+moon|o|2025-04-10|Kimi-VL-A3B|multimodal|Kimi-VL-A3B
+oai|p|2025-04-14|GPT-4.1 family|chat|GPT-4.1;;GPT-4.1 mini;;GPT-4.1 nano
+glm|o|2025-04-14|GLM-4 family|reasoning|GLM-4-9B/32B/Air/Flash-0414;;GLM-Z1-9B/32B/Air/Flash-0414
+oai|p|2025-04-16|o3 family|reasoning|o3;;o4-mini
+goog|p|2025-04-17|Gemini 2.5 family|multimodal|Gemini 2.5 Flash Preview
+qwen|o|2025-04-29|Qwen3 family|chat|Qwen3 Family (0.6B / 1.7B / 4B / 8B / 14B / 32B / 30B-A3B / 235B-A22B)
+qwen|o|2025-04-30|Qwen2.5-Omni-3B|multimodal|Qwen2.5-Omni-3B
+moon|p|2025-05-06|kimi-thinking-preview|reasoning|kimi-thinking-preview
+mis|p|2025-05-07|Mistral Medium 3.0|chat|Mistral Medium 3.0
+oai|p|2025-05-16|codex-1 family|coding|codex-1;;codex-mini-latest
+goog|o|2025-05-20|MedGemma|multimodal|MedGemma (4B, 27B)
+mis|o|2025-05-21|Devstral Small 1.0|coding|Devstral Small 1.0
+anth|p|2025-05-22|Claude 4 family|chat|Claude Opus 4;;Claude Sonnet 4
+deep|o|2025-05-28|DeepSeek-R1-0528|reasoning|DeepSeek-R1-0528
+anth|p|2025-06-06|Claude Gov models|chat|Claude Gov models
+mis|o|2025-06-10|Magistral Small 1.0|reasoning|Magistral Small 1.0
+mis|p|2025-06-10|Magistral Medium 1.0|reasoning|Magistral Medium 1.0
+oai|p|2025-06-10|o3-pro|reasoning|o3-pro
+mini|o|2025-06-16|MiniMax-M1|chat|MiniMax-M1
+goog|p|2025-06-17|Gemini 2.5 family|multimodal|Gemini 2.5 Pro;;Gemini 2.5 Flash;;Gemini 2.5 Flash-Lite Preview
+moon|o|2025-06-17|Kimi-Dev-72B|chat|Kimi-Dev-72B
+mis|o|2025-06-20|Mistral Small 3.2|chat|Mistral Small 3.2
+moon|o|2025-06-21|Kimi-VL-A3B-Thinking-25…|reasoning|Kimi-VL-A3B-Thinking-2506
+goog|o|2025-06-26|Gemma 3 family|multimodal|Gemma 3n (E2B, E4B)
+goog|o|2025-07-09|Gemma 2 family|multimodal|T5Gemma;;MedGemma 27B multimodal
+xai|p|2025-07-09|Grok 4 family|chat|Grok 4;;Grok 4 Heavy
+mis|o|2025-07-10|Devstral family|coding|Devstral Medium 1.0;;Devstral Small 1.1
+moon|o|2025-07-10|Kimina-Prover-72B|reasoning|Kimina-Prover-72B
+moon|o|2025-07-11|Kimi-K2|chat|Kimi-K2
+mis|o|2025-07-15|Voxtral Small family|chat|Voxtral Small;;Voxtral Mini
+qwen|o|2025-07-21|Qwen3-235B-A22B-2507|chat|Qwen3-235B-A22B-2507
+qwen|o|2025-07-22|Qwen3 family|coding|Qwen3-Coder-480B-A35B-Instruct
+goog|p|2025-07-22|Gemini 2.5 Flash-Lite|multimodal|Gemini 2.5 Flash-Lite
+mis|o|2025-07-24|Magistral Small 1.1|reasoning|Magistral Small 1.1
+mis|p|2025-07-24|Magistral Medium 1.1|reasoning|Magistral Medium 1.1
+glm|o|2025-07-28|GLM-4.5 family|chat|GLM-4.5 Family
+qwen|o|2025-07-30|Qwen3-30B-A3B-2507|chat|Qwen3-30B-A3B-2507
+mis|o|2025-07-30|Codestral 2508|coding|Codestral 2508
+qwen|o|2025-07-31|Qwen3 family|coding|Qwen3-Coder-30B-A3B-Instruct
+goog|p|2025-08-01|Gemini 2.5 Deep Think|reasoning|Gemini 2.5 Deep Think
+anth|p|2025-08-05|Claude Opus 4.1|chat|Claude Opus 4.1
+oai|o|2025-08-05|gpt-oss family|chat|gpt-oss-120b;;gpt-oss-20b
+qwen|o|2025-08-06|Qwen3-4B-2507|chat|Qwen3-4B-2507
+oai|p|2025-08-07|GPT-5 family|chat|GPT-5;;GPT-5 mini;;GPT-5 nano;;GPT-5 Pro
+mis|p|2025-08-12|Mistral Medium 3.1|chat|Mistral Medium 3.1
+goog|o|2025-08-14|Gemma 3 family|multimodal|Gemma 3 (270M)
+deep|o|2025-08-21|DeepSeek-V3.1|chat|DeepSeek-V3.1
+xai|o|2025-08-23|Grok 2.5 open weights|chat|Grok 2.5 open weights
+xai|p|2025-08-28|Grok Code Fast 1|chat|Grok Code Fast 1
+moon|o|2025-09-05|Kimi-K2-0905|chat|Kimi-K2-0905
+qwen|o|2025-09-11|Qwen3 family|reasoning|Qwen3-Next-80B-A3B-Instruct/Thinking
+goog|o|2025-09-13|VaultGemma|multimodal|VaultGemma (1B)
+oai|p|2025-09-15|GPT-5-Codex|coding|GPT-5-Codex
+mis|o|2025-09-18|Magistral Small 1.2|reasoning|Magistral Small 1.2
+mis|p|2025-09-18|Magistral Medium 1.2|reasoning|Magistral Medium 1.2
+xai|p|2025-09-19|Grok 4 Fast|chat|Grok 4 Fast
+qwen|o|2025-09-21|Qwen3 family|reasoning|Qwen3-Omni-30B-A3B-Instruct / Thinking
+deep|o|2025-09-22|DeepSeek-V3.1-Terminus|chat|DeepSeek-V3.1-Terminus
+qwen|o|2025-09-23|Qwen3 family|reasoning|Qwen3-VL-235B-A22B-Instruct / Thinking
+qwen|p|2025-09-24|Qwen3-Max|chat|Qwen3-Max
+anth|p|2025-09-29|Claude Sonnet 4.5|chat|Claude Sonnet 4.5
+deep|o|2025-09-29|DeepSeek-V3.2-Exp|chat|DeepSeek-V3.2-Exp
+glm|p|2025-09-30|GLM-4.6|chat|GLM-4.6
+qwen|o|2025-10-04|Qwen3 family|reasoning|Qwen3-VL-30B-A3B-Instruct / Thinking
+qwen|o|2025-10-15|Qwen3 family|multimodal|Qwen3-VL-4B / 8B
+anth|p|2025-10-15|Claude Haiku 4.5|chat|Claude Haiku 4.5
+qwen|o|2025-10-21|Qwen3 family|multimodal|Qwen3-VL-2B / 32B
+mini|o|2025-10-27|MiniMax-M2|chat|MiniMax-M2
+moon|o|2025-10-30|Kimi-Linear-48B-A3B|chat|Kimi-Linear-48B-A3B
+moon|o|2025-11-06|Kimi-k2-thinking|reasoning|Kimi-k2-thinking
+oai|p|2025-11-12|GPT-5.1 family|coding|GPT-5.1 Instant;;GPT-5.1 Thinking;;GPT-5.1-Codex;;GPT-5.1-Codex mini
+xai|p|2025-11-17|Grok 4.1|chat|Grok 4.1
+goog|p|2025-11-18|Gemini 3 Pro Preview|multimodal|Gemini 3 Pro Preview
+oai|p|2025-11-19|GPT-5.1-Codex-Max|coding|GPT-5.1-Codex-Max
+anth|p|2025-11-24|Claude Opus 4.5|chat|Claude Opus 4.5
+deep|o|2025-11-27|DeepSeek-Math-V2|reasoning|DeepSeek-Math-V2
+deep|o|2025-12-01|DeepSeek-V3.2 family|reasoning|DeepSeek-V3.2;;DeepSeek-V3.2-Speciale
+mis|o|2025-12-02|Ministral family|chat|Ministral 3 - 3B/8B/14B
+mis|p|2025-12-02|Mistral Large 3.0|chat|Mistral Large 3.0
+mis|o|2025-12-09|Devstral family|coding|Devstral 2;;Devstral Small 2
+oai|p|2025-12-11|GPT-5.2 family|reasoning|GPT-5.2 Instant;;GPT-5.2 Thinking / gpt-5.2;;GPT-5.2 Pro
+mis|p|2025-12-16|Mistral Small Creative|chat|Mistral Small Creative
+goog|p|2025-12-17|Gemini 3 Flash Preview|multimodal|Gemini 3 Flash Preview
+goog|o|2025-12-18|FunctionGemma family|multimodal|FunctionGemma (270M);;T5Gemma v2
+oai|p|2025-12-18|GPT-5.2-Codex|coding|GPT-5.2-Codex
+mini|o|2025-12-22|MiniMax-M2.1|chat|MiniMax-M2.1
+glm|p|2025-12-22|GLM-4.7|chat|GLM-4.7
+goog|o|2026-01-13|Gemma 1 family|multimodal|MedGemma 1.5 (4B)
+goog|o|2026-01-15|TranslateGemma|multimodal|TranslateGemma (4B, 12B, 27B)
+glm|p|2026-01-19|GLM-4.7-Flash|chat|GLM-4.7-Flash
+mini|o|2026-01-27|MiniMax-M2-Her|chat|MiniMax-M2-Her
+moon|o|2026-01-27|kimi-k2.5|chat|kimi-k2.5
+qwen|o|2026-02-02|Qwen3-Coder-Next|coding|Qwen3-Coder-Next
+anth|p|2026-02-05|Claude Opus 4.6|chat|Claude Opus 4.6
+oai|p|2026-02-05|GPT-5.3-Codex|coding|GPT-5.3-Codex
+mini|o|2026-02-12|MiniMax-M2.5|chat|MiniMax-M2.5
+oai|p|2026-02-12|GPT-5.3-Codex-Spark|coding|GPT-5.3-Codex-Spark
+glm|o|2026-02-12|GLM-5|chat|GLM-5
+qwen|o|2026-02-16|Qwen3.5-397B-A17B|chat|Qwen3.5-397B-A17B
+qwen|p|2026-02-16|Qwen3.5-Plus|chat|Qwen3.5-Plus
+anth|p|2026-02-17|Claude Sonnet 4.6|chat|Claude Sonnet 4.6
+xai|p|2026-02-17|Grok 4.20 family|chat|Grok 4.20 Beta;;Grok 4.20 Multi-agent
+goog|p|2026-02-19|Gemini 3.1 Pro Preview|multimodal|Gemini 3.1 Pro Preview
+qwen|o|2026-02-24|Qwen3.5 family|chat|Qwen3.5-122B-A10B / 35B-A3B / 27B
+qwen|o|2026-03-02|Qwen3.5 family|chat|Qwen3.5-0.8B / 2B / 4B / 9B
+goog|p|2026-03-03|Gemini 3.1 family|multimodal|Gemini 3.1 Flash-Lite Preview
+oai|p|2026-03-03|GPT-5.3 Instant|chat|GPT-5.3 Instant
+oai|p|2026-03-05|GPT-5.4 family|reasoning|GPT-5.4 Thinking / gpt-5.4;;GPT-5.4 Pro
+mis|o|2026-03-16|Mistral Small family|coding|Mistral Small 4;;Leanstral
+oai|p|2026-03-17|GPT-5.4 family|chat|GPT-5.4 mini;;GPT-5.4 nano
+qwen|p|2026-03-18|Qwen3.5-Max-Preview|chat|Qwen3.5-Max-Preview
+mini|o|2026-03-18|MiniMax-M2.7|chat|MiniMax-M2.7
+qwen|p|2026-03-29|Qwen3.5-Omni|multimodal|Qwen3.5-Omni
+goog|o|2026-03-31|Gemma 4 family|multimodal|Gemma 4 (E2B, E4B, 31B, 26B A4B)
+qwen|p|2026-04-01|Qwen3.6-Plus|chat|Qwen3.6-Plus
+anth|p|2026-04-07|Claude Mythos Preview|chat|Claude Mythos Preview
+glm|o|2026-04-07|GLM-5.1|chat|GLM-5.1
+meta|o|2026-04-08|Muse Spark|chat|Muse Spark
+qwen|o|2026-04-16|Qwen3.6-35B-A3B|chat|Qwen3.6-35B-A3B
+anth|p|2026-04-16|Claude Opus 4.7|chat|Claude Opus 4.7
+xai|p|2026-04-17|Grok 4.3 Beta|chat|Grok 4.3 Beta
+qwen|p|2026-04-20|Qwen3.6-Max-Preview|chat|Qwen3.6-Max-Preview
+moon|o|2026-04-20|kimi-k2.6|chat|kimi-k2.6
+qwen|o|2026-04-22|Qwen3.6-27B|chat|Qwen3.6-27B
+oai|p|2026-04-23|GPT-5.5 family|reasoning|GPT-5.5 Thinking;;GPT-5.5 Pro
+deep|o|2026-04-24|DeepSeek-V4 family|chat|DeepSeek-V4-Pro;;DeepSeek-V4-Flash
+mis|p|2026-04-29|Mistral Medium 3.5|chat|Mistral Medium 3.5
+oai|p|2026-05-05|GPT-5.5 Instant|chat|GPT-5.5 Instant
+goog|p|2026-05-07|Gemini 3.1 Flash-Lite|multimodal|Gemini 3.1 Flash-Lite`;
+function cleanFamilyLabel(value){let out=String(value||"").replaceAll("Previe…","Preview").trim();out=out.replaceAll(" family"," Family").replaceAll(" Family"," Family").replaceAll(" series"," Series").replaceAll(" Series"," Series");return out}
+function inferFamilyLabel(rawDisplay,models){const list=models.filter(Boolean);if(list.length<=1)return list[0]||cleanFamilyLabel(rawDisplay);const joined=list.join(" / ");const display=cleanFamilyLabel(rawDisplay);if(display.includes("Family")||display.includes("Series"))return display;if(joined.length<=34)return joined;return display.endsWith("Family")?display:display+" Family"}
+const events=rawData.trim().split(String.fromCharCode(10)).filter(Boolean).map((line,index)=>{const [company,av,date,display,category,modelString]=line.split("|");const models=(modelString||"").split(";;").filter(Boolean);return{id:"e"+index,company,availability:av==="o"?"open":"proprietary",date,display:inferFamilyLabel(display,models),rawDisplay:cleanFamilyLabel(display),category,models}});
+const state={query:"",zoom:1,selectedCompanies:new Set(companyOrder),selectedCategories:new Set(Object.keys(categoryLabels)),selectedAvailability:new Set(Object.keys(availabilityLabels)),selectedEventId:events[events.length-1]?.id};
+const el={search:document.getElementById("search"),zoom:document.getElementById("zoom"),zoomLabel:document.getElementById("zoomLabel"),companyFilters:document.getElementById("companyFilters"),categoryFilters:document.getElementById("categoryFilters"),availabilityFilters:document.getElementById("availabilityFilters"),canvas:document.getElementById("timelineCanvas"),scroller:document.getElementById("scroller"),detail:document.getElementById("detail"),count:document.getElementById("stat-count"),company:document.getElementById("stat-company"),span:document.getElementById("stat-span"),rangeLabel:document.getElementById("rangeLabel")};
+function html(s){return String(s??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]))}function parseDate(v){const [y,m,d]=v.split("-").map(Number);return new Date(Date.UTC(y,m-1,d))}function toISO(d){return d.toISOString().slice(0,10)}function addMonths(d,n){return new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+n,1))}function daysBetween(a,b){return Math.round((parseDate(b)-parseDate(a))/86400000)}function startOfQuarter(d){return new Date(Date.UTC(d.getUTCFullYear(),Math.floor(d.getUTCMonth()/3)*3,1))}function endOfQuarter(d){return new Date(Date.UTC(d.getUTCFullYear(),Math.floor(d.getUTCMonth()/3)*3+3,0))}
+const minDate=new Date(Math.min(...events.map(e=>parseDate(e.date))));const maxDate=new Date(Math.max(...events.map(e=>parseDate(e.date))));const rangeStart=toISO(startOfQuarter(addMonths(minDate,-1)));const rangeEnd=toISO(endOfQuarter(addMonths(maxDate,2)));
+function filteredEvents(){const q=state.query.trim().toLowerCase();return events.filter(event=>{const company=companyMap[event.company]?.name||event.company;const text=[event.display,event.rawDisplay,company,availabilityLabels[event.availability],categoryLabels[event.category],...event.models].join(" ").toLowerCase();return state.selectedCompanies.has(event.company)&&state.selectedCategories.has(event.category)&&state.selectedAvailability.has(event.availability)&&(!q||text.includes(q))})}
+function buildMonthTicks(){const ticks=[];let cursor=new Date(Date.UTC(parseDate(rangeStart).getUTCFullYear(),parseDate(rangeStart).getUTCMonth(),1));const end=parseDate(rangeEnd);while(cursor<=end){const month=cursor.getUTCMonth();ticks.push({date:toISO(cursor),label:monthNames[month],quarter:Math.floor(month/3)+1,year:cursor.getUTCFullYear(),isQuarterStart:month%3===0});cursor=addMonths(cursor,1)}return ticks}function buildQuarterTicks(){return buildMonthTicks().filter(m=>m.isQuarterStart).map(m=>{const next=addMonths(parseDate(m.date),3);const end=next>parseDate(rangeEnd)?rangeEnd:toISO(next);return{date:m.date,widthDays:Math.max(30,daysBetween(m.date,end)),label:`${m.year} Q${m.quarter}`}})}
+function renderFilters(){el.companyFilters.innerHTML=companyOrder.map(code=>{const c=companyMap[code];return `<button class="companyChip ${state.selectedCompanies.has(code)?"active":""}" data-company="${code}"><span class="dot" style="background:${c.accent}"></span><span>${html(c.name)}</span></button>`}).join("");el.categoryFilters.innerHTML=Object.entries(categoryLabels).map(([id,label])=>`<button class="chip ${state.selectedCategories.has(id)?"active":""}" data-category="${id}">${html(label)}</button>`).join("");el.availabilityFilters.innerHTML=Object.entries(availabilityLabels).map(([id,label])=>`<button class="chip ${state.selectedAvailability.has(id)?"active":""}" data-availability="${id}">${html(label)}</button>`).join("")}
+function buildLanes(data){const lanes=[];for(const code of companyOrder){if(!state.selectedCompanies.has(code))continue;const companyEvents=data.filter(e=>e.company===code);const allTypes=new Set(events.filter(e=>e.company===code).map(e=>e.availability));const shouldSplit=allTypes.size>1;if(shouldSplit){for(const av of Object.keys(availabilityLabels)){if(!state.selectedAvailability.has(av))continue;const items=companyEvents.filter(e=>e.availability===av);if(items.length||!state.query.trim())lanes.push({id:`${code}-${av}`,company:code,availability:av,events:items})}}else{const av=[...allTypes][0]||"proprietary";if(state.selectedAvailability.has(av))lanes.push({id:code,company:code,availability:av,events:companyEvents})}}return lanes.filter(lane=>lane.events.length||!state.query.trim())}
+function layoutLaneEvents(lane,pxPerDay,cardW){const trackEnds=[];return lane.events.slice().sort((a,b)=>a.date.localeCompare(b.date)).map(event=>{const x=daysBetween(rangeStart,event.date)*pxPerDay;let track=trackEnds.findIndex(end=>end+6<x);if(track===-1){track=trackEnds.length;trackEnds.push(x+cardW)}else trackEnds[track]=x+cardW;return{...event,x,track,trackCount:trackEnds.length}}).map(event=>{event.trackCount=trackEnds.length;return event})}
+function renderTimeline(){const data=filteredEvents();const pxPerDay=2.15*state.zoom;const width=Math.max(1800,daysBetween(rangeStart,rangeEnd)*pxPerDay);const months=buildMonthTicks();const quarters=buildQuarterTicks();const lanes=buildLanes(data);const labelWidth=window.innerWidth<=640?168:218;const cardW=94;el.canvas.style.width=`${width+labelWidth}px`;let totalHeight=72;const axis=`<div class="axis" style="width:${width}px">${quarters.map(q=>`<div class="quarter" style="left:${daysBetween(rangeStart,q.date)*pxPerDay}px;width:${q.widthDays*pxPerDay}px">${html(q.label)}</div>`).join("")}${months.map(m=>`<div class="month" style="left:${daysBetween(rangeStart,m.date)*pxPerDay}px;width:${Math.max(32,daysBetween(m.date,toISO(addMonths(parseDate(m.date),1)))*pxPerDay)}px">${html(m.label)}</div>`).join("")}</div>`;if(!lanes.length){el.canvas.innerHTML=axis+`<div class="empty">No matching model cards. Adjust the search or filters.</div>`;el.canvas.style.minHeight="372px";return}const lanesHtml=lanes.map(lane=>{const c=companyMap[lane.company];const laidOut=layoutLaneEvents(lane,pxPerDay,cardW);const trackCount=laidOut[0]?.trackCount||1;const laneHeight=Math.max(62,12+trackCount*33+12);totalHeight+=laneHeight;const grid=months.map(m=>`<div class="gridline ${m.isQuarterStart?"q":""}" style="left:${daysBetween(rangeStart,m.date)*pxPerDay}px"></div>`).join("");const cards=laidOut.map(event=>`<button type="button" class="eventCard ${state.selectedEventId===event.id?"selected":""}" data-id="${event.id}" style="left:${event.x}px;top:${12+event.track*33}px;border-top-color:${c.accent}"><span class="eventDot" style="background:${c.accent}"></span><span class="eventTitle" title="${html(event.display)}">${html(event.display)}</span><div class="eventDate">${html(event.date)}</div></button>`).join("");return `<div class="lane" style="height:${laneHeight}px"><div class="laneLabel" style="height:${laneHeight}px"><div><div class="laneCode" style="background:${c.accent}">${html(c.short)}</div><div class="laneName">${html(c.name)}</div><div class="subLane">${html(availabilityLabels[lane.availability])}</div><div class="laneCount">${lane.events.length} cards</div></div></div><div class="laneBody" style="width:${width}px;height:${laneHeight}px">${grid}${cards}</div></div>`}).join("");el.canvas.style.minHeight=`${totalHeight}px`;el.canvas.innerHTML=axis+lanesHtml}
+function updateSelectedCards(){document.querySelectorAll(".eventCard.selected").forEach(card=>card.classList.remove("selected"));const card=document.querySelector(`.eventCard[data-id="${state.selectedEventId}"]`);if(card)card.classList.add("selected")}function renderDetail(){const event=events.find(e=>e.id===state.selectedEventId)||filteredEvents()[0];if(!event){el.detail.innerHTML=`<div class="detailLabel">Selected card</div><h2>—</h2><p>No event is available under the current filters.</p>`;return}const company=companyMap[event.company];const models=event.models.map(m=>`<li>${html(m)}</li>`).join("");el.detail.innerHTML=`<div class="detailGrid"><div><div class="detailLabel">Selected card</div><h2>${html(event.display)}</h2><p>This card represents a grouped release entry from the uploaded spreadsheets. The card label may be shortened to a family name; the full model list is shown below.</p><ul class="modelList">${models}</ul><div class="tagRow"><span class="tag strong">${html(event.date)}</span><span class="tag">${html(company.name)}</span><span class="tag">${html(availabilityLabels[event.availability])}</span><span class="tag">${html(categoryLabels[event.category])}</span><span class="tag">${event.models.length} model${event.models.length===1?"":"s"}</span></div></div></div>`}
+function renderStats(){const data=filteredEvents();const unique=new Set(data.map(e=>e.company));const years=data.map(e=>Number(e.date.slice(0,4)));el.count.textContent=data.length;el.company.textContent=unique.size;el.span.textContent=years.length?`${Math.min(...years)}–${Math.max(...years)}`:"—";el.zoomLabel.textContent=`${Math.round(state.zoom*100)}%`;el.rangeLabel.textContent=`${rangeStart.slice(0,4)}–${rangeEnd.slice(0,4)}`}function render(){renderFilters();renderStats();renderTimeline();renderDetail()}function selectEvent(id,scroll){state.selectedEventId=id;updateSelectedCards();renderDetail();if(scroll)el.detail.scrollIntoView({behavior:"smooth",block:"nearest"})}
+el.search.addEventListener("input",e=>{state.query=e.target.value;render()});el.zoom.addEventListener("input",e=>{state.zoom=Number(e.target.value);render()});document.getElementById("selectCompanies").addEventListener("click",()=>{state.selectedCompanies=new Set(companyOrder);render()});document.getElementById("selectCategories").addEventListener("click",()=>{state.selectedCategories=new Set(Object.keys(categoryLabels));render()});document.getElementById("selectAvailability").addEventListener("click",()=>{state.selectedAvailability=new Set(Object.keys(availabilityLabels));render()});document.getElementById("resetBtn").addEventListener("click",()=>{state.query="";state.zoom=1;state.selectedCompanies=new Set(companyOrder);state.selectedCategories=new Set(Object.keys(categoryLabels));state.selectedAvailability=new Set(Object.keys(availabilityLabels));state.selectedEventId=events[events.length-1]?.id;el.search.value="";el.zoom.value="1";render()});document.getElementById("todayBtn").addEventListener("click",()=>{const pxPerDay=2.15*state.zoom;const today=new Date().toISOString().slice(0,10);const clamped=today<rangeStart?rangeStart:today>rangeEnd?rangeEnd:today;const x=daysBetween(rangeStart,clamped)*pxPerDay;el.scroller.scrollTo({left:Math.max(0,x-el.scroller.clientWidth/2),behavior:"smooth"})});el.companyFilters.addEventListener("click",e=>{const btn=e.target.closest("[data-company]");if(!btn)return;const id=btn.dataset.company;state.selectedCompanies.has(id)?state.selectedCompanies.delete(id):state.selectedCompanies.add(id);render()});el.categoryFilters.addEventListener("click",e=>{const btn=e.target.closest("[data-category]");if(!btn)return;const id=btn.dataset.category;state.selectedCategories.has(id)?state.selectedCategories.delete(id):state.selectedCategories.add(id);render()});el.availabilityFilters.addEventListener("click",e=>{const btn=e.target.closest("[data-availability]");if(!btn)return;const id=btn.dataset.availability;state.selectedAvailability.has(id)?state.selectedAvailability.delete(id):state.selectedAvailability.add(id);render()});let dragging=false,dragMoved=false,dragStartX=0,startScrollLeft=0,cardPress=null;
+el.canvas.addEventListener("pointerdown",e=>{const card=e.target.closest(".eventCard");if(!card)return;cardPress={id:card.dataset.id,x:e.clientX,y:e.clientY};dragMoved=false;e.stopPropagation()});
+el.canvas.addEventListener("pointerup",e=>{const card=e.target.closest(".eventCard");if(!cardPress||!card)return;const moved=Math.abs(e.clientX-cardPress.x)>8||Math.abs(e.clientY-cardPress.y)>8;if(!moved&&card.dataset.id===cardPress.id)selectEvent(cardPress.id,true);cardPress=null;e.preventDefault();e.stopPropagation()});
+el.scroller.addEventListener("pointerdown",e=>{if(e.target.closest(".eventCard"))return;dragging=true;dragMoved=false;dragStartX=e.clientX;startScrollLeft=el.scroller.scrollLeft;el.scroller.classList.add("dragging");el.scroller.setPointerCapture?.(e.pointerId)});
+el.scroller.addEventListener("pointermove",e=>{if(!dragging)return;const dx=e.clientX-dragStartX;if(Math.abs(dx)>5)dragMoved=true;el.scroller.scrollLeft=startScrollLeft-dx});
+function stopDrag(){dragging=false;el.scroller.classList.remove("dragging")}
+el.scroller.addEventListener("pointerup",stopDrag);el.scroller.addEventListener("pointerleave",stopDrag);
+render();
+</script>
+</body>
+</html>
