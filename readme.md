@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-05-09**
+> Last updated: **2026-05-20**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -70,7 +70,7 @@ You may also want to read my other posts:
 ### ~~Google Gemini~~ Google/Gemma 3/4
 Community reports that **Gemma 3** is working properly. </br>
 ~~https://ai.google.dev/gemini-api/docs/rate-limits#free-tier~~ 
-> Last updated: **2026-05-09 UTC** </br>
+> Last updated: **2026-05-20 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
 > **RPD** Requests per day</br>
@@ -83,7 +83,7 @@ Endpoint: https://generativelanguage.googleapis.com
 
 | Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
 |---------------------------|---------------------------|--------------------------|-----------------|
-| Gemini 2.5 Flash </br> Gemini 3 Flash | 5             | 250k                     | 20              |
+| Gemini 2.5 Flash </br> Gemini 3 Flash</br> Gemini 3.5 Flash | 5             | 250k                     | 20              |
 | Gemini 2.5 Flash Lite     | 10                        | 250k                     | 20              |
 | Gemini 3.1 Flash Lite     | 15                        | 250k                     | 500             |
 | Gemma 4 26B/31B           | 15                        | Unlimited                | 1.5K            |
@@ -459,7 +459,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-05-09** </br>
+> Last Check: **2026-05-20** </br>
 
 
 https://ollama.com/cloud </br>
