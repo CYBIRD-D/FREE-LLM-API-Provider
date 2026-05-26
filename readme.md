@@ -34,9 +34,10 @@ You may also want to read my other posts:
 ---------
 
 **Easy guide** to deploy online LLM api（luna）:
-  - sign up/register;
-  - get **api key** and **endpoint address** in your account/setting etc
-  - put it in luna or the softwares support it.
+  - Sign up/register in certain platform;
+  - Get **this** platform's **Api Key** and **Endpoint Address**
+    - Check if there's an available date for the key
+  - Put it in the softwares that support it.
 
 ## Content/目录
 - [Global Platform](#global-platform)
