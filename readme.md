@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-05-27**
+> Last updated: **2026-05-31**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -460,7 +460,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-05-27** </br>
+> Last Check: **2026-05-31** </br>
 
 
 https://ollama.com/cloud </br>
@@ -509,7 +509,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last updated: **2026-05-27**
+> Last updated: **2026-05-31**
 
 
 https://console.groq.com/docs/rate-limits</br>
@@ -533,7 +533,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### Celebras
-> Last Check: **2026-05-27**
+> Last Check: **2026-05-31**
 
 https://inference-docs.cerebras.ai/support/rate-limits</br>
 Endpoint: https://api.cerebras.ai
@@ -551,7 +551,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-05-27** </br>
+> Last Check: **2026-05-31** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -574,7 +574,7 @@ Endpoint: https://openrouter.ai/api
 
 ### Cloudflare
 > Last web updated: **2026-04-22** </br>
-> Last Check: **2026-05-27** </br>
+> Last Check: **2026-05-31** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -643,7 +643,7 @@ Models list </br>
 
 ### Cohere
 > Last updated: **2026-05-19**</br>
-> Last Check: **2026-05-27** </br>
+> Last Check: **2026-05-31** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -683,7 +683,7 @@ https://docs.z.ai/guides/overview/pricing </br>
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-05-27** </br>
+> Last Check: **2026-05-31** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
