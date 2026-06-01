@@ -460,7 +460,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-05-31** </br>
+> Last Check: **2026-06-02** </br>
 
 
 https://ollama.com/cloud </br>
@@ -469,7 +469,7 @@ https://ollama.com/search?c=cloud
 **Models**：So far Ollama **cloud** support:
 - gpt-oss: 20b/120b
 - **cogito-2.1 671b**
-- **minimax-m2/2.1/2.5/2.7**
+- **minimax-m2/2.1/2.5/2.7/3**
 - **kimi-k2: 1t/thinking/kimi-k2.5/kimi-k2.6**
 - nemotron-3-nano:30b
 - nemotron-3-super:120b
