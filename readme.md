@@ -58,6 +58,7 @@ You may also want to read my other posts:
 - [CN Platform](#cn-platform)
   - [ModelScope（魔搭社区）](#modelscope魔搭社区仅限cnonly-cn)
   - [SilliconFlow 硅基流动](#silliconflow-硅基流动)
+  - [CoderPlan](#coderplan)
   - [Tencent-Hunyuan 腾讯混元](#tencent-hunyuan-腾讯混元)
   - [Volcengine 火山引擎（平台）](#volcengine-火山引擎平台-500-point-资源点day)
   - [心流](#心流)
@@ -766,6 +767,20 @@ https://modelscope.cn/docs/model-service/API-Inference/limits </br>
 https://siliconflow.cn/
 
 -------
+
+### CoderPlan
+Free trial credits on signup; pay-per-use at ~0.7x official pricing </br>
+https://coderplan.ai </br>
+https://docs.coderplan.ai </br>
+
+Endpoint: https://api.coderplan.ai </br>
+Payment: Alipay, WeChat Pay (¥10 minimum top-up)
+
+- OpenAI-compatible API (drop-in replacement)
+- Models: Claude (Code, Opus 4.7, Sonnet 4.6, Haiku 4.5), OpenAI (GPT-5.5, GPT-5.4, GPT-4.1), Gemini (3.1 Pro), DeepSeek (V3, R1), Grok (3)
+- Hong Kong & Singapore nodes, high cache hit rate
+
+-----------
 
 ### Tencent-Hunyuan 腾讯混元
 (Hunyuan-lite free; 1 M free token for other models/per account) </br>
