@@ -69,8 +69,9 @@ You may also want to read my other posts:
 ## Global Platform
 
 ### ~~Google Gemini~~ Google/Gemma ~~3~~/4
-Community reports that **Gemma 3** is working properly. </br>
-~~https://ai.google.dev/gemini-api/docs/rate-limits#free-tier~~ 
+~~Community reports that **Gemma 3** is working properly~~. </br>
+https://ai.google.dev/gemini-api/docs/rate-limits#free-tier 
+Gemma3 had been removed from api.
 > Last updated: **2026-06-16 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
