@@ -470,7 +470,10 @@ https://ollama.com/search?c=cloud
 - gpt-oss: 20b/120b
 - **cogito-2.1 671b**
 - **minimax-m2/2.1/2.5/2.7/3**
-- **kimi-k2: 1t/thinking/kimi-k2.5/kimi-k2.6**
+- **kimi**
+    - k2: 1t/thinking
+    - kimi-k2.5
+    - kimi-k2.6/k2.7-code
 - Nvidia-nemotron
   - nemotron-3-nano:30b
   - nemotron-3-super:120b
