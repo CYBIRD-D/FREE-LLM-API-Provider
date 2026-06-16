@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-06-06**
+> Last updated: **2026-06-16**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -68,10 +68,10 @@ You may also want to read my other posts:
 
 ## Global Platform
 
-### ~~Google Gemini~~ Google/Gemma 3/4
+### ~~Google Gemini~~ Google/Gemma ~~3~~/4
 Community reports that **Gemma 3** is working properly. </br>
 ~~https://ai.google.dev/gemini-api/docs/rate-limits#free-tier~~ 
-> Last updated: **2026-06-06 UTC** </br>
+> Last updated: **2026-06-16 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
 > **RPD** Requests per day</br>
@@ -88,7 +88,7 @@ Endpoint: https://generativelanguage.googleapis.com
 | Gemini 2.5 Flash Lite     | 10                        | 250k                     | 20              |
 | Gemini 3.1 Flash Lite     | 15                        | 250k                     | 500             |
 | Gemma 4 26B/31B           | 15                        | Unlimited                | 1.5K            |
-| **Gemma 3 (1B/2B/4B/12B/27B)**  | 30                  | 15k                      | 14.4k           |
+| ~~Gemma 3 (1B/2B/4B/12B/27B)~~  | ~~30~~                  | ~~15k~~                      | ~~14.4k~~           |
 ~~gemini 2 Flash/Lite~~
 ~~gemini 2.5/3.1 Pro~~
 
@@ -460,7 +460,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-06-06** </br>
+> Last Check: **2026-06-16** </br>
 
 
 https://ollama.com/cloud </br>
@@ -530,15 +530,16 @@ Endpoint: https://api.groq.com/openai
 | llama-3.3-70b-versatile                   | 30  | 1K    | 12K  | 100K  | 
 | meta-llama/llama-4-maverick-17b-128e-instruct | 30  | 1K    | 6K   | 500K  | 
 | meta-llama/llama-4-scout-17b-16e-instruct | 30  | 1K    | 30K  | 500K  |
-| moonshotai/kimi-k2-instruct </br> moonshotai/kimi-k2-instruct-0905  | 60  | 1K    | 10K  | 300K  |
-| openai/gpt-oss-20b & gpt-oss-120b        | 30  | 1K    | 8K   | 200K  | 
-| qwen/qwen3-32b                           | 60  | 1K    | 6K   | 500K  |
+| ~~moonshotai/kimi-k2-instruct </br> moonshotai/kimi-k2-instruct-0905~~ | ~~60~~  | ~~1K~~    | ~~10K~~  | ~~300K~~  |
+| openai/gpt-oss-20b & gpt-oss-120b         | 30  | 1K    | 8K   | 200K  | 
+| qwen/qwen3-32b                            | 60  | 1K    | 6K   | 500K  |
+| qwen/qwen3.6-27b                          | 30  | 1K    | 8K   | 200K  |
 
 
 ---------
 
 ### ~~Celebras~~
-> Last Check: **2026-06-06**
+> Last Check: **2026-06-16**
 
 **Unusable rate limit**
 
@@ -556,7 +557,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-06-06** </br>
+> Last Check: **2026-06-16** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -578,8 +579,8 @@ Endpoint: https://openrouter.ai/api
 --------
 
 ### Cloudflare
-> Last web updated: **2026-04-22** </br>
-> Last Check: **2026-06-06** </br>
+> Last web updated: **2026-06-12** </br>
+> Last Check: **2026-06-16** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -608,7 +609,7 @@ Models list </br>
 - granite-4.0-h-micro
 - **glm-4.7-flash**
 - **nemotron-3-120b-a12b**
-- **kimi-k2.5/k2.6**
+- **kimi-k2.5/k2.6/k2.7-code**
     
  <details>
   <summary>Full list with token cost</summary>  
@@ -639,7 +640,7 @@ Models list </br>
 | nemotron-3-120b-a12b   | 45455 | 136364 |       |
 | kimi-k2.5   | 54545 | 9091（cache）</br> 272727 |       |
 | kimi-k2.6   | 86364 | 14545（cache）</br> 363636 |       |
-
+| kimi-k2.7-code   | 86364 | 17273（cache）</br> 363636 |       |
  </details>
 
 
@@ -647,8 +648,8 @@ Models list </br>
 
 
 ### Cohere
-> Last updated: **2026-05-19**</br>
-> Last Check: **2026-06-06** </br>
+> Last updated: **2026-06-09**</br>
+> Last Check: **2026-06-16** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -667,6 +668,7 @@ Endpoint: https://api.cohere.ai/compatibility
   - Command R+
   - Command R
   - Command R7B
+  - North Mini Code
 
 
 > All endpoints are limited to 1,000 calls per month with a trial key
@@ -688,7 +690,7 @@ https://docs.z.ai/guides/overview/pricing </br>
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-05-31** </br>
+> Last Check: **2026-06-16** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
