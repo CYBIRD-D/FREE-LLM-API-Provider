@@ -461,7 +461,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-06-16** </br>
+> Last Check: **2026-06-18** </br>
 
 
 https://ollama.com/cloud </br>
@@ -487,7 +487,7 @@ https://ollama.com/search?c=cloud
 - **GLM**
   - GLM-4.6
   - GLM-4.7
-  - GLM-5/5.1
+  - GLM-5/5.1/5.2
 - **Qwen**
   - qwen3-vl: 235b/instruct
   - qwen3-coder: 480b
