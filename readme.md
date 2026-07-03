@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-06-16**
+> Last updated: **2026-07-03**
 
 
 This is a list of free llm providers and their rate usage limits.</br>
@@ -105,7 +105,7 @@ Endpoint: https://generativelanguage.googleapis.com
 -------
 
 ### Nvidia
-> Last updated: **2026-04-21** </br>
+> Last updated: **2026-07-03** </br>
 
 https://build.nvidia.com/explore/discover </br>
 Endpoint: https://integrate.api.nvidia.com
@@ -119,102 +119,74 @@ Rate limits may vary by model and traffic from other users may cause throttling.
   - OpenAI/Google/Meta/Microsoft/NVIDIA/IBM/Databricks/Mistral AI/AI21 Labs/DeepSeek/Moonshot AI/Z-ai/Minimax etc.
 <details>
 
-## Model List
+<summary> 
+  
+  ## Model List 
+</summary>
 
 #### 01-ai
-<details>
-<summary>1 model</summary>
 
 - `01-ai/yi-large`
 
-</details>
-
 #### abacusai
-<details>
-<summary>1 model</summary>
 
 - `abacusai/dracarys-llama-3.1-70b-instruct`
 
-</details>
-
 #### adept
-<details>
-<summary>1 model</summary>
 
 - `adept/fuyu-8b`
 
-</details>
-
 #### ai21labs
-<details>
-<summary>1 model</summary>
 
 - `ai21labs/jamba-1.5-large-instruct`
 
-</details>
-
 #### aisingapore
-<details>
-<summary>1 model</summary>
 
 - `aisingapore/sea-lion-7b-instruct`
 
-</details>
-
 #### baai
-<details>
-<summary>1 model</summary>
 
 - `baai/bge-m3`
 
-</details>
-
 #### bigcode
-<details>
-<summary>1 model</summary>
 
 - `bigcode/starcoder2-15b`
 
-</details>
-
 #### bytedance
-<details>
-<summary>1 model</summary>
 
 - `bytedance/seed-oss-36b-instruct`
 
-</details>
-
 #### databricks
-<details>
-<summary>1 model</summary>
 
 - `databricks/dbrx-instruct`
 
-</details>
+<details>
+<summary>
 
 #### deepseek-ai
-<details>
-<summary>3 models</summary>
+
+</summary>
 
 - `deepseek-ai/deepseek-coder-6.7b-instruct`
-- `deepseek-ai/deepseek-v3.1-terminus`
-- `deepseek-ai/deepseek-v3.2`
-- `deepseek-ai/deepseek-v4 flash/pro`
+- `deepseek-ai/deepseek-v4-flash`
+- `deepseek-ai/deepseek-v4-pro`
 
 </details>
 
-#### google
 <details>
-<summary>12 models</summary>
+<summary>
+
+#### google
+
+</summary>
 
 - `google/codegemma-1.1-7b`
 - `google/codegemma-7b`
 - `google/deplot`
+- `google/diffusiongemma-26b-a4b-it`
 - `google/gemma-2-2b-it`
 - `google/gemma-2b`
 - `google/gemma-3-12b-it`
-- `google/gemma-3-27b-it`
 - `google/gemma-3-4b-it`
 - `google/gemma-3n-e2b-it`
 - `google/gemma-3n-e4b-it`
@@ -223,9 +195,12 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 </details>
 
-#### ibm
 <details>
-<summary>4 models</summary>
+<summary>
+
+#### ibm
+
+</summary>
 
 - `ibm/granite-3.0-3b-a800m-instruct`
 - `ibm/granite-3.0-8b-instruct`
@@ -234,12 +209,14 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 </details>
 
-#### meta
 <details>
-<summary>12 models</summary>
+<summary>
+
+#### meta
+
+</summary>
 
 - `meta/codellama-70b`
-- `meta/llama-3.1-405b-instruct`
 - `meta/llama-3.1-70b-instruct`
 - `meta/llama-3.1-8b-instruct`
 - `meta/llama-3.2-11b-vision-instruct`
@@ -253,9 +230,12 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 </details>
 
-#### microsoft
 <details>
-<summary>5 models</summary>
+<summary>
+
+#### microsoft
+
+</summary>
 
 - `microsoft/kosmos-2`
 - `microsoft/phi-3-vision-128k-instruct`
@@ -265,59 +245,55 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 
 </details>
 
-#### minimaxai
 <details>
-<summary>2 models</summary>
+<summary>
 
-- `minimaxai/minimax-m2.5`
+#### minimaxai
+
+</summary>
+
 - `minimaxai/minimax-m2.7`
+- `minimaxai/minimax-m3`
 
 </details>
 
-#### mistralai
 <details>
-<summary>14 models</summary>
+<summary>
+
+#### mistralai
+
+</summary>
 
 - `mistralai/codestral-22b-instruct-v0.1`
-- `mistralai/devstral-2-123b-instruct-2512`
-- `mistralai/magistral-small-2506`
 - `mistralai/ministral-14b-instruct-2512`
 - `mistralai/mistral-7b-instruct-v0.3`
 - `mistralai/mistral-large`
 - `mistralai/mistral-large-2-instruct`
 - `mistralai/mistral-large-3-675b-instruct-2512`
-- `mistralai/mistral-medium-3-instruct`
+- `mistralai/mistral-medium-3.5-128b`
 - `mistralai/mistral-nemotron`
 - `mistralai/mistral-small-4-119b-2603`
-- `mistralai/mixtral-8x22b-instruct-v0.1`
 - `mistralai/mixtral-8x22b-v0.1`
 - `mistralai/mixtral-8x7b-instruct-v0.1`
 
 </details>
 
 #### moonshotai
-<details>
-<summary>4 models</summary>
 
-- `moonshotai/kimi-k2-instruct`
-- `moonshotai/kimi-k2-instruct-0905`
-- `moonshotai/kimi-k2-thinking`
-- `moonshotai/kimi-k2.5`
-
-</details>
+- `moonshotai/kimi-k2.6`
 
 #### nv-mistralai
-<details>
-<summary>1 model</summary>
 
 - `nv-mistralai/mistral-nemo-12b-instruct`
 
-</details>
+<details>
+<summary>
 
 #### nvidia
-<details>
-<summary>42 models</summary>
 
+</summary>
+
+- `nvidia/ai-synthetic-video-detector`
 - `nvidia/cosmos-reason2-8b`
 - `nvidia/embed-qa-4`
 - `nvidia/gliner-pii`
@@ -331,9 +307,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 - `nvidia/llama-3.1-nemotron-safety-guard-8b-v3`
 - `nvidia/llama-3.1-nemotron-ultra-253b-v1`
 - `nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1`
-- `nvidia/llama-3.2-nemoretriever-300m-embed-v1`
 - `nvidia/llama-3.2-nv-embedqa-1b-v1`
-- `nvidia/llama-3.2-nv-embedqa-1b-v2`
 - `nvidia/llama-3.3-nemotron-super-49b-v1`
 - `nvidia/llama-3.3-nemotron-super-49b-v1.5`
 - `nvidia/llama-nemotron-embed-1b-v2`
@@ -343,7 +317,10 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 - `nvidia/nemoretriever-parse`
 - `nvidia/nemotron-3-content-safety`
 - `nvidia/nemotron-3-nano-30b-a3b`
+- `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`
 - `nvidia/nemotron-3-super-120b-a12b`
+- `nvidia/nemotron-3-ultra-550b-a55b`
+- `nvidia/nemotron-3.5-content-safety`
 - `nvidia/nemotron-4-340b-instruct`
 - `nvidia/nemotron-4-340b-reward`
 - `nvidia/nemotron-content-safety-reasoning-4b`
@@ -360,74 +337,69 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 - `nvidia/nvidia-nemotron-nano-9b-v2`
 - `nvidia/riva-translate-4b-instruct`
 - `nvidia/riva-translate-4b-instruct-v1.1`
+- `nvidia/vila`
 
 </details>
 
-#### openai
 <details>
-<summary>2 models</summary>
+<summary>
+
+#### openai
+
+</summary>
 
 - `openai/gpt-oss-120b`
 - `openai/gpt-oss-20b`
 
 </details>
 
-#### qwen
 <details>
-<summary>6 models</summary>
+<summary>
 
-- `qwen/qwen2.5-coder-32b-instruct`
-- `qwen/qwen3-coder-480b-a35b-instruct`
+#### qwen
+
+</summary>
+
 - `qwen/qwen3-next-80b-a3b-instruct`
-- `qwen/qwen3-next-80b-a3b-thinking`
 - `qwen/qwen3.5-122b-a10b`
 - `qwen/qwen3.5-397b-a17b`
 
 </details>
 
 #### sarvamai
-<details>
-<summary>1 model</summary>
 
 - `sarvamai/sarvam-m`
 
-</details>
-
 #### snowflake
-<details>
-<summary>1 model</summary>
 
 - `snowflake/arctic-embed-l`
 
-</details>
+<details>
+<summary>
 
 #### stepfun-ai
-<details>
-<summary>1 model</summary>
+
+</summary>
 
 - `stepfun-ai/step-3.5-flash`
+- `stepfun-ai/step-3.7-flash`
 
 </details>
 
 #### stockmark
-<details>
-<summary>1 model</summary>
 
 - `stockmark/stockmark-2-100b-instruct`
 
-</details>
-
 #### upstage
-<details>
-<summary>1 model</summary>
 
 - `upstage/solar-10.7b-instruct`
 
-</details>
+<details>
+<summary>
 
 #### writer
-<details>
-<summary>4 models</summary>
+
+</summary>
 
 - `writer/palmyra-creative-122b`
 - `writer/palmyra-fin-70b-32k`
@@ -437,22 +409,13 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 </details>
 
 #### z-ai
-<details>
-<summary>3 models</summary>
 
-- `z-ai/glm-5.1`
-- `z-ai/glm4.7`
-- `z-ai/glm5`
-
-</details>
+- `z-ai/glm-5.2`
 
 #### zyphra
-<details>
-<summary>1 model</summary>
 
 - `zyphra/zamba2-7b-instruct`
 
-</details>
 
 </details>
 
@@ -461,7 +424,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-06-18** </br>
+> Last Check: **2026-07-03** </br>
 
 
 https://ollama.com/cloud </br>
@@ -515,7 +478,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last updated: **2026-06-06**
+> Last updated: **2026-07-03**
 
 
 https://console.groq.com/docs/rate-limits</br>
@@ -540,7 +503,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### ~~Celebras~~
-> Last Check: **2026-06-16**
+> Last Check: **2026-07-03**
 
 **Unusable rate limit**
 
@@ -549,8 +512,9 @@ Endpoint: https://api.cerebras.ai
 
 | Model                                | Requests/Minute |   Tokens/Minute | Tokens/Hour | Tokens/Day |
 |--------------------------------------|-----------------|---------------|-------------|------------|
-| gpt-oss-120b                         | 5              |   30k          | 1M          | 1M         |
-| zai-glm-4.7                          | 5              |  30k          | 1M          | 1M         |
+| gpt-oss-120b                         | 5               |  30k          | 1M          | 1M         |
+| zai-glm-4.7                          | 5               |  30k          | 1M          | 1M         |
+| gemma-4-31b                          | 5               |  30k          | 1M          | 1M         |
 
 
 </br>
@@ -558,7 +522,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-06-16** </br>
+> Last Check: **2026-07-03** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -580,14 +544,13 @@ Endpoint: https://openrouter.ai/api
 --------
 
 ### Cloudflare
-> Last web updated: **2026-06-12** </br>
-> Last Check: **2026-06-16** </br>
+> Last web updated: **2026-06-16** </br>
+> Last Check: **2026-07-03** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
 https://developers.cloudflare.com/workers/platform/pricing/ </br>
-- Workers Free	**`10,000 Neurons`** per day </br>
-> Last updated: **Nov 13, 2025** </br>
+- Workers Free	**`10,000 Neurons`**/0.11$ per day </br>
 > "Neurons are our way of measuring AI outputs across different models, representing the GPU compute needed to perform your request. Our serverless model allows you to pay only for what you use without having to worry about renting, managing, or scaling GPUs."
 
 Models list </br>
@@ -604,44 +567,49 @@ Models list </br>
     - Mistral-7b-intruct-v0.1
     - Mistral-small-3.1b-24b
 - deepseek-r1-distill-qwen-32b
-- gemma-3-12b
-- **gemma-4-26B-A4B**
-- gemma-sea-lion-v4-27b-it
+- Gemma
+  - gemma-3-12b
+  - **gemma-4-26B-A4B**
+  - gemma-sea-lion-v4-27b-it
 - granite-4.0-h-micro
 - **glm-4.7-flash**
+- **glm-5.2**
 - **nemotron-3-120b-a12b**
 - **kimi-k2.5/k2.6/k2.7-code**
     
  <details>
   <summary>Full list with token cost</summary>  
    
-| Model | Neurons/1M Input token | Neurons/1M Output token | Input:Output=1:1 </br>（Overall/k token） |
-|------|-----------------------|-----------------------|-------------------------------|
-| `meta/llama-3.2-1b-instruct` | 2457  | 18252  | 966  |
-| `meta/llama-3.2-3b-instruct` | 4625  | 30475  | 570  |
-| `meta/llama-3.1-8b-instruct-fp8-fast` | 4119  | 34868  | 513  |
-| `meta/llama-3.2-11b-vision-instruct` | 4410  | 61493  | 303  |
-| `meta/llama-3.1-70b-instruct-fp8-fast` </br> `meta/llama-3.3-70b-instruct-fp8-fast` | 26668 | 204805 | 86   |
-| `deepseek-ai/deepseek-r1-distill-qwen-32b` | 45170 | 443756 | 41   |
-| `mistral/mistral-7b-instruct-v0.1` | 10000 | 17300  | 733  |
-| `mistralai/mistral-small-3.1-24b-instruct` | 31876 | 50488  | 243  |
-| `meta/llama-3.1-8b-instruct` </br> `@cf/meta/llama-3-8b-instruct` | 25608 | 75147  | 199  |
-| `meta/llama-3.1-8b-instruct-fp8` | 13778 | 26128  | 501  |
-| `meta/llama-3.1-8b-instruct-awq` </br> `@cf/meta/llama-3-8b-instruct-awq` | 11161 | 24215  | 565  |
-| `meta/llama-2-7b-chat-fp16` | 50505 | 606061 | 30   |
-| `meta/llama-4-scout-17b-16e-instruct` | 24545 | 77273  | 196  |
-| `google/gemma-3-12b-it` | 31371 | 50560  | 244  |
-| `qwen/qwq-32b` </br> `qwen/qwen2.5-coder-32b-instruct` | 60000 | 90909  | 133  |
-| `qwen/qwen3-30b-a3b-fp8`  | 4625 | 30475  | 570  |
-| `openai/gpt-oss-120b` | 31818 | 68182  | 200  |
-| `openai/gpt-oss-20b` | 18182 | 27273  | 440  |
-| `aisingapore/gemma-sea-lion-v4-27b-it` | 31876 | 50488  | 243  |
-| `ibm-granite/granite-4.0-h-micro` | 1542  | 10158  | 1709 |
-| zai-org/glm-4.7-flash  | 5500 | 36400 |       |
-| nemotron-3-120b-a12b   | 45455 | 136364 |       |
-| kimi-k2.5   | 54545 | 9091（cache）</br> 272727 |       |
-| kimi-k2.6   | 86364 | 14545（cache）</br> 363636 |       |
-| kimi-k2.7-code   | 86364 | 17273（cache）</br> 363636 |       |
+| Model | $/1M Input token | $/1M Output token | Input:Output=1:1 <br/> Overall $/1k token | $0.11 <br/> 1k tokens/per |
+|------|------------------:|-------------------:|------------------------------------------:|------------------------------------:|
+| `meta/llama-3.2-1b-instruct` | $0.027 | $0.201 | $0.000114 | 964 |
+| `meta/llama-3.2-3b-instruct` | $0.051 | $0.335 | $0.000193 | 569 |
+| `meta/llama-3.1-8b-instruct-fp8-fast` | $0.045 | $0.384 | $0.000215 | 512 |
+| `meta/llama-3.2-11b-vision-instruct` | $0.049 | $0.676 | $0.000363 | 303 |
+| `meta/llama-3.1-70b-instruct-fp8-fast` <br/> `meta/llama-3.3-70b-instruct-fp8-fast` | $0.293 | $2.253 | $0.001273 | 86 |
+| `deepseek-ai/deepseek-r1-distill-qwen-32b` | $0.497 | $4.881 | $0.002689 | 40 |
+| `mistral/mistral-7b-instruct-v0.1` | $0.110 | $0.190 | $0.000150 | 733 |
+| `mistralai/mistral-small-3.1-24b-instruct` | $0.351 | $0.555 | $0.000453 | 242 |
+| `meta/llama-3.1-8b-instruct` <br/> `meta/llama-3-8b-instruct` | $0.282 | $0.827 | $0.000555 | 198 |
+| `meta/llama-3.1-8b-instruct-fp8` | $0.152 | $0.287 | $0.000220 | 501 |
+| `meta/llama-3.1-8b-instruct-awq` <br/> `meta/llama-3-8b-instruct-awq` | $0.123 | $0.266 | $0.000195 | 565 |
+| `meta/llama-2-7b-chat-fp16` | $0.556 | $6.667 | $0.003612 | 30 |
+| `meta/llama-4-scout-17b-16e-instruct` | $0.270 | $0.850 | $0.000560 | 196 |
+| `google/gemma-3-12b-it` | $0.345 | $0.556 | $0.000451 | 244 |
+| `qwen/qwq-32b` <br/> `qwen/qwen2.5-coder-32b-instruct` | $0.660 | $1.000 | $0.000830 | 132 |
+| `qwen/qwen3-30b-a3b-fp8` | $0.051 | $0.335 | $0.000193 | 569 |
+| `openai/gpt-oss-120b` | $0.350 | $0.750 | $0.000550 | 200 |
+| `openai/gpt-oss-20b` | $0.200 | $0.300 | $0.000250 | 440 |
+| `aisingapore/gemma-sea-lion-v4-27b-it` | $0.351 | $0.555 | $0.000453 | 242 |
+| `ibm-granite/granite-4.0-h-micro` | $0.017 | $0.112 | $0.000065 | 1705 |
+| `zai-org/glm-4.7-flash` | $0.060 | $0.400 | $0.000230 | 478 |
+| `zai-org/glm-5.2` | $1.400 <br/> cache: $0.260 | $4.400 | $0.002900 <br/> cache: $0.002330 | 37 <br/> cache: 47 |
+| `nvidia/nemotron-3-120b-a12b` | $0.500 | $1.500 | $0.001000 | 110 |
+| `moonshotai/kimi-k2.5` | $0.600 <br/> cache: $0.100 | $3.000 | $0.001800 <br/> cache: $0.001550 | 61 <br/> cache: 70 |
+| `moonshotai/kimi-k2.6` | $0.950 <br/> cache: $0.160 | $4.000 | $0.002475 <br/> cache: $0.002080 | 44 <br/> cache: 52 |
+| `moonshotai/kimi-k2.7-code` | $0.950 <br/> cache: $0.190 | $4.000 | $0.002475 <br/> cache: $0.002095 | 44 <br/> cache: 52 |
+| `google/gemma-4-26b-a4b-it` | $0.100 | $0.300 | $0.000200 | 550 |
+
  </details>
 
 
@@ -649,8 +617,8 @@ Models list </br>
 
 
 ### Cohere
-> Last updated: **2026-06-09**</br>
-> Last Check: **2026-06-16** </br>
+> Last web updated: **2026-06-09**</br>
+> Last Check: **2026-07-03** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -691,7 +659,7 @@ https://docs.z.ai/guides/overview/pricing </br>
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-06-16** </br>
+> Last Check: **2026-07-03** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
