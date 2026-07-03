@@ -2,7 +2,9 @@
 > Last updated: **2026-07-03**
 
 
-This is a list of free llm providers and their rate usage limits.</br>
+This is a list of free llm providers and their rate usage limits </br>
+Updates from time to time.
+
 免费LLM api平台（包括cn平台）
 
 <table align="center">
