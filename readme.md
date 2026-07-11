@@ -60,6 +60,7 @@ You may also want to read my other posts:
 - [CN Platform](#cn-platform)
   - [ModelScope（魔搭社区）](#modelscope魔搭社区仅限cnonly-cn)
   - [SilliconFlow 硅基流动](#silliconflow-硅基流动)
+  - [AI Router](#ai-router)
   - [Tencent-Hunyuan 腾讯混元](#tencent-hunyuan-腾讯混元)
   - [Volcengine 火山引擎（平台）](#volcengine-火山引擎平台-500-point-资源点day)
   - [心流](#心流)
@@ -742,6 +743,17 @@ https://modelscope.cn/docs/model-service/API-Inference/limits </br>
 ### SilliconFlow 硅基流动
 **部分**小模型免费；新cn手机用户注册送**20M token** </br>
 https://siliconflow.cn/
+
+-------
+
+### AI Router
+https://ai-router.dev/cn </br>
+API Endpoint: https://api.ai-router.dev/v1 </br>
+
+- OpenAI 兼容 API 中转服务，通过 API Key 使用。
+- 新用户注册后直接解锁 5U；另外最多 15U 在符合条件的充值后按 1:1 解锁。
+- 每日签到奖励为 1 USD + 昨日消费额的 2%，以站内活动规则和实际到账为准。
+- 非 OpenAI 官方服务；当前模型可用性请以 `/v1/models` 和站内说明为准。
 
 -------
 
