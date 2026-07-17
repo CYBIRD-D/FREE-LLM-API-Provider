@@ -647,7 +647,10 @@ Endpoint: https://api.cohere.ai/compatibility
 --------
 
 ### Z.ai (GLM-4.5/4.7-Flash)
+
 https://docs.z.ai/guides/overview/pricing </br>
+
+Endpoint: https://api.z.ai/api/paas/v4
 
 **Free Models :**
 - GLM-4.5-Flash
