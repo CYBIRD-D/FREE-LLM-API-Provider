@@ -750,10 +750,10 @@ https://siliconflow.cn/
 https://ai-router.dev/cn </br>
 API Endpoint: https://api.ai-router.dev/v1 </br>
 
-- OpenAI 兼容 API 中转服务，通过 API Key 使用。
-- 新用户注册后直接解锁 5U；另外最多 15U 在符合条件的充值后按 1:1 解锁。
-- 每日签到奖励为 1 USD + 昨日消费额的 2%，以站内活动规则和实际到账为准。
-- 非 OpenAI 官方服务；当前模型可用性请以 `/v1/models` 和站内说明为准。
+- 独立运营的 OpenAI 兼容 API 中转服务，通过个人 API Key 使用。
+- 可在现有兼容客户端或脚本中配置 Base URL，并在控制台查看用量。
+- 当前模型及可用性请以 `/v1/models` 和站内说明为准。
+- 非 OpenAI 官方服务；新用户权益以站内当前规则为准，不作为永久免费 API 承诺。
 
 -------
 
@@ -829,6 +829,5 @@ Spark-lite free </br>
 - 首次开通后，免费包（个人）有200k免费额度（所有模型),有效期为一年</br>
 https://www.xfyun.cn/doc/spark/HTTP调用文档.html   
 https://xinghuo.xfyun.cn/sparkapi?scr=price
-
 
 
