@@ -90,7 +90,7 @@ Endpoint: https://generativelanguage.googleapis.com
 | Gemini 2.5 Flash </br> Gemini 3 Flash</br> Gemini 3.5 Flash | 5             | 250k                     | 20              |
 | Gemini 2.5 Flash Lite     | 10                        | 250k                     | 20              |
 | Gemini 3.1 Flash Lite     | 15                        | 250k                     | 500             |
-| Gemma 4 26B/31B           | 30                        | 16k               | 14.4K            |
+| **Gemma 4 26B/31B**           | **30**                        | **16k**             | **14.4K**            |
 | ~~Gemma 3 (1B/2B/4B/12B/27B)~~  | ~~30~~                  | ~~15k~~                      | ~~14.4k~~           |
 ~~gemini 2 Flash/Lite~~
 ~~gemini 2.5/3.1 Pro~~
