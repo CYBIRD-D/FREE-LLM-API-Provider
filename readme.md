@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-07-22**
+> Last updated: **2026-07-24**
 
 
 This is a list of free llm providers and their rate usage limits </br>
@@ -47,13 +47,15 @@ You may also want to read my other posts:
   - [★Nvidia(40RPM)](#nvidia)
   - [★Ollama](#ollama)
   - [★Groq](#groq)
-  - [★Cerebras](#celebras)
+  - [Cerebras](#celebras)
   - [OpenRouter](#openrouter)
   - [Cloudflare](#cloudflare)
   - [Cohere](#cohere)
-  - [Z.ai (GLM-4.5/4.7-Flash)](#zai-glm-4547-flash)
+  - [★Z.ai (GLM-4.5/4.7-Flash)](#zai-glm-4547-flash)
   - [GitHub Models](#github)
-  - [Mistral](#mistral)
+  - [★Mistral](#mistral)
+  - [SambaNova](#sambanova)
+  - [AionLabs](#aionlabs)
   - [SKT](#skt)
   - [IBM](#ibm)
   - [Scaleway (1M free token/per account)](#scaleway-1m-free-tokenper-account-no-refresh)
@@ -74,7 +76,7 @@ You may also want to read my other posts:
 ~~Community reports that **Gemma 3** is working properly~~. </br>
 https://ai.google.dev/gemini-api/docs/rate-limits#free-tier 
 Gemma3 had been removed from api.
-> Last updated: **2026-07-22 UTC** </br>
+> Last updated: **2026-07-24 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
 > **RPD** Requests per day</br>
@@ -87,9 +89,9 @@ Endpoint: https://generativelanguage.googleapis.com
 
 | Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
 |---------------------------|---------------------------|--------------------------|-----------------|
-| Gemini 2.5 Flash </br> Gemini 3 Flash</br> Gemini 3.5 Flash | 5             | 250k                     | 20              |
+| Gemini 2.5/3/3.5/3.6 Flash    | 5             | 250k                     | 20              |
 | Gemini 2.5 Flash Lite     | 10                        | 250k                     | 20              |
-| Gemini 3.1 Flash Lite     | 15                        | 250k                     | 500             |
+| Gemini 3.1/3.5 Flash Lite     | 15                        | 250k                     | 500             |
 | **Gemma 4 26B/31B**           | **30**                        | **16k**             | **14.4K**            |
 | ~~Gemma 3 (1B/2B/4B/12B/27B)~~  | ~~30~~                  | ~~15k~~                      | ~~14.4k~~           |
 ~~gemini 2 Flash/Lite~~
@@ -426,7 +428,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-07-22** </br>
+> Last Check: **2026-07-24** </br>
 
 
 https://ollama.com/cloud </br>
@@ -547,7 +549,7 @@ Endpoint: https://openrouter.ai/api
 
 ### Cloudflare
 > Last web updated: **2026-06-16** </br>
-> Last Check: **2026-07-13** </br>
+> Last Check: **2026-07-24** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -620,7 +622,7 @@ Models list </br>
 
 ### Cohere
 > Last web updated: **2026-06-09**</br>
-> Last Check: **2026-07-13** </br>
+> Last Check: **2026-07-24** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -664,7 +666,7 @@ Endpoint: https://api.z.ai/api/paas/v4
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-07-13** </br>
+> Last Check: **2026-07-24** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
@@ -706,6 +708,24 @@ https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 | gpt-oss-120b                         | 20               |  20          |  200k        |
 | DeepSeek-V3.2                        | 20               |  20          |  200k        |
 | gemma-4-31B-it                       | 20               |  20          |  200k        |
+
+-----------
+
+### AionLabs
+
+> Last Check: **2026-07-24**
+
+https://www.aionlabs.ai/docs/rate-limits/
+
+Endpoint: https://api.aionlabs.ai/v1
+
+| Model                                | Requests/Minute | Tokens/Day |
+|--------------------------------------|----------------- |------------|
+| Aion-2.0 (DeepSeek V3.2 finetune)                     | 15               |  20k        |
+| Aion-2.5 (Improve of Aion-2.0)                        | 15               |  20k        |
+| Aion-3.0 (GLM)                                        | 15               |  20k        |
+| Aion-3.0 Mini (Deepseek)                              | 15               |  20k        |
+| Aion-RP 1.0 (8B) (llama-3.1-8b fineune/openweight)    | 15               |  20k        |
 
 ------
 
