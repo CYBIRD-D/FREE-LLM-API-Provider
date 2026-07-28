@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-07-24**
+> Last updated: **2026-07-29**
 
 
 This is a list of free llm providers and their rate usage limits </br>
@@ -428,7 +428,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-07-24** </br>
+> Last Check: **2026-07-29** </br>
 
 
 https://ollama.com/cloud </br>
@@ -442,6 +442,7 @@ https://ollama.com/search?c=cloud
     - k2: 1t/thinking
     - kimi-k2.5
     - kimi-k2.6/k2.7-code
+    - kimi-k3
 - Nvidia-nemotron
   - nemotron-3-nano:30b
   - nemotron-3-super:120b
@@ -482,7 +483,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last updated: **2026-07-13**
+> Last Check: **2026-07-29**
 
 
 https://console.groq.com/docs/rate-limits</br>
@@ -526,7 +527,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-07-13** </br>
+> Last Check: **2026-07-29** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -549,7 +550,7 @@ Endpoint: https://openrouter.ai/api
 
 ### Cloudflare
 > Last web updated: **2026-06-16** </br>
-> Last Check: **2026-07-24** </br>
+> Last Check: **2026-07-29** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -666,7 +667,7 @@ Endpoint: https://api.z.ai/api/paas/v4
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-07-24** </br>
+> Last Check: **2026-07-29** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
@@ -696,7 +697,7 @@ Endpoint: https://api.mistral.ai
 
 ### SambaNova
 
-> Last Check: **2026-07-13**
+> Last Check: **2026-07-29**
 
 https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
@@ -713,9 +714,11 @@ https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
 ### AionLabs
 
-> Last Check: **2026-07-24**
+> Last Check: **2026-07-29**
 
 https://www.aionlabs.ai/docs/rate-limits/
+
+https://www.aionlabs.ai/docs/models/
 
 Endpoint: https://api.aionlabs.ai/v1
 
@@ -736,7 +739,7 @@ https://github.com/SKT-AI/A.X-4.0/blob/main/apis/README.md
 
 
 ### IBM
-> Last Check: **2026-04-21** </br>
+> Last Check: **2026-07-29** </br>
 
 
 https://www.ibm.com/products/watsonx-ai/pricing
