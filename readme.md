@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-07-29**
+> Last updated: **2026-08-02**
 
 
 This is a list of free llm providers and their rate usage limits </br>
@@ -428,7 +428,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-07-29** </br>
+> Last Check: **2026-08-02** </br>
 
 
 https://ollama.com/cloud </br>
@@ -450,7 +450,7 @@ https://ollama.com/search?c=cloud
 - rnj-1:8b
 - **Deepseek**
   - deepseek-v3.1/3.2: 671b
-  - deepseek-v4-flash （284B A13B）
+  - deepseek-v4-flash/v4-flash-0731 （284B A13B）
   - deepseek-v4-pro (1.6T A49B)
 - **GLM**
   - GLM-4.6
