@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-08-02**
+> Last updated: **2026-08-08**
 
 
 This is a list of free llm providers and their rate usage limits </br>
@@ -428,7 +428,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-08-02** </br>
+> Last Check: **2026-08-08** </br>
 
 
 https://ollama.com/cloud </br>
@@ -483,7 +483,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last Check: **2026-07-29**
+> Last Check: **2026-08-08**
 
 
 https://console.groq.com/docs/rate-limits</br>
@@ -508,7 +508,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### ~~Celebras~~
-> Last Check: **2026-07-13**
+> Last Check: **2026-08-08**
 
 **Unusable rate limit**
 
@@ -527,7 +527,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-07-29** </br>
+> Last Check: **2026-08-08** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -550,7 +550,7 @@ Endpoint: https://openrouter.ai/api
 
 ### Cloudflare
 > Last web updated: **2026-06-16** </br>
-> Last Check: **2026-07-29** </br>
+> Last Check: **2026-08-08** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -623,7 +623,7 @@ Models list </br>
 
 ### Cohere
 > Last web updated: **2026-06-09**</br>
-> Last Check: **2026-07-24** </br>
+> Last Check: **2026-08-08** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -667,7 +667,7 @@ Endpoint: https://api.z.ai/api/paas/v4
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-07-29** </br>
+> Last Check: **2026-08-08** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
@@ -697,7 +697,7 @@ Endpoint: https://api.mistral.ai
 
 ### SambaNova
 
-> Last Check: **2026-07-29**
+> Last Check: **2026-08-08**
 
 https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
@@ -714,7 +714,7 @@ https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
 ### AionLabs
 
-> Last Check: **2026-07-29**
+> Last Check: **2026-08-08**
 
 https://www.aionlabs.ai/docs/rate-limits/
 
