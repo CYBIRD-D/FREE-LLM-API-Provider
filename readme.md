@@ -67,6 +67,7 @@ You may also want to read my other posts:
   - [心流](#心流)
   - [StreamLake 快手万擎Vanchin](#StreamLake-快手万擎Vanchin)
   - [Spark 讯飞星火](#spark-讯飞星火)
+- [LLM PRICE LIST](#llm-price-list)
 
 -----------
 
@@ -860,5 +861,65 @@ Spark-lite free </br>
 https://www.xfyun.cn/doc/spark/HTTP调用文档.html   
 https://xinghuo.xfyun.cn/sparkapi?scr=price
 
+----------
+
+## LLM PRICE LIST
+
+> **LLM API Pricing — August 8, 2026**
+
+> Scope: Text/reasoning/code models released or launched within the past six months that remain available and have not been announced for imminent retirement.
+>
+> Unit: USD per 1M tokens
+>
+> Ranking method: `Combined = Input + Output`, representing the cost of 1M input tokens + 1M output tokens.
+>
+> Standard real-time API pricing is used. Batch/Flex pricing is excluded.
+>
+> For tiered models, the lowest standard context tier is used unless otherwise noted.
+
+| Rank | Provider | Model | Input | Output | Input + Output | Notes |
+|---:|---|---|---:|---:|---:|---|
+| 1 | DeepSeek | DeepSeek V4 Flash | $0.14 | $0.28 | **$0.42** | 1M context |
+| 2 | Qwen | Qwen3.5 Flash | $0.10 | $0.40 | **$0.50** | International |
+| 3 | Mistral | Mistral Small 4 | $0.15 | $0.60 | **$0.75** | 256K context |
+| 4 | DeepSeek | DeepSeek V4 Pro | $0.435 | $0.87 | **$1.305** | 1M context |
+| 5 | OpenAI | GPT-5.6 Luna | $0.20 | $1.20 | **$1.40** | >272K: $0.40 / $1.80 |
+| 6 | OpenAI | GPT-5.4 nano | $0.20 | $1.25 | **$1.45** | — |
+| 7 | Qwen | Qwen3.7 Plus | $0.32 | $1.28 | **$1.60** | Current International alias: 20% discount; list $0.40 / $1.60 |
+| 8 | Google | Gemini 3.1 Flash-Lite | $0.25 | $1.50 | **$1.75** | — |
+| 9 | Qwen | Qwen3.6 Flash | $0.25 | $1.50 | **$1.75** | ≤256K |
+| 10 | Google | Gemini 3.5 Flash-Lite | $0.30 | $2.50 | **$2.80** | — |
+| 11 | Qwen | Qwen3.5 Plus | $0.40 | $2.40 | **$2.80** | ≤256K |
+| 12 | xAI | Grok Build 0.1 | $1.00 | $2.00 | **$3.00** | <200K |
+| 13 | Qwen | Qwen3.6 Plus | $0.50 | $3.00 | **$3.50** | ≤256K |
+| 14 | xAI | Grok 4.3 | $1.25 | $2.50 | **$3.75** | <200K |
+| 15 | xAI | Grok 4.20 | $1.25 | $2.50 | **$3.75** | Reasoning / Non-Reasoning / Multi-Agent; <200K |
+| 16 | GLM / Z.AI | GLM-5 | $1.00 | $3.20 | **$4.20** | — |
+| 17 | Kimi | Kimi K2.6 | $0.95 | $4.00 | **$4.95** | 262K context |
+| 18 | Kimi | Kimi K2.7 Code | $0.95 | $4.00 | **$4.95** | 262K context |
+| 19 | Qwen | Qwen3.7 Max | $1.25 | $3.75 | **$5.00** | Current International alias: 50% discount; list $2.50 / $7.50 |
+| 20 | GLM / Z.AI | GLM-5 Turbo | $1.20 | $4.00 | **$5.20** | — |
+| 21 | OpenAI | GPT-5.4 mini | $0.75 | $4.50 | **$5.25** | — |
+| 22 | GLM / Z.AI | GLM-5.1 | $1.40 | $4.40 | **$5.80** | — |
+| 23 | GLM / Z.AI | GLM-5.2 | $1.40 | $4.40 | **$5.80** | 1M context |
+| 24 | xAI | Grok 4.5 | $2.00 | $6.00 | **$8.00** | <200K |
+| 25 | Google | Gemini 3.6 Flash | $1.50 | $7.50 | **$9.00** | Thinking tokens billed as output |
+| 26 | Mistral | Mistral Medium 3.5 | $1.50 | $7.50 | **$9.00** | 256K context |
+| 27 | Kimi | Kimi K2.7 Code Highspeed | $1.90 | $8.00 | **$9.90** | 262K context |
+| 28 | Google | Gemini 3.5 Flash | $1.50 | $9.00 | **$10.50** | Thinking tokens billed as output |
+| 29 | Anthropic | Claude Sonnet 5 | $2.00 | $10.00 | **$12.00** | Introductory price through Aug 31, 2026 |
+| 30 | OpenAI | GPT-5.6 Terra | $2.00 | $12.00 | **$14.00** | >272K: $4 / $18 |
+| 31 | Google | Gemini 3.1 Pro Preview | $2.00 | $12.00 | **$14.00** | ≤200K; >200K: $4 / $18 |
+| 32 | OpenAI | GPT-5.4 | $2.50 | $15.00 | **$17.50** | >272K long-context surcharge |
+| 33 | Anthropic | Claude Sonnet 4.6 | $3.00 | $15.00 | **$18.00** | — |
+| 34 | Kimi | Kimi K3 | $3.00 | $15.00 | **$18.00** | 1M context |
+| 35 | Anthropic | Claude Opus 4.7 | $5.00 | $25.00 | **$30.00** | — |
+| 36 | Anthropic | Claude Opus 4.8 | $5.00 | $25.00 | **$30.00** | — |
+| 37 | Anthropic | Claude Opus 5 | $5.00 | $25.00 | **$30.00** | 1M context |
+| 38 | OpenAI | GPT-5.5 | $5.00 | $30.00 | **$35.00** | — |
+| 39 | OpenAI | GPT-5.6 Sol | $5.00 | $30.00 | **$35.00** | >272K long-context surcharge |
+| 40 | Anthropic | Claude Fable 5 | $10.00 | $50.00 | **$60.00** | — |
+| 41 | OpenAI | GPT-5.4 Pro | $30.00 | $180.00 | **$210.00** | Maximum-compute tier |
+| 42 | OpenAI | GPT-5.5 Pro | $30.00 | $180.00 | **$210.00** | Maximum-compute tier |
 
 
