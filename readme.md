@@ -62,6 +62,7 @@ You may also want to read my other posts:
 - [CN Platform](#cn-platform)
   - [ModelScope（魔搭社区）](#modelscope魔搭社区仅限cnonly-cn)
   - [SilliconFlow 硅基流动](#silliconflow-硅基流动)
+  - [AI Router](#ai-router)
   - [Tencent-Hunyuan 腾讯混元](#tencent-hunyuan-腾讯混元)
   - [Volcengine 火山引擎（平台）](#volcengine-火山引擎平台-500-point-资源点day)
   - [心流](#心流)
@@ -788,6 +789,17 @@ https://siliconflow.cn/
 
 -------
 
+### AI Router
+https://ai-router.dev/cn </br>
+API Endpoint: https://api.ai-router.dev/v1 </br>
+
+- 独立运营的 OpenAI 兼容 API 中转服务，通过个人 API Key 使用。
+- 可在现有兼容客户端或脚本中配置 Base URL，并在控制台查看用量。
+- 当前模型及可用性请以 `/v1/models` 和站内说明为准。
+- 非 OpenAI 官方服务；新用户权益以站内当前规则为准，不作为永久免费 API 承诺。
+
+-------
+
 ### Tencent-Hunyuan 腾讯混元
 (Hunyuan-lite free; 1 M free token for other models/per account) </br>
 - 首次开通腾讯混元大模型服务后，混元生文将发放一定量级的免费调用额度（100M tokens）
@@ -921,5 +933,4 @@ https://xinghuo.xfyun.cn/sparkapi?scr=price
 | 40 | Anthropic | Claude Fable 5 | $10.00 | $50.00 | **$60.00** | — |
 | 41 | OpenAI | GPT-5.4 Pro | $30.00 | $180.00 | **$210.00** | Maximum-compute tier |
 | 42 | OpenAI | GPT-5.5 Pro | $30.00 | $180.00 | **$210.00** | Maximum-compute tier |
-
 
