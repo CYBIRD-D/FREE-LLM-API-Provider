@@ -865,7 +865,7 @@ https://xinghuo.xfyun.cn/sparkapi?scr=price
 
 ## LLM PRICE LIST
 
-> **LLM API Pricing — August 8, 2026**
+> **LLM API Pricing — August 17, 2026**
 
 > Scope: Text/reasoning/code models released or launched within the past six months that remain available and have not been announced for imminent retirement.
 >
