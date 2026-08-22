@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-08-17**
+> Last updated: **2026-08-22**
 
 
 This is a list of free llm providers and their rate usage limits </br>
@@ -47,7 +47,7 @@ You may also want to read my other posts:
   - [★Nvidia(40RPM)](#nvidia)
   - [★Ollama](#ollama)
   - [★Groq](#groq)
-  - [Cerebras](#celebras)
+  - [~~Cerebras~~](#celebras)
   - [OpenRouter](#openrouter)
   - [Cloudflare](#cloudflare)
   - [Cohere](#cohere)
@@ -429,7 +429,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-08-17** </br>
+> Last Check: **2026-08-22** </br>
 
 
 https://ollama.com/cloud </br>
@@ -484,7 +484,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last Check: **2026-08-08**
+> Last Check: **2026-08-22**
 
 
 https://console.groq.com/docs/rate-limits</br>
@@ -502,16 +502,15 @@ Endpoint: https://api.groq.com/openai
 | meta-llama/llama-4-scout-17b-16e-instruct | 30  | 1K    | 30K  | 500K  |
 | ~~moonshotai/kimi-k2-instruct </br> moonshotai/kimi-k2-instruct-0905~~ | ~~60~~  | ~~1K~~    | ~~10K~~  | ~~300K~~  |
 | openai/gpt-oss-20b & gpt-oss-120b         | 30  | 1K    | 8K   | 200K  | 
-| qwen/qwen3-32b                            | 60  | 1K    | 6K   | 500K  |
 | qwen/qwen3.6-27b                          | 30  | 1K    | 8K   | 200K  |
 
 
 ---------
 
 ### ~~Celebras~~
-> Last Check: **2026-08-17**
+~~> Last Check: **2026-08-17**~~
 
-**Unusable rate limit**
+**Unusable rate limit** 5$ per account
 
 https://inference-docs.cerebras.ai/support/rate-limits</br>
 Endpoint: https://api.cerebras.ai
@@ -519,7 +518,7 @@ Endpoint: https://api.cerebras.ai
 | Model                                | Requests/Minute |   Tokens/Minute | Tokens/Hour | Tokens/Day |
 |--------------------------------------|-----------------|---------------|-------------|------------|
 | gpt-oss-120b                         | 5               |  30k          | 1M          | 1M         |
-| zai-glm-4.7                          | 5               |  30k          | 1M          | 1M         |
+| ~~zai-glm-4.7~~                      | 5               |  30k          | 1M          | 1M         |
 | gemma-4-31b                          | 5               |  30k          | 1M          | 1M         |
 
 
@@ -528,7 +527,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-08-08** </br>
+> Last Check: **2026-08-22** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -550,8 +549,8 @@ Endpoint: https://openrouter.ai/api
 --------
 
 ### Cloudflare
-> Last web updated: **2026-06-16** </br>
-> Last Check: **2026-08-17** </br>
+> Last web updated: **2026-08-18** </br>
+> Last Check: **2026-08-22** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -569,10 +568,12 @@ Models list </br>
     - qwq-32b
     - qwen2.5-coder-32b
     - **qwen3-30b-a3b**
+    - **qwen3.8-27b**
 - Mistral
     - Mistral-7b-intruct-v0.1
     - Mistral-small-3.1b-24b
 - deepseek-r1-distill-qwen-32b
+- deepseek v4 flash/pro
 - Gemma
   - gemma-3-12b
   - **gemma-4-26B-A4B**
@@ -586,35 +587,56 @@ Models list </br>
  <details>
   <summary>Full list with token cost</summary>  
    
-| Model | $/1M Input token | $/1M Output token | Input:Output=1:1 <br/> Overall $/1k token | $0.11 <br/> 1k tokens/per |
-|------|------------------:|-------------------:|------------------------------------------:|------------------------------------:|
-| `meta/llama-3.2-1b-instruct` | $0.027 | $0.201 | $0.000114 | 964 |
-| `meta/llama-3.2-3b-instruct` | $0.051 | $0.335 | $0.000193 | 569 |
-| `meta/llama-3.1-8b-instruct-fp8-fast` | $0.045 | $0.384 | $0.000215 | 512 |
-| `meta/llama-3.2-11b-vision-instruct` | $0.049 | $0.676 | $0.000363 | 303 |
-| `meta/llama-3.1-70b-instruct-fp8-fast` <br/> `meta/llama-3.3-70b-instruct-fp8-fast` | $0.293 | $2.253 | $0.001273 | 86 |
-| `deepseek-ai/deepseek-r1-distill-qwen-32b` | $0.497 | $4.881 | $0.002689 | 40 |
-| `mistral/mistral-7b-instruct-v0.1` | $0.110 | $0.190 | $0.000150 | 733 |
-| `mistralai/mistral-small-3.1-24b-instruct` | $0.351 | $0.555 | $0.000453 | 242 |
-| `meta/llama-3.1-8b-instruct` <br/> `meta/llama-3-8b-instruct` | $0.282 | $0.827 | $0.000555 | 198 |
-| `meta/llama-3.1-8b-instruct-fp8` | $0.152 | $0.287 | $0.000220 | 501 |
-| `meta/llama-3.1-8b-instruct-awq` <br/> `meta/llama-3-8b-instruct-awq` | $0.123 | $0.266 | $0.000195 | 565 |
-| `meta/llama-2-7b-chat-fp16` | $0.556 | $6.667 | $0.003612 | 30 |
-| `meta/llama-4-scout-17b-16e-instruct` | $0.270 | $0.850 | $0.000560 | 196 |
-| `google/gemma-3-12b-it` | $0.345 | $0.556 | $0.000451 | 244 |
-| `qwen/qwq-32b` <br/> `qwen/qwen2.5-coder-32b-instruct` | $0.660 | $1.000 | $0.000830 | 132 |
-| `qwen/qwen3-30b-a3b-fp8` | $0.051 | $0.335 | $0.000193 | 569 |
-| `openai/gpt-oss-120b` | $0.350 | $0.750 | $0.000550 | 200 |
-| `openai/gpt-oss-20b` | $0.200 | $0.300 | $0.000250 | 440 |
-| `aisingapore/gemma-sea-lion-v4-27b-it` | $0.351 | $0.555 | $0.000453 | 242 |
-| `ibm-granite/granite-4.0-h-micro` | $0.017 | $0.112 | $0.000065 | 1705 |
-| `zai-org/glm-4.7-flash` | $0.060 | $0.400 | $0.000230 | 478 |
-| `zai-org/glm-5.2` | $1.400 <br/> cache: $0.260 | $4.400 | $0.002900 <br/> cache: $0.002330 | 37 <br/> cache: 47 |
-| `nvidia/nemotron-3-120b-a12b` | $0.500 | $1.500 | $0.001000 | 110 |
-| `moonshotai/kimi-k2.5` | $0.600 <br/> cache: $0.100 | $3.000 | $0.001800 <br/> cache: $0.001550 | 61 <br/> cache: 70 |
-| `moonshotai/kimi-k2.6` | $0.950 <br/> cache: $0.160 | $4.000 | $0.002475 <br/> cache: $0.002080 | 44 <br/> cache: 52 |
-| `moonshotai/kimi-k2.7-code` | $0.950 <br/> cache: $0.190 | $4.000 | $0.002475 <br/> cache: $0.002095 | 44 <br/> cache: 52 |
-| `google/gemma-4-26b-a4b-it` | $0.100 | $0.300 | $0.000200 | 550 |
+> Last official page update: August 18, 2026
+>
+> Unit: USD per 1M tokens
+>
+> Ranking method: `Combined = Input + Output`
+>
+> Free allocation: 10,000 Neurons per day
+>
+> Free Tokens/day assumes an Input : Output token ratio of `1 : 1.3`.
+>
+> Free-token estimates are calculated directly from Cloudflare's Neurons-per-token rates rather than rounded USD prices.
+>
+> Cached input is excluded from the free-token calculation.
+>
+> Identical models from the same family are merged only when their pricing and relevant notes are identical.
+
+| Rank | Provider | Model | Input | Output | Combined | 10K Neurons ≈ Tokens/day (I:O = 1:1.3) | Notes |
+|---:|---|---|---:|---:|---:|---:|---|
+| 1 | IBM | Granite 4.0 H Micro | $0.017 | $0.112 | **$0.129** | **~1.560M** | — |
+| 2 | Meta | Llama 3.2 1B Instruct | $0.027 | $0.201 | **$0.228** | **~878K** | — |
+| 3 | Mistral | Mistral 7B Instruct v0.1 | $0.110 | $0.190 | **$0.300** | **~708K** | — |
+| 4 | Meta | Llama 3.2 3B Instruct | $0.051 | $0.335 | **$0.386** | **~520K** | — |
+| 5 | Qwen | Qwen3 30B-A3B FP8 | $0.051 | $0.335 | **$0.386** | **~520K** | — |
+| 6 | Meta | Llama 3/3.1 8B Instruct AWQ | $0.123 | $0.266 | **$0.389** | **~539K** | Identical pricing; merged |
+| 7 | Google | Gemma 4 26B-A4B IT | $0.100 | $0.300 | **$0.400** | **~516K** | — |
+| 8 | Meta | Llama 3.1 8B Instruct FP8 Fast | $0.045 | $0.384 | **$0.429** | **~465K** | — |
+| 9 | Meta | Llama 3.1 8B Instruct FP8 | $0.152 | $0.287 | **$0.439** | **~482K** | — |
+| 10 | Z.AI | GLM-4.7 Flash | $0.060 | $0.400 | **$0.460** | **~435K** | — |
+| 11 | OpenAI | GPT-OSS 20B | $0.200 | $0.300 | **$0.500** | **~429K** | — |
+| 12 | Meta | Llama Guard 3 8B | $0.484 | $0.030 | **$0.514** | **~484K** | Safety classifier; not a general-purpose chat LLM |
+| 13 | Meta | Llama 3.2 11B Vision Instruct | $0.049 | $0.676 | **$0.725** | **~273K** | Vision-capable |
+| 14 | Google | Gemma 3 12B IT | $0.345 | $0.556 | **$0.901** | **~237K** | — |
+| 15 | AI Singapore | Gemma SEA-LION v4 27B IT | $0.351 | $0.555 | **$0.906** | **~236K** | — |
+| 16 | Mistral | Mistral Small 3.1 24B Instruct | $0.351 | $0.555 | **$0.906** | **~236K** | — |
+| 17 | OpenAI | GPT-OSS 120B | $0.350 | $0.750 | **$1.100** | **~191K** | — |
+| 18 | Meta | Llama 3/3.1 8B Instruct | $0.282 | $0.827 | **$1.109** | **~187K** | Identical pricing; merged |
+| 19 | Meta | Llama 4 Scout 17B-16E Instruct | $0.270 | $0.850 | **$1.120** | **~184K** | — |
+| 20 | Qwen | QwQ 32B | $0.660 | $1.000 | **$1.660** | **~129K** | — |
+| 21 | Qwen | Qwen2.5 Coder 32B Instruct | $0.660 | $1.000 | **$1.660** | **~129K** | — |
+| 22 | DeepSeek | DeepSeek V4 Flash 0731 | $0.440 | $1.320 | **$1.760** | **~117K** | Cached input $0.014; paid billing method required |
+| 23 | NVIDIA | Nemotron 3 120B-A12B | $0.500 | $1.500 | **$2.000** | **~103K** | — |
+| 24 | Meta | Llama 3.1/3.3 70B Instruct FP8 Fast | $0.293 | $2.253 | **$2.546** | **~78.5K** | Identical pricing; merged |
+| 25 | Moonshot AI | Kimi K2.5 | $0.600 | $3.000 | **$3.600** | **~56.2K** | Cached input $0.100 |
+| 26 | Qwen | Qwen3.8 27B | $0.450 | $3.200 | **$3.650** | **~54.9K** | — |
+| 27 | Moonshot AI | Kimi K2.6 | $0.950 | $4.000 | **$4.950** | **~41.1K** | Cached input $0.160; paid billing method required |
+| 28 | Moonshot AI | Kimi K2.7 Code | $0.950 | $4.000 | **$4.950** | **~41.1K** | Cached input $0.190; paid billing method required |
+| 29 | DeepSeek | DeepSeek V4 Pro 0813 | $1.320 | $3.960 | **$5.280** | **~39.1K** | Cached input $0.044; paid billing method required |
+| 30 | DeepSeek | DeepSeek R1 Distill Qwen 32B | $0.497 | $4.881 | **$5.378** | **~37.0K** | — |
+| 31 | Z.AI | GLM-5.2 | $1.400 | $4.400 | **$5.800** | **~35.5K** | Cached input $0.260; paid billing method required |
+| 32 | Meta | Llama 2 7B Chat FP16 | $0.556 | $6.667 | **$7.223** | **~27.4K** | — |
 
  </details>
 
@@ -624,7 +646,7 @@ Models list </br>
 
 ### Cohere
 > Last web updated: **2026-06-09**</br>
-> Last Check: **2026-08-17** </br>
+> Last Check: **2026-08-22** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -668,7 +690,7 @@ Endpoint: https://api.z.ai/api/paas/v4
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-08-17** </br>
+> Last Check: **2026-08-22** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
@@ -698,7 +720,7 @@ Endpoint: https://api.mistral.ai
 
 ### SambaNova
 
-> Last Check: **2026-08-17**
+> Last Check: **2026-08-22**
 
 https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
