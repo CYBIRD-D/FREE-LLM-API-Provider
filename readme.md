@@ -43,7 +43,7 @@ You may also want to read my other posts:
 
 ## Content/目录
 - [Global Platform](#global-platform)
-  - [★Google/Gemma 3/4](#google-gemini-googlegemma-34)
+  - [★Google/Gemma 3/4](#google-gemini-googlegemma-4)
   - [★Nvidia(40RPM)](#nvidia)
   - [★★Ollama](#ollama)
   - [★Groq](#groq)
@@ -73,10 +73,10 @@ You may also want to read my other posts:
 
 ## Global Platform
 
-### ~~Google Gemini~~ Google/Gemma ~~3~~/4
-~~Community reports that **Gemma 3** is working properly~~. </br>
-https://ai.google.dev/gemini-api/docs/rate-limits#free-tier 
-Gemma3 had been removed from api.
+### ~~Google Gemini~~ Google/Gemma 4
+
+https://ai.google.dev/gemini-api/docs/rate-limits#free-tier </br>
+**Gemma3** had been removed from api.
 > Last updated: **2026-08-17 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
