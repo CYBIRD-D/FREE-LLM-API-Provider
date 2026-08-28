@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-08-22**
+> Last updated: **2026-08-29**
 
 
 This is a list of free llm providers and their rate usage limits </br>
@@ -429,50 +429,46 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-08-22** </br>
+> Last Check: **2026-08-29** </br>
 
 
 https://ollama.com/cloud </br>
 https://ollama.com/search?c=cloud
 
-**Models**：So far Ollama **cloud** support:
-- gpt-oss: 20b/120b
-- **cogito-2.1 671b**
-- **minimax-m2/2.1/2.5/2.7/3**
-- **kimi**
-    - k2: 1t/thinking
-    - kimi-k2.5
-    - kimi-k2.6/k2.7-code
-    - kimi-k3
-- Nvidia-nemotron
-  - nemotron-3-nano:30b
-  - nemotron-3-super:120b
-  - nemotron-3-ultra (550b A55B)
-- rnj-1:8b
-- **Deepseek**
-  - deepseek-v3.1/3.2: 671b
-  - deepseek-v4-flash/v4-flash-0731 （284B A13B）
-  - deepseek-v4-pro (1.6T A49B)
-- **GLM**
-  - GLM-4.6
-  - GLM-4.7
-  - GLM-5/5.1/5.2
-- **Qwen**
-  - qwen3-vl: 235b/instruct
-  - qwen3-coder: 480b
-  - qwen3-next:80b(A3B)
-  - qwen3-coder-next
-  - qwen3.5-397B-A17B
-- **Google**
-  - gemini-3-pro-preview
-  - gemini-3-flash-preview
-  - Gemma 3 4b/12b/27b
-  - Gemma 4 31b （+MTP）
-- Mistral
-  - ministral-3 3b/8b/14b
-  - mistral-large-3 675b
-  - devstral-small-2:24b
-  - devstral-2:123b
+> So far Ollama **cloud** support:
+
+- OpenAI — GPT-OSS
+- MiniMax — M2 / M3
+- Moonshot AI — Kimi K2-K3
+- NVIDIA — Nemotron 3
+- DeepSeek — DeepSeek V4
+- Z.ai — GLM 5
+- Alibaba Qwen — Qwen 3.5
+- Google — Gemma 4
+- Mistral AI — Mistral Large 3 / Devstral Small 2
+
+<details>
+<summary>
+
+#### Model list
+
+</summary>
+
+| Company | Models |
+|---|---|
+| **OpenAI—GPT-OSS** | GPT-OSS 20B<br>GPT-OSS 120B |
+| **MiniMax—M2 / M3** | MiniMax M2.7（229B/A10B）<br>MiniMax M3 （428B/A22B） |
+| **Moonshot AI—Kimi K2 / K3** | Kimi K2.6（1T/A32B）<br>Kimi K2.7 Code（1T/A32B）<br>Kimi K3（2.8T/A104B） |
+| **NVIDIA—Nemotron 3** | Nemotron 3 Nano（30B/A3B）<br>Nemotron 3 Super（120B/A12B）<br>Nemotron 3 Ultra（550B/A55B） |
+| **DeepSeek—DeepSeek V4** | DeepSeek V4 Flash（284B/A13B）<br>DeepSeek V4 Flash 0731（284B/A13B）<br>DeepSeek V4 Pro（1.6T/A49B）<br>DeepSeek V4 Pro 0813（1.6T/A49B） |
+| **Z.ai—GLM 5** | GLM-5.1（754B/A40B）<br>GLM-5.2（753B/A40B）<br>GLM-5.3-Flash（320B/A18B） |
+| **Alibaba Qwen—Qwen 3.5** | Qwen3.5-397B-A17B |
+| **Google—Gemma 4** | Gemma 4 31B |
+| **Mistral AI—Mistral Large 3 / Devstral Small 2** | Mistral Large 3 675B <br>Devstral Small 2 24B  |
+
+</details>
+
+
  
 > "Ollama's cloud includes hourly and daily limits to avoid capacity issues. Usage-based pricing will soon be available to consume models in a metered fashion. "</br>
 > No exact rate limit number.
@@ -484,31 +480,34 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last Check: **2026-08-22**
+> Last Check: **2026-08-29**
 
 
 https://console.groq.com/docs/rate-limits</br>
 Endpoint: https://api.groq.com/openai
 
+<details>
+<summary>
 
+#### Model list
 
-| Model ID                                   | Request/Minute | Request/Day | Token/Minuite  | Token/Day   |
-|-------------------------------------------|-----|-------|------|-------|
-| allam-2-7b                                | 30  | 7K    | 6K   | 500K  | 
-| groq/compound & groq/compound-mini        | 30  | 250   | 70K  | -     | 
-| llama-3.1-8b-instant                      | 30  | 14.4K | 6K   | 500K  |
-| llama-3.3-70b-versatile                   | 30  | 1K    | 12K  | 100K  | 
-| meta-llama/llama-4-maverick-17b-128e-instruct | 30  | 1K    | 6K   | 500K  | 
-| meta-llama/llama-4-scout-17b-16e-instruct | 30  | 1K    | 30K  | 500K  |
-| ~~moonshotai/kimi-k2-instruct </br> moonshotai/kimi-k2-instruct-0905~~ | ~~60~~  | ~~1K~~    | ~~10K~~  | ~~300K~~  |
-| openai/gpt-oss-20b & gpt-oss-120b         | 30  | 1K    | 8K   | 200K  | 
-| qwen/qwen3.6-27b                          | 30  | 1K    | 8K   | 200K  |
+</summary>
 
+| Model | Request/Minute | Request/Day | Token/Minute | Token/Day |
+| --- | ---: | ---: | ---: | ---: |
+| groq/compound | 30 | 250 | 70K | - |
+| groq/compound-mini | 30 | 250 | 70K | - |
+| openai/gpt-oss-120b | 30 | 1K | 8K | 200K |
+| openai/gpt-oss-20b | 30 | 1K | 8K | 200K |
+| qwen/qwen3.6-27b | 30 | 1K | 8K | 200K |
+| qwen/qwen3.8-27b | 30 | 1K | 8K | 2M |
+
+</details>
 
 ---------
 
 ### ~~Celebras~~
-~~> Last Check: **2026-08-17**~~
+~~> Last Check: **2026-08-29**~~
 
 **Unusable rate limit** 5$ per account
 
@@ -518,7 +517,6 @@ Endpoint: https://api.cerebras.ai
 | Model                                | Requests/Minute |   Tokens/Minute | Tokens/Hour | Tokens/Day |
 |--------------------------------------|-----------------|---------------|-------------|------------|
 | gpt-oss-120b                         | 5               |  30k          | 1M          | 1M         |
-| ~~zai-glm-4.7~~                      | 5               |  30k          | 1M          | 1M         |
 | gemma-4-31b                          | 5               |  30k          | 1M          | 1M         |
 
 
@@ -527,7 +525,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-08-22** </br>
+> Last Check: **2026-08-29** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -646,7 +644,7 @@ Models list </br>
 
 ### Cohere
 > Last web updated: **2026-06-09**</br>
-> Last Check: **2026-08-22** </br>
+> Last Check: **2026-08-29** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -674,6 +672,8 @@ Endpoint: https://api.cohere.ai/compatibility
 
 ### Z.ai (GLM-4.5/4.7-Flash)
 
+> Last Check: **2026-08-29** </br>
+
 https://docs.z.ai/guides/overview/pricing </br>
 
 Endpoint: https://api.z.ai/api/paas/v4
@@ -690,7 +690,7 @@ Endpoint: https://api.z.ai/api/paas/v4
 
 ### Github
 > Last web updated: **2025-08-11** </br>
-> Last Check: **2026-08-22** </br>
+> Last Check: **2026-08-29** </br>
 
 https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
 
@@ -720,7 +720,7 @@ Endpoint: https://api.mistral.ai
 
 ### SambaNova
 
-> Last Check: **2026-08-22**
+> Last Check: **2026-08-29**
 
 https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
