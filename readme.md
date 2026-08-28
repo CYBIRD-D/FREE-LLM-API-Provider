@@ -482,6 +482,7 @@ https://ollama.com/search?c=cloud
 ### Groq
 > Last Check: **2026-08-29**
 
+*Current only GPT-OSS 20b/120b & Qwen3.6/3.8-27b
 
 https://console.groq.com/docs/rate-limits</br>
 Endpoint: https://api.groq.com/openai
