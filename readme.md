@@ -466,6 +466,9 @@ https://ollama.com/search?c=cloud
 > **Session usage** reset in 3hours
 
 
+<details>
+<summary> 
+
 #### Model list
 
 </summary>
@@ -485,10 +488,71 @@ https://ollama.com/search?c=cloud
 </details>
 
 
- 
-> "Ollama's cloud includes hourly and daily limits to avoid capacity issues. Usage-based pricing will soon be available to consume models in a metered fashion. "</br>
-> No exact rate limit number.
+<details>
+<summary>
 
+#### Ollama Subscription Plans
+
+</summary>
+
+| Plan | Price | Included Usage Credits | Concurrent Requests | Model Access | Main Features |
+|---|---:|---:|---:|---|---|
+| **Free** | $0 | Starter usage credits | 1 | Starter models by default; add credits to unlock all models | Run models locally; no service fees |
+| **Pro** | $20/month or $200/year | $60/month | 3 | Access to larger Pro models | Everything in Free; multiple models concurrently; Fast Mode (coming soon) |
+| **Max** | $100/month | $300/month | 10 | All Pro access + early access to newest models | Everything in Pro; designed for power users running multiple agents simultaneously |
+| **Team** | $500/month | $1,000/month shared across the team | 10 | Pro-level model access | Unlimited users; centralized billing and administration; priority support; shared projects, skills and instructions (coming soon) |
+| **Enterprise** | Custom pricing | Custom / volume-based | Custom | Configurable model access | Everything in Team; model access controls; user/API-key cost budgets; private Slack support channel; custom security questionnaires |
+
+### Additional Plan Notes
+
+- **Pro annual billing:** $200/year, equivalent to about **$16.67/month**.
+- **Local model usage is unlimited** on your own hardware regardless of plan.
+- All plans, including Free, can purchase **additional usage credits**.
+- Purchased/additional credits can unlock all cloud models even on the Free plan.
+- Included monthly credits are used first, followed by the extra usage balance.
+- **Unused included monthly credits do not roll over.**
+- Pro, Max and Team included usage resets monthly on the subscription anniversary date.
+- Free usage resets monthly from the account signup date.
+- Requests exceeding the concurrency limit are queued until a slot becomes available; requests may be rejected if the queue is full.
+- Team credits and additional usage balances are shared across the organization.
+- Ollama states that prompt and response data is not logged or used for training.
+
+</details>
+
+
+<details>
+<summary>
+
+#### Ollama Model Pricing
+
+</summary>
+
+> Prices are in USD per 1 million tokens.
+> "Input + Output (1:1)" assumes 1M input tokens + 1M output tokens.
+
+| Model | Input | Output | Input + Output (1:1) |
+|---|---:|---:|---:|
+| **deepseek-v4-flash** | $0.44 | $1.32 | **$1.76** |
+| **deepseek-v4-pro** | $1.32 | $3.96 | **$5.28** |
+| **gemma4** | $0.14 | $0.40 | **$0.54** |
+| **glm-5.3** | $1.40 | $4.40 | **$5.80** |
+| **glm-5.3-flash** | $0.15 | $0.50 | **$0.65** |
+| **glm-5.2** | $1.40 | $4.40 | **$5.80** |
+| **glm-5.1** | $1.00 | $3.20 | **$4.20** |
+| **gpt-oss:120b** | $0.15 | $0.60 | **$0.75** |
+| **gpt-oss:20b** | $0.07 | $0.30 | **$0.37** |
+| **kimi-k3** | $3.00 | $15.00 | **$18.00** |
+| **kimi-k2.7-code** | $0.95 | $4.00 | **$4.95** |
+| **kimi-k2.6** | $0.95 | $4.00 | **$4.95** |
+| **minimax-m3** | $0.60 | $2.40 | **$3.00** |
+| **minimax-m2.7** | $0.30 | $1.20 | **$1.50** |
+| **mistral-large-3** | $0.50 | $1.50 | **$2.00** |
+| **nemotron-3-nano** | $0.06 | $0.24 | **$0.30** |
+| **nemotron-3-super** | $0.015 | $0.60 | **$0.615** |
+| **nemotron-3-ultra** | $0.10 | $3.00 | **$3.10** |
+| **qwen3.5:397b** | $0.60 | $3.60 | **$4.20** |
+
+</details>
 
 
 </br>
@@ -502,6 +566,7 @@ https://ollama.com/search?c=cloud
 
 https://console.groq.com/docs/rate-limits</br>
 Endpoint: https://api.groq.com/openai
+
 
 <details>
 <summary>
