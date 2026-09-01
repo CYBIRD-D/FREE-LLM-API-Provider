@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-08-29**
+> Last updated: **2026-09-02**
 
 
 This is a list of free llm providers and their rate usage limits </br>
@@ -429,26 +429,42 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-08-29** </br>
+> Last Check: **2026-09-02** </br>
 
 
 https://ollama.com/cloud </br>
 https://ollama.com/search?c=cloud
 
-> So far Ollama **cloud** support:
 
-- OpenAI — GPT-OSS
-- MiniMax — M2 / M3
-- Moonshot AI — Kimi K2-K3
-- NVIDIA — Nemotron 3
-- DeepSeek — DeepSeek V4
-- Z.ai — GLM 5
-- Alibaba Qwen — Qwen 3.5
-- Google — Gemma 4
-- Mistral AI — Mistral Large 3 / Devstral Small 2
+#### Ollama Models
 
 <details>
-<summary>
+<summary> 
+  
+#### All Cloud Models (expand to view)
+
+</summary>
+
+  - OpenAI — GPT-OSS
+  - MiniMax — M2 / M3
+  - Moonshot AI — Kimi K2-K3
+  - NVIDIA — Nemotron 3
+  - DeepSeek — DeepSeek V4
+  - Z.ai — GLM 5
+  - Alibaba Qwen — Qwen 3.5
+  - Google — Gemma 4
+  - Mistral AI — Mistral Large 3 / Devstral Small 2
+
+</details>
+
+> **Free model list**
+
+- Gemma4: 31b
+- gpt-oss 20b/120b
+- nemotron-3-nano/super/ultra
+
+> **Session usage** reset in 3hours
+
 
 #### Model list
 
