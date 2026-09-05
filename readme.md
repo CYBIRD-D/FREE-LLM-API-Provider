@@ -77,7 +77,7 @@ You may also want to read my other posts:
 
 https://ai.google.dev/gemini-api/docs/rate-limits#free-tier </br>
 **Gemma3** had been removed from api.
-> Last updated: **2026-08-17 UTC** </br>
+> Last updated: **2026-09-05 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
 > **RPD** Requests per day</br>
@@ -90,7 +90,7 @@ Endpoint: https://generativelanguage.googleapis.com
 
 | Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
 |---------------------------|---------------------------|--------------------------|-----------------|
-| Gemini 2.5/3/3.5/3.6/3.7 Flash    | 5             | 250k                     | 20              |
+| Gemini 2.5~3.8   Flash    | 5             | 250k                     | 20              |
 | Gemini 2.5 Flash Lite     | 10                        | 250k                     | 20              |
 | Gemini 3.1/3.5 Flash Lite     | 15                        | 250k                     | 500             |
 | **Gemma 4 26B/31B**           | **30**                        | **16k**             | **14.4K**            |
@@ -429,7 +429,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-09-02** </br>
+> Last Check: **2026-09-05** </br>
 
 
 https://ollama.com/cloud </br>
@@ -969,76 +969,84 @@ https://xinghuo.xfyun.cn/sparkapi?scr=price
 
 ## LLM PRICE LIST
 
-> **LLM API Pricing — August 27, 2026**
+> LLM API Pricing — September 5, 2026
 
-> Scope: Text/reasoning/code models released or launched within the past six months that remain available and have not been announced for imminent retirement.
->
 > Unit: USD per 1M tokens
 >
-> Ranking method: `Combined = Input + Output`
+> Primary ranking: `Combined = Input + Output`
 >
 > Combined represents the cost of 1M uncached input tokens + 1M output tokens.
 >
-> Sorted from lowest to highest Combined price.
+> Tie-breaker: when Combined prices are identical, the model with the lower directly comparable Cached Input price is ranked first.
 >
-> Standard real-time API pricing is used. Temporary promotional prices and normal/list prices are shown separately.
+> Standard real-time API pricing is used.
+>
+> Temporary promotional prices and normal/list prices are shown separately.
 >
 > Batch, Flex, Priority/Fast and other alternative processing modes are excluded.
 >
-> For context-tiered models, the lowest/default context tier is used.
+> For context-tiered models, the lowest/default context tier is used for ranking.
 >
-> Same-family models are merged when pricing and relevant pricing conditions are identical.
+> Same-family models are merged only when their main pricing and relevant pricing conditions are sufficiently equivalent.
+>
+> Qwen prices use Alibaba Cloud Model Studio Singapore / International pricing.
 
-| Rank | Provider | Model | Input | Output | Combined | Notes |
-|---:|---|---|---:|---:|---:|---|
-| 1 | Meta / OpenRouter | Muse Spark 1.2 Contributor | $0.10 | $0.20 | **$0.30** | 1M context; prompts/outputs may be used to improve Meta products |
-| 2 | GLM / Z.AI | GLM-5.3-Flash — Promo | $0.075 | $0.25 | **$0.325** | 50% off until Sep 9, 2026 24:00 UTC+8; list $0.15 / $0.50 |
-| 3 | Qwen | Qwen3.5 Flash | $0.10 | $0.40 | **$0.50** | Alibaba Cloud International |
-| 4 | Qwen | Qwen3.8-Flash | $0.16 | $0.47 | **$0.63** | QwenCloud standard price; 1M context |
-| 5 | GLM / Z.AI | GLM-5.3-Flash — List Price | $0.15 | $0.50 | **$0.65** | Normal price; currently discounted by 50% |
-| 6 | Mistral | Mistral Small 4 | $0.15 | $0.60 | **$0.75** | 256K context |
-| 7 | DeepSeek | DeepSeek V4 Flash — Off-peak | $0.22 | $0.66 | **$0.88** | Off-peak pricing |
-| 8 | OpenAI | GPT-5.6 Luna | $0.20 | $1.20 | **$1.40** | >272K input: $0.40 / $1.80 |
-| 9 | OpenAI | GPT-5.4 nano | $0.20 | $1.25 | **$1.45** | — |
-| 10 | Qwen | Qwen3.7 Plus — Promo | $0.32 | $1.28 | **$1.60** | International alias; 20% off; list $0.40 / $1.60 |
-| 11 | Google | Gemini 3.1 Flash-Lite | $0.25 | $1.50 | **$1.75** | — |
-| 12 | Qwen | Qwen3.6 Flash | $0.25 | $1.50 | **$1.75** | ≤256K; Alibaba Cloud International |
-| 13 | DeepSeek | DeepSeek V4 Flash — Peak | $0.44 | $1.32 | **$1.76** | Peak pricing |
-| 14 | Qwen | Qwen3.7 Plus — List Price | $0.40 | $1.60 | **$2.00** | Normal International price; current alias receives 20% discount |
-| 15 | DeepSeek | DeepSeek V4 Pro — Off-peak | $0.66 | $1.98 | **$2.64** | Off-peak pricing |
-| 16 | Google | Gemini 3.5 Flash-Lite | $0.30 | $2.50 | **$2.80** | — |
-| 17 | Qwen | Qwen3.5 Plus | $0.40 | $2.40 | **$2.80** | ≤256K |
-| 18 | xAI | Grok Build 0.1 | $1.00 | $2.00 | **$3.00** | <200K; ≥200K: $2 / $4 |
-| 19 | Qwen | Qwen3.6 Plus | $0.50 | $3.00 | **$3.50** | ≤256K |
-| 20 | xAI | Grok 4.20/4.3 | $1.25 | $2.50 | **$3.75** | <200K; ≥200K: $2.50 / $5 |
-| 21 | GLM / Z.AI | GLM-5 | $1.00 | $3.20 | **$4.20** | — |
-| 22 | Google | Gemini 3.6/3.7 Flash — Promo | $0.75 | $3.75 | **$4.50** | Introductory price through Dec 31, 2026 |
-| 23 | Kimi | Kimi K2.6 / K2.7 Code | $0.95 | $4.00 | **$4.95** | 256K-class context |
-| 24 | Qwen | Qwen3.7 Max — Promo | $1.25 | $3.75 | **$5.00** | International alias; 50% off; list $2.50 / $7.50 |
-| 25 | GLM / Z.AI | GLM-5-Turbo | $1.20 | $4.00 | **$5.20** | — |
-| 26 | OpenAI | GPT-5.4 mini | $0.75 | $4.50 | **$5.25** | — |
-| 27 | DeepSeek | DeepSeek V4 Pro — Peak | $1.32 | $3.96 | **$5.28** | Peak pricing |
-| 28 | Meta / OpenRouter | Muse Spark 1.2 | $1.25 | $4.25 | **$5.50** | 1M context; standard data policy |
-| 29 | GLM / Z.AI | GLM-5.1 | $1.40 | $4.40 | **$5.80** | — |
-| 30 | GLM / Z.AI | GLM-5.2/5.3 | $1.40 | $4.40 | **$5.80** | 1M context; cached input $0.26 |
-| 31 | xAI | Grok 4.5/4.6 | $2.00 | $6.00 | **$8.00** | <200K; ≥200K: $4 / $12 |
-| 32 | Google | Gemini 3.6/3.7 Flash — List Price | $1.50 | $7.50 | **$9.00** | Standard price from Jan 1, 2027 |
-| 33 | Mistral | Mistral Medium 3.5 | $1.50 | $7.50 | **$9.00** | 256K context |
-| 34 | Kimi | Kimi K2.7 Code Highspeed | $1.90 | $8.00 | **$9.90** | 256K-class context |
-| 35 | Qwen | Qwen3.7 Max — List Price | $2.50 | $7.50 | **$10.00** | Normal International price; current alias receives 50% discount |
-| 36 | Google | Gemini 3.5 Flash | $1.50 | $9.00 | **$10.50** | Thinking tokens billed as output |
-| 37 | Anthropic | Claude Sonnet 5 | $2.00 | $10.00 | **$12.00** | Standard price |
-| 38 | OpenAI | GPT-5.6 Terra | $2.00 | $12.00 | **$14.00** | >272K input: $4 / $18 |
-| 39 | Google | Gemini 3.1 Pro Preview | $2.00 | $12.00 | **$14.00** | ≤200K; >200K: $4 / $18 |
-| 40 | OpenAI | GPT-5.4 | $2.50 | $15.00 | **$17.50** | >272K long-context surcharge |
-| 41 | Anthropic | Claude Sonnet 4.6 | $3.00 | $15.00 | **$18.00** | — |
-| 42 | Kimi | Kimi K3 | $3.00 | $15.00 | **$18.00** | 1M context |
-| 43 | OpenAI | GPT-5.6 Sol — Promo | $4.00 | $20.00 | **$24.00** | Promotional price available at least through Nov 21, 2026; list $5 / $30 |
-| 44 | Anthropic | Claude Opus 4.7/4.8/5 | $5.00 | $25.00 | **$30.00** | — |
-| 45 | OpenAI | GPT-5.5 | $5.00 | $30.00 | **$35.00** | — |
-| 46 | OpenAI | GPT-5.6 Sol — List Price | $5.00 | $30.00 | **$35.00** | Original/normal price; currently promotional $4 / $20 |
-| 47 | Anthropic | Claude Fable 5 | $10.00 | $50.00 | **$60.00** | — |
-| 48 | OpenAI | GPT-5.4/5.5 Pro | $30.00 | $180.00 | **$210.00** | Maximum-compute tier |
+| Rank | Provider | Model | Input | Cached Input | Output | Combined | Notes |
+|---:|---|---|---:|---:|---:|---:|---|
+| 1 | Qwen | Qwen3.7 Flash | $0.030 | — | $0.130 | **$0.160** | ≤32K; 32K–256K: $0.10/$0.40; 256K–1M: $0.20/$0.80 |
+| 2 | Meta / OpenRouter | Muse Spark 1.2/1.3 Contributor | $0.10 | $0.002 | $0.20 | **$0.30** | 1M context; prompts/outputs may be used to improve Meta products |
+| 3 | GLM / Z.AI | GLM-5.3-Flash — Promo | $0.075 | $0.015 | $0.25 | **$0.325** | 50% off until Sep 9, 2026 24:00 UTC+8 |
+| 4 | Qwen | Qwen3.5 Flash | $0.10 | — | $0.40 | **$0.50** | International |
+| 5 | Qwen | Qwen3.8 Flash | $0.15 | — | $0.47 | **$0.62** | International; 1M context |
+| 6 | GLM / Z.AI | GLM-5.3-Flash — List Price | $0.15 | $0.03 | $0.50 | **$0.65** | Normal price; currently 50% off |
+| 7 | Mistral | Mistral Small 4 | $0.15 | $0.015 | $0.60 | **$0.75** | 256K context |
+| 8 | DeepSeek | DeepSeek V4 Flash — Off-peak | $0.22 | $0.007 | $0.66 | **$0.88** | Off-peak pricing |
+| 9 | OpenAI | GPT-5.6 Luna | $0.20 | $0.02 | $1.20 | **$1.40** | >272K: $0.40 input / $1.80 output |
+| 10 | Meta / OpenRouter | Muse Glimmer 30B | $0.30 | $0.04 | $1.10 | **$1.40** | 131K context; cheapest current standard OpenRouter route |
+| 11 | OpenAI | GPT-5.4 nano | $0.20 | $0.02 | $1.25 | **$1.45** | — |
+| 12 | Qwen | Qwen3.7 Plus — Promo | $0.32 | — | $1.28 | **$1.60** | International alias; 20% off; list $0.40/$1.60 |
+| 13 | Google | Gemini 3.1 Flash-Lite | $0.25 | $0.025 | $1.50 | **$1.75** | — |
+| 14 | Qwen | Qwen3.6 Flash | $0.25 | — | $1.50 | **$1.75** | ≤256K; International |
+| 15 | DeepSeek | DeepSeek V4 Flash — Peak | $0.44 | $0.014 | $1.32 | **$1.76** | Peak pricing |
+| 16 | Qwen | Qwen3.7 Plus — List Price | $0.40 | — | $1.60 | **$2.00** | Normal International price |
+| 17 | DeepSeek | DeepSeek V4 Pro — Off-peak | $0.66 | $0.022 | $1.98 | **$2.64** | Off-peak pricing |
+| 18 | Google | Gemini 3.5 Flash-Lite | $0.30 | $0.03 | $2.50 | **$2.80** | — |
+| 19 | Qwen | Qwen3.5 Plus | $0.40 | — | $2.40 | **$2.80** | ≤256K; International |
+| 20 | xAI | Grok Build 0.1 | $1.00 | $0.20 | $2.00 | **$3.00** | <200K; ≥200K: $2/$4 |
+| 21 | Qwen | Qwen3.6 Plus | $0.50 | — | $3.00 | **$3.50** | ≤256K; International |
+| 22 | xAI | Grok 4.20/4.3 | $1.25 | $0.20 | $2.50 | **$3.75** | <200K; ≥200K: $2.50/$5 |
+| 23 | GLM / Z.AI | GLM-5 | $1.00 | $0.20 | $3.20 | **$4.20** | — |
+| 24 | Google | Gemini 3.6/3.7/3.8 Flash — Promo | $0.75 | $0.075 | $3.75 | **$4.50** | Introductory price through Dec 31, 2026 |
+| 25 | Kimi | Kimi K2.6 | $0.95 | $0.16 | $4.00 | **$4.95** | ~262K context |
+| 26 | Kimi | Kimi K2.7 Code | $0.95 | $0.19 | $4.00 | **$4.95** | ~262K context |
+| 27 | GLM / Z.AI | GLM-5-Turbo | $1.20 | $0.24 | $4.00 | **$5.20** | 200K context |
+| 28 | OpenAI | GPT-5.4 mini | $0.75 | $0.075 | $4.50 | **$5.25** | — |
+| 29 | DeepSeek | DeepSeek V4 Pro — Peak | $1.32 | $0.044 | $3.96 | **$5.28** | Peak pricing |
+| 30 | Meta / OpenRouter | Muse Spark 1.1/1.2/1.3 | $1.25 | $0.15 | $4.25 | **$5.50** | 1M context; standard data policy |
+| 31 | GLM / Z.AI | GLM-5.1 | $1.40 | $0.26 | $4.40 | **$5.80** | 200K context |
+| 32 | GLM / Z.AI | GLM-5.2/5.3 | $1.40 | $0.26 | $4.40 | **$5.80** | 1M context |
+| 33 | Qwen | Qwen3.8 Max | $2.00 | — | $6.00 | **$8.00** | International; 1M context |
+| 34 | xAI | Grok 4.5/4.6 | $2.00 | $0.30 / $0.50 | $6.00 | **$8.00** |  ≥200K: $4/$12 |
+| 35 | Google | Gemini 3.6/3.7/3.8 Flash — List Price | $1.50 | $0.15 | $7.50 | **$9.00** | Standard price from Jan 1, 2027 |
+| 36 | Mistral | Mistral Medium 3.5 | $1.50 | $0.15 | $7.50 | **$9.00** | 256K context |
+| 37 | Kimi | Kimi K2.7 Code Highspeed | $1.90 | $0.38 | $8.00 | **$9.90** | ~262K context |
+| 38 | Qwen | Qwen3.7 Max | $2.50 | — | $7.50 | **$10.00** | International; 1M context |
+| 39 | Google | Gemini 3.5 Flash | $1.50 | $0.15 | $9.00 | **$10.50** | Thinking tokens billed as output |
+| 40 | Anthropic | Claude Sonnet 5 | $2.00 | $0.20 | $10.00 | **$12.00** | Standard price |
+| 41 | OpenAI | GPT-5.6 Terra | $2.00 | $0.20 | $12.00 | **$14.00** | >272K: $4 input / $18 output |
+| 42 | Google | Gemini 3.1 Pro Preview | $2.00 | $0.20 | $12.00 | **$14.00** | ≤200K; >200K: $4/$18 |
+| 43 | OpenAI | GPT-5.4 | $2.50 | $0.25 | $15.00 | **$17.50** | >272K long-context surcharge |
+| 44 | Anthropic | Claude Sonnet 4.6 | $3.00 | $0.30 | $15.00 | **$18.00** | — |
+| 45 | Kimi | Kimi K3 | $3.00 | $0.30 | $15.00 | **$18.00** | 1M context |
+| 46 | OpenAI | GPT-5.6 Sol — Promo | $4.00 | $0.40 | $20.00 | **$24.00** | Promo available at least through Nov 21, 2026; list $5/$30 |
+| 47 | Anthropic | Claude Opus 4.7/4.8/5 | $5.00 | $0.50 | $25.00 | **$30.00** | — |
+| 48 | OpenAI | GPT-5.5 | $5.00 | $0.50 | $30.00 | **$35.00** | — |
+| 49 | OpenAI | GPT-5.6 Sol — List Price | $5.00 | $0.50 | $30.00 | **$35.00** | Original/list price; currently $4/$20 promo |
+| 50 | Anthropic | Claude Fable 5.1 | $10.00 | **$0.25** | $50.00 | **$60.00** | 1M context; cache read is 75% cheaper than Fable 5 |
+| 51 | Anthropic | Claude Fable 5 | $10.00 | $1.00 | $50.00 | **$60.00** | — |
+| 52 | OpenAI | GPT-6 Astra | $10.00 | $1.00 | $50.00 | **$60.00** | 1.05M context; >272K: $20 input / $75 output |
+| 53 | OpenAI | GPT-5.4/5.5 Pro | $30.00 | — | $180.00 | **$210.00** | Maximum-compute tier |
+
 
 > DeepSeek introduced Peak / Off-peak pricing on August 16, 2026.
 >
