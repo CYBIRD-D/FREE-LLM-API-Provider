@@ -429,7 +429,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-09-05** </br>
+> Last Check: **2026-09-15** </br>
 
 
 https://ollama.com/cloud </br>
@@ -457,7 +457,7 @@ https://ollama.com/search?c=cloud
 
 </details>
 
-> **Free model list**
+> **Free** model list
 
 - Gemma4: 31b
 - gpt-oss 20b/120b
@@ -479,7 +479,7 @@ https://ollama.com/search?c=cloud
 | **MiniMax—M2 / M3** | MiniMax M2.7（229B/A10B）<br>MiniMax M3 （428B/A22B） |
 | **Moonshot AI—Kimi K2 / K3** | Kimi K2.6（1T/A32B）<br>Kimi K2.7 Code（1T/A32B）<br>Kimi K3（2.8T/A104B） |
 | **NVIDIA—Nemotron 3** | Nemotron 3 Nano（30B/A3B）<br>Nemotron 3 Super（120B/A12B）<br>Nemotron 3 Ultra（550B/A55B） |
-| **DeepSeek—DeepSeek V4** | DeepSeek V4 Flash（284B/A13B）<br>DeepSeek V4 Flash 0731（284B/A13B）<br>DeepSeek V4 Pro（1.6T/A49B）<br>DeepSeek V4 Pro 0813（1.6T/A49B） |
+| **DeepSeek—DeepSeek V4** | DeepSeek V4 Flash（284B/A13B）<br>DeepSeek V4 Flash 0731（284B/A13B）<br>DeepSeek V4 Pro（1.6T/A49B）<br>DeepSeek V4 Pro 0813（1.6T/A49B）</br> DeepSeek v4.1 Flash(552B) |
 | **Z.ai—GLM 5** | GLM-5.1（754B/A40B）<br>GLM-5.2（753B/A40B）<br>GLM-5.3-Flash（320B/A18B） |
 | **Alibaba Qwen—Qwen 3.5** | Qwen3.5-397B-A17B |
 | **Google—Gemma 4** | Gemma 4 31B |
@@ -530,9 +530,10 @@ https://ollama.com/search?c=cloud
 > Prices are in USD per 1 million tokens.
 > "Input + Output (1:1)" assumes 1M input tokens + 1M output tokens.
 
-| Model | Input | Output | Input + Output (1:1) |
-|---|---:|---:|---:|
-| **deepseek-v4-flash** | $0.44 | $1.32 | **$1.76** |
+| Model | Input | Output | Input + Output (1:1) | Note |
+|---|---:|---:|---:|---:|
+| **deepseek-v4.1-flash** | $0.15 | $0.60 | **$0.75** | unpeak |
+| **deepseek-v4-flash** | $0.44 | $1.32 | **$1.76** | peak |
 | **deepseek-v4-pro** | $1.32 | $3.96 | **$5.28** |
 | **gemma4** | $0.14 | $0.40 | **$0.54** |
 | **glm-5.3** | $1.40 | $4.40 | **$5.80** |
@@ -560,9 +561,9 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last Check: **2026-08-29**
+> Last Check: **2026-09-15**
 
-*Current only GPT-OSS 20b/120b & Qwen3.6/3.8-27b
+*Current only GPT-OSS 20b/120b & Qwen3.8-27b
 
 https://console.groq.com/docs/rate-limits</br>
 Endpoint: https://api.groq.com/openai
@@ -581,7 +582,6 @@ Endpoint: https://api.groq.com/openai
 | groq/compound-mini | 30 | 250 | 70K | - |
 | openai/gpt-oss-120b | 30 | 1K | 8K | 200K |
 | openai/gpt-oss-20b | 30 | 1K | 8K | 200K |
-| qwen/qwen3.6-27b | 30 | 1K | 8K | 200K |
 | qwen/qwen3.8-27b | 30 | 1K | 8K | 2M |
 
 </details>
@@ -607,7 +607,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-08-29** </br>
+> Last Check: **2026-09-15** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
