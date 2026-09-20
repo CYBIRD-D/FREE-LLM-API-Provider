@@ -67,6 +67,8 @@ You may also want to read my other posts:
   - [心流](#心流)
   - [StreamLake 快手万擎Vanchin](#StreamLake-快手万擎Vanchin)
   - [Spark 讯飞星火](#spark-讯飞星火)
+- [Third-party Gateway/第三方网关](#third-party-gateway第三方网关)
+  - [onomeo (small quota, use with care)](#onomeo-small-quota-use-with-care)
 - [LLM PRICE LIST](#llm-price-list)
 
 -----------
@@ -964,6 +966,81 @@ Spark-lite free </br>
 - 首次开通后，免费包（个人）有200k免费额度（所有模型),有效期为一年</br>
 https://www.xfyun.cn/doc/spark/HTTP调用文档.html   
 https://xinghuo.xfyun.cn/sparkapi?scr=price
+
+----------
+
+## Third-party Gateway/第三方网关
+
+> Not vendor platforms. These are community/personal projects that re-expose other platforms' free tiers behind a single OpenAI-compatible endpoint. </br>
+> Uptime depends on one operator, and the free quota is far smaller than the official platforms listed above. Treat them as a convenience layer, not as a replacement.
+
+### onomeo (small quota, use with care)
+> Last Check: **2026-09-20** </br>
+
+**Disclosure: I operate onomeo. This entry is a self-submission.**
+
+https://onomeo.com </br>
+https://onomeo.com/docs </br>
+https://onomeo.com/models </br>
+https://onomeo.com/free-models </br>
+https://onomeo.com/api/info — public JSON (no key needed): model list, measured average credit cost per call, check-in ladder, rate limits, recent health </br>
+
+Endpoint: https://onomeo.com/v1 (OpenAI-compatible, `/v1/chat/completions`)
+
+- Gateway built by a single developer; it aggregates the **free tiers** of several upstream platforms into one endpoint. No card and no ID verification required.
+- **36 text models** + an `auto` router. The line-up rotates with the upstreams, so `/api/info` is the authoritative list.
+- `POST /v1/messages` (Anthropic format) exists for clients that only speak that protocol, but it **only accepts `my/`-prefixed models, i.e. models served with your own upstream key**. It does **not** run on the site's free credits.
+- No region block is declared. The site is behind Cloudflare; mainland-China direct-connection speed has not been measured.
+
+#### Free quota — counted in characters, not in requests
+
+| Item | Value |
+|---|---|
+| How you get credits | Daily check-in, 7-day ladder: **1200 / 1500 / 1800 / 2200 / 2600 / 3000 / 3500** credits; stays at **3500/day** from day 7, drops back to 1200 if you miss a day |
+| Credit rate | 1 CJK character = **1** credit; 4 other characters = **1** credit; prompt characters + completion characters are both charged |
+| Balance cap | 500,000 credits |
+| Referral | +2000 credits per invited user, up to 20 users |
+
+**What 3500 credits/day actually buys**, using the measured per-call averages published in `/api/info`:
+
+| Model | Calls/day on 3500 credits |
+|---|---:|
+| Qwen3.5-397B-A17B | **~1** |
+| GLM-5.2 | **~4** |
+| DeepSeek V4.1 Flash | **~6** |
+| gpt-oss-120b | ~200 |
+| Gemini 3.1 Flash-Lite | ~200 |
+
+#### Rate limits — all four apply at the same time
+
+| Scope | Limit |
+|---|---|
+| Per API key | 12 requests/minute |
+| Per account | 60 requests/5 hours |
+| Per IP address | 120 requests/5 hours |
+| **Whole site (shared pool)** | **450 requests/5 hours** — at peak hours requests can be refused even when your own quota is untouched |
+
+<details>
+<summary>
+
+#### Model list (36, rotates with upstreams)
+
+</summary>
+
+| Company | Models |
+|---|---|
+| **DeepSeek** | DeepSeek V4 Flash<br>DeepSeek V4.1 Flash<br>DeepSeek-R1-0528-Qwen3-8B |
+| **Z.ai — GLM** | GLM-5.2<br>GLM-4-9B-0414<br>glm-5.3-flash-free |
+| **Alibaba Qwen** | Qwen3.5-397B-A17B<br>Qwen3.8-Flash-Next<br>Qwen3-8B<br>Qwen2.5-7B-Instruct<br>qwen2.5-coder-32b |
+| **Google** | Gemini 3 Flash<br>Gemini 3.1 Flash-Lite |
+| **OpenAI — GPT-OSS** | gpt-oss-120b<br>gpt-oss-20b |
+| **Meta** | Llama 4 Scout 17B |
+| **MiniMax** | MiniMax M2.7 |
+| **Mistral AI** | Codestral<br>Mistral Nemo<br>mistral-nemotron<br>Ministral 8B<br>Ministral 3B |
+| **NVIDIA — Nemotron** | Nemotron 3 Super 120B<br>Nemotron 3.5 Lightning 30B |
+| **Others** | Intern-S2-Preview<br>mimo-v2.5<br>north-mini-code<br>lfm-2.5-2.6b<br>nex-n2.5-pro<br>nex-n2.5-mini<br>hy3-free<br>step-3.7-flash<br>ling-3.0-flash-sante<br>ling-3.0-flash-fin<br>dots-3-note-preview<br>poolside laguna-s-2.1 |
+
+</details>
 
 ----------
 
