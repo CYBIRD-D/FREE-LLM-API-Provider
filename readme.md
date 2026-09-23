@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-09-05**
+> Last updated: **2026-09-23**
 
 
 This is a list of free llm providers and their rate usage limits </br>
@@ -120,8 +120,8 @@ Endpoint: https://integrate.api.nvidia.com
 Rate limits may vary by model and traffic from other users may cause throttling. </br>
 > For dedicated availability, deploy models as a dedicated endpoint with NVIDIA NIM.
 
-- **129** Models list
-  - OpenAI/Google/Meta/Microsoft/NVIDIA/IBM/Databricks/Mistral AI/AI21 Labs/DeepSeek/Moonshot AI/Z-ai/Minimax etc.
+- **55** Models list
+  - OpenAI/Google/Meta/Microsoft/NVIDIA/Mistral AI/DeepSeek/Moonshot AI/Z-ai/Minimax etc.
 <details>
 
 <summary> 
@@ -129,297 +129,94 @@ Rate limits may vary by model and traffic from other users may cause throttling.
   ## Model List 
 </summary>
 
-#### 01-ai
-
-- `01-ai/yi-large`
-
-#### abacusai
-
-- `abacusai/dracarys-llama-3.1-70b-instruct`
-
-#### adept
-
-- `adept/fuyu-8b`
-
-#### ai21labs
-
-- `ai21labs/jamba-1.5-large-instruct`
-
-#### aisingapore
-
-- `aisingapore/sea-lion-7b-instruct`
-
-#### baai
-
-- `baai/bge-m3`
-
-#### bigcode
-
-- `bigcode/starcoder2-15b`
-
-#### bytedance
-
-- `bytedance/seed-oss-36b-instruct`
-
-#### databricks
-
-- `databricks/dbrx-instruct`
-
-<details>
-<summary>
-
-#### deepseek-ai
-
-</summary>
-
-- `deepseek-ai/deepseek-coder-6.7b-instruct`
-- `deepseek-ai/deepseek-v4-flash`
-- `deepseek-ai/deepseek-v4-pro`
-
-</details>
-
-<details>
-<summary>
-
-#### google
-
-</summary>
-
-- `google/codegemma-1.1-7b`
-- `google/codegemma-7b`
-- `google/deplot`
-- `google/diffusiongemma-26b-a4b-it`
-- `google/gemma-2-2b-it`
-- `google/gemma-2b`
-- `google/gemma-3-12b-it`
-- `google/gemma-3-4b-it`
-- `google/gemma-3n-e2b-it`
-- `google/gemma-3n-e4b-it`
-- `google/gemma-4-31b-it`
-- `google/recurrentgemma-2b`
-
-</details>
-
-<details>
-<summary>
-
-#### ibm
-
-</summary>
-
-- `ibm/granite-3.0-3b-a800m-instruct`
-- `ibm/granite-3.0-8b-instruct`
-- `ibm/granite-34b-code-instruct`
-- `ibm/granite-8b-code-instruct`
-
-</details>
-
-<details>
-<summary>
-
-#### meta
-
-</summary>
-
-- `meta/codellama-70b`
-- `meta/llama-3.1-70b-instruct`
-- `meta/llama-3.1-8b-instruct`
-- `meta/llama-3.2-11b-vision-instruct`
-- `meta/llama-3.2-1b-instruct`
-- `meta/llama-3.2-3b-instruct`
-- `meta/llama-3.2-90b-vision-instruct`
-- `meta/llama-3.3-70b-instruct`
-- `meta/llama-4-maverick-17b-128e-instruct`
-- `meta/llama-guard-4-12b`
-- `meta/llama2-70b`
-
-</details>
-
-<details>
-<summary>
-
-#### microsoft
-
-</summary>
-
-- `microsoft/kosmos-2`
-- `microsoft/phi-3-vision-128k-instruct`
-- `microsoft/phi-3.5-moe-instruct`
-- `microsoft/phi-4-mini-instruct`
-- `microsoft/phi-4-multimodal-instruct`
-
-</details>
-
-<details>
-<summary>
-
-#### minimaxai
-
-</summary>
-
-- `minimaxai/minimax-m2.7`
-- `minimaxai/minimax-m3`
-
-</details>
-
-<details>
-<summary>
-
-#### mistralai
-
-</summary>
-
-- `mistralai/codestral-22b-instruct-v0.1`
-- `mistralai/ministral-14b-instruct-2512`
-- `mistralai/mistral-7b-instruct-v0.3`
-- `mistralai/mistral-large`
-- `mistralai/mistral-large-2-instruct`
-- `mistralai/mistral-large-3-675b-instruct-2512`
-- `mistralai/mistral-medium-3.5-128b`
-- `mistralai/mistral-nemotron`
-- `mistralai/mistral-small-4-119b-2603`
-- `mistralai/mixtral-8x22b-v0.1`
-- `mistralai/mixtral-8x7b-instruct-v0.1`
-
-</details>
-
-#### moonshotai
-
-- `moonshotai/kimi-k2.6`
-
-#### nv-mistralai
-
-- `nv-mistralai/mistral-nemo-12b-instruct`
-
-<details>
-<summary>
-
-#### nvidia
-
-</summary>
-
-- `nvidia/ai-synthetic-video-detector`
-- `nvidia/cosmos-reason2-8b`
-- `nvidia/embed-qa-4`
-- `nvidia/gliner-pii`
-- `nvidia/ising-calibration-1-35b-a3b`
-- `nvidia/llama-3.1-nemoguard-8b-content-safety`
-- `nvidia/llama-3.1-nemoguard-8b-topic-control`
-- `nvidia/llama-3.1-nemotron-51b-instruct`
-- `nvidia/llama-3.1-nemotron-70b-instruct`
-- `nvidia/llama-3.1-nemotron-nano-8b-v1`
-- `nvidia/llama-3.1-nemotron-nano-vl-8b-v1`
-- `nvidia/llama-3.1-nemotron-safety-guard-8b-v3`
-- `nvidia/llama-3.1-nemotron-ultra-253b-v1`
-- `nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1`
-- `nvidia/llama-3.2-nv-embedqa-1b-v1`
-- `nvidia/llama-3.3-nemotron-super-49b-v1`
-- `nvidia/llama-3.3-nemotron-super-49b-v1.5`
-- `nvidia/llama-nemotron-embed-1b-v2`
-- `nvidia/llama-nemotron-embed-vl-1b-v2`
-- `nvidia/llama3-chatqa-1.5-70b`
-- `nvidia/mistral-nemo-minitron-8b-8k-instruct`
-- `nvidia/nemoretriever-parse`
-- `nvidia/nemotron-3-content-safety`
-- `nvidia/nemotron-3-nano-30b-a3b`
-- `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`
-- `nvidia/nemotron-3-super-120b-a12b`
-- `nvidia/nemotron-3-ultra-550b-a55b`
-- `nvidia/nemotron-3.5-content-safety`
-- `nvidia/nemotron-4-340b-instruct`
-- `nvidia/nemotron-4-340b-reward`
-- `nvidia/nemotron-content-safety-reasoning-4b`
-- `nvidia/nemotron-mini-4b-instruct`
-- `nvidia/nemotron-nano-12b-v2-vl`
-- `nvidia/nemotron-nano-3-30b-a3b`
-- `nvidia/nemotron-parse`
-- `nvidia/neva-22b`
-- `nvidia/nv-embed-v1`
-- `nvidia/nv-embedcode-7b-v1`
-- `nvidia/nv-embedqa-e5-v5`
-- `nvidia/nv-embedqa-mistral-7b-v2`
-- `nvidia/nvclip`
-- `nvidia/nvidia-nemotron-nano-9b-v2`
-- `nvidia/riva-translate-4b-instruct`
-- `nvidia/riva-translate-4b-instruct-v1.1`
-- `nvidia/vila`
-
-</details>
-
-<details>
-<summary>
-
-#### openai
-
-</summary>
-
-- `openai/gpt-oss-120b`
-- `openai/gpt-oss-20b`
-
-</details>
-
-<details>
-<summary>
-
-#### qwen
-
-</summary>
-
-- `qwen/qwen3-next-80b-a3b-instruct`
-- `qwen/qwen3.5-122b-a10b`
-- `qwen/qwen3.5-397b-a17b`
-
-</details>
-
-#### sarvamai
-
-- `sarvamai/sarvam-m`
-
-#### snowflake
-
-- `snowflake/arctic-embed-l`
-
-<details>
-<summary>
-
-#### stepfun-ai
-
-</summary>
-
-- `stepfun-ai/step-3.5-flash`
-- `stepfun-ai/step-3.7-flash`
-
-</details>
-
-#### stockmark
-
-- `stockmark/stockmark-2-100b-instruct`
-
-#### upstage
-
-- `upstage/solar-10.7b-instruct`
-
-<details>
-<summary>
-
-#### writer
-
-</summary>
-
-- `writer/palmyra-creative-122b`
-- `writer/palmyra-fin-70b-32k`
-- `writer/palmyra-med-70b`
-- `writer/palmyra-med-70b-32k`
-
-</details>
-
-#### z-ai
-
-- `z-ai/glm-5.2`
-
-#### zyphra
-
-- `zyphra/zamba2-7b-instruct`
+#### DeepSeek
+deepseek-ai/deepseek-v4-flash  
+deepseek-ai/deepseek-v4-flash-0731  
+deepseek-ai/deepseek-v4-pro  
+
+#### Google
+google/codegemma-7b  
+google/gemma-7b  
+
+#### Meta
+meta/llama2-70b  
+meta/llama-3.1-8b-instruct  
+meta/llama-3.1-70b-instruct  
+meta/llama-3.2-1b-instruct  
+meta/llama-3.2-3b-instruct  
+meta/llama-3.3-70b-instruct  
+
+#### Microsoft
+microsoft/phi-4-mini-instruct  
+microsoft/phi-4-mini-flash-reasoning  
+
+#### MiniMax
+minimaxai/minimax-m2.5  
+minimaxai/minimax-m2.7  
+
+#### Mistral
+mistralai/mistral-nemotron  
+mistralai/mixtral-8x7b-instruct  
+mistralai/mixtral-8x22b-instruct  
+
+#### Moonshot / Kimi
+moonshotai/kimi-k2-instruct  
+moonshotai/kimi-k2-thinking  
+moonshotai/kimi-k3  
+
+#### NVIDIA
+nvidia/gliner-pii  
+nvidia/llama-3.1-nemoguard-8b-content-safety  
+nvidia/llama-3.1-nemoguard-8b-topic-control  
+nvidia/llama-3.1-nemotron-safety-guard-8b-v3  
+nvidia/llama-3.3-nemotron-super-49b-v1  
+nvidia/llama-3.3-nemotron-super-49b-v1.5  
+nvidia/llama-3.1-nemotron-ultra-253b-v1  
+nvidia/nemotron-3-ultra-550b-a55b  
+nvidia/nemotron-3.5-lightning-30b-a3b  
+nvidia/nemoguard-jailbreak-detect  
+nvidia/nemotron-3-nano-30b-a3b  
+nvidia/nemotron-3-super-120b-a12b  
+nvidia/nemotron-content-safety-reasoning-4b  
+nvidia/nvidia-nemotron-nano-9b-v2  
+nvidia/riva-translate-4b-instruct-v1.1  
+nvidia/riva-translate-4b-instruct-v2  
+nvidia/usdcode  
+
+#### OpenAI
+openai/gpt-oss-20b  
+openai/gpt-oss-120b  
+
+#### Poolside
+poolside/laguna-xs-2-1  
+
+#### Qwen
+qwen/qwen2.5-coder-32b-instruct  
+qwen/qwen3-next-80b-a3b-instruct  
+qwen/qwen3-next-80b-a3b-thinking  
+qwen/qwq-32b  
+
+#### Sarvam AI
+sarvamai/sarvam-m  
+
+#### StepFun
+stepfun-ai/step-3.5-flash  
+
+#### Stockmark
+stockmark/stockmark-2-100b-instruct  
+
+#### Thinking Machines
+thinking-machines/inkling  
+
+#### Upstage
+upstage/solar-10.7b-instruct  
+
+#### Z.ai / GLM
+z-ai/glm4.7  
+z-ai/glm5.1  
+z-ai/glm-5.2  
+z-ai/glm-5.3  
+z-ai/glm-5.3-flash  
 
 
 </details>
