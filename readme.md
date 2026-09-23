@@ -52,7 +52,7 @@ You may also want to read my other posts:
   - [Cloudflare](#cloudflare)
   - [Cohere](#cohere)
   - [★Z.ai (GLM-4.5/4.7-Flash)](#zai-glm-4547-flash)
-  - [GitHub Models](#github)
+  - [~~GitHub Models~~](#github)
   - [★Mistral](#mistral)
   - [SambaNova](#sambanova)
   - [AionLabs](#aionlabs)
@@ -77,7 +77,7 @@ You may also want to read my other posts:
 
 https://ai.google.dev/gemini-api/docs/rate-limits#free-tier </br>
 **Gemma3** had been removed from api.
-> Last updated: **2026-09-05 UTC** </br>
+> Last updated: **2026-09-23 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
 > **RPD** Requests per day</br>
@@ -110,7 +110,7 @@ Endpoint: https://generativelanguage.googleapis.com
 -------
 
 ### Nvidia
-> Last updated: **2026-07-03** </br>
+> Last updated: **2026-09-23** </br>
 
 https://build.nvidia.com/explore/discover </br>
 Endpoint: https://integrate.api.nvidia.com
@@ -226,7 +226,7 @@ z-ai/glm-5.3-flash
 --------
 
 ### Ollama
-> Last Check: **2026-09-15** </br>
+> Last Check: **2026-09-23** </br>
 
 
 https://ollama.com/cloud </br>
@@ -258,7 +258,7 @@ https://ollama.com/search?c=cloud
 
 - Gemma4: 31b
 - gpt-oss 20b/120b
-- nemotron-3-nano/super/ultra
+- nemotron-3-nano 30B/super 120B-A12B/ultra 550B-A55B
 
 > **Session usage** reset in 3hours
 
@@ -358,7 +358,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last Check: **2026-09-15**
+> Last Check: **2026-09-23**
 
 *Current only GPT-OSS 20b/120b & Qwen3.8-27b
 
@@ -386,7 +386,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### ~~Celebras~~
-~~> Last Check: **2026-08-29**~~
+~~> Last Check: **2026-09-23**~~
 
 **Unusable rate limit** 5$ per account
 
@@ -404,7 +404,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-09-15** </br>
+> Last Check: **2026-09-23** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -427,7 +427,7 @@ Endpoint: https://openrouter.ai/api
 
 ### Cloudflare
 > Last web updated: **2026-08-18** </br>
-> Last Check: **2026-08-22** </br>
+> Last Check: **2026-09-23** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -523,7 +523,7 @@ Models list </br>
 
 ### Cohere
 > Last web updated: **2026-06-09**</br>
-> Last Check: **2026-08-29** </br>
+> Last Check: **2026-09-23** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -567,19 +567,13 @@ Endpoint: https://api.z.ai/api/paas/v4
 -------
 
 
-### Github
-> Last web updated: **2025-08-11** </br>
-> Last Check: **2026-08-29** </br>
+### ~~Github~~
 
-https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
+~~https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits~~
 
-| Tier / Model                                             | Request/Mintute </br> (Copilot Free) | Request/Day </br> (Copilot Free) | Tokens/request </br> (in/out) | Concurrent requests </br> (Copilot Free) |
-|----------------------------------------------------------------|--------------------|--------------------|-----------------------------|------------------------------------|
-| Low tier models                                                | 15                 | 150                | 8000 in / 4000 out          | 5                                  |
-| High tier models                                               | 10                 | 50                 | 8000 in / 4000 out          | 2                                  |
-| DeepSeek-R1 / DeepSeek-R1-0528 / MAI-DS-R1                     | 1                  | 8                  | 4000 in / 4000 out          | 1                                  |
-| xAI Grok-3                                                     | 1                  | 15                 | 4000 in / 4000 out          | 1                                  |
-| xAI Grok-3-Mini                                                | 2                  | 30                 | 4000 in / 8000 out          | 1                                  |
+> GitHub Models has been retired.  
+> As of July 30, 2026, GitHub Models has been fully retired. The playground, model catalog, inference API, and bring your own key (BYOK) are no longer available to any customer.  
+> GitHub Models was a separate service from GitHub Copilot and is unrelated to GitHub Copilot services.  
 
 ---------
 
@@ -599,7 +593,7 @@ Endpoint: https://api.mistral.ai
 
 ### SambaNova
 
-> Last Check: **2026-08-29**
+> Last Check: **2026-09-23**
 
 https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
@@ -616,7 +610,7 @@ https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
 ### AionLabs
 
-> Last Check: **2026-08-17**
+> Last Check: **2026-09-23**
 
 https://www.aionlabs.ai/docs/rate-limits/
 
@@ -641,7 +635,7 @@ https://github.com/SKT-AI/A.X-4.0/blob/main/apis/README.md
 
 
 ### IBM
-> Last Check: **2026-07-29** </br>
+> Last Check: **2026-09-23** </br>
 
 
 https://www.ibm.com/products/watsonx-ai/pricing
