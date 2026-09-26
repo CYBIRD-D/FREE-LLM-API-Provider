@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-09-05**
+> Last updated: **2026-09-23**
 
 
 This is a list of free llm providers and their rate usage limits </br>
@@ -52,7 +52,7 @@ You may also want to read my other posts:
   - [Cloudflare](#cloudflare)
   - [Cohere](#cohere)
   - [★Z.ai (GLM-4.5/4.7-Flash)](#zai-glm-4547-flash)
-  - [GitHub Models](#github)
+  - [~~GitHub Models~~](#github)
   - [★Mistral](#mistral)
   - [SambaNova](#sambanova)
   - [AionLabs](#aionlabs)
@@ -79,7 +79,7 @@ You may also want to read my other posts:
 
 https://ai.google.dev/gemini-api/docs/rate-limits#free-tier </br>
 **Gemma3** had been removed from api.
-> Last updated: **2026-09-05 UTC** </br>
+> Last updated: **2026-09-23 UTC** </br>
 > **RPM**: Requests per minute </br>
 > **TPM**: Tokens per minute</br>
 > **RPD** Requests per day</br>
@@ -112,7 +112,7 @@ Endpoint: https://generativelanguage.googleapis.com
 -------
 
 ### Nvidia
-> Last updated: **2026-07-03** </br>
+> Last updated: **2026-09-23** </br>
 
 https://build.nvidia.com/explore/discover </br>
 Endpoint: https://integrate.api.nvidia.com
@@ -122,8 +122,8 @@ Endpoint: https://integrate.api.nvidia.com
 Rate limits may vary by model and traffic from other users may cause throttling. </br>
 > For dedicated availability, deploy models as a dedicated endpoint with NVIDIA NIM.
 
-- **129** Models list
-  - OpenAI/Google/Meta/Microsoft/NVIDIA/IBM/Databricks/Mistral AI/AI21 Labs/DeepSeek/Moonshot AI/Z-ai/Minimax etc.
+- **55** Models list
+  - OpenAI/Google/Meta/Microsoft/NVIDIA/Mistral AI/DeepSeek/Moonshot AI/Z-ai/Minimax etc.
 <details>
 
 <summary> 
@@ -131,297 +131,94 @@ Rate limits may vary by model and traffic from other users may cause throttling.
   ## Model List 
 </summary>
 
-#### 01-ai
-
-- `01-ai/yi-large`
-
-#### abacusai
-
-- `abacusai/dracarys-llama-3.1-70b-instruct`
-
-#### adept
-
-- `adept/fuyu-8b`
-
-#### ai21labs
-
-- `ai21labs/jamba-1.5-large-instruct`
-
-#### aisingapore
-
-- `aisingapore/sea-lion-7b-instruct`
-
-#### baai
-
-- `baai/bge-m3`
-
-#### bigcode
-
-- `bigcode/starcoder2-15b`
-
-#### bytedance
-
-- `bytedance/seed-oss-36b-instruct`
-
-#### databricks
-
-- `databricks/dbrx-instruct`
-
-<details>
-<summary>
-
-#### deepseek-ai
-
-</summary>
-
-- `deepseek-ai/deepseek-coder-6.7b-instruct`
-- `deepseek-ai/deepseek-v4-flash`
-- `deepseek-ai/deepseek-v4-pro`
-
-</details>
-
-<details>
-<summary>
-
-#### google
-
-</summary>
-
-- `google/codegemma-1.1-7b`
-- `google/codegemma-7b`
-- `google/deplot`
-- `google/diffusiongemma-26b-a4b-it`
-- `google/gemma-2-2b-it`
-- `google/gemma-2b`
-- `google/gemma-3-12b-it`
-- `google/gemma-3-4b-it`
-- `google/gemma-3n-e2b-it`
-- `google/gemma-3n-e4b-it`
-- `google/gemma-4-31b-it`
-- `google/recurrentgemma-2b`
-
-</details>
-
-<details>
-<summary>
-
-#### ibm
-
-</summary>
-
-- `ibm/granite-3.0-3b-a800m-instruct`
-- `ibm/granite-3.0-8b-instruct`
-- `ibm/granite-34b-code-instruct`
-- `ibm/granite-8b-code-instruct`
-
-</details>
-
-<details>
-<summary>
-
-#### meta
-
-</summary>
-
-- `meta/codellama-70b`
-- `meta/llama-3.1-70b-instruct`
-- `meta/llama-3.1-8b-instruct`
-- `meta/llama-3.2-11b-vision-instruct`
-- `meta/llama-3.2-1b-instruct`
-- `meta/llama-3.2-3b-instruct`
-- `meta/llama-3.2-90b-vision-instruct`
-- `meta/llama-3.3-70b-instruct`
-- `meta/llama-4-maverick-17b-128e-instruct`
-- `meta/llama-guard-4-12b`
-- `meta/llama2-70b`
-
-</details>
-
-<details>
-<summary>
-
-#### microsoft
-
-</summary>
-
-- `microsoft/kosmos-2`
-- `microsoft/phi-3-vision-128k-instruct`
-- `microsoft/phi-3.5-moe-instruct`
-- `microsoft/phi-4-mini-instruct`
-- `microsoft/phi-4-multimodal-instruct`
-
-</details>
-
-<details>
-<summary>
-
-#### minimaxai
-
-</summary>
-
-- `minimaxai/minimax-m2.7`
-- `minimaxai/minimax-m3`
-
-</details>
-
-<details>
-<summary>
-
-#### mistralai
-
-</summary>
-
-- `mistralai/codestral-22b-instruct-v0.1`
-- `mistralai/ministral-14b-instruct-2512`
-- `mistralai/mistral-7b-instruct-v0.3`
-- `mistralai/mistral-large`
-- `mistralai/mistral-large-2-instruct`
-- `mistralai/mistral-large-3-675b-instruct-2512`
-- `mistralai/mistral-medium-3.5-128b`
-- `mistralai/mistral-nemotron`
-- `mistralai/mistral-small-4-119b-2603`
-- `mistralai/mixtral-8x22b-v0.1`
-- `mistralai/mixtral-8x7b-instruct-v0.1`
-
-</details>
-
-#### moonshotai
-
-- `moonshotai/kimi-k2.6`
-
-#### nv-mistralai
-
-- `nv-mistralai/mistral-nemo-12b-instruct`
-
-<details>
-<summary>
-
-#### nvidia
-
-</summary>
-
-- `nvidia/ai-synthetic-video-detector`
-- `nvidia/cosmos-reason2-8b`
-- `nvidia/embed-qa-4`
-- `nvidia/gliner-pii`
-- `nvidia/ising-calibration-1-35b-a3b`
-- `nvidia/llama-3.1-nemoguard-8b-content-safety`
-- `nvidia/llama-3.1-nemoguard-8b-topic-control`
-- `nvidia/llama-3.1-nemotron-51b-instruct`
-- `nvidia/llama-3.1-nemotron-70b-instruct`
-- `nvidia/llama-3.1-nemotron-nano-8b-v1`
-- `nvidia/llama-3.1-nemotron-nano-vl-8b-v1`
-- `nvidia/llama-3.1-nemotron-safety-guard-8b-v3`
-- `nvidia/llama-3.1-nemotron-ultra-253b-v1`
-- `nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1`
-- `nvidia/llama-3.2-nv-embedqa-1b-v1`
-- `nvidia/llama-3.3-nemotron-super-49b-v1`
-- `nvidia/llama-3.3-nemotron-super-49b-v1.5`
-- `nvidia/llama-nemotron-embed-1b-v2`
-- `nvidia/llama-nemotron-embed-vl-1b-v2`
-- `nvidia/llama3-chatqa-1.5-70b`
-- `nvidia/mistral-nemo-minitron-8b-8k-instruct`
-- `nvidia/nemoretriever-parse`
-- `nvidia/nemotron-3-content-safety`
-- `nvidia/nemotron-3-nano-30b-a3b`
-- `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`
-- `nvidia/nemotron-3-super-120b-a12b`
-- `nvidia/nemotron-3-ultra-550b-a55b`
-- `nvidia/nemotron-3.5-content-safety`
-- `nvidia/nemotron-4-340b-instruct`
-- `nvidia/nemotron-4-340b-reward`
-- `nvidia/nemotron-content-safety-reasoning-4b`
-- `nvidia/nemotron-mini-4b-instruct`
-- `nvidia/nemotron-nano-12b-v2-vl`
-- `nvidia/nemotron-nano-3-30b-a3b`
-- `nvidia/nemotron-parse`
-- `nvidia/neva-22b`
-- `nvidia/nv-embed-v1`
-- `nvidia/nv-embedcode-7b-v1`
-- `nvidia/nv-embedqa-e5-v5`
-- `nvidia/nv-embedqa-mistral-7b-v2`
-- `nvidia/nvclip`
-- `nvidia/nvidia-nemotron-nano-9b-v2`
-- `nvidia/riva-translate-4b-instruct`
-- `nvidia/riva-translate-4b-instruct-v1.1`
-- `nvidia/vila`
-
-</details>
-
-<details>
-<summary>
-
-#### openai
-
-</summary>
-
-- `openai/gpt-oss-120b`
-- `openai/gpt-oss-20b`
-
-</details>
-
-<details>
-<summary>
-
-#### qwen
-
-</summary>
-
-- `qwen/qwen3-next-80b-a3b-instruct`
-- `qwen/qwen3.5-122b-a10b`
-- `qwen/qwen3.5-397b-a17b`
-
-</details>
-
-#### sarvamai
-
-- `sarvamai/sarvam-m`
-
-#### snowflake
-
-- `snowflake/arctic-embed-l`
-
-<details>
-<summary>
-
-#### stepfun-ai
-
-</summary>
-
-- `stepfun-ai/step-3.5-flash`
-- `stepfun-ai/step-3.7-flash`
-
-</details>
-
-#### stockmark
-
-- `stockmark/stockmark-2-100b-instruct`
-
-#### upstage
-
-- `upstage/solar-10.7b-instruct`
-
-<details>
-<summary>
-
-#### writer
-
-</summary>
-
-- `writer/palmyra-creative-122b`
-- `writer/palmyra-fin-70b-32k`
-- `writer/palmyra-med-70b`
-- `writer/palmyra-med-70b-32k`
-
-</details>
-
-#### z-ai
-
-- `z-ai/glm-5.2`
-
-#### zyphra
-
-- `zyphra/zamba2-7b-instruct`
+#### DeepSeek
+deepseek-ai/deepseek-v4-flash  
+deepseek-ai/deepseek-v4-flash-0731  
+deepseek-ai/deepseek-v4-pro  
+
+#### Google
+google/codegemma-7b  
+google/gemma-7b  
+
+#### Meta
+meta/llama2-70b  
+meta/llama-3.1-8b-instruct  
+meta/llama-3.1-70b-instruct  
+meta/llama-3.2-1b-instruct  
+meta/llama-3.2-3b-instruct  
+meta/llama-3.3-70b-instruct  
+
+#### Microsoft
+microsoft/phi-4-mini-instruct  
+microsoft/phi-4-mini-flash-reasoning  
+
+#### MiniMax
+minimaxai/minimax-m2.5  
+minimaxai/minimax-m2.7  
+
+#### Mistral
+mistralai/mistral-nemotron  
+mistralai/mixtral-8x7b-instruct  
+mistralai/mixtral-8x22b-instruct  
+
+#### Moonshot / Kimi
+moonshotai/kimi-k2-instruct  
+moonshotai/kimi-k2-thinking  
+moonshotai/kimi-k3  
+
+#### NVIDIA
+nvidia/gliner-pii  
+nvidia/llama-3.1-nemoguard-8b-content-safety  
+nvidia/llama-3.1-nemoguard-8b-topic-control  
+nvidia/llama-3.1-nemotron-safety-guard-8b-v3  
+nvidia/llama-3.3-nemotron-super-49b-v1  
+nvidia/llama-3.3-nemotron-super-49b-v1.5  
+nvidia/llama-3.1-nemotron-ultra-253b-v1  
+nvidia/nemotron-3-ultra-550b-a55b  
+nvidia/nemotron-3.5-lightning-30b-a3b  
+nvidia/nemoguard-jailbreak-detect  
+nvidia/nemotron-3-nano-30b-a3b  
+nvidia/nemotron-3-super-120b-a12b  
+nvidia/nemotron-content-safety-reasoning-4b  
+nvidia/nvidia-nemotron-nano-9b-v2  
+nvidia/riva-translate-4b-instruct-v1.1  
+nvidia/riva-translate-4b-instruct-v2  
+nvidia/usdcode  
+
+#### OpenAI
+openai/gpt-oss-20b  
+openai/gpt-oss-120b  
+
+#### Poolside
+poolside/laguna-xs-2-1  
+
+#### Qwen
+qwen/qwen2.5-coder-32b-instruct  
+qwen/qwen3-next-80b-a3b-instruct  
+qwen/qwen3-next-80b-a3b-thinking  
+qwen/qwq-32b  
+
+#### Sarvam AI
+sarvamai/sarvam-m  
+
+#### StepFun
+stepfun-ai/step-3.5-flash  
+
+#### Stockmark
+stockmark/stockmark-2-100b-instruct  
+
+#### Thinking Machines
+thinking-machines/inkling  
+
+#### Upstage
+upstage/solar-10.7b-instruct  
+
+#### Z.ai / GLM
+z-ai/glm4.7  
+z-ai/glm5.1  
+z-ai/glm-5.2  
+z-ai/glm-5.3  
+z-ai/glm-5.3-flash  
 
 
 </details>
@@ -431,7 +228,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 --------
 
 ### Ollama
-> Last Check: **2026-09-15** </br>
+> Last Check: **2026-09-23** </br>
 
 
 https://ollama.com/cloud </br>
@@ -463,7 +260,7 @@ https://ollama.com/search?c=cloud
 
 - Gemma4: 31b
 - gpt-oss 20b/120b
-- nemotron-3-nano/super/ultra
+- nemotron-3-nano 30B/super 120B-A12B/ultra 550B-A55B
 
 > **Session usage** reset in 3hours
 
@@ -563,7 +360,7 @@ https://ollama.com/search?c=cloud
 -------
 
 ### Groq
-> Last Check: **2026-09-15**
+> Last Check: **2026-09-23**
 
 *Current only GPT-OSS 20b/120b & Qwen3.8-27b
 
@@ -591,7 +388,7 @@ Endpoint: https://api.groq.com/openai
 ---------
 
 ### ~~Celebras~~
-~~> Last Check: **2026-08-29**~~
+~~> Last Check: **2026-09-23**~~
 
 **Unusable rate limit** 5$ per account
 
@@ -609,7 +406,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-09-15** </br>
+> Last Check: **2026-09-23** </br>
 
 https://openrouter.ai/models?q=free </br>
 https://openrouter.ai/pricing </br>
@@ -632,7 +429,7 @@ Endpoint: https://openrouter.ai/api
 
 ### Cloudflare
 > Last web updated: **2026-08-18** </br>
-> Last Check: **2026-08-22** </br>
+> Last Check: **2026-09-23** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -728,7 +525,7 @@ Models list </br>
 
 ### Cohere
 > Last web updated: **2026-06-09**</br>
-> Last Check: **2026-08-29** </br>
+> Last Check: **2026-09-23** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -772,19 +569,13 @@ Endpoint: https://api.z.ai/api/paas/v4
 -------
 
 
-### Github
-> Last web updated: **2025-08-11** </br>
-> Last Check: **2026-08-29** </br>
+### ~~Github~~
 
-https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits
+~~https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models#rate-limits~~
 
-| Tier / Model                                             | Request/Mintute </br> (Copilot Free) | Request/Day </br> (Copilot Free) | Tokens/request </br> (in/out) | Concurrent requests </br> (Copilot Free) |
-|----------------------------------------------------------------|--------------------|--------------------|-----------------------------|------------------------------------|
-| Low tier models                                                | 15                 | 150                | 8000 in / 4000 out          | 5                                  |
-| High tier models                                               | 10                 | 50                 | 8000 in / 4000 out          | 2                                  |
-| DeepSeek-R1 / DeepSeek-R1-0528 / MAI-DS-R1                     | 1                  | 8                  | 4000 in / 4000 out          | 1                                  |
-| xAI Grok-3                                                     | 1                  | 15                 | 4000 in / 4000 out          | 1                                  |
-| xAI Grok-3-Mini                                                | 2                  | 30                 | 4000 in / 8000 out          | 1                                  |
+> GitHub Models has been retired.  
+> As of July 30, 2026, GitHub Models has been fully retired. The playground, model catalog, inference API, and bring your own key (BYOK) are no longer available to any customer.  
+> GitHub Models was a separate service from GitHub Copilot and is unrelated to GitHub Copilot services.  
 
 ---------
 
@@ -804,7 +595,7 @@ Endpoint: https://api.mistral.ai
 
 ### SambaNova
 
-> Last Check: **2026-08-29**
+> Last Check: **2026-09-23**
 
 https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
@@ -821,7 +612,7 @@ https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
 ### AionLabs
 
-> Last Check: **2026-08-17**
+> Last Check: **2026-09-23**
 
 https://www.aionlabs.ai/docs/rate-limits/
 
@@ -846,7 +637,7 @@ https://github.com/SKT-AI/A.X-4.0/blob/main/apis/README.md
 
 
 ### IBM
-> Last Check: **2026-07-29** </br>
+> Last Check: **2026-09-23** </br>
 
 
 https://www.ibm.com/products/watsonx-ai/pricing
@@ -1046,7 +837,7 @@ Endpoint: https://onomeo.com/v1 (OpenAI-compatible, `/v1/chat/completions`)
 
 ## LLM PRICE LIST
 
-> LLM API Pricing — September 5, 2026
+### LLM API Pricing — September 23, 2026
 
 > Unit: USD per 1M tokens
 >
@@ -1058,7 +849,9 @@ Endpoint: https://onomeo.com/v1 (OpenAI-compatible, `/v1/chat/completions`)
 >
 > Standard real-time API pricing is used.
 >
-> Temporary promotional prices and normal/list prices are shown separately.
+> Temporary promotional prices and normal/list prices are shown separately when the promotion is still active.
+>
+> Expired promotional prices are not included in the current ranking.
 >
 > Batch, Flex, Priority/Fast and other alternative processing modes are excluded.
 >
@@ -1068,61 +861,64 @@ Endpoint: https://onomeo.com/v1 (OpenAI-compatible, `/v1/chat/completions`)
 >
 > Qwen prices use Alibaba Cloud Model Studio Singapore / International pricing.
 
-| Rank | Provider | Model | Input | Cached Input | Output | Combined | Notes |
-|---:|---|---|---:|---:|---:|---:|---|
-| 1 | Qwen | Qwen3.7 Flash | $0.030 | — | $0.130 | **$0.160** | ≤32K; 32K–256K: $0.10/$0.40; 256K–1M: $0.20/$0.80 |
-| 2 | Meta / OpenRouter | Muse Spark 1.2/1.3 Contributor | $0.10 | $0.002 | $0.20 | **$0.30** | 1M context; prompts/outputs may be used to improve Meta products |
-| 3 | GLM / Z.AI | GLM-5.3-Flash — Promo | $0.075 | $0.015 | $0.25 | **$0.325** | 50% off until Sep 9, 2026 24:00 UTC+8 |
-| 4 | Qwen | Qwen3.5 Flash | $0.10 | — | $0.40 | **$0.50** | International |
-| 5 | Qwen | Qwen3.8 Flash | $0.15 | — | $0.47 | **$0.62** | International; 1M context |
-| 6 | GLM / Z.AI | GLM-5.3-Flash — List Price | $0.15 | $0.03 | $0.50 | **$0.65** | Normal price; currently 50% off |
-| 7 | Mistral | Mistral Small 4 | $0.15 | $0.015 | $0.60 | **$0.75** | 256K context |
-| 8 | DeepSeek | DeepSeek V4 Flash — Off-peak | $0.22 | $0.007 | $0.66 | **$0.88** | Off-peak pricing |
-| 9 | OpenAI | GPT-5.6 Luna | $0.20 | $0.02 | $1.20 | **$1.40** | >272K: $0.40 input / $1.80 output |
-| 10 | Meta / OpenRouter | Muse Glimmer 30B | $0.30 | $0.04 | $1.10 | **$1.40** | 131K context; cheapest current standard OpenRouter route |
-| 11 | OpenAI | GPT-5.4 nano | $0.20 | $0.02 | $1.25 | **$1.45** | — |
-| 12 | Qwen | Qwen3.7 Plus — Promo | $0.32 | — | $1.28 | **$1.60** | International alias; 20% off; list $0.40/$1.60 |
-| 13 | Google | Gemini 3.1 Flash-Lite | $0.25 | $0.025 | $1.50 | **$1.75** | — |
-| 14 | Qwen | Qwen3.6 Flash | $0.25 | — | $1.50 | **$1.75** | ≤256K; International |
-| 15 | DeepSeek | DeepSeek V4 Flash — Peak | $0.44 | $0.014 | $1.32 | **$1.76** | Peak pricing |
-| 16 | Qwen | Qwen3.7 Plus — List Price | $0.40 | — | $1.60 | **$2.00** | Normal International price |
-| 17 | DeepSeek | DeepSeek V4 Pro — Off-peak | $0.66 | $0.022 | $1.98 | **$2.64** | Off-peak pricing |
-| 18 | Google | Gemini 3.5 Flash-Lite | $0.30 | $0.03 | $2.50 | **$2.80** | — |
-| 19 | Qwen | Qwen3.5 Plus | $0.40 | — | $2.40 | **$2.80** | ≤256K; International |
-| 20 | xAI | Grok Build 0.1 | $1.00 | $0.20 | $2.00 | **$3.00** | <200K; ≥200K: $2/$4 |
-| 21 | Qwen | Qwen3.6 Plus | $0.50 | — | $3.00 | **$3.50** | ≤256K; International |
-| 22 | xAI | Grok 4.20/4.3 | $1.25 | $0.20 | $2.50 | **$3.75** | <200K; ≥200K: $2.50/$5 |
-| 23 | GLM / Z.AI | GLM-5 | $1.00 | $0.20 | $3.20 | **$4.20** | — |
-| 24 | Google | Gemini 3.6/3.7/3.8 Flash — Promo | $0.75 | $0.075 | $3.75 | **$4.50** | Introductory price through Dec 31, 2026 |
-| 25 | Kimi | Kimi K2.6 | $0.95 | $0.16 | $4.00 | **$4.95** | ~262K context |
-| 26 | Kimi | Kimi K2.7 Code | $0.95 | $0.19 | $4.00 | **$4.95** | ~262K context |
-| 27 | GLM / Z.AI | GLM-5-Turbo | $1.20 | $0.24 | $4.00 | **$5.20** | 200K context |
-| 28 | OpenAI | GPT-5.4 mini | $0.75 | $0.075 | $4.50 | **$5.25** | — |
-| 29 | DeepSeek | DeepSeek V4 Pro — Peak | $1.32 | $0.044 | $3.96 | **$5.28** | Peak pricing |
-| 30 | Meta / OpenRouter | Muse Spark 1.1/1.2/1.3 | $1.25 | $0.15 | $4.25 | **$5.50** | 1M context; standard data policy |
-| 31 | GLM / Z.AI | GLM-5.1 | $1.40 | $0.26 | $4.40 | **$5.80** | 200K context |
-| 32 | GLM / Z.AI | GLM-5.2/5.3 | $1.40 | $0.26 | $4.40 | **$5.80** | 1M context |
-| 33 | Qwen | Qwen3.8 Max | $2.00 | — | $6.00 | **$8.00** | International; 1M context |
-| 34 | xAI | Grok 4.5/4.6 | $2.00 | $0.30 / $0.50 | $6.00 | **$8.00** |  ≥200K: $4/$12 |
-| 35 | Google | Gemini 3.6/3.7/3.8 Flash — List Price | $1.50 | $0.15 | $7.50 | **$9.00** | Standard price from Jan 1, 2027 |
-| 36 | Mistral | Mistral Medium 3.5 | $1.50 | $0.15 | $7.50 | **$9.00** | 256K context |
-| 37 | Kimi | Kimi K2.7 Code Highspeed | $1.90 | $0.38 | $8.00 | **$9.90** | ~262K context |
-| 38 | Qwen | Qwen3.7 Max | $2.50 | — | $7.50 | **$10.00** | International; 1M context |
-| 39 | Google | Gemini 3.5 Flash | $1.50 | $0.15 | $9.00 | **$10.50** | Thinking tokens billed as output |
-| 40 | Anthropic | Claude Sonnet 5 | $2.00 | $0.20 | $10.00 | **$12.00** | Standard price |
-| 41 | OpenAI | GPT-5.6 Terra | $2.00 | $0.20 | $12.00 | **$14.00** | >272K: $4 input / $18 output |
-| 42 | Google | Gemini 3.1 Pro Preview | $2.00 | $0.20 | $12.00 | **$14.00** | ≤200K; >200K: $4/$18 |
-| 43 | OpenAI | GPT-5.4 | $2.50 | $0.25 | $15.00 | **$17.50** | >272K long-context surcharge |
-| 44 | Anthropic | Claude Sonnet 4.6 | $3.00 | $0.30 | $15.00 | **$18.00** | — |
-| 45 | Kimi | Kimi K3 | $3.00 | $0.30 | $15.00 | **$18.00** | 1M context |
-| 46 | OpenAI | GPT-5.6 Sol — Promo | $4.00 | $0.40 | $20.00 | **$24.00** | Promo available at least through Nov 21, 2026; list $5/$30 |
-| 47 | Anthropic | Claude Opus 4.7/4.8/5 | $5.00 | $0.50 | $25.00 | **$30.00** | — |
-| 48 | OpenAI | GPT-5.5 | $5.00 | $0.50 | $30.00 | **$35.00** | — |
-| 49 | OpenAI | GPT-5.6 Sol — List Price | $5.00 | $0.50 | $30.00 | **$35.00** | Original/list price; currently $4/$20 promo |
-| 50 | Anthropic | Claude Fable 5.1 | $10.00 | **$0.25** | $50.00 | **$60.00** | 1M context; cache read is 75% cheaper than Fable 5 |
-| 51 | Anthropic | Claude Fable 5 | $10.00 | $1.00 | $50.00 | **$60.00** | — |
-| 52 | OpenAI | GPT-6 Astra | $10.00 | $1.00 | $50.00 | **$60.00** | 1.05M context; >272K: $20 input / $75 output |
-| 53 | OpenAI | GPT-5.4/5.5 Pro | $30.00 | — | $180.00 | **$210.00** | Maximum-compute tier |
+| Rank | Provider          | Model                                 |  Input |  Cached Input |  Output |    Combined | Notes                                                            |
+| ---: | ----------------- | ------------------------------------- | -----: | ------------: | ------: | ----------: | ---------------------------------------------------------------- |
+|    1 | Qwen              | Qwen3.7 Flash                         | $0.030 |             — |  $0.130 |  **$0.160** | ≤32K; 32K–256K: $0.10/$0.40; 256K–1M: $0.20/$0.80                |
+|    2 | Meta / OpenRouter | Muse Spark 1.2/1.3 Contributor        |  $0.10 |        $0.002 |   $0.20 |   **$0.30** | 1M context; prompts/outputs may be used to improve Meta products |
+|    3 | Qwen              | Qwen3.5 Flash                         |  $0.10 |             — |   $0.40 |   **$0.50** | International                                                    |
+|    4 | OpenAI            | GPT-6 Luna                            |  $0.10 |         $0.01 |   $0.50 |   **$0.60** | 1.05M context; >272K: $0.20/$0.75                                |
+|    5 | Qwen              | Qwen3.8 Flash                         |  $0.15 |             — |   $0.47 |   **$0.62** | International; 1M context                                        |
+|    6 | GLM / Z.AI        | GLM-5.3-Flash                         |  $0.15 |         $0.03 |   $0.50 |   **$0.65** | Standard/list price; previous 50% promo has ended                |
+|    7 | DeepSeek          | DeepSeek V4.1 Flash — Off-peak        |  $0.15 |        $0.003 |   $0.60 |   **$0.75** | 1M context; off-peak pricing                                     |
+|    8 | Mistral           | Mistral Small 4                       |  $0.15 |        $0.015 |   $0.60 |   **$0.75** | 256K context                                                     |
+|    9 | OpenAI            | GPT-5.6 Luna                          |  $0.20 |         $0.02 |   $1.20 |   **$1.40** | >272K: $0.40/$1.80                                               |
+|   10 | Meta / OpenRouter | Muse Glimmer 30B                      |  $0.30 |         $0.04 |   $1.10 |   **$1.40** | 131K context                                                     |
+|   11 | OpenAI            | GPT-5.4 nano                          |  $0.20 |         $0.02 |   $1.25 |   **$1.45** | —                                                                |
+|   12 | DeepSeek          | DeepSeek V4.1 Flash — Peak            |  $0.30 |        $0.006 |   $1.20 |   **$1.50** | 1M context; peak pricing                                         |
+|   13 | Qwen              | Qwen3.7 Plus — Promo                  |  $0.32 |             — |   $1.28 |   **$1.60** | International alias; 20% off; list $0.40/$1.60                   |
+|   14 | Google            | Gemini 3.1 Flash-Lite                 |  $0.25 |        $0.025 |   $1.50 |   **$1.75** | —                                                                |
+|   15 | Qwen              | Qwen3.6 Flash                         |  $0.25 |             — |   $1.50 |   **$1.75** | ≤256K; International                                             |
+|   16 | Qwen              | Qwen3.7 Plus — List Price             |  $0.40 |             — |   $1.60 |   **$2.00** | Normal International price                                       |
+|   17 | DeepSeek          | DeepSeek V4 Pro — Off-peak            |  $0.66 |        $0.022 |   $1.98 |   **$2.64** | Off-peak pricing                                                 |
+|   18 | Google            | Gemini 3.5 Flash-Lite                 |  $0.30 |         $0.03 |   $2.50 |   **$2.80** | —                                                                |
+|   19 | Qwen              | Qwen3.5 Plus                          |  $0.40 |             — |   $2.40 |   **$2.80** | ≤256K; International                                             |
+|   20 | xAI               | Grok Build 0.1                        |  $1.00 |         $0.20 |   $2.00 |   **$3.00** | <200K; ≥200K: $2/$4                                              |
+|   21 | Qwen              | Qwen3.6 Plus                          |  $0.50 |             — |   $3.00 |   **$3.50** | ≤256K; International                                             |
+|   22 | xAI               | Grok 4.20/4.3                         |  $1.25 |         $0.20 |   $2.50 |   **$3.75** | <200K; ≥200K: $2.50/$5                                           |
+|   23 | GLM / Z.AI        | GLM-5                                 |  $1.00 |         $0.20 |   $3.20 |   **$4.20** | —                                                                |
+|   24 | Google            | Gemini 3.6/3.7/3.8 Flash — Promo      |  $0.75 |        $0.075 |   $3.75 |   **$4.50** | Introductory price through Dec 31, 2026                          |
+|   25 | Kimi              | Kimi K2.6                             |  $0.95 |         $0.16 |   $4.00 |   **$4.95** | ~262K context                                                    |
+|   26 | Kimi              | Kimi K2.7 Code                        |  $0.95 |         $0.19 |   $4.00 |   **$4.95** | ~262K context                                                    |
+|   27 | GLM / Z.AI        | GLM-5-Turbo                           |  $1.20 |         $0.24 |   $4.00 |   **$5.20** | 200K context                                                     |
+|   28 | OpenAI            | GPT-5.4 mini                          |  $0.75 |        $0.075 |   $4.50 |   **$5.25** | —                                                                |
+|   29 | DeepSeek          | DeepSeek V4 Pro — Peak                |  $1.32 |        $0.044 |   $3.96 |   **$5.28** | Peak pricing                                                     |
+|   30 | Meta / OpenRouter | Muse Spark 1.1/1.2/1.3                |  $1.25 |         $0.15 |   $4.25 |   **$5.50** | 1M context; standard data policy                                 |
+|   31 | GLM / Z.AI        | GLM-5.1                               |  $1.40 |         $0.26 |   $4.40 |   **$5.80** | 200K context                                                     |
+|   32 | GLM / Z.AI        | GLM-5.2/5.3                           |  $1.40 |         $0.26 |   $4.40 |   **$5.80** | 1M context                                                       |
+|   33 | xAI               | Grok 4.7                              |  $2.00 |         $0.50 |   $6.00 |   **$8.00** | 500K context; ≥200K: $4/$12                                      |
+|   34 | xAI               | Grok 4.5/4.6                          |  $2.00 | $0.30 / $0.50 |   $6.00 |   **$8.00** | <200K; ≥200K: $4/$12                                             |
+|   35 | Qwen              | Qwen3.8 Max                           |  $2.00 |             — |   $6.00 |   **$8.00** | International; 1M context                                        |
+|   36 | Google            | Gemini 3.6/3.7/3.8 Flash              |  $1.50 |         $0.15 |   $7.50 |   **$9.00** | Standard price from Jan 1, 2027                                  |
+|   37 | Mistral           | Mistral Medium 3.5                    |  $1.50 |         $0.15 |   $7.50 |   **$9.00** | 256K context                                                     |
+|   38 | Kimi              | Kimi K2.7 Code Highspeed              |  $1.90 |         $0.38 |   $8.00 |   **$9.90** | ~262K context                                                    |
+|   39 | Qwen              | Qwen3.7 Max                           |  $2.50 |             — |   $7.50 |  **$10.00** | International; 1M context                                        |
+|   40 | Google            | Gemini 3.5 Flash                      |  $1.50 |         $0.15 |   $9.00 |  **$10.50** | Thinking tokens billed as output                                 |
+|   41 | OpenAI            | GPT-6 Sol                             |  $2.00 |         $0.20 |  $10.00 |  **$12.00** | 1.05M context; >272K: $4/$15                                     |
+|   42 | Anthropic         | Claude Sonnet 5                       |  $2.00 |         $0.20 |  $10.00 |  **$12.00** | 1M context; standard price                                       |
+|   43 | OpenAI            | GPT-5.6 Terra                         |  $2.00 |         $0.20 |  $12.00 |  **$14.00** | >272K: $4/$18                                                    |
+|   44 | Google            | Gemini 3.1 Pro Preview                |  $2.00 |         $0.20 |  $12.00 |  **$14.00** | ≤200K; >200K: $4/$18                                             |
+|   45 | OpenAI            | GPT-5.4                               |  $2.50 |         $0.25 |  $15.00 |  **$17.50** | >272K long-context surcharge                                     |
+|   46 | Anthropic         | Claude Sonnet 4.6                     |  $3.00 |         $0.30 |  $15.00 |  **$18.00** | —                                                                |
+|   47 | Kimi              | Kimi K3                               |  $3.00 |         $0.30 |  $15.00 |  **$18.00** | 1M context                                                       |
+|   48 | Anthropic         | Claude Opus 5.5                       |  $4.00 |         $0.20 |  $20.00 |  **$24.00** | 1M context; 128K max output                                      |
+|   49 | OpenAI            | GPT-5.6 Sol — Promo                   |  $4.00 |         $0.40 |  $20.00 |  **$24.00** | Promo available at least through Nov 21, 2026; list $5/$30       |
+|   50 | Anthropic         | Claude Opus 4.7/4.8/5                 |  $5.00 |         $0.50 |  $25.00 |  **$30.00** | —                                                                |
+|   51 | OpenAI            | GPT-5.5                               |  $5.00 |         $0.50 |  $30.00 |  **$35.00** | —                                                                |
+|   52 | OpenAI            | GPT-5.6 Sol — List Price              |  $5.00 |         $0.50 |  $30.00 |  **$35.00** | Original/list price; currently $4/$20 promo                      |
+|   53 | Anthropic         | Claude Fable 5.1                      | $10.00 |     **$0.25** |  $50.00 |  **$60.00** | 1M context; unusually low 0.025× cache-read multiplier           |
+|   54 | Anthropic         | Claude Fable 5                        | $10.00 |         $1.00 |  $50.00 |  **$60.00** | —                                                                |
+|   55 | OpenAI            | GPT-6 Astra                           | $10.00 |         $1.00 |  $50.00 |  **$60.00** | 1.05M context; >272K: $20/$75                                    |
+|   56 | OpenAI            | GPT-5.4/5.5 Pro                       | $30.00 |             — | $180.00 | **$210.00** | Maximum-compute tier                                             |
 
 
 > DeepSeek introduced Peak / Off-peak pricing on August 16, 2026.
