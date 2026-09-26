@@ -67,6 +67,8 @@ You may also want to read my other posts:
   - [心流](#心流)
   - [StreamLake 快手万擎Vanchin](#StreamLake-快手万擎Vanchin)
   - [Spark 讯飞星火](#spark-讯飞星火)
+- [Third-party Gateway/第三方网关](#third-party-gateway第三方网关)
+  - [onomeo (public beta, small quota)](#onomeo-public-beta-small-quota)
 - [LLM PRICE LIST](#llm-price-list)
 
 -----------
@@ -755,6 +757,27 @@ Spark-lite free </br>
 - 首次开通后，免费包（个人）有200k免费额度（所有模型),有效期为一年</br>
 https://www.xfyun.cn/doc/spark/HTTP调用文档.html   
 https://xinghuo.xfyun.cn/sparkapi?scr=price
+
+----------
+
+## Third-party Gateway/第三方网关
+
+> Not vendor platforms: a single operator re-exposes other platforms' free tiers behind one OpenAI-compatible endpoint. Free quota is much smaller than the official platforms above.
+
+### onomeo (public beta, small quota)
+> Last Check: **2026-09-26** </br>
+
+https://onomeo.com/models </br>
+
+Endpoint: https://onomeo.com/v1
+
+- **Public beta**: not every feature is guaranteed to work; feedback is welcome at https://onomeo.com/feedback
+- **47** models behind one key, most routed through other providers' free tiers. Cost per reply varies by model (see the models page).
+- **Free credits**: daily check-in, **50k** on day 1 rising to **200k/day** from day 7 of a streak; missing a day resets it. No card needed.
+- **Premium models** (13, e.g. Claude / GPT-6 / Gemini Pro): at most **50k credits/day** per account that has not paid.
+- **Paid (optional)**: $5 one-time = 1M credits (Ko-fi).
+- **Rate limits**: 12 req/min per key, 60 req/5h per account, 120 req/5h per IP; accounts that have not paid share a site-wide pool of 450 req/5h.
+- Some free upstreams may use prompts for training; each model page says which.
 
 ----------
 
