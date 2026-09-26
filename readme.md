@@ -68,7 +68,7 @@ You may also want to read my other posts:
   - [StreamLake 快手万擎Vanchin](#StreamLake-快手万擎Vanchin)
   - [Spark 讯飞星火](#spark-讯飞星火)
 - [Third-party Gateway/第三方网关](#third-party-gateway第三方网关)
-  - [onomeo (small quota, use with care)](#onomeo-small-quota-use-with-care)
+  - [onomeo (public beta, small quota)](#onomeo-public-beta-small-quota)
 - [LLM PRICE LIST](#llm-price-list)
 
 -----------
@@ -762,76 +762,22 @@ https://xinghuo.xfyun.cn/sparkapi?scr=price
 
 ## Third-party Gateway/第三方网关
 
-> Not vendor platforms. These are community/personal projects that re-expose other platforms' free tiers behind a single OpenAI-compatible endpoint. </br>
-> Uptime depends on one operator, and the free quota is far smaller than the official platforms listed above. Treat them as a convenience layer, not as a replacement.
+> Not vendor platforms: a single operator re-exposes other platforms' free tiers behind one OpenAI-compatible endpoint. Free quota is much smaller than the official platforms above.
 
-### onomeo (small quota, use with care)
-> Last Check: **2026-09-20** </br>
+### onomeo (public beta, small quota)
+> Last Check: **2026-09-26** </br>
 
-**Disclosure: I operate onomeo. This entry is a self-submission.**
-
-https://onomeo.com </br>
-https://onomeo.com/docs </br>
 https://onomeo.com/models </br>
-https://onomeo.com/free-models </br>
-https://onomeo.com/api/info — public JSON (no key needed): model list, measured average credit cost per call, check-in ladder, rate limits, recent health </br>
 
-Endpoint: https://onomeo.com/v1 (OpenAI-compatible, `/v1/chat/completions`)
+Endpoint: https://onomeo.com/v1
 
-- Gateway built by a single developer; it aggregates the **free tiers** of several upstream platforms into one endpoint. No card and no ID verification required.
-- **36 text models** + an `auto` router. The line-up rotates with the upstreams, so `/api/info` is the authoritative list.
-- `POST /v1/messages` (Anthropic format) exists for clients that only speak that protocol, but it **only accepts `my/`-prefixed models, i.e. models served with your own upstream key**. It does **not** run on the site's free credits.
-- No region block is declared. The site is behind Cloudflare; mainland-China direct-connection speed has not been measured.
-
-#### Free quota — counted in characters, not in requests
-
-| Item | Value |
-|---|---|
-| How you get credits | Daily check-in, 7-day ladder: **1200 / 1500 / 1800 / 2200 / 2600 / 3000 / 3500** credits; stays at **3500/day** from day 7, drops back to 1200 if you miss a day |
-| Credit rate | 1 CJK character = **1** credit; 4 other characters = **1** credit; prompt characters + completion characters are both charged |
-| Balance cap | 500,000 credits |
-| Referral | +2000 credits per invited user, up to 20 users |
-
-**What 3500 credits/day actually buys**, using the measured per-call averages published in `/api/info`:
-
-| Model | Calls/day on 3500 credits |
-|---|---:|
-| Qwen3.5-397B-A17B | **~1** |
-| GLM-5.2 | **~4** |
-| DeepSeek V4.1 Flash | **~6** |
-| gpt-oss-120b | ~200 |
-| Gemini 3.1 Flash-Lite | ~200 |
-
-#### Rate limits — all four apply at the same time
-
-| Scope | Limit |
-|---|---|
-| Per API key | 12 requests/minute |
-| Per account | 60 requests/5 hours |
-| Per IP address | 120 requests/5 hours |
-| **Whole site (shared pool)** | **450 requests/5 hours** — at peak hours requests can be refused even when your own quota is untouched |
-
-<details>
-<summary>
-
-#### Model list (36, rotates with upstreams)
-
-</summary>
-
-| Company | Models |
-|---|---|
-| **DeepSeek** | DeepSeek V4 Flash<br>DeepSeek V4.1 Flash<br>DeepSeek-R1-0528-Qwen3-8B |
-| **Z.ai — GLM** | GLM-5.2<br>GLM-4-9B-0414<br>glm-5.3-flash-free |
-| **Alibaba Qwen** | Qwen3.5-397B-A17B<br>Qwen3.8-Flash-Next<br>Qwen3-8B<br>Qwen2.5-7B-Instruct<br>qwen2.5-coder-32b |
-| **Google** | Gemini 3 Flash<br>Gemini 3.1 Flash-Lite |
-| **OpenAI — GPT-OSS** | gpt-oss-120b<br>gpt-oss-20b |
-| **Meta** | Llama 4 Scout 17B |
-| **MiniMax** | MiniMax M2.7 |
-| **Mistral AI** | Codestral<br>Mistral Nemo<br>mistral-nemotron<br>Ministral 8B<br>Ministral 3B |
-| **NVIDIA — Nemotron** | Nemotron 3 Super 120B<br>Nemotron 3.5 Lightning 30B |
-| **Others** | Intern-S2-Preview<br>mimo-v2.5<br>north-mini-code<br>lfm-2.5-2.6b<br>nex-n2.5-pro<br>nex-n2.5-mini<br>hy3-free<br>step-3.7-flash<br>ling-3.0-flash-sante<br>ling-3.0-flash-fin<br>dots-3-note-preview<br>poolside laguna-s-2.1 |
-
-</details>
+- **Public beta**: not every feature is guaranteed to work; feedback is welcome at https://onomeo.com/feedback
+- **47** models behind one key, most routed through other providers' free tiers. Cost per reply varies by model (see the models page).
+- **Free credits**: daily check-in, **50k** on day 1 rising to **200k/day** from day 7 of a streak; missing a day resets it. No card needed.
+- **Premium models** (13, e.g. Claude / GPT-6 / Gemini Pro): at most **50k credits/day** per account that has not paid.
+- **Paid (optional)**: $5 one-time = 1M credits (Ko-fi).
+- **Rate limits**: 12 req/min per key, 60 req/5h per account, 120 req/5h per IP; accounts that have not paid share a site-wide pool of 450 req/5h.
+- Some free upstreams may use prompts for training; each model page says which.
 
 ----------
 
