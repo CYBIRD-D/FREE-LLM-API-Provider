@@ -765,19 +765,19 @@ https://xinghuo.xfyun.cn/sparkapi?scr=price
 > Not vendor platforms: a single operator re-exposes other platforms' free tiers behind one OpenAI-compatible endpoint. Free quota is much smaller than the official platforms above.
 
 ### onomeo (public beta, small quota)
-> Last Check: **2026-09-26** </br>
+> Last Check: **2026-09-28** </br>
 
 https://onomeo.com/models </br>
 
 Endpoint: https://onomeo.com/v1
 
 - **Public beta**: not every feature is guaranteed to work; feedback is welcome at https://onomeo.com/feedback
-- **47** models behind one key, most routed through other providers' free tiers. Cost per reply varies by model (see the models page).
-- **Free credits**: daily check-in, **50k** on day 1 rising to **200k/day** from day 7 of a streak; missing a day resets it. No card needed.
-- **Premium models** (13, e.g. Claude / GPT-6 / Gemini Pro): at most **50k credits/day** per account that has not paid.
-- **Paid (optional)**: $5 one-time = 1M credits (Ko-fi).
-- **Rate limits**: 12 req/min per key, 60 req/5h per account, 120 req/5h per IP; accounts that have not paid share a site-wide pool of 450 req/5h.
-- Some free upstreams may use prompts for training; each model page says which.
+- **47** models behind one key. The **35** free models are routed through other providers' free tiers and use no credits; the premium models' cost per reply varies by model (see the models page).
+- **Free credits**: daily check-in, **20k** on day 1 rising to **50k/day** from day 7 of a streak; missing a day resets it. No card needed.
+- **Premium models** (12, e.g. Claude / GPT-6 / Gemini Pro): at most **50k credits/day** per account that has not paid.
+- **Paid (optional)**: $5/month = 3M credits a month (Ko-fi; credits never expire, cancel any time).
+- **Rate limits** (free models): 12 req/min per key, 60 req/5h per account, 120 req/5h per IP; all accounts share a site-wide pool of 450 req/5h. A long request counts as several.
+- 31 of the 47 models' upstreams may use prompts for training; each model page says which.
 
 ----------
 
