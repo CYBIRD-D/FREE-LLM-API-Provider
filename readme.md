@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last updated: **2026-09-30**
+> Last updated: **2026-10-08**
 
 
 This is a list of free llm providers and their rate usage limits </br>
@@ -762,7 +762,7 @@ https://xinghuo.xfyun.cn/sparkapi?scr=price
 
 ## LLM PRICE LIST
 
-### LLM API Pricing — September 30, 2026
+### LLM API Pricing — October 08, 2026
 
 > Unit: USD per 1M tokens
 >
