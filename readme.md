@@ -760,7 +760,7 @@ https://xinghuo.xfyun.cn/sparkapi?scr=price
 
 ----------
 
-## LLM PRICE LIST
+## [LLM PRICE LIST](https://github.com/CYBIRD-D/LLM-API-Official-Pricing-Tracker)
 
 ### LLM API Pricing — October 14, 2026
 
