@@ -59,6 +59,7 @@ You may also want to read my other posts:
   - [SKT](#skt)
   - [IBM](#ibm)
   - [Scaleway (1M free token/per account)](#scaleway-1m-free-tokenper-account-no-refresh)
+  - [Gonka DAHL (100M free token/per account)](#gonka-dahl-100m-free-tokenper-account-no-refresh)
 - [CN Platform](#cn-platform)
   - [ModelScope（魔搭社区）](#modelscope魔搭社区仅限cnonly-cn)
   - [SilliconFlow 硅基流动](#silliconflow-硅基流动)
@@ -652,6 +653,20 @@ https://www.ibm.com/products/watsonx-ai/pricing
 
 ### Scaleway (1M free token/per account-no refresh)
 https://www.scaleway.com/en/docs/generative-apis/faq/#how-does-the-free-tier-work
+
+--------
+
+
+### Gonka DAHL (100M free token/per account-no refresh)
+> Last Check: **2026-10-08** </br>
+
+https://aidrop.gnk.space </br>
+https://inference.dahl.global/docs/tokens/
+
+- OpenAI-compatible endpoint: `https://inference.dahl.global/v1`
+- Models: DeepSeek V4-Flash, GLM-5.3-Flash, MiniMax M2.7 (served on the Gonka decentralized GPU network)
+- Sign-up asks for a username only (no email, no card). The 100M welcome grant goes to the account pool; allocate it to a key before calling the API
+- Busy models may return `model_concurrency` at peak times; switch model or retry
 
 --------
 
