@@ -226,7 +226,7 @@ z-ai/glm-5.3-flash
 --------
 
 ### Ollama
-> Last Check: **2026-10-08** </br>
+> Last Check: **2026-10-23** </br>
 
 
 https://ollama.com/cloud </br>
@@ -243,7 +243,7 @@ https://ollama.com/search?c=cloud
 </summary>
 
   - OpenAI — GPT-OSS
-  - MiniMax — M2 / M3
+  - MiniMax — M2 / M3 / M3.1 flash
   - Moonshot AI — Kimi K2-K3
   - NVIDIA — Nemotron 3
   - DeepSeek — DeepSeek V4
@@ -259,6 +259,7 @@ https://ollama.com/search?c=cloud
 - Gemma4: 31b
 - gpt-oss 20b/120b
 - nemotron-3-nano 30B/super 120B-A12B/ultra 550B-A55B
+- Reflection Beam 501B （limit time)
 
 > **Session usage** reset in 3hours
 
@@ -280,7 +281,7 @@ https://ollama.com/search?c=cloud
 | **Z.ai—GLM 5** | GLM-5.1（754B/A40B）<br>GLM-5.2（753B/A40B）<br>GLM-5.3-Flash（320B/A18B） |
 | **Alibaba Qwen—Qwen 3.5** | Qwen3.5-397B-A17B |
 | **Google—Gemma 4** | Gemma 4 31B |
-| **Mistral AI—Mistral Large 3 / Devstral Small 2** | Mistral Large 3 675B <br>Devstral Small 2 24B  |
+| **Mistral AI—Mistral Large 3 / 4 / Devstral Small 2** | Mistral Large 3 675B <br>Devstral Small 2 24B  |
 
 </details>
 
