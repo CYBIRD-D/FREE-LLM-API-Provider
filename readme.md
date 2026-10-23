@@ -30,9 +30,9 @@ Updates from time to time.
 
 You may also want to read my other posts: 
 - [**How to Choose Your LLM For Translation?**](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/tree/main)
-- [Model & Performance FAQ](https://github.com/CYBIRD-D/How-to-Choose-your-LLM-Model-for-translation/blob/main/FAQ_EN.md#models--performance)
 - [**Local LLMs Collection For Translation**](https://github.com/CYBIRD-D/Local-LLMs-Collection-For-Translation/tree/main)
 - [**LLM Timeline**](https://github.com/CYBIRD-D/AI-Model-LLM-Timeline)
+- [**LLM API Official Pricing Tracker**](https://github.com/CYBIRD-D/LLM-API-Official-Pricing-Tracker)
 ---------
 
 **Easy guide** to deploy online LLM api（luna）:
