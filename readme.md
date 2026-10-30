@@ -47,7 +47,7 @@ You may also want to read my other posts:
 - [Global Platform](#global-platform)
   - [★Google/Gemini & Gemma 4](#google-gemini-googlegemma-4)
   - [★Nvidia(40RPM)](#nvidia)
-  - [Ollama (paid cloud)](#ollama)
+  - [Ollama](#ollama)
   - [★Groq](#groq)
   - [~~Cerebras~~](#cerebras)
   - [OpenRouter](#openrouter)
@@ -222,7 +222,7 @@ z-ai/glm-5.3-flash
 
 --------
 
-### Ollama (cloud is pay-as-you-go, not a recurring free API)
+### Ollama
 > Last checked: **2026-10-30**
 
 - [Official pricing and cloud plans](https://ollama.com/pricing) · [Cloud models](https://ollama.com/search?c=cloud) · [2026-08-31 pricing transition](https://ollama.com/blog/transparent-pricing)
