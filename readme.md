@@ -447,7 +447,7 @@ Models list </br>
 
 ### Cohere
 > Last web updated: **2026-06-09**</br>
-> Last Check: **2026-10-08** </br>
+> Last Check: **2026-10-30** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -475,7 +475,7 @@ Endpoint: https://api.cohere.ai/compatibility
 
 ### Z.ai (GLM-4.5/4.7-Flash)
 
-> Last Check: **2026-10-08** </br>
+> Last Check: **2026-10-30** </br>
 
 https://docs.z.ai/guides/overview/pricing </br>
 
