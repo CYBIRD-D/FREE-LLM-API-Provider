@@ -44,11 +44,11 @@ You may also want to read my other posts:
 
 ## Content/目录
 - [Global Platform](#global-platform)
-  - [★Google/Gemma 3/4](#google-gemini-googlegemma-4)
+  - [★Google/Gemini & Gemma 4](#google-gemini-googlegemma-4)
   - [★Nvidia(40RPM)](#nvidia)
-  - [★★Ollama](#ollama)
+  - [Ollama (paid cloud)](#ollama)
   - [★Groq](#groq)
-  - [~~Cerebras~~](#celebras)
+  - [~~Cerebras~~](#cerebras)
   - [OpenRouter](#openrouter)
   - [Cloudflare](#cloudflare)
   - [Cohere](#cohere)
@@ -62,7 +62,7 @@ You may also want to read my other posts:
   - [Scaleway (1M free token/per account)](#scaleway-1m-free-tokenper-account-no-refresh)
 - [CN Platform](#cn-platform)
   - [ModelScope（魔搭社区）](#modelscope魔搭社区仅限cnonly-cn)
-  - [SilliconFlow 硅基流动](#silliconflow-硅基流动)
+  - [SiliconFlow 硅基流动](#siliconflow-硅基流动)
   - [Tencent-Hunyuan 腾讯混元](#tencent-hunyuan-腾讯混元)
   - [Volcengine 火山引擎（平台）](#volcengine-火山引擎平台-500-point-资源点day)
   - [心流](#心流)
@@ -259,12 +259,12 @@ Off-peak pricing applies to eligible models outside **12:00–18:00 UTC on weekd
 -------
 
 ### Groq
-> Last Check: **2026-10-08**
+> Last checked: **2026-10-30**
 
-*Current only **GPT-OSS 20b/120b** & **Qwen3.8-27b**
+The published free rate-limits table includes GPT-OSS 20B/120B and Qwen3.8 27B. Your account may have different limits.
 
 https://console.groq.com/docs/rate-limits</br>
-Endpoint: https://api.groq.com/openai
+Endpoint (OpenAI-compatible): https://api.groq.com/openai/v1
 
 
 <details>
@@ -276,18 +276,16 @@ Endpoint: https://api.groq.com/openai
 
 | Model | Request/Minute | Request/Day | Token/Minute | Token/Day |
 | --- | ---: | ---: | ---: | ---: |
-| groq/compound | 30 | 250 | 70K | - |
-| groq/compound-mini | 30 | 250 | 70K | - |
 | openai/gpt-oss-120b | 30 | 1K | 8K | 200K |
 | openai/gpt-oss-20b | 30 | 1K | 8K | 200K |
-| qwen/qwen3.8-27b | 30 | 1K | 8K | 2M |
+| qwen/qwen3.8-27b | 30 | 1K | 8K | 200K |
 
 </details>
 
 ---------
 
-### ~~Celebras~~
-~~> Last Check: **2026-09-23**~~
+### ~~Cerebras~~
+~~> Last checked: **2026-10-30**~~
 
 **Unusable rate limit** 5$ per account
 
@@ -305,18 +303,18 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last Check: **2026-10-08** </br>
+> Last checked: **2026-10-30** </br>
 
-https://openrouter.ai/models?q=free </br>
+https://openrouter.ai/collections/free-models </br>
 https://openrouter.ai/pricing </br>
 
-Endpoint: https://openrouter.ai/api
+Endpoint (OpenAI-compatible): https://openrouter.ai/api/v1
 
-**Models**: Based on what OpenRouter (the platform) provide as **Free**
+**Models**: Check the live collection. `openrouter/free` can route to a free model; $0-priced models without `:free` can follow different eligibility rules.
 - **Free usage limits**: If you’re using a free model variant (with an ID ending in **`:free`**/ **`(free)`** ) </br>
   you can make up to **`20`** requests/minute.</br>
   - If you have purchased less than **`$10 credits`**, you’re limited to **`50`** `free` model **requests/Day**.
-  - If you purchase at least **`$10 credits`** , your daily limit is increased to **`1000`** `free` model **requests/Day**.
+  - If you purchase at least **`$10 credits`**, the daily limit increases to **`1000`** free model requests/day. Failed requests also count. See [official limits](https://openrouter.ai/docs/api-reference/limits) for purchase thresholds.
 
 | Model variant (ID) | Credits purchased        | Rate limit (requests/min) | Daily limit (requests/day) |
 |--------------------|--------------------------|---------------------------|----------------------------|
@@ -327,14 +325,16 @@ Endpoint: https://openrouter.ai/api
 --------
 
 ### Cloudflare
-> Last web updated: **2026-08-18** </br>
+> Official pricing page last updated: **2026-10-20** </br>
 > Last Check: **2026-09-23** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
 https://developers.cloudflare.com/workers/platform/pricing/ </br>
-- Workers Free	**`10,000 Neurons`**/0.11$ per day </br>
+- Workers Free: **10,000 Neurons/day** (resets 00:00 UTC); paid overage **$0.011 per 1,000 Neurons**. </br>
 > "Neurons are our way of measuring AI outputs across different models, representing the GPU compute needed to perform your request. Our serverless model allows you to pay only for what you use without having to worry about renting, managing, or scaling GPUs."
+
+**Billing requirement:** Certain Kimi, DeepSeek V4/V4.1 and GLM-5.x APIs require Workers Paid or prepaid AI Gateway credits **even with unused free Neurons**. Listed models are not all available without a billing method.
 
 Models list </br>
 - Llama
@@ -351,21 +351,21 @@ Models list </br>
     - Mistral-7b-intruct-v0.1
     - Mistral-small-3.1b-24b
 - deepseek-r1-distill-qwen-32b
-- deepseek v4 flash/pro 
+- deepseek V4 flash/pro and V4.1 flash 1017 
 - Gemma
   - gemma-3-12b
   - **gemma-4-26B-A4B**
   - gemma-sea-lion-v4-27b-it
 - granite-4.0-h-micro
 - **glm-4.7-flash**
-- **glm-5.2**
+- **glm-5.2 / glm-5.3 / glm-5.3-flash**
 - **nemotron-3-120b-a12b**
 - **kimi-k2.5/k2.6/k2.7-code**
     
  <details>
   <summary>Full list with token cost</summary>  
    
-> Last official page update: August 18, 2026
+> Pricing page updated October 20, 2026 (reviewed October 30)
 >
 > Unit: USD per 1M tokens
 >
@@ -375,7 +375,7 @@ Models list </br>
 >
 > Free Tokens/day assumes an Input : Output token ratio of `1 : 1.3`.
 >
-> Free-token estimates are calculated directly from Cloudflare's Neurons-per-token rates rather than rounded USD prices.
+> Free-token estimates use Neurons-per-token rates rather than rounded USD prices; for billing-gated models these are **illustrative, not free account entitlements**.
 >
 > Cached input is excluded from the free-token calculation.
 >
@@ -479,8 +479,12 @@ Endpoint: https://api.z.ai/api/paas/v4
 ---------
 
 ### Mistral
-https://docs.mistral.ai/deployment/laplateforme/tier/
-（need to login)</br>
+> Last checked: **2026-10-30**
+
+[Official rate-limit guide](https://docs.mistral.ai/admin/billing-usage/usage-limits) · [Explanation](https://help.mistral.ai/en/articles/698531-why-am-i-hitting-api-rate-limits-and-how-do-i-increase-them)
+
+Free-mode limits depend on the **organization and model**. The old numeric cap below is a historical community report, **not a guaranteed free-tier entitlement**. Check **Admin Panel → API → Limits**.
+
 
 Endpoint: https://api.mistral.ai
 
@@ -494,7 +498,7 @@ Endpoint: https://api.mistral.ai
 
 ### SambaNova
 
-> Last Check: **2026-10-08**
+> Last checked: **2026-10-30**
 
 https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
@@ -511,13 +515,15 @@ https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
 ### AionLabs
 
-> Last Check: **2026-10-08**
+> Last checked: **2026-10-30**
 
 https://www.aionlabs.ai/docs/rate-limits/
 
 https://www.aionlabs.ai/docs/models/
 
 Endpoint: https://api.aionlabs.ai/v1
+
+**Shared free-tier caps:** 15 RPM, 20K TPM, 20K tokens/day ([official rate limits](https://www.aionlabs.ai/docs/rate-limits/)).
 
 | Model                                | Requests/Minute | Tokens/Day |
 |--------------------------------------|----------------- |------------|
@@ -580,15 +586,17 @@ https://modelscope.cn/docs/model-service/API-Inference/limits </br>
 - 在每个模型每天不超过500次调用的基础上，平台可能对于部分模型再进行**单独的限制**
   - 例如，deepseek-ai/DeepSeek-R1-0528，deepseek-ai/DeepSeek-V3.2-Exp等**规格较大模型**，当前限制**单模型每天100次调用额度**。其他模型的API调用，也可能会有类似的限制并进行动态调整
 
-### SilliconFlow 硅基流动
+### SiliconFlow 硅基流动
 **部分**小模型免费；新cn手机用户注册送**20M token** </br>
 https://siliconflow.cn/
 
 -------
 
 ### Tencent-Hunyuan 腾讯混元
-(Hunyuan-lite free; 1 M free token for other models/per account) </br>
-- 首次开通腾讯混元大模型服务后，混元生文将发放一定量级的免费调用额度（100M tokens）
+> Last checked: **2026-10-30**
+
+- [腾讯云官方计费说明](https://cloud.tencent.com/document/product/1729/97731)：首次开通后部分生文模型共享 **100 万（1M）tokens** 赠送额度，**不是 100M**。Embedding 有独立的 1M tokens 赠送额度。混元服务正逐步迁移至 **TokenHub**。
+- 首次开通腾讯混元大模型服务后，免费额度以控制台实际发放为准
   - 资源包有效期为1年，自开通服务之日起1年内若免费资源包次数未使用完，则过期作废
 - Hunyuan-lite 为免费模型 </br>
 https://cloud.tencent.com/document/product/1729/97731
@@ -663,7 +671,9 @@ https://xinghuo.xfyun.cn/sparkapi?scr=price
 
 ## [LLM PRICE LIST](https://github.com/CYBIRD-D/LLM-API-Official-Pricing-Tracker)
 
-### LLM API Pricing — October 14, 2026
+### LLM API Pricing — historical snapshot (October 14, 2026)
+
+> **Not re-audited on October 30.** See [dedicated pricing tracker](https://github.com/CYBIRD-D/LLM-API-Official-Pricing-Tracker) for current pricing.
 
 > Unit: USD per 1M tokens
 >
