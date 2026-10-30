@@ -61,15 +61,15 @@ You may also want to read my other posts:
   - [SKT](#skt)
   - [IBM](#ibm)
   - [Scaleway (1M free token/per account)](#scaleway-1m-free-tokenper-account-no-refresh)
-- [CN Platform](#cn-platform)
-  - [ModelScope 魔搭社区](#modelscope-魔搭社区)
-  - [SiliconFlow 硅基流动](#siliconflow-硅基流动)
-  - [Tencent Cloud TokenHub 腾讯云](#tencent-cloud-tokenhub-腾讯云)
-  - [Volcengine Ark 火山方舟](#volcengine-ark-火山方舟)
-  - [Coze 扣子 (separate from Ark)](#coze-扣子-separate-from-ark)
-  - [StreamLake Vanchin 快手万擎](#streamlake-vanchin-快手万擎)
-  - [iFLYTEK Spark 讯飞星火](#iflytek-spark-讯飞星火)
-  - [iFlow 心流 (retired)](#iflow-心流-retired)
+- [中国大陆平台](#cn-platform)
+  - [魔搭社区（ModelScope）](#魔搭社区modelscope)
+  - [硅基流动（SiliconFlow）](#硅基流动siliconflow)
+  - [腾讯云 TokenHub](#腾讯云-tokenhub)
+  - [火山方舟（Volcengine Ark）](#火山方舟volcengine-ark)
+  - [扣子（Coze）](#扣子coze)
+  - [快手万擎（StreamLake Vanchin）](#快手万擎streamlake-vanchin)
+  - [讯飞星火（iFLYTEK Spark）](#讯飞星火iflytek-spark)
+  - [心流（iFlow，已停止服务）](#心流iflow已停止服务)
 - [LLM PRICE LIST](#llm-price-list)
 
 -----------
@@ -604,115 +604,119 @@ https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing
 
 ## CN Platform
 
-> **Last reviewed: 2026-10-30.** This section distinguishes **recurring free inference**, **one-time trial tokens/vouchers**, and **non-API product credits**. Rate limits, eligible models, campaigns and geographic access may change; the logged-in console takes precedence. No account-level API calls were performed during this documentation review.
+> **最后核查：2026 年 10 月 30 日**
 >
-> 本节区分**持续免费推理**、**一次性试用额度/代金券**与**非 API 的产品积分**。具体权限、模型和额度以账号控制台为准。
+> 本节区分**持续免费推理**、**定期发放的额度**、**一次性试用 Token/代金券**和**非模型 API 的产品积分**。免费模型、使用限制、活动及地区政策可能随时变化，请以登录后的平台控制台为准。本次核查依据平台文档及公告，**未使用实际账号逐一测试 API**。
 
-### ModelScope 魔搭社区
-**Type:** Magicube-supported inference (renewable daily points; not an unlimited free API).
-> Last checked: **2026-10-30**
+### 魔搭社区（ModelScope）
 
-- [API-Inference usage limits](https://modelscope.cn/docs/model-service/API-Inference/limits) · [Magicube announcement (2026-08-10)](https://www.modelscope.cn/posts/435591) · [Magicube usage](https://www.modelscope.cn/magicube/usage)
-- OpenAI-compatible base URL: `https://api-inference.modelscope.cn/v1`.
-- An Alibaba Cloud account **linked to ModelScope and real-name verified** is required for API-Inference.
-- The current **Magicube (魔粒)** system grants **200 points/day** for logging in and **50 additional points/day** for linking Alibaba Cloud; community participation can earn more.
-- Indicative API costs: **0.5 points/request** (light), **1 point/request** (mainstream) or **2 points/request** (flagship). Actual points consumed depend on the selected model.
-- Earlier documentation stated **2,000 calls/day across models**, **up to 500/model/day**, with lower limits for some large models. These figures should **not** be treated as an unconditional current allowance or as a substitute for Magicube balances; model-specific quotas and concurrency may still apply.
-- Free shared capacity is for exploration and has no production SLA; check remaining points and per-model restrictions before use.
+**免费方式：** 每日魔粒积分，可用于模型推理；并非无限次免费 API。
 
-**中文：** 2026 年 8 月起 API-Inference 已纳入魔粒体系；每日登录 200 魔粒、绑定阿里云额外 50，模型通常按每次 0.5 / 1 / 2 魔粒扣减。原「每天 2000 次」口径不再适合单独代表当前可用额度。
+**官方资料：** [API-Inference 调用限制](https://modelscope.cn/docs/model-service/API-Inference/limits) · [魔粒体系公告（2026-08-10）](https://www.modelscope.cn/posts/435591) · [魔粒使用说明](https://www.modelscope.cn/magicube/usage)
 
----
+**API 地址（兼容 OpenAI）：** `https://api-inference.modelscope.cn/v1`
 
-### SiliconFlow 硅基流动
-**Type:** Selected zero-priced models + limited-time voucher (not a blanket free-token grant).
-> Last checked: **2026-10-30**
-
-- [Official free-model rate limits](https://docs.siliconflow.cn/docs/userguide/faqs/rate-limit-and-upgradation) · [Free vs. Pro models](https://docs.siliconflow.cn/docs/userguide/faqs/misc) · [Official 2026 voucher campaign](https://www.siliconflow.cn/developer-talk/od7wj9rr23p95uhihmhrombp)
-- OpenAI-compatible base URL: `https://api.siliconflow.cn/v1` (Mainland China service).
-- After **real-name verification**, users can access models currently identified as **free** in the model catalog at **0 inference charge**. Free models have **fixed, model-specific rate limits**; paid variants may carry a `Pro/` prefix. Check a model's actual pricing rather than assuming all small or non-`Pro/` models are free.
-- **Promotional voucher:** the official “推荐官” campaign (**2026-01-15 to 2026-12-31**) offers a **¥16 general-use voucher** after real-name verification, **manually claimed** from the event centre; valid for **180 days from receipt**. Referral vouchers are a **separate** reward. Historic referral gifts are converted to voucher equivalents.
-- The older “**20M free tokens upon CN-phone registration**” claim is **not verified as a universally current registration entitlement**; do not rely on it.
-
-**中文：** 免费模型本身的 0 元调用与实名认证领取的 **16 元代金券**是两种权益。代金券需要在活动中心领取，并非每人固定赠送 2000 万 tokens。
+- 使用 API-Inference 需要绑定**已完成实名认证的阿里云账号**。
+- 根据现行魔粒体系，每日登录可领取 **200 魔粒**，绑定阿里云账号可额外获得 **50 魔粒/天**；参与社区活动还可能获得额外积分。
+- 模型推理消耗参考：轻量模型约 **0.5 魔粒/次**，主流模型约 **1 魔粒/次**，旗舰模型约 **2 魔粒/次**。实际以具体模型的计费规则为准。
+- 旧版规则列有**所有模型合计 2,000 次/天、单模型最多 500 次/天**，部分大型模型限制更严格。这些数字不能直接当作当前账号每天可获得的免费调用次数；还需考虑魔粒余额、模型限额及并发限制。
+- 免费共享推理资源主要用于体验和开发测试，不保证生产环境服务等级；使用前请查看账号剩余积分及模型限制。
 
 ---
 
-### Tencent Cloud TokenHub 腾讯云
-**Type:** One-time new-user trial tokens (not an indefinitely free API).
-> Last checked: **2026-10-30**
+### 硅基流动（SiliconFlow）
 
-- [TokenHub new-user free trial (Mainland China, updated 2026-09-04)](https://cloud.tencent.com/document/product/1823/130053) · [TokenHub API quick start](https://cloud.tencent.com/document/product/1823/130058) · [Legacy platform shutdown announcement](https://cloud.tencent.com/announce/detail/2287)
-- **The legacy Tencent Hunyuan API platform is retired:** new purchases/key creation stopped **2026-06-30**, with the legacy console and API service fully shut down on **2026-09-30**. New integration should use **TokenHub**, which offers Hunyuan and third-party models.
-- On the **Mainland China TokenHub** new-user promotion (currently stated to run until **2026-12-31**), the official trial document lists **1 million tokens for language models**, valid for **one year** from receipt. This applies as **one-time trial entitlement**, with account/model package restrictions; see the console.
-- Complete Tencent Cloud **real-name verification**. Free packages can be claimed from the model catalog or activation page, and some are automatically issued on first call. **Turn off postpaid billing** if you do not want charges after the free package is depleted; without postpaid billing, inference stops when free tokens run out.
-- **Regional distinction:** the Tencent Cloud **international** TokenHub documentation specifies a different validity period (**90 days**) and may require a **US$1 balance hold per model activation**. Do not combine Mainland China and international terms.
-- Old “Hunyuan-lite free” and legacy **1M tokens / 1-year** API offers are historical and **not a current route through the retired API**.
+**免费方式：** 部分模型长期标价为 0 元；另有活动代金券，两者应分开计算。
 
-**中文：** 腾讯混元旧 API 已于 **2026-09-30 停服**；应改用 **TokenHub**。中国站新人语言模型试用为 **100 万 tokens、有效期一年**（一次性，活动至 2026-12-31），不要混用国际站的 90 天规则。
+**官方资料：** [免费模型及限流规则](https://docs.siliconflow.cn/docs/userguide/faqs/rate-limit-and-upgradation) · [免费与 Pro 模型说明](https://docs.siliconflow.cn/docs/userguide/faqs/misc) · [2026 年代金券活动公告](https://www.siliconflow.cn/developer-talk/od7wj9rr23p95uhihmhrombp)
 
----
+**API 地址（兼容 OpenAI）：** `https://api.siliconflow.cn/v1`
 
-### Volcengine Ark 火山方舟
-**Type:** Model inference API with one-time trials; **not** the same as Coze points.
-> Last checked: **2026-10-30**
-
-- [Ark safe-experience mode](https://docs.volcengine.com/docs/ark/free-tokens-only-mode?lang=zh) · [Model activation and free quotas](https://docs.volcengine.com/docs/ark/activation-management?lang=zh)
-- **Safe-experience mode (安心体验模式):** eligible **new accounts** can use the platform's **500,000-token trial allowance** for model inference; when that trial allowance is exhausted, eligible inference is **paused rather than billed**.
-- The safeguard must be enabled **when first activating model service**; an account that has already activated inference outside this mode may not be eligible. Once switched off, safe-experience mode **cannot be re-enabled**.
-- The allowance only covers eligible **inference tokens**: tools/plugins, knowledge bases and other products can still incur charges. Other free model packages may exist, but amounts and eligibility vary by model/campaign and are shown in the console.
-- The older **500 points/day** and per-model **Coze point-cost table** were **not Ark API pricing** and have been removed from this section.
-
-**中文：** 方舟提供真正的模型推理 API 试用。符合条件的新账号可在首次开通时开启**安心体验模式**，试用的 50 万 tokens 用完后自动暂停推理；插件、知识库等不一定免费。
+- 完成**实名认证**后，可调用模型列表中当前明确标注为**免费**的模型，相关推理费用为 **0 元**。
+- 免费模型有**按模型区分的调用速率限制**。部分付费版本带有 `Pro/` 前缀，但不能仅凭模型大小或是否带有该前缀判断是否免费，应以模型详情页的实际价格为准。
+- **活动代金券：** 官方 2026 年「推荐官」活动（**2026-01-15 至 2026-12-31**）提供实名认证后领取的 **16 元通用代金券**，须在活动中心**主动领取**，领取后 **180 天内有效**；邀请奖励另行计算。
+- 仓库此前所写「中国手机号新用户注册即送 **2,000 万 tokens**」未能确认仍为当前普遍适用的注册权益，因此不再作为确定额度展示。
 
 ---
 
-### Coze 扣子 (separate from Ark)
-**Type:** Agent/AI application platform credits; **not a general-purpose free model inference API**.
-> Last checked: **2026-10-30**
+### 腾讯云 TokenHub
 
-- [2026 subscription upgrade announcement](https://docs.volcengine.com/docs/coze/button-subscription-package-upgrade?lang=zh) · [Current subscription plans](https://docs.volcengine.com/docs/coze/Subscriptionpackage?lang=zh) · [Credit rules](https://docs.volcengine.com/docs/coze/integral?lang=zh)
-- The **2026-01-18** upgrade renamed **资源点** to **积分**. Its announcement introduced **1,500 points for daily sign-in** on the personal Free plan (**one-day validity**), replacing the earlier 500/day.
-- **Important documentation difference:** the current subscription table does **not** include monthly subscription points in the personal Free plan, while the current credit rules explicitly list a **one-time 1,500-point new-user grant** (**30-day validity**) and the FAQ also mentions daily sign-in rewards. Accordingly, **do not guarantee 1,500 recurring points/day for every account** without checking its actual event/credit balance.
-- Coze points may pay for platform features, but must **not** be represented as Volcengine Ark API token quotas. The prior detailed Coze 2025 model-point table was removed because it belonged to an older billing scheme.
+**免费方式：** 新用户一次性试用 Token；**不属于持续免费的模型 API**。
 
-**中文：** 扣子和火山方舟分开记录。旧的「500 资源点/天」已经过时；2026 年初公告提到每日签到 1500 积分，但现行页面还明确列出新用户**一次性** 1500 积分（30 天），应以账号活动界面为准。
+**官方资料：** [TokenHub 中国站新用户免费体验](https://cloud.tencent.com/document/product/1823/130053) · [TokenHub API 快速入门](https://cloud.tencent.com/document/product/1823/130058) · [旧混元平台停服公告](https://cloud.tencent.com/announce/detail/2287)
 
----
-
-### StreamLake Vanchin 快手万擎
-**Type:** One-time/campaign-specific free inference trial.
-> Last checked: **2026-10-30**
-
-- [Official free inference quota (updated 2025-12-12)](https://streamlake.com/document/WANQING/mdsor5767ob7s796sp6) · [Model billing](https://streamlake.com/document/WANQING/mdsorb4ejjptsmfyrn)
-- **Registration, verification and service activation** are required. Free online-inference allocations are provided in campaign/resource packages, with **no universal token amount confirmed**; check **Billing Centre → Resource Packages**.
-- Free credits apply to online inference **input, output and cache-hit tokens**, but **not batch inference**. Quotas are **model-specific** and shared within the main account.
-- **Postpaid billing warning:** usage after free credits expire or run out **can create a bill**; monitor usage or disable/limit postpaid access where supported.
-
-**中文：** 注册并认证后可领取活动试用包；不应填写未经证实的固定免费额度。免费额度耗尽后继续调用，可能按量收费。
+- **腾讯混元旧 API 平台已停止服务：** 旧平台于 **2026-06-30** 停止新购和创建密钥，于 **2026-09-30** 关闭原控制台及 API 服务。新的模型接入应使用 **TokenHub**，其提供混元及第三方模型。
+- **中国大陆站：** 官方新用户活动说明列出语言模型 **100 万 tokens** 的试用额度，**领取后一年内有效**；活动公布的结束日期为 **2026-12-31**。这属于**一次性试用权益**，部分模型或账号可能有单独限制。
+- 需要完成腾讯云**实名认证**。免费资源包可通过模型列表或开通页面领取，部分权益可能在首次调用时自动发放；最终以控制台显示为准。
+- **避免意外扣费：** 如不希望试用额度耗尽后产生费用，请关闭后付费模式。未开启后付费时，免费额度用尽后调用将停止。
+- **中国站与国际站不可混用：** 腾讯云国际站 TokenHub 的试用有效期为 **90 天**，部分模型开通还可能要求 **1 美元余额预授权**，与中国站的规则不同。
+- 此前的旧版「Hunyuan-lite 免费」和旧混元平台 **100 万 tokens / 一年**资源包属于历史权益，不能作为已经停服的旧 API 仍可使用的依据。
 
 ---
 
-### iFLYTEK Spark 讯飞星火
-**Type:** Zero-priced models + separate promotional free packages.
-> Last checked: **2026-10-30**
+### 火山方舟（Volcengine Ark）
 
-- [Spark Lite HTTP API documentation](https://www.xfyun.cn/doc/spark/HTTP%E8%B0%83%E7%94%A8%E6%96%87%E6%A1%A3.html) · [Spark-X2.5 model IDs](https://www.xfyun.cn/doc/spark/Spark-X2.5%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%BB%8D.html) · [Official model pricing/catalog](https://spark.xfyun.cn/sparkapi)
-- **Spark Lite:** official HTTP API documentation marks Lite as supporting **free use**. OpenAI-compatible base URL for the classic Spark HTTP API: `https://spark-api-open.xf-yun.com/v1/`.
-- **Spark-X2.5-1.7B** (model ID `spark-x2.5-1.7b`): listed as **free** (0 yuan/1M tokens) in the current model catalog.
-- **Spark-X2.5-4B** (`spark-x2.5-4b`): listed at **0 yuan/1M tokens / limited-time free** in model listings; **do not assume permanent pricing**. The X2.5 models are listed in the Spark model marketplace; confirm endpoint/API credentials for that platform separately.
-- The former blanket statement “**200K free tokens for all models, valid one year**” could **not** be reconfirmed and should not be treated as current.
+**免费方式：** 模型推理 API 一次性体验额度；与扣子的积分体系不同。
 
-**中文：** 保留 Spark Lite 免费；增加 **X2.5-1.7B 免费**和 **X2.5-4B 限时免费**，不再使用缺少现行依据的「所有模型共享 20 万 tokens」口径。
+**官方资料：** [安心体验模式](https://docs.volcengine.com/docs/ark/free-tokens-only-mode?lang=zh) · [模型开通与免费额度管理](https://docs.volcengine.com/docs/ark/activation-management?lang=zh)
+
+- **安心体验模式：** 符合条件的**新用户**可通过该模式使用 **50 万 tokens** 模型推理体验额度；额度用尽后，符合条件的推理服务会**暂停而不是继续扣费**。
+- 该模式须在**首次开通模型推理服务时**选择。已通过其他模式开通服务的账号可能不再符合条件；**关闭安心体验模式后不能重新开启**。
+- 此模式的免费额度仅覆盖适用范围内的**模型推理 Token**。工具、插件、知识库等其他功能可能单独计费。
+- 平台还可能提供其他按模型、活动或账号发放的免费资源包，具体数量与适用条件请查看控制台。
+- 旧版「**500 资源点/天**」及豆包模型资源点消耗表属于**扣子（Coze）**的计费体系，**不是火山方舟 API 的免费额度或定价**，因此已从本节移除。
 
 ---
 
-### iFlow 心流 (retired)
-**Status: API and model catalog closed on 2026-04-17. Not a currently usable free LLM API provider.**
+### 扣子（Coze）
 
-- [Official closure announcement (2026-03-20)](https://vibex.iflow.cn/t/topic/4819) · [Closure-day notice (2026-04-17)](https://vibex.iflow.cn/t/topic/5753)
-- The original **iFlow API service and hosted model catalog** were shut down on **2026-04-17**, along with the bundled iFlow CLI model access. The CLI can still be configured with **other providers'** compatible APIs; that does **not** restore the retired iFlow-hosted model service.
-- Retained for historical reference only; excluded from active-provider recommendations.
+**免费方式：** AI 应用与智能体平台积分；**不等同于通用模型推理 API 免费额度**。
+
+**官方资料：** [2026 年订阅体系升级公告](https://docs.volcengine.com/docs/coze/button-subscription-package-upgrade?lang=zh) · [现行订阅套餐](https://docs.volcengine.com/docs/coze/Subscriptionpackage?lang=zh) · [积分规则](https://docs.volcengine.com/docs/coze/integral?lang=zh)
+
+- **2026-01-18** 的套餐升级将「资源点」更名为「积分」。升级公告提出个人免费版**每日签到领取 1,500 积分**（**当天有效**），取代此前的 500 资源点/天。
+- **现行资料存在口径差异：** 当前套餐表未将每月订阅积分列入个人免费版；积分规则又明确列出**新用户一次性获得 1,500 积分**（**30 天有效**），相关常见问题仍提及每日签到奖励。因此，不能在未查看账号活动页面的情况下保证所有用户每天都能固定领取 1,500 积分。
+- 扣子积分主要用于平台产品和功能，**不能直接换算成火山方舟 API 的免费 Token 数量**。
+- 原仓库中按旧版扣子资源点计算的豆包、DeepSeek、Kimi 模型消耗表已移除，以免把过期计费规则当作现行价格。
+
+---
+
+### 快手万擎（StreamLake Vanchin）
+
+**免费方式：** 新用户或活动提供的模型在线推理试用资源包。
+
+**官方资料：** [免费推理额度说明（2025-12-12 更新）](https://streamlake.com/document/WANQING/mdsor5767ob7s796sp6) · [模型计费说明](https://streamlake.com/document/WANQING/mdsorb4ejjptsmfyrn)
+
+- 需要完成**注册、认证和服务开通**，方可使用符合条件的免费推理资源包。
+- 免费资源包通常按**具体模型**发放，同一主账号下共享；未确认所有新用户均能领取相同数量的 Token，因此不填写统一免费额度。实际余额请在**费用中心 → 资源包**中查看。
+- 资源包可抵扣符合条件的**在线推理输入、输出及缓存命中 Token**，但**不能抵扣批量推理**。
+- **注意超额费用：** 免费额度过期或用尽后继续调用，可能产生按量计费账单。建议及时查看用量，并在支持的情况下限制或关闭后付费调用。
+
+---
+
+### 讯飞星火（iFLYTEK Spark）
+
+**免费方式：** 部分模型标价为 0 元，另有独立的活动赠送额度。
+
+**官方资料：** [Spark Lite HTTP API 文档](https://www.xfyun.cn/doc/spark/HTTP%E8%B0%83%E7%94%A8%E6%96%87%E6%A1%A3.html) · [Spark-X2.5 模型说明](https://www.xfyun.cn/doc/spark/Spark-X2.5%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%BB%8D.html) · [星火模型与价格页面](https://spark.xfyun.cn/sparkapi)
+
+- **Spark Lite：** 官方 HTTP API 文档标注支持**免费使用**。
+- **Spark Lite 经典 API 地址（兼容 OpenAI）：** `https://spark-api-open.xf-yun.com/v1/`。
+- **Spark-X2.5-1.7B**（模型 ID：`spark-x2.5-1.7b`）：现行模型列表标价为 **0 元/百万 tokens**。
+- **Spark-X2.5-4B**（模型 ID：`spark-x2.5-4b`）：模型列表出现 **0 元/百万 tokens / 限时免费**标注，**不可视为永久免费**。X2.5 系列属于星火模型平台，调用前需另行确认适用的 API 地址及鉴权方式。
+- 旧版「首次开通后，所有模型共享 **20 万免费 tokens，有效期一年**」未能找到明确的现行依据，故不再将其列为确定权益。
+
+---
+
+### 心流（iFlow，已停止服务）
+
+**状态：原免费 LLM API 与托管模型库已于 2026 年 4 月 17 日停止服务，不再属于当前可用的免费模型 API 平台。**
+
+**官方资料：** [2026-03-20 停服公告](https://vibex.iflow.cn/t/topic/4819) · [2026-04-17 停服通知](https://vibex.iflow.cn/t/topic/5753)
+
+- 原有 **iFlow API 服务及托管模型库**于 **2026-04-17** 关闭，相关 iFlow CLI 内置模型访问也随之停止。
+- iFlow CLI 仍可配置**其他平台的兼容 API**，但这不代表原心流托管模型服务恢复。
+- 本条仅作**历史记录**，不应再列为可用免费 API 推荐项。
 
 ---
 
