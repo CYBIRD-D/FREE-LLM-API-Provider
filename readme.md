@@ -1,12 +1,12 @@
 # Free LLM API Provider
-> Last reviewed: **2026-10-30** (selected providers; see per-section dates)
-
+> Last reviewed: **2026-10-30** 
 
 This directory tracks **free LLM inference APIs**, their account requirements and rate limits (including CN providers). **Free inference**, **one-time trial credits** and **$0/month subscriptions with paid token usage** are not the same thing. Free quotas and model catalogs can change.
 
 免费 LLM API 平台汇总（包括中国大陆平台）。**免费调用、一次性试用额度和按量付费（免月费）应分别判断**。
 
-> **Review status (2026-10-30):** Google, NVIDIA, Ollama, Groq, OpenRouter, Cloudflare, Cohere, Z.ai, Mistral, SambaNova, Aion Labs and Tencent Hunyuan were checked against provider documentation. Other sections and the embedded price list are dated snapshots, not fully re-audited.
+> **Review status (2026-10-30)**
+> Google, NVIDIA, Ollama, Groq, OpenRouter, Cloudflare, Cohere, Z.ai, Mistral, SambaNova, Aion Labs and Tencent Hunyuan were checked against provider documentation. Other sections and the embedded price list are dated snapshots, not fully re-audited.
 
 <table align="center">
   <tr>
@@ -84,6 +84,17 @@ You may also want to read my other posts:
 - Google does **not** publish a single guaranteed RPM / TPM / RPD quota that applies to every free project. Limits depend on model, project and account tier and are shown in AI Studio. Previously observed numbers (e.g. 5 RPM/20 RPD) are **not universal guarantees**.
 - Limits apply **per project** (not per key); RPD quotas reset at **midnight Pacific time**. Free-tier prompts may be used to improve Google products.
 - **Alternative, unofficial:** [AI Studio to API Adapter](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md). Review its security and terms before use.
+
+| Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
+|---------------------------|---------------------------|--------------------------|-----------------|
+| Gemini 2.5~3.8   Flash    | 5             | 250k                     | 20              |
+| Gemini 2.5 Flash Lite     | 10                        | 250k                     | 20              |
+| Gemini 3.1/3.5 Flash Lite     | 15                        | 250k                     | 500             |
+| **Gemma 4 26B/31B**           | **30**                        | **16k**             | **14.4K**            |
+| ~~Gemma 3 (1B/2B/4B/12B/27B)~~  | ~~30~~                  | ~~15k~~                      | ~~14.4k~~           |
+~~gemini 2 Flash/Lite~~
+~~gemini 2.5/3.1 Pro~~
+
 
 -------
 
@@ -217,6 +228,17 @@ z-ai/glm-5.3-flash
 - **Pay as you go ($0/month)** means **no subscription**, not free inference: cloud token usage consumes purchased credits. The old blanket list of “free models” and **3-hour session resets** no longer describes the current published plans.
 - Running local models on your own hardware incurs no Ollama cloud token charges.
 - Cloud concurrency: **3** for Pay as you go and Pro; **10** for Max and Team. Some legacy accounts may have different conditions.
+
+> **Free** model list
+
+- Gemma4: 31b
+- gpt-oss 20b/120b
+- nemotron-3-nano 30B/super 120B-A12B/ultra 550B-A55B
+- Reflection Beam 501B （limit time)
+
+> **Session usage** reset in 3hours
+
+
 
 | Plan | Subscription | Included cloud usage |
 |---|---:|---:|
