@@ -1,11 +1,12 @@
 # Free LLM API Provider
-> Last updated: **2026-10-14**
+> Last reviewed: **2026-10-30** (selected providers; see per-section dates)
 
 
-This is a list of free llm providers and their rate usage limits </br>
-Updates from time to time.
+This directory tracks **free LLM inference APIs**, their account requirements and rate limits (including CN providers). **Free inference**, **one-time trial credits** and **$0/month subscriptions with paid token usage** are not the same thing. Free quotas and model catalogs can change.
 
-免费LLM api平台（包括cn平台）
+免费 LLM API 平台汇总（包括中国大陆平台）。**免费调用、一次性试用额度和按量付费（免月费）应分别判断**。
+
+> **Review status (2026-10-30):** Google, NVIDIA, Ollama, Groq, OpenRouter, Cloudflare, Cohere, Z.ai, Mistral, SambaNova, Aion Labs and Tencent Hunyuan were checked against provider documentation. Other sections and the embedded price list are dated snapshots, not fully re-audited.
 
 <table align="center">
   <tr>
@@ -73,55 +74,33 @@ You may also want to read my other posts:
 
 ## Global Platform
 
-### ~~Google Gemini~~ Google/Gemma 4
+### Google Gemini / Gemma 4
+> Last checked: **2026-10-30**
 
-https://ai.google.dev/gemini-api/docs/rate-limits#free-tier </br>
-**Gemma3** had been removed from api.
-> Last updated: **2026-10-14 UTC** </br>
-> **RPM**: Requests per minute </br>
-> **TPM**: Tokens per minute</br>
-> **RPD** Requests per day</br>
-
-- No free api for Gemini 3 Pro </br>
-https://ai.google.dev/gemini-api/docs/gemini-3?thinking=high#faq </br>
-
-Endpoint: https://generativelanguage.googleapis.com
-
-
-| Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
-|---------------------------|---------------------------|--------------------------|-----------------|
-| Gemini 2.5~3.8   Flash    | 5             | 250k                     | 20              |
-| Gemini 2.5 Flash Lite     | 10                        | 250k                     | 20              |
-| Gemini 3.1/3.5 Flash Lite     | 15                        | 250k                     | 500             |
-| **Gemma 4 26B/31B**           | **30**                        | **16k**             | **14.4K**            |
-| ~~Gemma 3 (1B/2B/4B/12B/27B)~~  | ~~30~~                  | ~~15k~~                      | ~~14.4k~~           |
-~~gemini 2 Flash/Lite~~
-~~gemini 2.5/3.1 Pro~~
-
-
-
-**Google has set gemini limit to low rate**.
-
-**★Other solutions:** </br>
-[**Google AI Studio to API Adapter**](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md)
-
-</br>
+- [Free-tier model pricing](https://ai.google.dev/gemini-api/docs/pricing) · [Rate limits](https://ai.google.dev/gemini-api/docs/rate-limits) · [Your project's limits in AI Studio](https://aistudio.google.com/rate-limit)
+- Endpoint: `https://generativelanguage.googleapis.com`
+- **Free-tier examples confirmed on Google's pricing page:** `gemini-3.8-flash`, `gemini-3.5-flash-lite` and **Gemma 4**. Check the Free Tier column for other models.
+- **Not free-tier eligible:** `gemini-4-argon`, `gemini-3.1-pro-preview` (other Pro models require individual checks).
+- Google does **not** publish a single guaranteed RPM / TPM / RPD quota that applies to every free project. Limits depend on model, project and account tier and are shown in AI Studio. Previously observed numbers (e.g. 5 RPM/20 RPD) are **not universal guarantees**.
+- Limits apply **per project** (not per key); RPD quotas reset at **midnight Pacific time**. Free-tier prompts may be used to improve Google products.
+- **Alternative, unofficial:** [AI Studio to API Adapter](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md). Review its security and terms before use.
 
 -------
 
 ### Nvidia
-> Last updated: **2026-09-23** </br>
+> Last checked: **2026-10-30** </br>
 
-https://build.nvidia.com/explore/discover </br>
-Endpoint: https://integrate.api.nvidia.com
+https://build.nvidia.com/models </br>
+Endpoint (OpenAI-compatible): https://integrate.api.nvidia.com/v1
 
 **Rate limit**: Usually up to **`40`** Requests per minute(RPM)</br>
 > Nvidia: Maximum API requests accepted in a given timeframe. </br>
 Rate limits may vary by model and traffic from other users may cause throttling. </br>
 > For dedicated availability, deploy models as a dedicated endpoint with NVIDIA NIM.
 
-- **55** Models list
-  - OpenAI/Google/Meta/Microsoft/NVIDIA/Mistral AI/DeepSeek/Moonshot AI/Z-ai/Minimax etc.
+- **Representative catalog below, not a fixed or exhaustive 55-model list.** Verify the **Free Endpoint** label for each model in the [live NVIDIA catalog](https://build.nvidia.com/models).
+  - OpenAI/Google/Meta/Microsoft/NVIDIA/Mistral AI/DeepSeek/Moonshot AI/Z.ai/MiniMax etc.
+- Free endpoints are for **trial/evaluation**, not guaranteed dedicated production hosting. Check NVIDIA trial privacy terms before submitting sensitive data.
 <details>
 
 <summary> 
@@ -133,6 +112,7 @@ Rate limits may vary by model and traffic from other users may cause throttling.
 deepseek-ai/deepseek-v4-flash  
 deepseek-ai/deepseek-v4-flash-0731  
 deepseek-ai/deepseek-v4-pro  
+deepseek-ai/deepseek-v4.1-flash  
 
 #### Google
 google/codegemma-7b  
@@ -145,6 +125,7 @@ meta/llama-3.1-70b-instruct
 meta/llama-3.2-1b-instruct  
 meta/llama-3.2-3b-instruct  
 meta/llama-3.3-70b-instruct  
+meta/muse-glimmer-30b  
 
 #### Microsoft
 microsoft/phi-4-mini-instruct  
@@ -153,11 +134,13 @@ microsoft/phi-4-mini-flash-reasoning
 #### MiniMax
 minimaxai/minimax-m2.5  
 minimaxai/minimax-m2.7  
+minimaxai/minimax-m3.1-flash  
 
 #### Mistral
 mistralai/mistral-nemotron  
 mistralai/mixtral-8x7b-instruct  
 mistralai/mixtral-8x22b-instruct  
+mistralai/mistral-large-4-1t-a52b  
 
 #### Moonshot / Kimi
 moonshotai/kimi-k2-instruct  
@@ -174,6 +157,7 @@ nvidia/llama-3.3-nemotron-super-49b-v1.5
 nvidia/llama-3.1-nemotron-ultra-253b-v1  
 nvidia/nemotron-3-ultra-550b-a55b  
 nvidia/nemotron-3.5-lightning-30b-a3b  
+nvidia/nemotron-3.5-super-vl-120b-a12b  
 nvidia/nemoguard-jailbreak-detect  
 nvidia/nemotron-3-nano-30b-a3b  
 nvidia/nemotron-3-super-120b-a12b  
@@ -201,6 +185,7 @@ sarvamai/sarvam-m
 
 #### StepFun
 stepfun-ai/step-3.5-flash  
+stepfun-ai/step-5-preview  
 
 #### Stockmark
 stockmark/stockmark-2-100b-instruct  
@@ -225,136 +210,51 @@ z-ai/glm-5.3-flash
 
 --------
 
-### Ollama
-> Last Check: **2026-10-23** </br>
+### Ollama (cloud is pay-as-you-go, not a recurring free API)
+> Last checked: **2026-10-30**
 
+- [Official pricing and cloud plans](https://ollama.com/pricing) · [Cloud models](https://ollama.com/search?c=cloud) · [2026-08-31 pricing transition](https://ollama.com/blog/transparent-pricing)
+- **Pay as you go ($0/month)** means **no subscription**, not free inference: cloud token usage consumes purchased credits. The old blanket list of “free models” and **3-hour session resets** no longer describes the current published plans.
+- Running local models on your own hardware incurs no Ollama cloud token charges.
+- Cloud concurrency: **3** for Pay as you go and Pro; **10** for Max and Team. Some legacy accounts may have different conditions.
 
-https://ollama.com/cloud </br>
-https://ollama.com/search?c=cloud
-
-
-#### Ollama Models
-
-<details>
-<summary> 
-  
-#### All Cloud Models (expand to view)
-
-</summary>
-
-  - OpenAI — GPT-OSS
-  - MiniMax — M2 / M3 / M3.1 flash
-  - Moonshot AI — Kimi K2-K3
-  - NVIDIA — Nemotron 3
-  - DeepSeek — DeepSeek V4
-  - Z.ai — GLM 5
-  - Alibaba Qwen — Qwen 3.5
-  - Google — Gemma 4
-  - Mistral AI — Mistral Large 3 / 4; Devstral Small 2
-
-</details>
-
-> **Free** model list
-
-- Gemma4: 31b
-- gpt-oss 20b/120b
-- nemotron-3-nano 30B/super 120B-A12B/ultra 550B-A55B
-- Reflection Beam 501B （limit time)
-
-> **Session usage** reset in 3hours
-
+| Plan | Subscription | Included cloud usage |
+|---|---:|---:|
+| Pay as you go | $0/month | None advertised; purchase usage credits |
+| Pro | $20/month ($200/year) | $60/month |
+| Max | $100/month | $300/month |
+| Team | $500/month | $1,000/month shared |
+| Enterprise | Custom | Custom |
 
 <details>
-<summary> 
+<summary>Current cloud model pricing (USD per 1M input / 1M output tokens)</summary>
 
-#### Model list
+| Model | Input | Output | Combined |
+|---|---:|---:|---:|
+| deepseek-v4.1-flash (off-peak) | $0.15 | $0.60 | $0.75 |
+| deepseek-v4.1-flash (standard) | $0.30 | $1.20 | $1.50 |
+| deepseek-v4-pro (off-peak) | $0.66 | $1.98 | $2.64 |
+| deepseek-v4-pro (standard) | $1.32 | $3.96 | $5.28 |
+| gemma4 | $0.14 | $0.40 | $0.54 |
+| glm-5.3 / glm-5.2 | $1.40 | $4.40 | $5.80 |
+| glm-5.3-flash | $0.15 | $0.50 | $0.65 |
+| gpt-oss:120b | $0.15 | $0.60 | $0.75 |
+| gpt-oss:20b | $0.07 | $0.30 | $0.37 |
+| kimi-k3 | $3.00 | $15.00 | $18.00 |
+| kimi-k2.7-code / kimi-k2.6 | $0.95 | $4.00 | $4.95 |
+| minimax-m3.1-flash | $0.15 | $0.60 | $0.75 |
+| minimax-m3 | $0.60 | $2.40 | $3.00 |
+| minimax-m2.7 | $0.30 | $1.20 | $1.50 |
+| mistral-large-4 | $0.70 | $2.10 | $2.80 |
+| mistral-large-3 | $0.50 | $1.50 | $2.00 |
+| muse-spark-open | $1.25 | $4.25 | $5.50 |
+| nemotron-3-nano | $0.06 | $0.24 | $0.30 |
+| nemotron-3-super | $0.015 | $0.60 | $0.615 |
+| nemotron-3-ultra | $0.10 | $3.00 | $3.10 |
 
-</summary>
-
-| Company | Models |
-|---|---|
-| **OpenAI—GPT-OSS** | GPT-OSS 20B<br>GPT-OSS 120B |
-| **MiniMax—M2 / M3** | MiniMax M2.7（229B/A10B）<br>MiniMax M3 （428B/A22B） |
-| **Moonshot AI—Kimi K2 / K3** | Kimi K2.6（1T/A32B）<br>Kimi K2.7 Code（1T/A32B）<br>Kimi K3（2.8T/A104B） |
-| **NVIDIA—Nemotron 3** | Nemotron 3 Nano（30B/A3B）<br>Nemotron 3 Super（120B/A12B）<br>Nemotron 3 Ultra（550B/A55B） |
-| **DeepSeek—DeepSeek V4** | DeepSeek V4 Flash（284B/A13B）<br>DeepSeek V4 Flash 0731（284B/A13B）<br>DeepSeek V4 Pro（1.6T/A49B）<br>DeepSeek V4 Pro 0813（1.6T/A49B）</br> DeepSeek v4.1 Flash(552B) |
-| **Z.ai—GLM 5** | GLM-5.1（754B/A40B）<br>GLM-5.2（753B/A40B）<br>GLM-5.3-Flash（320B/A18B） |
-| **Alibaba Qwen—Qwen 3.5** | Qwen3.5-397B-A17B |
-| **Google—Gemma 4** | Gemma 4 31B |
-| **Mistral AI—Mistral Large 3 / 4 / Devstral Small 2** | Mistral Large 3 675B <br>Devstral Small 2 24B  |
-
-</details>
-
-
-<details>
-<summary>
-
-#### Ollama Subscription Plans
-
-</summary>
-
-| Plan | Price | Included Usage Credits | Concurrent Requests | Model Access | Main Features |
-|---|---:|---:|---:|---|---|
-| **Free** | $0 | Starter usage credits | 1 | Starter models by default; add credits to unlock all models | Run models locally; no service fees |
-| **Pro** | $20/month or $200/year | $60/month | 3 | Access to larger Pro models | Everything in Free; multiple models concurrently; Fast Mode (coming soon) |
-| **Max** | $100/month | $300/month | 10 | All Pro access + early access to newest models | Everything in Pro; designed for power users running multiple agents simultaneously |
-| **Team** | $500/month | $1,000/month shared across the team | 10 | Pro-level model access | Unlimited users; centralized billing and administration; priority support; shared projects, skills and instructions (coming soon) |
-| **Enterprise** | Custom pricing | Custom / volume-based | Custom | Configurable model access | Everything in Team; model access controls; user/API-key cost budgets; private Slack support channel; custom security questionnaires |
-
-### Additional Plan Notes
-
-- **Pro annual billing:** $200/year, equivalent to about **$16.67/month**.
-- **Local model usage is unlimited** on your own hardware regardless of plan.
-- All plans, including Free, can purchase **additional usage credits**.
-- Purchased/additional credits can unlock all cloud models even on the Free plan.
-- Included monthly credits are used first, followed by the extra usage balance.
-- **Unused included monthly credits do not roll over.**
-- Pro, Max and Team included usage resets monthly on the subscription anniversary date.
-- Free usage resets monthly from the account signup date.
-- Requests exceeding the concurrency limit are queued until a slot becomes available; requests may be rejected if the queue is full.
-- Team credits and additional usage balances are shared across the organization.
-- Ollama states that prompt and response data is not logged or used for training.
+Off-peak pricing applies to eligible models outside **12:00–18:00 UTC on weekdays**, and throughout weekends. See the official table for cached-input prices. This table is **paid cloud pricing**, not a free-tier model listing.
 
 </details>
-
-
-<details>
-<summary>
-
-#### Ollama Model Pricing
-
-</summary>
-
-> Prices are in USD per 1 million tokens.
-> "Input + Output (1:1)" assumes 1M input tokens + 1M output tokens.
-
-| Model | Input | Output | Input + Output (1:1) | Note |
-|---|---:|---:|---:|---:|
-| **deepseek-v4.1-flash** | $0.15 | $0.60 | **$0.75** | unpeak |
-| **deepseek-v4-flash** | $0.44 | $1.32 | **$1.76** | peak |
-| **deepseek-v4-pro** | $1.32 | $3.96 | **$5.28** |
-| **gemma4** | $0.14 | $0.40 | **$0.54** |
-| **glm-5.3** | $1.40 | $4.40 | **$5.80** |
-| **glm-5.3-flash** | $0.15 | $0.50 | **$0.65** |
-| **glm-5.2** | $1.40 | $4.40 | **$5.80** |
-| **glm-5.1** | $1.00 | $3.20 | **$4.20** |
-| **gpt-oss:120b** | $0.15 | $0.60 | **$0.75** |
-| **gpt-oss:20b** | $0.07 | $0.30 | **$0.37** |
-| **kimi-k3** | $3.00 | $15.00 | **$18.00** |
-| **kimi-k2.7-code** | $0.95 | $4.00 | **$4.95** |
-| **kimi-k2.6** | $0.95 | $4.00 | **$4.95** |
-| **minimax-m3** | $0.60 | $2.40 | **$3.00** |
-| **minimax-m2.7** | $0.30 | $1.20 | **$1.50** |
-| **mistral-large-3** | $0.50 | $1.50 | **$2.00** |
-| **nemotron-3-nano** | $0.06 | $0.24 | **$0.30** |
-| **nemotron-3-super** | $0.015 | $0.60 | **$0.615** |
-| **nemotron-3-ultra** | $0.10 | $3.00 | **$3.10** |
-| **qwen3.5:397b** | $0.60 | $3.60 | **$4.20** |
-
-</details>
-
-
-</br>
 
 -------
 
