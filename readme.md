@@ -1,5 +1,5 @@
 # Free LLM API Provider
-> Last reviewed: **2026-10-30** 
+> Last reviewed: **2026-11-02** 
 
 This directory tracks **free LLM inference APIs**, their account requirements and rate limits (including CN providers).  
 
