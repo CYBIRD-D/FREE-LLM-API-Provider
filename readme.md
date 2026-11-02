@@ -7,7 +7,7 @@ This directory tracks **free LLM inference APIs**, their account requirements an
 免费 LLM API 平台汇总（包括中国大陆平台）。**免费调用、一次性试用额度和按量付费（免月费）应分别判断**。
 
 > **Review status (2026-10-30)**
-> Google, NVIDIA, Ollama, Groq, OpenRouter, Cloudflare, Cohere, Z.ai, Mistral, SambaNova, Aion Labs and Tencent Hunyuan were checked against provider documentation. Other provider sections may remain dated snapshots. The embedded price list is synchronized to the standalone pricing tracker dated **2026-10-30**; this repository does not independently live-verify its prices.
+> AMD Radeon Cloud Token Factory and AMD AI Developer Program were checked on **2026-11-02**. Google, NVIDIA, Ollama, Groq, OpenRouter, Cloudflare, Cohere, Z.ai, Mistral, SambaNova, Aion Labs and Tencent Hunyuan were checked against provider documentation on **2026-10-30**. Other provider sections may remain dated snapshots. The embedded price list is synchronized to the standalone pricing tracker dated **2026-10-30**; this repository does not independently live-verify its prices.
 
 <table align="center">
   <tr>
@@ -45,6 +45,8 @@ You may also want to read my other posts:
 
 ## Content/目录
 - [Global Platform](#global-platform)
+  - [AMD Radeon Cloud Token Factory (China site)](#amd-radeon-cloud-token-factory-china-site)
+  - [AMD AI Developer Program (cloud credits)](#amd-ai-developer-program-one-time-cloud-credits)
   - [★Google/Gemini & Gemma 4](#google-gemini-googlegemma-4)
   - [★Nvidia(40RPM)](#nvidia)
   - [Ollama](#ollama)
@@ -62,6 +64,7 @@ You may also want to read my other posts:
   - [IBM](#ibm)
   - [Scaleway (1M free token/per account)](#scaleway-1m-free-tokenper-account-no-refresh)
 - [中国大陆平台](#cn-platform)
+  - [AMD Radeon Cloud Token Factory](#amd-radeon-cloud-token-factoryamd-免费模型-api)
   - [魔搭社区（ModelScope）](#魔搭社区modelscope)
   - [硅基流动（SiliconFlow）](#硅基流动siliconflow)
   - [腾讯云 TokenHub](#腾讯云-tokenhub)
@@ -75,6 +78,29 @@ You may also want to read my other posts:
 -----------
 
 ## Global Platform
+
+### AMD Radeon Cloud Token Factory (China site)
+> Last checked: **2026-11-02** · **Free shared-model API with a daily renewable usage cap**
+
+- **Official links:** [Token Factory console](https://developer.amd.com.cn/radeon/tokenfactory) · [Documentation](https://amd-aim.github.io/radeon-cloud-docs/guides/token-factory/) · [Rate limits](https://amd-aim.github.io/radeon-cloud-docs/api/rate-limits/) · [Usage and quota](https://amd-aim.github.io/radeon-cloud-docs/api/usage/) · [Terms](https://amd-aim.github.io/radeon-cloud-docs/api/terms/)
+- **API base URL (OpenAI-compatible):** `https://developer.amd.com.cn/radeon/api/v1`. Also supports Anthropic-compatible Messages requests. No GPU instance needed.
+- **Free quota:** Resets **daily at 00:00 Beijing time (UTC+8)**. Usage is metered in **pts (points)**, *not* USD, GPU cloud credits, or a fixed number of tokens. **Daily pts limits vary by account and can change**; the official 10-pt example is **not a guaranteed allowance**. Check **Credits & Usage** or `GET https://developer.amd.com.cn/radeon/api/v1/usage` with your API key (fields `daily_cost_limit_usd` and `daily_cost_remaining_usd` represent pts despite their names).
+- **Typical rate limits (not guaranteed):** **20 RPM/account** at the gateway, **30 RPM/API key** at admission, and **8 concurrent requests/API key**; model/backend capacity may impose additional limits.
+- **Models:** The hosted catalog includes DeepSeek, Qwen, GLM, MiMo and other families, but changes without notice. Query the authenticated `GET /models` endpoint for the actual list.
+- **Restrictions:** Intended for **evaluation and development only**; **not for production**. No SLA or uptime guarantee, and reselling or proxying access to third parties is prohibited. The service is available on AMD's **China site only**, despite this English-language listing.
+
+---
+
+### AMD AI Developer Program (one-time cloud credits)
+> Last checked: **2026-11-02** · **Promotional credits, not a recurring free LLM API tier**
+
+- **Official links:** [Join AMD AI Developer Program](https://developer.amd.com/ai-developer-program/) · [Benefits, FAQ and credit terms](https://developer.amd.com/resources/)
+- Membership is free for **approved developers**. After joining, apply through member perks and **select either** of the following benefits (do not assume both can be claimed):
+  - **AMD Developer Cloud — US$100 credit** for AMD cloud GPU compute (which can be used to deploy or run models). Unless the confirmation email says otherwise, the credits expire **30 days after activation** via the redemption link.
+  - **Fireworks AI — US$50 credit** on the third-party Fireworks platform (including eligible model inference). The **redemption code must be used within 90 days of issuance**; *after redemption*, the credits remain available **until consumed**, subject to Fireworks' terms.
+- **Important:** AMD Developer Cloud credit is **GPU infrastructure credit**, **not a ready-made hosted LLM API allowance**. Both options are **one-time promotions**, not daily-renewable free API quotas; approval and eligibility terms apply. Do not confuse this global program with the China developer program's separate Devpoint-to-GPU-hours benefit.
+
+---
 
 ### Google Gemini / Gemma 4
 > Last checked: **2026-10-30**
@@ -603,6 +629,22 @@ https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing
 </br>
 
 ## CN Platform
+
+### AMD Radeon Cloud Token Factory（AMD 免费模型 API）
+
+**免费方式：** 每日重置的共享模型推理 API 额度，以 **pts** 计量；**不是一次性体验金**，也不是 GPU 算力券。
+
+**官方资料：** [Token Factory 控制台](https://developer.amd.com.cn/radeon/tokenfactory) · [中文使用文档](https://amd-aim.github.io/radeon-cloud-docs/zh-cn/guides/shared-models/) · [用量及额度](https://amd-aim.github.io/radeon-cloud-docs/api/usage/) · [限流规则](https://amd-aim.github.io/radeon-cloud-docs/api/rate-limits/) · [API 使用条款](https://amd-aim.github.io/radeon-cloud-docs/zh-cn/api/terms/)
+
+**API 地址（兼容 OpenAI）：** `https://developer.amd.com.cn/radeon/api/v1`；亦支持兼容 Anthropic Messages 的接口。
+
+- **每天多少额度：** 每日北京时间 **00:00（UTC+8）** 重置。**不同账号的 pts/天额度可能不同，也可能调整**；官方文档中的 **10 pts/天只是示例**，不能当作统一赠送额度。登录后在「积分与用量」查看，或使用 API Key 查询 `GET https://developer.amd.com.cn/radeon/api/v1/usage`。返回的 `daily_cost_limit_usd`、`daily_cost_remaining_usd` 虽带 `usd` 字样，实际单位是 **pts，并不扣美元**。
+- **pts 代表什么：** 是模型调用的**用量计算单位**，不是现金、开发者积分、GPU 算力券，也不等于固定数量的 tokens；具体模型按每百万输入/输出 tokens 等分别计量，以模型卡显示的 pts 单价为准。
+- **限流参考：** 网关通常 **20 RPM/账号**，接入层通常 **30 RPM/API Key**，每个 API Key 通常最多 **8 个并发请求**；实际还受模型后端共享容量限制。
+- **模型：** 可见 DeepSeek、Qwen、GLM、MiMo 等系列，实际模型会调整；以登录后的模型列表或鉴权调用 `GET /models` 为准。无需自行部署 GPU 实例。
+- **使用限制：** 仅供**试用、学习、开发与评估**，**不可用于生产环境**，无可用性保证；禁止转售或向第三方代理提供该 API。Token Factory **仅中国站提供**。
+
+---
 
 > **最后核查：2026 年 10 月 30 日**
 >
