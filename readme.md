@@ -3,7 +3,8 @@
 
 This directory tracks **free LLM inference APIs**, their account requirements and rate limits (including CN providers).  
 
-**Free inference**, **one-time trial credits** and **$0/month subscriptions with paid token usage** are not the same thing. Free quotas and model catalogs can change.
+**Free inference**, **one-time trial credits** and **$0/month subscriptions with paid token usage** are not the same thing.     
+Free quotas and model catalogs can change.
 
 免费 LLM API 平台汇总（包括中国大陆平台）。**免费调用、一次性试用额度和按量付费（免月费）应分别判断**。
 
