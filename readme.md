@@ -558,7 +558,8 @@ Endpoint: https://api.z.ai/api/paas/v4
 
 [Official rate-limit guide](https://docs.mistral.ai/admin/billing-usage/usage-limits) · [Explanation](https://help.mistral.ai/en/articles/698531-why-am-i-hitting-api-rate-limits-and-how-do-i-increase-them)
 
-Free-mode limits depend on the **organization and model**. The old numeric cap below is a historical community report, **not a guaranteed free-tier entitlement**. Check **Admin Panel → API → Limits**.
+Free-mode limits depend on the **organization and model**. The old numeric cap below is a historical community report, **not a guaranteed free-tier entitlement**.    
+Check **Admin Panel → API → Limits**.
 
 
 Endpoint: https://api.mistral.ai
