@@ -35,7 +35,7 @@
 
 ## 目录
 
-### 中国大陆平台
+**中国大陆平台**
 - [AMD Radeon Cloud Token Factory（中国站）](#amd-radeon-cloud-token-factory中国站)
 - [魔搭社区（ModelScope）](#魔搭社区modelscope)
 - [硅基流动（SiliconFlow）](#硅基流动siliconflow)
@@ -46,7 +46,7 @@
 - [讯飞星火（iFLYTEK Spark）](#讯飞星火iflytek-spark)
 - [心流（iFlow，已停止服务）](#心流iflow已停止服务)
 
-### 国际平台
+**国际平台**
 - [AMD AI Developer Program](#amd-ai-developer-program)
 - [Google Gemini / Gemma 4](#google-gemini--gemma-4)
 - [NVIDIA NIM](#nvidia-nim)
