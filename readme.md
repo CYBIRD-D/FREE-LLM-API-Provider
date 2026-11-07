@@ -47,8 +47,9 @@ You may also want to read my other posts:
 
 ## Content/目录
 - [Global Platform](#global-platform)
-  - [AMD AI Developer Program (cloud credits)](#amd-ai-developer-program-one-time-cloud-credits)
-  - [★Google/Gemini & Gemma 4](#google-gemini-gemma-4)
+  - [★AMD AI Developer Program (cloud credits)](#amd-ai-developer-program-one-time-cloud-credits)
+  - [Google/Gemini & Gemma 4](#google-gemini-gemma-4)
+    - [★AI Studio to API Adapter](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md)
   - [★Nvidia(40RPM)](#nvidia)
   - [Ollama](#ollama)
   - [★Groq](#groq)
@@ -101,7 +102,7 @@ You may also want to read my other posts:
 - **Not free-tier eligible:** `gemini-4-argon`, `gemini-3.1-pro-preview` (other Pro models require individual checks).
 - Google does **not** publish a single guaranteed RPM / TPM / RPD quota that applies to every free project. Limits depend on model, project and account tier and are shown in AI Studio. Previously observed numbers (e.g. 5 RPM/20 RPD) are **not universal guarantees**.
 - Limits apply **per project** (not per key); RPD quotas reset at **midnight Pacific time**. Free-tier prompts may be used to improve Google products.
-- **Alternative, unofficial:** [AI Studio to API Adapter](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md). Review its security and terms before use.
+- **★Alternative, unofficial:** [AI Studio to API Adapter](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md). Review its security and terms before use.
 
 | Model                     | Requests/minute (RPM) | Tokens/minute (TPM) | Requests/day (RPD) |
 |---------------------------|---------------------------|--------------------------|-----------------|
@@ -127,9 +128,9 @@ Endpoint (OpenAI-compatible): https://integrate.api.nvidia.com/v1
 Rate limits may vary by model and traffic from other users may cause throttling. </br>
 > For dedicated availability, deploy models as a dedicated endpoint with NVIDIA NIM.
 
-- **Representative catalog below, not a fixed or exhaustive 55-model list.** Verify the **Free Endpoint** label for each model in the [live NVIDIA catalog](https://build.nvidia.com/models).
+- **Representative catalog below, not a fixed or exhaustive 55-model list.** Verify the **Free Endpoint** in the [live NVIDIA catalog](https://build.nvidia.com/models).
   - OpenAI/Google/Meta/Microsoft/NVIDIA/Mistral AI/DeepSeek/Moonshot AI/Z.ai/MiniMax etc.
-- Free endpoints are for **trial/evaluation**, not guaranteed dedicated production hosting. Check NVIDIA trial privacy terms before submitting sensitive data.
+- Free endpoints are for **trial/evaluation**, check NVIDIA trial privacy terms before submitting sensitive data.
 <details>
 
 <summary> 
