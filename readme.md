@@ -47,7 +47,8 @@ You may also want to read my other posts:
 
 ## Content/目录
 - [Global Platform](#global-platform)
-  - [★AMD AI Developer Program (cloud credits)](#amd-ai-developer-program-one-time-cloud-credits)
+  - [★AMD Radeon Cloud Token Factory (China site)](#amd-radeon-cloud-token-factory-china-site)
+  - [AMD AI Developer Program (cloud credits)](#amd-ai-developer-program-one-time-cloud-credits)
   - [Google/Gemini & Gemma 4](#google-gemini--gemma-4)
     - [★AI Studio to API Adapter](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md)
   - [★Nvidia(40RPM)](#nvidia)
@@ -80,6 +81,40 @@ You may also want to read my other posts:
 -----------
 
 ## Global Platform
+
+### AMD Radeon Cloud Token Factory (China site)
+> Last checked: **2026-11-02**   
+> **Free shared-model API with a daily renewable usage cap**
+
+- **Official links:** [Token Factory console](https://developer.amd.com.cn/radeon/tokenfactory) · [Documentation](https://amd-aim.github.io/radeon-cloud-docs/guides/token-factory/) · [Rate limits](https://amd-aim.github.io/radeon-cloud-docs/api/rate-limits/) · [Usage and quota](https://amd-aim.github.io/radeon-cloud-docs/api/usage/) · [Terms](https://amd-aim.github.io/radeon-cloud-docs/api/terms/)
+- **API base URL (OpenAI-compatible):** `https://developer.amd.com.cn/radeon/api/v1`. Also supports Anthropic-compatible Messages requests. No GPU instance needed.
+- **Free quota:** Resets **daily at 00:00 Beijing time (UTC+8)**. Usage is metered in **pts (points)**, *not* USD, GPU cloud credits, or a fixed number of tokens. 
+  - **Daily pts limits vary by account and can change**; the official 10-pt example is **not a guaranteed allowance**. (Usually 1 pt) <br>
+
+- **Typical rate limits (not guaranteed):** **20 RPM/account** at the gateway, **30 RPM/API key** at admission, and **8 concurrent requests/API key**
+
+<details>
+
+<summary>Models&Price(expand to see)</summary> 
+
+| Model                       |  Input | Output | **1 pt's Tokens（input:output = 1:1）** |
+| ---------------------------- | ----: | ---: | -------------------------------: |
+| DeepSeek-V4-Flash            |  0.14 | 0.28 |                        **4.76M** |
+| DeepSeek-V4-Flash-Vision-Exp |  0.14 | 0.28 |                        **4.76M** |
+| DeepSeek-V4.1-Flash          |  0.28 | 0.56 |                        **2.38M** |
+| Qwen3.8-Flash-Next           |  0.14 | 0.28 |                        **4.76M** |
+| Qwen3.8-27B                  | 0.035 | 0.07 |                       **19.05M** |
+| GLM-5.3-Flash                |  0.28 | 0.56 |                        **2.38M** |
+| MiMo-V2.6-Flash              |  0.14 | 0.28 |                        **4.76M** |
+| MiniCPM5-2B                  | 0.035 | 0.07 |                       **19.05M** |
+| MiniCPM-V-4.7-1B             | 0.035 | 0.07 |                       **19.05M** |
+| MiniCPM-V-4.7-35B-A3B        | 0.035 | 0.07 |                       **19.05M** |
+| Gemma-4-31B-IT               | 0.035 |  0.0 |                **19.05M**        |
+
+
+</details>
+
+-------------------
 
 ### AMD AI Developer Program (one-time cloud credits)
 > Last checked: **2026-11-02**  
