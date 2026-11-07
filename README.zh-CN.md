@@ -1,6 +1,6 @@
 # 免费 LLM API 平台汇总
 
-[**简体中文**](./README.zh-CN.md) | [English](./readme.md)
+[English](./readme.md) | [**简体中文**](./README.zh-CN.md) | [日本語](./README.ja.md) | [Português (Brasil)](./README.pt-BR.md)
 
 > **资料最后整理：2026 年 11 月 2 日**。
 >
