@@ -322,8 +322,9 @@ O README original retirou a Cerebras da lista de opções recomendadas porque os
 - **Tentativas com erro também podem consumir a cota.** Modelos com preço US$ 0, mas sem o sufixo `:free`, podem exigir condições de faturamento diferentes.
 
 | Tipo de modelo (ID) | Créditos comprados | Limite/min | Limite/dia |
-|---|---|---|---|
-|
+| --- | ---: | ---: | ---: |
+| *:free | < $10 em créditos | 20 | 50 |
+| *:free | ≥ $10 em créditos | 20 | 1000 |
 
 ---
 
@@ -441,8 +442,8 @@ O modo gratuito se destina a testes e prototipagem. Os limites de **RPS, TPM e t
 <summary>Limites históricos relatados pela comunidade</summary>
 
 | Plano | Requisições/seg (RPS) | Tokens/min (TPM) | Tokens/mês |
-|---|---|---|---|
-|
+| --- | ---: | ---: | ---: |
+| Mistral API gratuito | 1/sec | 500k | 1 bilhão |
 
 </details>
 
@@ -455,8 +456,12 @@ O modo gratuito se destina a testes e prototipagem. Os limites de **RPS, TPM e t
 **Limites oficiais do plano gratuito:** https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
 | Modelo | Requisições/min | Requisições/dia | Tokens/dia |
-|---|---|---|---|
-|
+| --- | ---: | ---: | ---: |
+| DeepSeek-V3.1 | 20 | 20 | 200k |
+| Meta-Llama-3.3-70B-Instruct | 20 | 20 | 200k |
+| gpt-oss-120b | 20 | 20 | 200k |
+| DeepSeek-V3.2 | 20 | 20 | 200k |
+| gemma-4-31B-it | 20 | 20 | 200k |
 
 ---
 
@@ -471,8 +476,14 @@ O modo gratuito se destina a testes e prototipagem. Os limites de **RPS, TPM e t
 O plano gratuito tem uma cota **compartilhada de 15 RPM, 20.000 TPM e 20.000 tokens/dia**. Não são 20.000 tokens separados para cada modelo.
 
 | Modelo | Requisições/min | Tokens/dia |
-|---|---|---|
-|
+| --- | ---: | ---: |
+| Aion-2.0 (DeepSeek V3.2 com ajuste fino) | 15 | 20k |
+| Aion-2.5 (versão melhorada de Aion-2.0) | 15 | 20k |
+| Aion-3.0 (GLM) | 15 | 20k |
+| Aion-3.0 Mini (Deepseek) | 15 | 20k |
+| Aion-3.5 (GLM) | 15 | 20k |
+| Aion-3.5 Mini (GLM) | 15 | 20k |
+| Aion-RP 1.0 (8B) (llama-3.1-8b ajuste fino, pesos abertos) | 15 | 20k |
 
 ---
 
@@ -493,8 +504,8 @@ O plano gratuito tem uma cota **compartilhada de 15 RPM, 20.000 TPM e 20.000 tok
 O nível gratuito para modelos de base tinha como referência **2 requisições/segundo e 300 mil tokens/mês**. Confirme os limites atuais no painel da conta.
 
 | Plano | Requisições/seg (RPS) | Tokens/mês |
-|---|---|---|
-|
+| --- | ---: | ---: |
+| watsonx.ai gratuito (modelos de base) | 2/sec | 300k |
 
 ---
 
