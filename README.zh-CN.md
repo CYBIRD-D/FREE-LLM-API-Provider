@@ -2,7 +2,9 @@
 
 [**简体中文**](./README.zh-CN.md) | [English](./readme.md)
 
-> **资料最后整理：2026 年 11 月 2 日**。本文以英文 README 的现有内容为基础制作中文版本，额度、模型列表及活动可能随时变化；请以各平台官方页面或账号控制台为准。
+> **资料最后整理：2026 年 11 月 2 日**。
+>
+> 额度、模型列表及活动可能随时变化；请以各平台官方页面或账号控制台为准。
 
 这个仓库收集可以免费体验或获得一定免费额度的 **LLM API / 云端模型服务**，包括中国大陆和国际平台，并整理调用限制、可选模型、API 地址和相关资料。
 
@@ -69,12 +71,12 @@
 
 ## 中国大陆平台
 
-> 本节包含真正的免费推理服务，也包含**有次数或有效期限制的试用额度**。注意活动政策会变动；下面的使用说明不能代替你自己账号的当前配额。
+> 本节包含真正的免费推理服务，也包含**有次数或有效期限制的试用额度**。注意活动政策会变动；
 
 ### AMD Radeon Cloud Token Factory（中国站）
 > 最后核查：**2026 年 11 月 2 日**
 
-**免费方式：** 每日重置的共享模型推理 API 额度，以 **pts** 计量；**不是一次性体验金**，也不是 GPU 算力券。
+**免费方式：** 每日重置的共享模型推理 API 额度，以 **pts** 计量；**不是一次性体验金**
 
 **官方资料：** [Token Factory 控制台](https://developer.amd.com.cn/radeon/tokenfactory) · [中文使用文档](https://amd-aim.github.io/radeon-cloud-docs/zh-cn/guides/shared-models/) · [用量及额度](https://amd-aim.github.io/radeon-cloud-docs/api/usage/) · [限流规则](https://amd-aim.github.io/radeon-cloud-docs/api/rate-limits/) · [API 使用条款](https://amd-aim.github.io/radeon-cloud-docs/zh-cn/api/terms/)
 
@@ -202,7 +204,7 @@
 - **Spark Lite：** 官方 HTTP API 文档标注支持**免费使用**。
 - **Spark Lite 经典 API 地址（兼容 OpenAI）：** `https://spark-api-open.xf-yun.com/v1/`。
 - **Spark-X2.5-1.7B**（模型 ID：`spark-x2.5-1.7b`）：现行模型列表标价为 **0 元/百万 tokens**。
-- **Spark-X2.5-4B**（模型 ID：`spark-x2.5-4b`）：模型列表出现 **0 元/百万 tokens / 限时免费**标注，**不可视为永久免费**。X2.5 系列属于星火模型平台，调用前需另行确认适用的 API 地址及鉴权方式。
+- **Spark-X2.5-4B**（模型 ID：`spark-x2.5-4b`）：模型列表出现 **0 元/百万 tokens / 限时免费**标注。X2.5 系列属于星火模型平台，调用前需另行确认适用的 API 地址及鉴权方式。
 - 旧版「首次开通后，所有模型共享 **20 万免费 tokens，有效期一年**」未能找到明确的现行依据，故不再将其列为确定权益。
 
 ---
@@ -223,7 +225,9 @@
 
 ### AMD AI Developer Program
 
-> 最近核查：**2026 年 11 月 2 日**。**这是一次性开发者福利，不是每天续送的免费 LLM API。**
+> 最近核查：**2026 年 11 月 2 日**。
+>
+> **这是一次性开发者福利，不是每天续送的免费 LLM API。**
 
 **官方资料：** [加入开发者计划](https://developer.amd.com/ai-developer-program/) · [申请要求及福利说明](https://developer.amd.com/resources/)
 
@@ -243,10 +247,10 @@
 **接口地址：** `https://generativelanguage.googleapis.com`
 
 - 根据英文版整理时的官方价格表，提供免费层的模型包括 **Gemini 3.8 Flash、Gemini 3.5 Flash-Lite 和 Gemma 4**。其他型号请查看价格页的 **Free Tier** 一栏。
-- **Gemini 4 Argon、Gemini 3.1 Pro Preview** 不在免费层中，其他 Pro 模型也应单独检查。
+  - **Gemini 4 Argon、Gemini 3.1 Pro Preview** 等不在免费层中
 - Google **没有对所有免费账号统一保证的 RPM、TPM、RPD 数字**。额度会因项目、账号等级和模型而变化，最可靠的办法是直接查看自己的 AI Studio。
 - 限额按**项目**计算，不是每把 API Key 独立计算。每日请求次数在**太平洋时间午夜**重置。
-- 免费层提交的内容可能用于改进 Google 产品，请注意数据隐私。
+- 免费层提交的内容可能用于改进 Google 产品
 - **非官方替代方案：** [AI Studio to API Adapter](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md)。使用第三方适配器前需自行评估安全性和服务条款。
 
 <details>
