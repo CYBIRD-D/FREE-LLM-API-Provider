@@ -285,12 +285,6 @@
 <details>
 <summary>展开 NVIDIA 模型列表</summary>
 
-<details>
-
-<summary> 
-## 模型列表
-</summary>
-
 #### DeepSeek
 deepseek-ai/deepseek-v4-flash  
 deepseek-ai/deepseek-v4-flash-0731  
@@ -497,7 +491,9 @@ Groq 的免费层速率表中包含 **GPT-OSS 20B/120B、Qwen3.8 27B**。不同�
 - **失败请求也可能占用免费调用次数**。价格虽然为 0、但 ID 不以 `:free` 结尾的模型，可能另有付款方式要求。
 
 | 模型版本（ID） | 已购买额度 | 每分钟请求上限 | 每天请求上限 |
-|
+| --- | ---: | ---: | ---: |
+| *:free | < $10 已购额度 | 20 | 50 |
+| *:free | ≥ $10 已购额度 | 20 | 1000 |
 
 ---
 
@@ -511,6 +507,15 @@ Groq 的免费层速率表中包含 **GPT-OSS 20B/120B、Qwen3.8 27B**。不同�
 - 超过免费额度的付费用量按 **每 1,000 Neurons 0.011 美元**计算。
 - **注意：** 部分 Kimi、DeepSeek V4/V4.1、GLM-5.x 模型即使还有免费 Neurons，也需要先开通 Workers Paid 或充值 AI Gateway 才能调用。**在下表出现，不代表不用绑定付款方式就能免费调用**。
 - 收录的模型涉及 Llama、Qwen、Mistral、Gemma、DeepSeek、GLM、Nemotron、Kimi、Granite 等多个系列，可选型号和免费权限请以官方页面为准。
+
+**代表性模型（具体是否免费以 Cloudflare 官网为准）：**
+
+- **Llama：** Llama 2 7B、Llama 3.1 8B/70B、Llama 3.2 1B/3B/11B Vision、Llama 4 Scout 17B-16E。
+- **Qwen：** QwQ 32B、Qwen2.5 Coder 32B、Qwen3 30B-A3B、Qwen3.8 27B。
+- **Mistral：** Mistral 7B Instruct v0.1、Mistral Small 3.1 24B。
+- **DeepSeek：** R1 Distill Qwen 32B、V4 Flash/Pro、V4.1 Flash 1017。
+- **Gemma：** Gemma 3 12B、Gemma 4 26B-A4B、Gemma SEA-LION v4 27B。
+- **其他：** Granite 4.0 H Micro、GLM-4.7 Flash、GLM-5.2/5.3/5.3 Flash、Nemotron 3 120B-A12B、Kimi K2.5/K2.6/K2.7 Code。
 
 <details>
 <summary>展开模型价格及每天大约可用多少 Token</summary>
@@ -619,7 +624,8 @@ Groq 的免费层速率表中包含 **GPT-OSS 20B/120B、Qwen3.8 27B**。不同�
 <summary>展开旧版社区额度参考（不保证仍适用）</summary>
 
 | 套餐 | 请求/秒（RPS） | Token/分钟（TPM） | Token/月 |
-|
+| --- | ---: | ---: | ---: |
+| Mistral API 免费版 | 1/sec | 500k | 10 亿 |
 
 </details>
 
@@ -632,7 +638,12 @@ Groq 的免费层速率表中包含 **GPT-OSS 20B/120B、Qwen3.8 27B**。不同�
 **官方免费层限制：** https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
 | 模型 | 每分钟请求数 | 每天请求数 | 每天 Token |
-|
+| --- | ---: | ---: | ---: |
+| DeepSeek-V3.1 | 20 | 20 | 200k |
+| Meta-Llama-3.3-70B-Instruct | 20 | 20 | 200k |
+| gpt-oss-120b | 20 | 20 | 200k |
+| DeepSeek-V3.2 | 20 | 20 | 200k |
+| gemma-4-31B-it | 20 | 20 | 200k |
 
 ---
 
@@ -647,7 +658,14 @@ Groq 的免费层速率表中包含 **GPT-OSS 20B/120B、Qwen3.8 27B**。不同�
 免费层的共享限额为 **15 RPM、20,000 TPM、20,000 Token/天**。不同模型共享每日配额，而非每个模型独立赠送。
 
 | 模型 | 每分钟请求数 | 每天 Token |
-|
+| --- | ---: | ---: |
+| Aion-2.0 (DeepSeek V3.2 微调版) | 15 | 20k |
+| Aion-2.5 (改进自 Aion-2.0) | 15 | 20k |
+| Aion-3.0 (GLM) | 15 | 20k |
+| Aion-3.0 Mini (Deepseek) | 15 | 20k |
+| Aion-3.5 (GLM) | 15 | 20k |
+| Aion-3.5 Mini (GLM) | 15 | 20k |
+| Aion-RP 1.0 (8B) (llama-3.1-8b 微调、开放权重) | 15 | 20k |
 
 ---
 
@@ -668,7 +686,8 @@ Groq 的免费层速率表中包含 **GPT-OSS 20B/120B、Qwen3.8 27B**。不同�
 watsonx.ai 基础模型免费层的参考限额为 **2 RPS，每月 300,000 Token**。以账号控制台当前权益为准。
 
 | 套餐 | 每秒请求数（RPS） | 每月 Token |
-|
+| --- | ---: | ---: |
+| watsonx.ai 免费版（基础模型） | 2/sec | 300k |
 
 ---
 
