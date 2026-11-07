@@ -48,7 +48,7 @@ You may also want to read my other posts:
 ## Content/目录
 - [Global Platform](#global-platform)
   - [★AMD AI Developer Program (cloud credits)](#amd-ai-developer-program-one-time-cloud-credits)
-  - [Google/Gemini & Gemma 4](#google-gemini-gemma-4)
+  - [Google/Gemini & Gemma 4](#google-gemini--gemma-4)
     - [★AI Studio to API Adapter](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md)
   - [★Nvidia(40RPM)](#nvidia)
   - [Ollama](#ollama)
