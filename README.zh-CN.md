@@ -24,7 +24,6 @@
     <td align="center"><img src="./logo/mistral-color.png" alt="Mistral" height="50" /></td>
     <td align="center"><img src="./logo/modelscope-color.png" alt="ModelScope" height="50" /></td>
     <td align="center"><img src="./logo/volcengine-color.png" alt="Volcengine" height="50" /></td>
-    </td>
   </tr>
 </table>
 
@@ -79,7 +78,7 @@
 
 **官方资料：** [Token Factory 控制台](https://developer.amd.com.cn/radeon/tokenfactory) · [中文使用文档](https://amd-aim.github.io/radeon-cloud-docs/zh-cn/guides/shared-models/) · [用量及额度](https://amd-aim.github.io/radeon-cloud-docs/api/usage/) · [限流规则](https://amd-aim.github.io/radeon-cloud-docs/api/rate-limits/) · [API 使用条款](https://amd-aim.github.io/radeon-cloud-docs/zh-cn/api/terms/)
 
-**API 地址（兼容 OpenAI）：** `https://developer.amd.com.cn/radeon/api/v1`；亦支持兼容 Anthropic Messages 的接口。
+**API 地址（兼容 OpenAI）：** `https://developer.amd.com.cn/radeon/api/v1`；亦支持兼容 Anthropic Messages 的接口，无需自行创建 GPU 云实例。
 
 - **每天多少额度：** 每日北京时间 **00:00（UTC+8）** 重置。**不同账号的 pts/天额度可能不同，也可能调整**；
 - 官方文档中的 **10 pts/天只是示例**，不能当作统一赠送额度。(一般为1pt）
@@ -697,78 +696,78 @@ watsonx.ai 基础模型免费层的参考限额为 **2 RPS，每月 300,000 Toke
 
 | 排名 | 提供商 | 模型 | 输入 | 缓存输入 | 输出 | 合计 | 备注 | 价格来源 |
 |---:|---|---|---:|---:|---:|---:|---|---|
-| 1 | Qwen | Qwen3.7 Flash | $0.03 | — | $0.13 | **$0.16** | 不超过 32K; 32K–256K: $0.10/$0.40; 256K–1M: $0.20/$0.80 | [Source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
-| 2 | Meta / OpenRouter | Muse Spark 1.2/1.3 Contributor | $0.10 | $0.002 | $0.20 | **$0.30** | 100 万上下文; 提示词和生成内容可能用于改进 Meta 产品 | [Source](https://openrouter.ai/meta/muse-spark-1.3-contributor) |
-| 3 | Qwen | Qwen3.5 Flash | $0.10 | — | $0.40 | **$0.50** | 国际站 | [Source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
-| 4 | Anthropic | Claude Haiku 5.5 | $0.10 | $0.01 | $0.50 | **$0.60** | 不超过 100K; 超过 100K: $0.50 输入 / $0.05 缓存 / $2.50 输出 | [Source](https://platform.claude.com/docs/en/models/haiku-5-5/overview) |
-| 5 | OpenAI | GPT-6 Luna | $0.10 | $0.01 | $0.50 | **$0.60** | 105 万上下文; 超过 272K: $0.20/$0.75 | [Source](https://developers.openai.com/api/docs/pricing) |
-| 6 | Qwen | Qwen3.8 Flash | $0.15 | — | $0.47 | **$0.62** | 国际站； 100 万上下文 | [Source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
-| 7 | GLM / Z.AI | GLM-5.3-Flash | $0.15 | $0.03 | $0.50 | **$0.65** | 标准 价格 | [Source](https://docs.z.ai/guides/overview/pricing) |
-| 8 | DeepSeek | DeepSeek V4.1 Flash 1017 — Off-peak | $0.15 | $0.003 | $0.60 | **$0.75** | 100 万上下文; 1017 更新，API 价格不变; off-高峰 定价 | [Source](https://api-docs.deepseek.com/quick_start/pricing/) |
-| 9 | MiniMax | MiniMax M3.1 Flash | $0.15 | $0.015 | $0.60 | **$0.75** | 100 万上下文; 模型权重已公开; 支持多模态输入 | [Source](https://www.minimax.io/blog/minimax-m31f) |
-| 10 | Mistral | Mistral Small 4 | $0.15 | $0.015 | $0.60 | **$0.75** | 25.6 万上下文 | [Source](https://docs.mistral.ai/models/mistral-small-4-0-26-03) |
-| 11 | OpenAI | GPT-5.6 Luna | $0.20 | $0.02 | $1.20 | **$1.40** | 超过 272K: $0.40/$1.80 | [Source](https://developers.openai.com/api/docs/pricing) |
-| 12 | Meta / OpenRouter | Muse Glimmer 30B | $0.30 | $0.04 | $1.10 | **$1.40** | 13.1 万上下文 | [Source](https://openrouter.ai/meta/muse-glimmer-30b) |
-| 13 | OpenAI | GPT-5.4 nano | $0.20 | $0.02 | $1.25 | **$1.45** | — | [Source](https://developers.openai.com/api/docs/pricing) |
-| 14 | DeepSeek | DeepSeek V4.1 Flash 1017 — Peak | $0.30 | $0.006 | $1.20 | **$1.50** | 100 万上下文; 1017 更新，API 价格不变; 高峰 定价 | [Source](https://api-docs.deepseek.com/quick_start/pricing/) |
-| 15 | MiniMax | MiniMax M2.7 | $0.30 | $0.06 | $1.20 | **$1.50** | 约 20.5 万上下文; 缓存 write $0.375/MTok | [Source](https://platform.minimax.io/docs/guides/pricing-paygo) |
-| 16 | MiniMax | MiniMax M3 | $0.30 | $0.06 | $1.20 | **$1.50** | 输入不超过 512K; >512K: $0.60 输入 / $0.12 缓存 / $2.40 输出; 长期五折 | [Source](https://platform.minimax.io/docs/guides/pricing-paygo) |
-| 17 | Qwen | Qwen3.7 Plus (Promo) | $0.32 | — | $1.28 | **$1.60** | 国际站别名； 八折; 原价 $0.40/$1.60 | [Source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
-| 18 | Google | Gemini 3.1 Flash-Lite | $0.25 | $0.025 | $1.50 | **$1.75** | — | [Source](https://ai.google.dev/gemini-api/docs/pricing) |
-| 19 | Qwen | Qwen3.6 Flash | $0.25 | — | $1.50 | **$1.75** | 不超过 256K; 国际站 | [Source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
-| 20 | Qwen | Qwen3.7 Plus (Regular Price) | $0.40 | — | $1.60 | **$2.00** | 不超过 256K | [Source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
-| 21 | MiniMax | MiniMax M3 — Priority | $0.45 | $0.09 | $1.80 | **$2.25** | 输入不超过 512K; 更快 priority serving; >512K: $0.90/$0.18/$3.60; 长期五折 | [Source](https://platform.minimax.io/docs/guides/pricing-paygo) |
-| 22 | DeepSeek | DeepSeek V4 Pro — Off-peak | $0.66 | $0.022 | $1.98 | **$2.64** | 低峰时段 定价 | [Source](https://api-docs.deepseek.com/quick_start/pricing/) |
-| 23 | Google | Gemini 3.5 Flash-Lite | $0.30 | $0.03 | $2.50 | **$2.80** | — | [Source](https://ai.google.dev/gemini-api/docs/pricing) |
-| 24 | Mistral | Mistral Large 4 | $0.70 | $0.07 | $2.10 | **$2.80** | 100 万上下文; 10 月 29 日开放权重; current official 标准 API 价格 | [Source](https://docs.mistral.ai/models/mistral-large-4-0) |
-| 25 | Qwen | Qwen3.5 Plus | $0.40 | — | $2.40 | **$2.80** | 不超过 256K; 国际站 | [Source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
-| 26 | MiniMax | MiniMax M2.7 Highspeed | $0.60 | $0.06 | $2.40 | **$3.00** | 与开放权重版 M2.7 为同一模型, 更快 serving; 约 20.5 万上下文; 缓存 write $0.375/MTok | [Source](https://platform.minimax.io/docs/guides/pricing-paygo) |
-| 27 | xAI | Grok Build 0.1 | $1.00 | $0.20 | $2.00 | **$3.00** | 少于 200K; 至少 200K: $2/$4 | [Source](https://docs.x.ai/developers/pricing) |
-| 28 | Qwen | Qwen3.6 Plus | $0.50 | — | $3.00 | **$3.50** | 不超过 256K; 国际站 | [Source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
-| 29 | xAI | Grok 4.20/4.3 | $1.25 | $0.20 | $2.50 | **$3.75** | 少于 200K; 至少 200K: $2.50/$5 | [Source](https://docs.x.ai/developers/pricing) |
-| 30 | GLM / Z.AI | GLM-5 | $1.00 | $0.20 | $3.20 | **$4.20** | — | [Source](https://docs.z.ai/guides/overview/pricing) |
-| 31 | Google | Gemini 3.6/3.8 Flash (Promo) | $0.75 | $0.075 | $3.75 | **$4.50** | 优惠价截至 2026 年 12 月 31 日; 3.7 已退役，自动转至 3.8 | [Source](https://ai.google.dev/gemini-api/docs/pricing) |
-| 32 | Kimi | Kimi K2.6 | $0.95 | $0.16 | $4.00 | **$4.95** | 约 26.2 万上下文 | [Source](https://www.kimi.com/) |
-| 33 | Kimi | Kimi K2.7 Code | $0.95 | $0.19 | $4.00 | **$4.95** | 约 26.2 万上下文 | [Source](https://www.kimi.com/) |
-| 34 | GLM / Z.AI | GLM-5-Turbo | $1.20 | $0.24 | $4.00 | **$5.20** | 20 万上下文; 针对智能体任务优化的 Turbo 版本 | [Source](https://docs.z.ai/guides/overview/pricing) |
-| 35 | OpenAI | GPT-5.4 mini | $0.75 | $0.075 | $4.50 | **$5.25** | — | [Source](https://developers.openai.com/api/docs/pricing) |
-| 36 | DeepSeek | DeepSeek V4 Pro — Peak | $1.32 | $0.044 | $3.96 | **$5.28** | 高峰时段 定价 | [Source](https://api-docs.deepseek.com/quick_start/pricing/) |
-| 37 | Meta / OpenRouter | Muse Spark 1.1/1.2/1.3 | $1.25 | $0.15 | $4.25 | **$5.50** | 100 万上下文; 标准 data policy | [Source](https://openrouter.ai/meta/muse-spark-1.3) |
-| 38 | Meta / OpenRouter | Muse Spark Open | $1.25 | $0.15 | $4.25 | **$5.50** | 100 万上下文; 10 月 15 日发布; 权重已公开 (额外做过安全后训练, 与…采用相同基础模型： Muse Spark 1.3) | [Source](https://openrouter.ai/meta/muse-spark-open) |
-| 39 | GLM / Z.AI | GLM-5.1 | $1.40 | $0.26 | $4.40 | **$5.80** | 20 万上下文 | [Source](https://docs.z.ai/guides/overview/pricing) |
-| 40 | GLM / Z.AI | GLM-5.2/5.3 | $1.40 | $0.26 | $4.40 | **$5.80** | 100 万上下文 | [Source](https://docs.z.ai/guides/overview/pricing) |
-| 41 | OpenAI | GPT-6.1 Terra | $1.00 | $0.05 | $5.00 | **$6.00** | 105 万上下文; 输入超过 272K: $2 输入 / $0.10 缓存 / $7.50 输出; 30 分钟缓存写入 $1.25 | [Source](https://developers.openai.com/api/docs/models/gpt-6.1-terra) |
-| 42 | xAI | Grok 4.5 | $2.00 | $0.30 | $6.00 | **$8.00** | 少于 200K; 至少 200K: $4/$12 | [Source](https://docs.x.ai/developers/pricing) |
-| 43 | xAI | Grok 4.6 | $2.00 | $0.50 | $6.00 | **$8.00** | 少于 200K; 至少 200K: $4/$12 | [Source](https://docs.x.ai/developers/pricing) |
-| 44 | xAI | Grok 4.7 | $2.00 | $0.50 | $6.00 | **$8.00** | 50 万上下文; 至少 200K: $4/$12 | [Source](https://docs.x.ai/developers/pricing) |
-| 45 | Qwen | Qwen3.8 Max | $2.00 | — | $6.00 | **$8.00** | 国际站； 100 万上下文 | [Source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
-| 46 | Google | Gemini 3.6/3.8 Flash (Regular Price) | $1.50 | $0.15 | $7.50 | **$9.00** | 2027 年 1 月 1 日起的标准价; 3.7 已退役，自动转至 3.8 | [Source](https://ai.google.dev/gemini-api/docs/pricing) |
-| 47 | Mistral | Mistral Medium 3.5 | $1.50 | $0.15 | $7.50 | **$9.00** | 25.6 万上下文 | [Source](https://docs.mistral.ai/models/) |
-| 48 | Kimi | Kimi K2.7 Code Highspeed | $1.90 | $0.38 | $8.00 | **$9.90** | ~262K; 相同 K2.7 Code 模型, 更快 输出 | [Source](https://www.kimi.com/) |
-| 49 | Qwen | Qwen3.7 Max | $2.50 | — | $7.50 | **$10.00** | 国际站； 100 万上下文 | [Source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
-| 50 | Anthropic | Claude Sonnet 5.5 | $2.00 | $0.10 | $10.00 | **$12.00** | 缓存读取价降至 $0.10 on 10 月 7 日 | [Source](https://platform.claude.com/docs/en/about-claude/pricing) |
-| 51 | Google | Gemini 4 Argon (Promo) | $2.00 | $0.10 | $10.00 | **$12.00** | 100 万上下文; 仅支持隐式缓存; offer through Nov 30, 2026 | [Source](https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud) |
-| 52 | OpenAI | GPT-6.1 Sol | $2.00 | $0.10 | $10.00 | **$12.00** | 105 万上下文; 超过 272K: $4/$0.20/$15 | [Source](https://developers.openai.com/api/docs/pricing) |
-| 53 | Anthropic | Claude Sonnet 5 | $2.00 | $0.20 | $10.00 | **$12.00** | — | [Source](https://platform.claude.com/docs/en/about-claude/pricing) |
-| 54 | OpenAI | GPT-6 Sol | $2.00 | $0.20 | $10.00 | **$12.00** | 105 万上下文; 超过 272K: $4/$0.40/$15 | [Source](https://developers.openai.com/api/docs/pricing) |
-| 55 | Kimi | Kimi K3.1 Pro | $2.00 | $0.20 | $10.00 | **$12.00** | 100 万上下文; 5 分钟缓存写入 $2/MTok; 计划 开放权重版本 by Nov 4 (尚未发布) | [Source](https://platform.kimi.ai/) |
-| 56 | Google | Gemini 3.1 Pro Preview | $2.00 | $0.20 | $12.00 | **$14.00** | 不超过 200K; >200K: $4/$18 | [Source](https://ai.google.dev/gemini-api/docs/pricing) |
-| 57 | OpenAI | GPT-5.6 Terra | $2.00 | $0.20 | $12.00 | **$14.00** | 超过 272K: $4/$18 | [Source](https://developers.openai.com/api/docs/pricing) |
-| 58 | OpenAI | GPT-5.4 | $2.50 | $0.25 | $15.00 | **$17.50** | 超过 272K long-上下文 surcharge | [Source](https://developers.openai.com/api/docs/pricing) |
-| 59 | Anthropic | Claude Sonnet 4.6 | $3.00 | $0.30 | $15.00 | **$18.00** | — | [Source](https://platform.claude.com/docs/en/about-claude/pricing) |
-| 60 | Kimi | Kimi K3 | $3.00 | $0.30 | $15.00 | **$18.00** | 100 万上下文 | [Source](https://www.kimi.com/) |
-| 61 | Anthropic | Claude Opus 5.5 | $4.00 | $0.20 | $20.00 | **$24.00** | 100 万上下文 | [Source](https://platform.claude.com/docs/en/about-claude/pricing) |
-| 62 | Google | Gemini 4 Argon (Regular Price) | $4.00 | $0.20 | $20.00 | **$24.00** | 100 万上下文; 仅支持隐式缓存; from Dec 1, 2026 | [Source](https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud) |
-| 63 | Kimi | Kimi K3.1 Pro Highspeed | $4.00 | $0.20 | $20.00 | **$24.00** | 与 K3.1 Pro 为同一模型, 速度提升约 2–3 倍; 100 万上下文; 5 分钟缓存写入 $4/MTok | [Source](https://platform.kimi.ai/) |
-| 64 | Meta | Muse Wonder | $4.00 | $0.20 | $20.00 | **$24.00** | 100 万上下文; Meta Model API / OpenRouter; Wonder Full is subscription-only | [Source](https://dev.meta.ai/models/muse-wonder) |
-| 65 | OpenAI | GPT-5.6 Sol (Promo) | $4.00 | $0.40 | $20.00 | **$24.00** | 优惠价至少持续至 2026 年 11 月 21 日; 原价 $5/$30 | [Source](https://developers.openai.com/api/docs/pricing) |
-| 66 | Anthropic | Claude Opus 4.7/4.8/5 | $5.00 | $0.50 | $25.00 | **$30.00** | — | [Source](https://platform.claude.com/docs/en/about-claude/pricing) |
-| 67 | OpenAI | GPT-5.5 | $5.00 | $0.50 | $30.00 | **$35.00** | — | [Source](https://developers.openai.com/api/docs/pricing) |
-| 68 | OpenAI | GPT-5.6 Sol (Regular Price) | $5.00 | $0.50 | $30.00 | **$35.00** | 原价；目前优惠价为 $4/$20 promo | [Source](https://developers.openai.com/api/docs/pricing) |
-| 69 | Anthropic | Claude Fable 5.1 | $10.00 | $0.25 | $50.00 | **$60.00** | 100 万上下文; low 0.025x 缓存-read multiplier | [Source](https://platform.claude.com/docs/en/about-claude/pricing) |
-| 70 | Anthropic | Claude Fable 5 | $10.00 | $1.00 | $50.00 | **$60.00** | — | [Source](https://platform.claude.com/docs/en/about-claude/pricing) |
-| 71 | OpenAI | GPT-6 Astra | $10.00 | $1.00 | $50.00 | **$60.00** | 105 万上下文; 超过 272K: $20/$2/$75 | [Source](https://developers.openai.com/api/docs/pricing) |
-| 72 | OpenAI | GPT-5.4/5.5 Pro | $30.00 | — | $180.00 | **$210.00** | 最高算力档位 | [Source](https://developers.openai.com/api/docs/pricing) |
+| 1 | Qwen | Qwen3.7 Flash | $0.03 | — | $0.13 | **$0.16** | 默认价格适用于输入不超过 32K；32K–256K：输入 $0.10、输出 $0.40；256K–1M：输入 $0.20、输出 $0.80 | [来源](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
+| 2 | Meta / OpenRouter | Muse Spark 1.2/1.3 Contributor | $0.10 | $0.002 | $0.20 | **$0.30** | 100 万 Token 上下文；提示词及生成内容可能用于改进 Meta 产品 | [来源](https://openrouter.ai/meta/muse-spark-1.3-contributor) |
+| 3 | Qwen | Qwen3.5 Flash | $0.10 | — | $0.40 | **$0.50** | 国际站价格 | [来源](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
+| 4 | Anthropic | Claude Haiku 5.5 | $0.10 | $0.01 | $0.50 | **$0.60** | 输入不超过 100K；超过 100K 时，输入 $0.50、缓存读取 $0.05、输出 $2.50 | [来源](https://platform.claude.com/docs/en/models/haiku-5-5/overview) |
+| 5 | OpenAI | GPT-6 Luna | $0.10 | $0.01 | $0.50 | **$0.60** | 105 万 Token 上下文；输入超过 272K 时，输入 $0.20、输出 $0.75 | [来源](https://developers.openai.com/api/docs/pricing) |
+| 6 | Qwen | Qwen3.8 Flash | $0.15 | — | $0.47 | **$0.62** | 国际站；100 万 Token 上下文 | [来源](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
+| 7 | GLM / Z.AI | GLM-5.3-Flash | $0.15 | $0.03 | $0.50 | **$0.65** | 标准价格 | [来源](https://docs.z.ai/guides/overview/pricing) |
+| 8 | DeepSeek | DeepSeek V4.1 Flash 1017 — 低峰 | $0.15 | $0.003 | $0.60 | **$0.75** | 100 万 Token 上下文；1017 版本更新，API 费率不变；低峰时段价格 | [来源](https://api-docs.deepseek.com/quick_start/pricing/) |
+| 9 | MiniMax | MiniMax M3.1 Flash | $0.15 | $0.015 | $0.60 | **$0.75** | 100 万 Token 上下文；模型权重已公开；支持多模态输入 | [来源](https://www.minimax.io/blog/minimax-m31f) |
+| 10 | Mistral | Mistral Small 4 | $0.15 | $0.015 | $0.60 | **$0.75** | 25.6 万 Token 上下文 | [来源](https://docs.mistral.ai/models/mistral-small-4-0-26-03) |
+| 11 | OpenAI | GPT-5.6 Luna | $0.20 | $0.02 | $1.20 | **$1.40** | 输入超过 272K 时，输入 $0.40、输出 $1.80 | [来源](https://developers.openai.com/api/docs/pricing) |
+| 12 | Meta / OpenRouter | Muse Glimmer 30B | $0.30 | $0.04 | $1.10 | **$1.40** | 13.1 万 Token 上下文 | [来源](https://openrouter.ai/meta/muse-glimmer-30b) |
+| 13 | OpenAI | GPT-5.4 nano | $0.20 | $0.02 | $1.25 | **$1.45** | — | [来源](https://developers.openai.com/api/docs/pricing) |
+| 14 | DeepSeek | DeepSeek V4.1 Flash 1017 — 高峰 | $0.30 | $0.006 | $1.20 | **$1.50** | 100 万 Token 上下文；1017 版本更新，API 费率不变；高峰时段价格 | [来源](https://api-docs.deepseek.com/quick_start/pricing/) |
+| 15 | MiniMax | MiniMax M2.7 | $0.30 | $0.06 | $1.20 | **$1.50** | 约 20.5 万 Token 上下文；缓存写入 $0.375/百万 Token | [来源](https://platform.minimax.io/docs/guides/pricing-paygo) |
+| 16 | MiniMax | MiniMax M3 | $0.30 | $0.06 | $1.20 | **$1.50** | 提示词不超过 512K；超过 512K 时，输入 $0.60、缓存读取 $0.12、输出 $2.40；长期五折价格 | [来源](https://platform.minimax.io/docs/guides/pricing-paygo) |
+| 17 | Qwen | Qwen3.7 Plus（优惠价） | $0.32 | — | $1.28 | **$1.60** | 国际站别名；当前八折，原价为输入 $0.40、输出 $1.60 | [来源](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
+| 18 | Google | Gemini 3.1 Flash-Lite | $0.25 | $0.025 | $1.50 | **$1.75** | — | [来源](https://ai.google.dev/gemini-api/docs/pricing) |
+| 19 | Qwen | Qwen3.6 Flash | $0.25 | — | $1.50 | **$1.75** | 输入不超过 256K；国际站 | [来源](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
+| 20 | Qwen | Qwen3.7 Plus（原价） | $0.40 | — | $1.60 | **$2.00** | 输入不超过 256K | [来源](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
+| 21 | MiniMax | MiniMax M3 — Priority | $0.45 | $0.09 | $1.80 | **$2.25** | 提示词不超过 512K；优先服务，响应更快；超过 512K 时，输入 $0.90、缓存读取 $0.18、输出 $3.60；长期五折价格 | [来源](https://platform.minimax.io/docs/guides/pricing-paygo) |
+| 22 | DeepSeek | DeepSeek V4 Pro — 低峰 | $0.66 | $0.022 | $1.98 | **$2.64** | 低峰时段价格 | [来源](https://api-docs.deepseek.com/quick_start/pricing/) |
+| 23 | Google | Gemini 3.5 Flash-Lite | $0.30 | $0.03 | $2.50 | **$2.80** | — | [来源](https://ai.google.dev/gemini-api/docs/pricing) |
+| 24 | Mistral | Mistral Large 4 | $0.70 | $0.07 | $2.10 | **$2.80** | 100 万 Token 上下文；10 月 29 日开放权重；当前官方标准 API 价格 | [来源](https://docs.mistral.ai/models/mistral-large-4-0) |
+| 25 | Qwen | Qwen3.5 Plus | $0.40 | — | $2.40 | **$2.80** | 输入不超过 256K；国际站 | [来源](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
+| 26 | MiniMax | MiniMax M2.7 Highspeed | $0.60 | $0.06 | $2.40 | **$3.00** | 与开源权重版 M2.7 为同一模型，但提供更快的服务；约 20.5 万 Token 上下文；缓存写入 $0.375/百万 Token | [来源](https://platform.minimax.io/docs/guides/pricing-paygo) |
+| 27 | xAI | Grok Build 0.1 | $1.00 | $0.20 | $2.00 | **$3.00** | 输入少于 200K；达到 200K 及以上时，输入 $2、输出 $4 | [来源](https://docs.x.ai/developers/pricing) |
+| 28 | Qwen | Qwen3.6 Plus | $0.50 | — | $3.00 | **$3.50** | 输入不超过 256K；国际站 | [来源](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
+| 29 | xAI | Grok 4.20/4.3 | $1.25 | $0.20 | $2.50 | **$3.75** | 输入少于 200K；达到 200K 及以上时，输入 $2.50、输出 $5 | [来源](https://docs.x.ai/developers/pricing) |
+| 30 | GLM / Z.AI | GLM-5 | $1.00 | $0.20 | $3.20 | **$4.20** | — | [来源](https://docs.z.ai/guides/overview/pricing) |
+| 31 | Google | Gemini 3.6/3.8 Flash（优惠价） | $0.75 | $0.075 | $3.75 | **$4.50** | 优惠价格截至 2026 年 12 月 31 日；3.7 已退役，相关请求转至 3.8 | [来源](https://ai.google.dev/gemini-api/docs/pricing) |
+| 32 | Kimi | Kimi K2.6 | $0.95 | $0.16 | $4.00 | **$4.95** | 约 26.2 万 Token 上下文 | [来源](https://www.kimi.com/) |
+| 33 | Kimi | Kimi K2.7 Code | $0.95 | $0.19 | $4.00 | **$4.95** | 约 26.2 万 Token 上下文 | [来源](https://www.kimi.com/) |
+| 34 | GLM / Z.AI | GLM-5-Turbo | $1.20 | $0.24 | $4.00 | **$5.20** | 20 万 Token 上下文；为智能体任务专门优化的 Turbo 版本 | [来源](https://docs.z.ai/guides/overview/pricing) |
+| 35 | OpenAI | GPT-5.4 mini | $0.75 | $0.075 | $4.50 | **$5.25** | — | [来源](https://developers.openai.com/api/docs/pricing) |
+| 36 | DeepSeek | DeepSeek V4 Pro — 高峰 | $1.32 | $0.044 | $3.96 | **$5.28** | 高峰时段价格 | [来源](https://api-docs.deepseek.com/quick_start/pricing/) |
+| 37 | Meta / OpenRouter | Muse Spark 1.1/1.2/1.3 | $1.25 | $0.15 | $4.25 | **$5.50** | 100 万 Token 上下文；采用标准数据使用政策 | [来源](https://openrouter.ai/meta/muse-spark-1.3) |
+| 38 | Meta / OpenRouter | Muse Spark Open | $1.25 | $0.15 | $4.25 | **$5.50** | 100 万 Token 上下文；10 月 15 日发布开放权重版本；与 Muse Spark 1.3 使用相同基础模型，经过额外安全后训练 | [来源](https://openrouter.ai/meta/muse-spark-open) |
+| 39 | GLM / Z.AI | GLM-5.1 | $1.40 | $0.26 | $4.40 | **$5.80** | 20 万 Token 上下文 | [来源](https://docs.z.ai/guides/overview/pricing) |
+| 40 | GLM / Z.AI | GLM-5.2/5.3 | $1.40 | $0.26 | $4.40 | **$5.80** | 100 万 Token 上下文 | [来源](https://docs.z.ai/guides/overview/pricing) |
+| 41 | OpenAI | GPT-6.1 Terra | $1.00 | $0.05 | $5.00 | **$6.00** | 105 万 Token 上下文；输入超过 272K 时，输入 $2、缓存读取 $0.10、输出 $7.50；30 分钟缓存写入 $1.25/百万 Token | [来源](https://developers.openai.com/api/docs/models/gpt-6.1-terra) |
+| 42 | xAI | Grok 4.5 | $2.00 | $0.30 | $6.00 | **$8.00** | 输入少于 200K；达到 200K 及以上时，输入 $4、输出 $12 | [来源](https://docs.x.ai/developers/pricing) |
+| 43 | xAI | Grok 4.6 | $2.00 | $0.50 | $6.00 | **$8.00** | 输入少于 200K；达到 200K 及以上时，输入 $4、输出 $12 | [来源](https://docs.x.ai/developers/pricing) |
+| 44 | xAI | Grok 4.7 | $2.00 | $0.50 | $6.00 | **$8.00** | 50 万 Token 上下文；输入达到 200K 及以上时，输入 $4、输出 $12 | [来源](https://docs.x.ai/developers/pricing) |
+| 45 | Qwen | Qwen3.8 Max | $2.00 | — | $6.00 | **$8.00** | 国际站；100 万 Token 上下文 | [来源](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
+| 46 | Google | Gemini 3.6/3.8 Flash（原价） | $1.50 | $0.15 | $7.50 | **$9.00** | 2027 年 1 月 1 日起的标准价格；3.7 已退役，相关请求转至 3.8 | [来源](https://ai.google.dev/gemini-api/docs/pricing) |
+| 47 | Mistral | Mistral Medium 3.5 | $1.50 | $0.15 | $7.50 | **$9.00** | 25.6 万 Token 上下文 | [来源](https://docs.mistral.ai/models/) |
+| 48 | Kimi | Kimi K2.7 Code Highspeed | $1.90 | $0.38 | $8.00 | **$9.90** | 约 26.2 万 Token 上下文；与 K2.7 Code 为同一模型，仅提高输出速度 | [来源](https://www.kimi.com/) |
+| 49 | Qwen | Qwen3.7 Max | $2.50 | — | $7.50 | **$10.00** | 国际站；100 万 Token 上下文 | [来源](https://www.alibabacloud.com/help/en/model-studio/model-pricing) |
+| 50 | Anthropic | Claude Sonnet 5.5 | $2.00 | $0.10 | $10.00 | **$12.00** | 10 月 7 日起，缓存读取价降至 $0.10 | [来源](https://platform.claude.com/docs/en/about-claude/pricing) |
+| 51 | Google | Gemini 4 Argon（优惠价） | $2.00 | $0.10 | $10.00 | **$12.00** | 100 万 Token 上下文；仅支持隐式缓存；优惠期至 2026 年 11 月 30 日 | [来源](https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud) |
+| 52 | OpenAI | GPT-6.1 Sol | $2.00 | $0.10 | $10.00 | **$12.00** | 105 万 Token 上下文；输入超过 272K 时，输入 $4、缓存读取 $0.20、输出 $15 | [来源](https://developers.openai.com/api/docs/pricing) |
+| 53 | Anthropic | Claude Sonnet 5 | $2.00 | $0.20 | $10.00 | **$12.00** | — | [来源](https://platform.claude.com/docs/en/about-claude/pricing) |
+| 54 | OpenAI | GPT-6 Sol | $2.00 | $0.20 | $10.00 | **$12.00** | 105 万 Token 上下文；输入超过 272K 时，输入 $4、缓存读取 $0.40、输出 $15 | [来源](https://developers.openai.com/api/docs/pricing) |
+| 55 | Kimi | Kimi K3.1 Pro | $2.00 | $0.20 | $10.00 | **$12.00** | 100 万 Token 上下文；5 分钟缓存写入 $2/百万 Token；截至源表 10 月 30 日更新时，开放权重版本原计划于 11 月 4 日发布，当时尚未发布 | [来源](https://platform.kimi.ai/) |
+| 56 | Google | Gemini 3.1 Pro Preview | $2.00 | $0.20 | $12.00 | **$14.00** | 输入不超过 200K；超过 200K 时，输入 $4、输出 $18 | [来源](https://ai.google.dev/gemini-api/docs/pricing) |
+| 57 | OpenAI | GPT-5.6 Terra | $2.00 | $0.20 | $12.00 | **$14.00** | 输入超过 272K 时，输入 $4、输出 $18 | [来源](https://developers.openai.com/api/docs/pricing) |
+| 58 | OpenAI | GPT-5.4 | $2.50 | $0.25 | $15.00 | **$17.50** | 输入超过 272K 时，会加收长上下文费用 | [来源](https://developers.openai.com/api/docs/pricing) |
+| 59 | Anthropic | Claude Sonnet 4.6 | $3.00 | $0.30 | $15.00 | **$18.00** | — | [来源](https://platform.claude.com/docs/en/about-claude/pricing) |
+| 60 | Kimi | Kimi K3 | $3.00 | $0.30 | $15.00 | **$18.00** | 100 万 Token 上下文 | [来源](https://www.kimi.com/) |
+| 61 | Anthropic | Claude Opus 5.5 | $4.00 | $0.20 | $20.00 | **$24.00** | 100 万 Token 上下文 | [来源](https://platform.claude.com/docs/en/about-claude/pricing) |
+| 62 | Google | Gemini 4 Argon（原价） | $4.00 | $0.20 | $20.00 | **$24.00** | 100 万 Token 上下文；仅支持隐式缓存；标准价自 2026 年 12 月 1 日起生效 | [来源](https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud) |
+| 63 | Kimi | Kimi K3.1 Pro Highspeed | $4.00 | $0.20 | $20.00 | **$24.00** | 与 K3.1 Pro 为同一模型，但推理服务速度约快 2–3 倍；100 万 Token 上下文；5 分钟缓存写入 $4/百万 Token | [来源](https://platform.kimi.ai/) |
+| 64 | Meta | Muse Wonder | $4.00 | $0.20 | $20.00 | **$24.00** | 100 万 Token 上下文；Meta Model API / OpenRouter 提供；Wonder Full 仅能通过订阅使用 | [来源](https://dev.meta.ai/models/muse-wonder) |
+| 65 | OpenAI | GPT-5.6 Sol（优惠价） | $4.00 | $0.40 | $20.00 | **$24.00** | 优惠价格至少持续至 2026 年 11 月 21 日；原价为输入 $5、输出 $30 | [来源](https://developers.openai.com/api/docs/pricing) |
+| 66 | Anthropic | Claude Opus 4.7/4.8/5 | $5.00 | $0.50 | $25.00 | **$30.00** | — | [来源](https://platform.claude.com/docs/en/about-claude/pricing) |
+| 67 | OpenAI | GPT-5.5 | $5.00 | $0.50 | $30.00 | **$35.00** | — | [来源](https://developers.openai.com/api/docs/pricing) |
+| 68 | OpenAI | GPT-5.6 Sol（原价） | $5.00 | $0.50 | $30.00 | **$35.00** | 标准原价；当前促销价格为输入 $4、输出 $20 | [来源](https://developers.openai.com/api/docs/pricing) |
+| 69 | Anthropic | Claude Fable 5.1 | $10.00 | $0.25 | $50.00 | **$60.00** | 100 万 Token 上下文；缓存读取费率仅为常规输入价的 2.5% | [来源](https://platform.claude.com/docs/en/about-claude/pricing) |
+| 70 | Anthropic | Claude Fable 5 | $10.00 | $1.00 | $50.00 | **$60.00** | — | [来源](https://platform.claude.com/docs/en/about-claude/pricing) |
+| 71 | OpenAI | GPT-6 Astra | $10.00 | $1.00 | $50.00 | **$60.00** | 105 万 Token 上下文；输入超过 272K 时，输入 $20、缓存读取 $2、输出 $75 | [来源](https://developers.openai.com/api/docs/pricing) |
+| 72 | OpenAI | GPT-5.4/5.5 Pro | $30.00 | — | $180.00 | **$210.00** | 最高算力档位 | [来源](https://developers.openai.com/api/docs/pricing) |
 
 > **DeepSeek 峰谷价格：** 高峰时段为 UTC **01:00–04:00** 和 **06:00–10:00**，其他时段为低峰。DeepSeek V4.1 Flash 1017 的低峰价为输入 **$0.15** / 缓存输入 **$0.003** / 输出 **$0.60**；高峰价分别为 **$0.30 / $0.006 / $1.20**（单位均为美元/百万 Token）。V4 Pro 的峰谷价格见上表。
 
