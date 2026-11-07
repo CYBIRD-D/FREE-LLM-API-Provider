@@ -1,6 +1,6 @@
 # Free LLM API Provider
 
-[English](./readme.md) | [**简体中文**](./README.zh-CN.md)
+[**English**](./readme.md) | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [Português (Brasil)](./README.pt-BR.md)
 > Last reviewed: **2026-11-02** 
 
 This directory tracks **free LLM inference APIs**, their account requirements and rate limits (including CN providers).  
