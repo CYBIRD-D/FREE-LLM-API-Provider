@@ -75,7 +75,7 @@ You may also want to read my other posts:
   - [扣子（Coze）](#扣子coze)
   - [快手万擎（StreamLake Vanchin）](#快手万擎streamlake-vanchin)
   - [讯飞星火（iFLYTEK Spark）](#讯飞星火iflytek-spark)
-  - [心流（iFlow，已停止服务）](#心流iflow已停止服务)
+  - [心流（iFlow，RIP）](#心流iflow已停止服务)
 - [LLM PRICE LIST](#llm-price-list)
 
 -----------
@@ -145,6 +145,7 @@ You may also want to read my other posts:
 | Gemini 2.5 Flash Lite     | 10                        | 250k                     | 20              |
 | Gemini 3.1/3.5 Flash Lite     | 15                        | 250k                     | 500             |
 | **Gemma 4 26B/31B**           | **30**                        | **16k**             | **14.4K**            |
+| Antigravity(agent)           | 60                        | 100k             | 100            |
 | ~~Gemma 3 (1B/2B/4B/12B/27B)~~  | ~~30~~                  | ~~15k~~                      | ~~14.4k~~           |
 ~~gemini 2 Flash/Lite~~
 ~~gemini 2.5/3.1 Pro~~
