@@ -38,9 +38,9 @@ Este repositório reúne serviços que oferecem **inferência de modelos de ling
 - [AMD AI Developer Program](#amd-ai-developer-program)
 - [Google Gemini / Gemma 4](#google-gemini--gemma-4)
 - [NVIDIA NIM](#nvidia-nim)
-- [Ollama](#ollama)
+- [~~Ollama~~](#ollama)
 - [Groq](#groq)
-- [Cerebras](#cerebras)
+- [~~Cerebras~~](#cerebras)
 - [OpenRouter](#openrouter)
 - [Cloudflare Workers AI](#cloudflare-workers-ai)
 - [Cohere](#cohere)
@@ -275,23 +275,14 @@ z-ai/glm-5.3-flash
 
 ---
 
-### Ollama
+### ~~Ollama~~
 
 > Verificado em **30 de outubro de 2026**. **O Ollama Cloud cobra pelos tokens consumidos. Mensalidade de US$ 0 não significa inferência grátis.**
 
 **Fontes oficiais:** [Planos e preços](https://ollama.com/pricing) · [Modelos em nuvem](https://ollama.com/search?c=cloud) · [Mudança de cobrança em 31/08/2026](https://ollama.com/blog/transparent-pricing)
 
 - No plano **Pay as you go**, não há assinatura mensal, mas a inferência na nuvem consome créditos comprados. A lista antiga de modelos gratuitos e o suposto reset a cada 3 horas não representam as regras atuais para todos.
-- Executar modelos no próprio computador continua sem cobrança de tokens pelo Ollama Cloud.
-- Concorrência de requisições: normalmente **3** em Pay as you go e Pro; **10** em Max e Team. Condições antigas podem variar.
 
-| Plano | Assinatura | Créditos de uso incluídos |
-|---|---:|---:|
-| Pay as you go | US$ 0/mês | Sem crédito incluído; é necessário comprar créditos |
-| Pro | US$ 20/mês (US$ 200/ano) | US$ 60/mês |
-| Max | US$ 100/mês | US$ 300/mês |
-| Team | US$ 500/mês | US$ 1.000/mês (compartilhados) |
-| Enterprise | Sob consulta | Sob contrato |
 
 <details>
 <summary>Preços de modelos do Ollama Cloud (US$/1 milhão de tokens)</summary>
