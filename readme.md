@@ -1,7 +1,7 @@
 # Free LLM API Provider
 
 [**English**](./readme.md) | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [Português (Brasil)](./README.pt-BR.md)
-> Last reviewed: **2026-11-02** 
+> Last reviewed: **2026-11-13** 
 
 This directory tracks **free LLM inference APIs**, their account requirements and rate limits (including CN providers).  
 
@@ -52,7 +52,7 @@ You may also want to read my other posts:
   - [Google/Gemini & Gemma 4](#google-gemini--gemma-4)
     - [★AI Studio to API Adapter](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md)
   - [★Nvidia(40RPM)](#nvidia)
-  - [Ollama](#ollama)
+  - [~~Ollama~~](#ollama)
   - [★Groq](#groq)
   - [~~Cerebras~~](#cerebras)
   - [OpenRouter](#openrouter)
@@ -84,7 +84,7 @@ You may also want to read my other posts:
 ## Global Platform
 
 ### AMD Radeon Cloud Token Factory (China site)
-> Last checked: **2026-11-02**   
+> Last checked: **2026-11-13**   
 > **Free shared-model API with a daily renewable usage cap**
 
 - **Official links:** [Token Factory console](https://developer.amd.com.cn/radeon/tokenfactory) · [Documentation](https://amd-aim.github.io/radeon-cloud-docs/guides/token-factory/) · [Rate limits](https://amd-aim.github.io/radeon-cloud-docs/api/rate-limits/) · [Usage and quota](https://amd-aim.github.io/radeon-cloud-docs/api/usage/) · [Terms](https://amd-aim.github.io/radeon-cloud-docs/api/terms/)
@@ -110,7 +110,7 @@ You may also want to read my other posts:
 | MiniCPM5-2B                  | 0.035 | 0.07 |                       **19.05M** |
 | MiniCPM-V-4.7-1B             | 0.035 | 0.07 |                       **19.05M** |
 | MiniCPM-V-4.7-35B-A3B        | 0.035 | 0.07 |                       **19.05M** |
-| Gemma-4-31B-IT               | 0.035 |  0.0 |                **19.05M**        |
+| Gemma-4-31B-IT               | 0.035 |  0.07 |                **19.05M**        |
 
 
 </details>
@@ -118,7 +118,7 @@ You may also want to read my other posts:
 -------------------
 
 ### AMD AI Developer Program (one-time cloud credits)
-> Last checked: **2026-11-02**  
+> Last checked: **2026-11-13**  
 > **Promotional credits, not a recurring free LLM API tier**
 
 - **Official links:** [Join AMD AI Developer Program](https://developer.amd.com/ai-developer-program/) · [Benefits, FAQ and credit terms](https://developer.amd.com/resources/)
@@ -130,7 +130,7 @@ You may also want to read my other posts:
 ---
 
 ### Google Gemini / Gemma 4
-> Last checked: **2026-10-30**
+> Last checked: **2026-11-13**
 
 - [Free-tier model pricing](https://ai.google.dev/gemini-api/docs/pricing) · [Rate limits](https://ai.google.dev/gemini-api/docs/rate-limits) · [Your project's limits in AI Studio](https://aistudio.google.com/rate-limit)
 - Endpoint: `https://generativelanguage.googleapis.com`
@@ -277,32 +277,14 @@ z-ai/glm-5.3-flash
 
 --------
 
-### Ollama
-> Last checked: **2026-10-30**
+### ~~Ollama~~
+> ~~Last checked: **2026-11-13**~~
+
+**No Free Cloud API — Pay-as-you-go only (since 2026-11-09）**
 
 - [Official pricing and cloud plans](https://ollama.com/pricing) · [Cloud models](https://ollama.com/search?c=cloud) · [2026-08-31 pricing transition](https://ollama.com/blog/transparent-pricing)
-- **Pay as you go ($0/month)** means **no subscription**, not free inference: cloud token usage consumes purchased credits. The old blanket list of “free models” and **3-hour session resets** no longer describes the current published plans.
+- **Pay as you go ($0/month)** means **no subscription**, not free inference: cloud token usage consumes purchased credits. 
 - Running local models on your own hardware incurs no Ollama cloud token charges.
-- Cloud concurrency: **3** for Pay as you go and Pro; **10** for Max and Team. Some legacy accounts may have different conditions.
-
-> **Free** model list
-
-- Gemma4: 31b
-- gpt-oss 20b/120b
-- nemotron-3-nano 30B/super 120B-A12B/ultra 550B-A55B
-- Reflection Beam 501B （limit time)
-
-> **Session usage** reset in 3hours
-
-
-
-| Plan | Subscription | Included cloud usage |
-|---|---:|---:|
-| Pay as you go | $0/month | None advertised; purchase usage credits |
-| Pro | $20/month ($200/year) | $60/month |
-| Max | $100/month | $300/month |
-| Team | $500/month | $1,000/month shared |
-| Enterprise | Custom | Custom |
 
 <details>
 <summary>Current cloud model pricing (USD per 1M input / 1M output tokens)</summary>
@@ -337,7 +319,7 @@ Off-peak pricing applies to eligible models outside **12:00–18:00 UTC on weekd
 -------
 
 ### Groq
-> Last checked: **2026-10-30**
+> Last checked: **2026-11-13**
 
 The published free rate-limits table includes GPT-OSS 20B/120B and Qwen3.8 27B. Your account may have different limits.
 
@@ -381,7 +363,7 @@ Endpoint: https://api.cerebras.ai
 ---------
 
 ### OpenRouter
-> Last checked: **2026-10-30** </br>
+> Last checked: **2026-11-13** </br>
 
 https://openrouter.ai/collections/free-models </br>
 https://openrouter.ai/pricing </br>
@@ -404,7 +386,7 @@ Endpoint (OpenAI-compatible): https://openrouter.ai/api/v1
 
 ### Cloudflare
 > Official pricing page last updated: **2026-10-20** </br>
-> Last Check: **2026-09-23** </br>
+> Last Check: **2026-11-13** </br>
 
 
 https://developers.cloudflare.com/workers-ai/platform/pricing/#llm-model-pricing </br>
@@ -429,16 +411,13 @@ Models list </br>
     - Mistral-7b-intruct-v0.1
     - Mistral-small-3.1b-24b
 - deepseek-r1-distill-qwen-32b
-- deepseek V4 flash/pro and V4.1 flash 1017 
 - Gemma
   - gemma-3-12b
   - **gemma-4-26B-A4B**
   - gemma-sea-lion-v4-27b-it
 - granite-4.0-h-micro
 - **glm-4.7-flash**
-- **glm-5.2 / glm-5.3 / glm-5.3-flash**
 - **nemotron-3-120b-a12b**
-- **kimi-k2.5/k2.6/k2.7-code**
     
  <details>
   <summary>Full list with token cost</summary>  
@@ -502,7 +481,7 @@ Models list </br>
 
 ### Cohere
 > Last web updated: **2026-06-09**</br>
-> Last Check: **2026-10-30** </br>
+> Last Check: **2026-11-13** </br>
 
 https://docs.cohere.com/docs/rate-limits
 
@@ -530,7 +509,7 @@ Endpoint: https://api.cohere.ai/compatibility
 
 ### Z.ai (GLM-4.5/4.7-Flash)
 
-> Last Check: **2026-10-30** </br>
+> Last Check: **2026-11-13** </br>
 
 https://docs.z.ai/guides/overview/pricing </br>
 
