@@ -6,7 +6,7 @@
 
 LLM をクラウド経由で試せるサービスをまとめました。**無料で何度も使えるAPI、毎日補充される枠、初回だけのトライアル、月額0ドルでも従量課金のサービス**は別物です。登録条件、利用回数、モデル、APIエンドポイントを比較できます。
 
-**この日本語版では中国本土向けサービスの章を掲載していません。** 中国向けサービスも含む一覧は[中国語版](./README.zh-CN.md)または[英語版](./readme.md)を参照してください。
+**中国本土向けサービスの一覧はこの版には掲載していませんが、AMD Radeon Cloud Token Factory（中国向け）は例外として収録しています。** その他の中国向けサービスは[中国語版](./README.zh-CN.md)または[英語版](./readme.md)を参照してください。
 
 <table align="center">
   <tr>
@@ -33,6 +33,7 @@ LLM をクラウド経由で試せるサービスをまとめました。**無�
 
 ## 目次
 
+- [AMD Radeon Cloud Token Factory（中国向け）](#amd-radeon-cloud-token-factory中国向け)
 - [AMD AI Developer Program](#amd-ai-developer-program)
 - [Google Gemini / Gemma 4](#google-gemini--gemma-4)
 - [NVIDIA NIM](#nvidia-nim)
@@ -56,6 +57,45 @@ LLM をクラウド経由で試せるサービスをまとめました。**無�
 ---
 
 ## 海外・国際向けサービス
+
+### AMD Radeon Cloud Token Factory（中国向け）
+
+> **参照情報：2026年11月2日。** 中国向けサービスを例外的に掲載しています。海外からの利用可否や登録条件は保証されません。
+
+**無料枠：** 共有モデルAPIの使用量が**毎日補充されるポイント（pts）制**。初回だけのトライアルではありません。
+
+**公式情報：** [Token Factory](https://developer.amd.com.cn/radeon/tokenfactory) · [モデル一覧と単価](https://amd-aim.github.io/radeon-cloud-docs/models/overview/) · [利用量と無料枠](https://amd-aim.github.io/radeon-cloud-docs/api/usage/) · [レート制限](https://amd-aim.github.io/radeon-cloud-docs/api/rate-limits/) · [利用規約](https://amd-aim.github.io/radeon-cloud-docs/api/terms/)
+
+**OpenAI互換API：** `https://developer.amd.com.cn/radeon/api/v1`。Anthropic Messages形式にも対応します。自分でGPUサーバーを起動する必要はありません。
+
+- **更新時刻：** 毎日**北京時間00:00（UTC+8）**。1日あたりのポイント付与数はアカウントによって異なり、変更される場合もあります。公式ドキュメントの「10 pts/日」は例示であり、全アカウント共通の保証ではありません。
+- **ptsとは：** トークン利用量に対する独自の計量単位で、現金やGPUクレジットとは別です。モデルごとに入力・出力の料金が異なります。最新の値はモデルカードで確認してください。
+- **レート制限の目安：** ゲートウェイで**20 RPM/アカウント**、受付側で**30 RPM/APIキー**、**同時実行はAPIキーあたり最大8件**。共有バックエンド側の状況により実際の上限は変わります。
+- **モデルID：** 一覧の表記をそのまま `model` に指定してください。例：`DeepSeek-V4.1-Flash`（モデルカード上の名称には `-1017` が付く場合があります）。現在公開中のモデルは `GET /v1/models` で確認できます。
+
+<details>
+<summary>モデル別のポイント消費と、1 ptで使えるトークン数を表示</summary>
+
+| モデルID | 入力（pts/100万トークン） | 出力（pts/100万トークン） | 1 ptで使える推定トークン数（入力:出力＝1:1） |
+|---|---:|---:|---:|
+| DeepSeek-V4-Flash | 0.14 | 0.28 | **4.76M** |
+| DeepSeek-V4-Flash-Vision-Exp | 0.14 | 0.28 | **4.76M** |
+| DeepSeek-V4.1-Flash | 0.28 | 0.56 | **2.38M** |
+| Qwen3.8-Flash-Next | 0.14 | 0.28 | **4.76M** |
+| Qwen3.8-27B | 0.035 | 0.07 | **19.05M** |
+| GLM-5.3-Flash | 0.28 | 0.56 | **2.38M** |
+| MiMo-V2.6-Flash | 0.14 | 0.28 | **4.76M** |
+| MiniCPM5-2B | 0.035 | 0.07 | **19.05M** |
+| MiniCPM-V-4.7-1B | 0.035 | 0.07 | **19.05M** |
+| MiniCPM-V-4.7-35B-A3B | 0.035 | 0.07 | **19.05M** |
+| Gemma-4-31B-IT | 0.035 | 0.07 | **19.05M** |
+
+この表は元の中国語READMEに掲載されたモデル・単価を引き継いだものです。右端は入力と出力を同量使った場合の**合計トークン数の概算**です。最新の単価や利用可能モデルは公式サイトで確認してください。
+
+</details>
+
+---
+
 
 ### AMD AI Developer Program
 
