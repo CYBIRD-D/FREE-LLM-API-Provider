@@ -38,9 +38,9 @@ LLM をクラウド経由で試せるサービスをまとめました。**無�
 - [AMD AI Developer Program](#amd-ai-developer-program)
 - [Google Gemini / Gemma 4](#google-gemini--gemma-4)
 - [NVIDIA NIM](#nvidia-nim)
-- [Ollama](#ollama)
+- [~~Ollama~~](#ollama)
 - [Groq](#groq)
-- [Cerebras（無料利用の実用性が低い）](#cerebras無料利用の実用性が低い)
+- [~~Cerebras（無料利用の実用性が低い）~~](#cerebras無料利用の実用性が低い)
 - [OpenRouter](#openrouter)
 - [Cloudflare Workers AI](#cloudflare-workers-ai)
 - [Cohere](#cohere)
@@ -275,23 +275,14 @@ z-ai/glm-5.3-flash
 
 ---
 
-### Ollama
+### ~~Ollama~~
 
 > 確認日：**2026年10月30日**。**Ollama Cloudの利用料金はトークン従量制です。「月額0ドル」は「推論が無料」という意味ではありません。**
 
 **公式情報：** [料金とプラン](https://ollama.com/pricing) · [クラウドモデル](https://ollama.com/search?c=cloud) · [2026年8月31日の料金制度変更](https://ollama.com/blog/transparent-pricing)
 
 - **Pay as you go（月額0ドル）**では、クラウドの推論利用量に応じて購入済みクレジットが消費されます。従来の「無料モデル一覧」「3時間ごとの枠リセット」を現行の共通特典として扱わないでください。
-- 自分のPCでモデルをローカル実行する場合は、Ollamaのクラウド推論料金は発生しません。
-- 同時実行数はPay as you go・Proで**3件**、Max・Teamで**10件**が目安です。旧契約のアカウントでは条件が異なる場合があります。
 
-| プラン | 月額など | 含まれるクラウド利用クレジット |
-|---|---:|---:|
-| Pay as you go | 月額 $0 | 付与額なし。利用分の購入が必要 |
-| Pro | 月額 $20（年払い $200） | 月額 $60 |
-| Max | 月額 $100 | 月額 $300 |
-| Team | 月額 $500 | 月額 $1,000（チーム共有） |
-| Enterprise | 個別見積もり | 個別契約 |
 
 <details>
 <summary>Ollama Cloudのモデル別料金（米ドル／100万トークン）</summary>
