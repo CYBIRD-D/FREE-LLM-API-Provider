@@ -6,7 +6,7 @@
 
 Este repositório reúne serviços que oferecem **inferência de modelos de linguagem por API sem custo, cotas gratuitas ou créditos de teste**. Há uma diferença importante entre **modelos realmente gratuitos**, **cotas renovadas todos os dias**, **créditos oferecidos uma única vez** e **planos sem mensalidade que cobram por token**.
 
-**Esta edição não inclui os provedores específicos da China continental.** Para eles, consulte a [versão em chinês](./README.zh-CN.md) ou a [versão em inglês](./readme.md).
+**Esta edição não reproduz a seção inteira de provedores da China continental, mas inclui o AMD Radeon Cloud Token Factory como exceção.** Para conhecer os demais serviços chineses, consulte a [versão em chinês](./README.zh-CN.md) ou a [versão em inglês](./readme.md).
 
 <table align="center">
   <tr>
@@ -33,6 +33,7 @@ Este repositório reúne serviços que oferecem **inferência de modelos de ling
 
 ## Índice
 
+- [AMD Radeon Cloud Token Factory (China)](#amd-radeon-cloud-token-factory-china)
 - [AMD AI Developer Program](#amd-ai-developer-program)
 - [Google Gemini / Gemma 4](#google-gemini--gemma-4)
 - [NVIDIA NIM](#nvidia-nim)
@@ -56,6 +57,45 @@ Este repositório reúne serviços que oferecem **inferência de modelos de ling
 ---
 
 ## Plataformas internacionais
+
+### AMD Radeon Cloud Token Factory (China)
+
+> **Dados de referência: 2 de novembro de 2026.** Serviço destinado ao mercado chinês, incluído como exceção. A disponibilidade fora da China e as condições de cadastro não são garantidas.
+
+**Acesso gratuito:** API de modelos compartilhados com **cota diária renovável, medida em pontos (pts)**. Não é apenas um bônus de cadastro.
+
+**Fontes oficiais:** [Token Factory](https://developer.amd.com.cn/radeon/tokenfactory) · [Modelos e tarifas](https://amd-aim.github.io/radeon-cloud-docs/models/overview/) · [Uso e cotas](https://amd-aim.github.io/radeon-cloud-docs/api/usage/) · [Limites de requisições](https://amd-aim.github.io/radeon-cloud-docs/api/rate-limits/) · [Termos de uso](https://amd-aim.github.io/radeon-cloud-docs/api/terms/)
+
+**Endpoint compatível com OpenAI:** `https://developer.amd.com.cn/radeon/api/v1`. Também aceita o formato Anthropic Messages. Não é necessário criar ou hospedar uma instância de GPU.
+
+- **Renovação:** todos os dias à **00h de Pequim (UTC+8)**. A quantidade de pontos recebida pode variar entre contas e mudar ao longo do tempo. O exemplo de **10 pts/dia** na documentação **não representa uma cota garantida** para todos.
+- **O que são pts:** unidade própria de consumo da API, diferente de dinheiro e de créditos para computação em GPU. Cada modelo cobra taxas distintas por tokens de entrada e de saída. Consulte o cartão do modelo para ver a tarifa vigente.
+- **Limites típicos, não garantidos:** **20 requisições/min por conta** no gateway, **30 requisições/min por chave de API** na camada de admissão e **até 8 requisições simultâneas por chave**. A capacidade compartilhada pode impor restrições adicionais.
+- **IDs de modelo:** envie o identificador exato no campo `model`. Exemplo: `DeepSeek-V4.1-Flash` (o cartão pode mencionar a versão `-1017`). A lista de modelos publicados está disponível em `GET /v1/models`.
+
+<details>
+<summary>Ver modelos, tarifas em pts e estimativa de tokens por ponto</summary>
+
+| ID do modelo | Entrada (pts/1M tokens) | Saída (pts/1M tokens) | Tokens estimados por 1 pt (entrada:saída = 1:1) |
+|---|---:|---:|---:|
+| DeepSeek-V4-Flash | 0.14 | 0.28 | **4.76M** |
+| DeepSeek-V4-Flash-Vision-Exp | 0.14 | 0.28 | **4.76M** |
+| DeepSeek-V4.1-Flash | 0.28 | 0.56 | **2.38M** |
+| Qwen3.8-Flash-Next | 0.14 | 0.28 | **4.76M** |
+| Qwen3.8-27B | 0.035 | 0.07 | **19.05M** |
+| GLM-5.3-Flash | 0.28 | 0.56 | **2.38M** |
+| MiMo-V2.6-Flash | 0.14 | 0.28 | **4.76M** |
+| MiniCPM5-2B | 0.035 | 0.07 | **19.05M** |
+| MiniCPM-V-4.7-1B | 0.035 | 0.07 | **19.05M** |
+| MiniCPM-V-4.7-35B-A3B | 0.035 | 0.07 | **19.05M** |
+| Gemma-4-31B-IT | 0.035 | 0.07 | **19.05M** |
+
+Tabela baseada na versão chinesa do README. A última coluna estima o **total de tokens de entrada e saída** com volumes iguais. Confira no catálogo oficial os modelos disponíveis e as tarifas atualizadas.
+
+</details>
+
+---
+
 
 ### AMD AI Developer Program
 
