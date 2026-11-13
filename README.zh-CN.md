@@ -2,7 +2,7 @@
 
 [English](./readme.md) | [**简体中文**](./README.zh-CN.md) | [日本語](./README.ja.md) | [Português (Brasil)](./README.pt-BR.md)
 
-> **资料最后整理：2026 年 11 月 2 日**。
+> **资料最后整理：2026 年 11 月 13 日**。
 >
 > 额度、模型列表及活动可能随时变化；请以各平台官方页面或账号控制台为准。
 
@@ -51,9 +51,9 @@
 - [AMD AI Developer Program](#amd-ai-developer-program)
 - [Google Gemini / Gemma 4](#google-gemini--gemma-4)
 - [NVIDIA NIM](#nvidia-nim)
-- [Ollama](#ollama)
+- [~~Ollama~~](#ollama)
 - [Groq](#groq)
-- [Cerebras（已划出推荐）](#cerebras已划出推荐)
+- [~~Cerebras~~](#cerebras)
 - [OpenRouter](#openrouter)
 - [Cloudflare Workers AI](#cloudflare-workers-ai)
 - [Cohere](#cohere)
@@ -75,7 +75,7 @@
 > 本节包含真正的免费推理服务，也包含**有次数或有效期限制的试用额度**。注意活动政策会变动；
 
 ### AMD Radeon Cloud Token Factory（中国站）
-> 最后核查：**2026 年 11 月 2 日**
+> 最后核查：**2026 年 11 月 13 日**
 
 **免费方式：** 每日重置的共享模型推理 API 额度，以 **pts** 计量；**不是一次性体验金**
 
@@ -112,7 +112,7 @@
 
 ### Index-Translate（哔哩哔哩）
 
-> **资料核查：2026 年 11 月 13 日** · **免费方式：官方提供免费公网翻译 API，无需本地 GPU。**
+> **资料核查：2026 年 11 月 13 日**
 
 **官方资料：** [项目仓库](https://github.com/bilibili/Index-Translate) · [免费 API 使用说明](https://github.com/bilibili/Index-Translate#option-1-free-online-api-zero-gpu-setup) · [官方调用脚本](https://github.com/bilibili/Index-Translate/blob/main/inference/llm/call_api.py) · [在线体验](https://index-translate.bilibili.com/)
 
@@ -244,7 +244,7 @@
 
 ### AMD AI Developer Program
 
-> 最近核查：**2026 年 11 月 2 日**。
+> 最近核查：**2026 年 11 月 13 日**。
 >
 > **这是一次性开发者福利，不是每天续送的免费 LLM API。**
 
@@ -259,7 +259,7 @@
 
 ### Google Gemini / Gemma 4
 
-> 最近核查：**2026 年 10 月 30 日**
+> 最近核查：**2026 年 11 月 13 日**
 
 **官方资料：** [各模型免费层与价格](https://ai.google.dev/gemini-api/docs/pricing) · [调用限制](https://ai.google.dev/gemini-api/docs/rate-limits) · [在 AI Studio 查看自己项目的额度](https://aistudio.google.com/rate-limit)
 
@@ -281,6 +281,7 @@
 | Gemini 2.5 Flash-Lite | 10 | 250K | 20 |
 | Gemini 3.1/3.5 Flash-Lite | 15 | 250K | 500 |
 | Gemma 4 26B/31B | 30 | 16K | 14,400 |
+| Antigravity(agent) | 60 | 100k | 100 | 
 
 上述数值只用于理解曾出现过的额度水平，**不要据此判断你的账号现在能调用多少次**。Gemma 3、Gemini 2 Flash 等历史型号也已从旧表中划除。
 
@@ -403,24 +404,14 @@ z-ai/glm-5.3-flash
 
 ---
 
-### Ollama
+### ~~Ollama~~
 
-> 最近核查：**2026 年 10 月 30 日**。**目前的 Ollama 云端推理是按 Token 付费，不应当作持续免费的托管模型 API。**
+> 最近核查：**2026 年 11 月 13 日**。**目前的 Ollama 云端推理是按 Token 付费，无免费的云端模型 API。**
 
 **官方资料：** [云端套餐与价格](https://ollama.com/pricing) · [云端模型列表](https://ollama.com/search?c=cloud) · [2026 年 8 月 31 日计费变更说明](https://ollama.com/blog/transparent-pricing)
 
-- **Pay as you go（每月订阅费 0 美元）**只表示不收月费，云端推理仍然要购买额度，按用量扣费。
-- 旧版的「免费模型列表」「每 3 小时重置会话额度」不再适合作为当前通用免费权益。
-- 在自己的电脑上**本地运行模型**，当然不收 Ollama 云端推理费用。
-- 云端并发请求：按量付费和 Pro 通常为 **3**；Max、Team 通常为 **10**；历史账号政策可能不同。
+- Ollama 已将原来的 Free 套餐替换为 Pay as you go （11 月 9 日）
 
-| 套餐 | 订阅费 | 包含的云端用量额度 |
-|---|---:|---:|
-| Pay as you go | 0 美元/月 | 未公布赠送额；需购买用量额度 |
-| Pro | 20 美元/月（或 200 美元/年） | 60 美元/月 |
-| Max | 100 美元/月 | 300 美元/月 |
-| Team | 500 美元/月 | 团队共享 1,000 美元/月 |
-| Enterprise | 定制价格 | 定制额度 |
 
 <details>
 <summary>展开 Ollama 云端模型价格（美元/百万 Token）</summary>
@@ -458,7 +449,7 @@ z-ai/glm-5.3-flash
 
 ### Groq
 
-> 最近核查：**2026 年 10 月 30 日**
+> 最近核查：**2026 年 11 月 13 日**
 
 **官方限制：** https://console.groq.com/docs/rate-limits
 
@@ -479,7 +470,7 @@ Groq 的免费层速率表中包含 **GPT-OSS 20B/120B、Qwen3.8 27B**。不同�
 
 ---
 
-### Cerebras（已划出推荐）
+### ~~Cerebras~~
 
 > 最近核查：**2026 年 10 月 30 日**
 
@@ -652,7 +643,7 @@ Groq 的免费层速率表中包含 **GPT-OSS 20B/120B、Qwen3.8 27B**。不同�
 
 ### SambaNova
 
-> 最近核查：**2026 年 10 月 30 日**
+> 最近核查：**2026 年 11 月 13 日**
 
 **官方免费层限制：** https://docs.sambanova.ai/docs/en/models/rate-limits#free-tier
 
@@ -668,7 +659,7 @@ Groq 的免费层速率表中包含 **GPT-OSS 20B/120B、Qwen3.8 27B**。不同�
 
 ### AionLabs
 
-> 最近核查：**2026 年 10 月 30 日**
+> 最近核查：**2026 年 11 月 13 日**
 
 **官方资料：** [调用限制](https://www.aionlabs.ai/docs/rate-limits/) · [模型目录](https://www.aionlabs.ai/docs/models/)
 
