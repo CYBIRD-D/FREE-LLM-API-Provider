@@ -6,7 +6,7 @@
 
 Este repositório reúne serviços que oferecem **inferência de modelos de linguagem por API sem custo, cotas gratuitas ou créditos de teste**. Há uma diferença importante entre **modelos realmente gratuitos**, **cotas renovadas todos os dias**, **créditos oferecidos uma única vez** e **planos sem mensalidade que cobram por token**.
 
-**Esta edição não reproduz a seção inteira de provedores da China continental, mas inclui o AMD Radeon Cloud Token Factory como exceção.** Para conhecer os demais serviços chineses, consulte a [versão em chinês](./README.zh-CN.md) ou a [versão em inglês](./readme.md).
+**Esta edição não reproduz a seção completa de provedores da China continental; as exceções são AMD Radeon Cloud Token Factory e Index-Translate.** Para conhecer os demais serviços chineses, consulte a [versão em chinês](./README.zh-CN.md) ou a [versão em inglês](./readme.md).
 
 <table align="center">
   <tr>
@@ -34,6 +34,7 @@ Este repositório reúne serviços que oferecem **inferência de modelos de ling
 ## Índice
 
 - [AMD Radeon Cloud Token Factory (China)](#amd-radeon-cloud-token-factory-china)
+- [Index-Translate (bilibili)](#index-translate-bilibili)
 - [AMD AI Developer Program](#amd-ai-developer-program)
 - [Google Gemini / Gemma 4](#google-gemini--gemma-4)
 - [NVIDIA NIM](#nvidia-nim)
@@ -96,6 +97,24 @@ Tabela baseada na versão chinesa do README. A última coluna estima o **total d
 
 ---
 
+
+### Index-Translate (bilibili)
+
+> **Atualizado em 13 de novembro de 2026**
+
+**Links oficiais:** [Repositório no GitHub](https://github.com/bilibili/Index-Translate) · [Como usar a API gratuita](https://github.com/bilibili/Index-Translate#option-1-free-online-api-zero-gpu-setup) · [Script oficial em Python](https://github.com/bilibili/Index-Translate/blob/main/inference/llm/call_api.py) · [Demo online](https://index-translate.bilibili.com/)
+
+**Endereço da API (compatível com OpenAI):** `https://index-translate.bilibili.com/v1`
+
+- **Modelos:** `Index-Translate-35B-A3B` é o modelo padrão da API gratuita. O script oficial também traz exemplos de tradução de imagens com `Index-Translate-2B` e `Index-Translate-9B`; confirme a disponibilidade no endpoint.
+- **Chave de API:** Os exemplos oficiais não exigem uma chave real. Se o aplicativo pedir uma, basta usar um valor fictício.
+- **Limite de chamadas:** Normalmente cerca de **30 RPM** (30 requisições por minuto). É uma **referência prática, não um limite garantido oficialmente**.
+- **O que oferece:** Tradução de textos em aproximadamente **150 idiomas**, tradução de imagens, glossários e instruções para preservar formatação e seguir regras de tradução. **É um modelo especializado em tradução, não em conversas gerais.**
+- **Formatos de API:** Chat Completions (`/v1/chat/completions`) e Responses (`/v1/responses`), compatíveis com OpenAI. Para imagens, usa o formato `image_url`.
+- **Integração com outros aplicativos:** Extensões de navegador podem enfrentar bloqueios de CORS ou WAF. O comando oficial `python inference/llm/call_api.py --serve` inicia uma ponte local em `http://127.0.0.1:8080/v1`, útil para aplicativos como o Immersive Translate. Para chamadas diretas, o guia de tradução de imagens recomenda o cabeçalho `User-Agent: Index-Translate-Client/1.0`.
+- **Textos longos:** Há relatos de repetição de trechos, respostas interrompidas e cortes em traduções extensas pela API pública de 35B ([relato no GitHub](https://github.com/bilibili/Index-Translate/issues/20)). É melhor traduzir documentos longos em partes. Limites observados em testes isolados não são necessariamente os limites oficiais.
+
+---
 
 ### AMD AI Developer Program
 
