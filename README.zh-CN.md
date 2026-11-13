@@ -37,6 +37,7 @@
 
 **中国大陆平台**
 - [AMD Radeon Cloud Token Factory（中国站）](#amd-radeon-cloud-token-factory中国站)
+- [Index-Translate（哔哩哔哩）](#index-translate哔哩哔哩)
 - [魔搭社区（ModelScope）](#魔搭社区modelscope)
 - [硅基流动（SiliconFlow）](#硅基流动siliconflow)
 - [腾讯云 TokenHub](#腾讯云-tokenhub)
@@ -106,6 +107,24 @@
 
 </details>
 
+
+---
+
+### Index-Translate（哔哩哔哩）
+
+> **资料核查：2026 年 11 月 13 日** · **免费方式：官方提供免费公网翻译 API，无需本地 GPU。**
+
+**官方资料：** [项目仓库](https://github.com/bilibili/Index-Translate) · [免费 API 使用说明](https://github.com/bilibili/Index-Translate#option-1-free-online-api-zero-gpu-setup) · [官方调用脚本](https://github.com/bilibili/Index-Translate/blob/main/inference/llm/call_api.py) · [在线体验](https://index-translate.bilibili.com/)
+
+**API 地址（兼容 OpenAI）：** `https://index-translate.bilibili.com/v1`
+
+- **模型：** `Index-Translate-35B-A3B`（官方免费 API 默认模型）。官方脚本另提供 `Index-Translate-2B`、`Index-Translate-9B` 的图片翻译调用示例；可用性以实际接口为准。
+- **API Key：** 官方调用示例无需申请真实密钥；如果第三方客户端强制要求填写 API Key，可以使用占位字符串。
+- **调用限制：** 通常约 **30 RPM**（每分钟 30 次请求，**经验参考值，并非官方公布的保证额度**）。官方尚未明确公开统一的每日 Token、每日请求次数及 TPM 限制。
+- **支持功能：** 面向约 **150 种语言**的文本翻译，并支持图片翻译、术语表、翻译格式和指令约束。**这是翻译专用模型，不是通用聊天模型。**
+- **接口格式：** 提供 OpenAI 兼容的 Chat Completions（`/v1/chat/completions`）及 Responses（`/v1/responses`）。图片翻译采用 `image_url` 格式。
+- **第三方软件：** 浏览器扩展可能遇到 CORS 或 WAF 限制。项目提供 `python inference/llm/call_api.py --serve` 本地代理，可通过 `http://127.0.0.1:8080/v1` 接入沉浸式翻译等工具。自行直接调用时，官方图片翻译文档建议添加请求头 `User-Agent: Index-Translate-Client/1.0`。
+- **长文本注意：** 有用户实测公共 35B API 处理较长文本时发生重复生成、提前停止或截断（[问题报告](https://github.com/bilibili/Index-Translate/issues/20)）。建议分段翻译；个别测试中的上下文/输出上限不应视为官方统一限制。
 
 ---
 
