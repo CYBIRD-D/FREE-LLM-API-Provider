@@ -6,7 +6,7 @@
 
 LLM をクラウド経由で試せるサービスをまとめました。**無料で何度も使えるAPI、毎日補充される枠、初回だけのトライアル、月額0ドルでも従量課金のサービス**は別物です。登録条件、利用回数、モデル、APIエンドポイントを比較できます。
 
-**中国本土向けサービスの一覧はこの版には掲載していませんが、AMD Radeon Cloud Token Factory（中国向け）は例外として収録しています。** その他の中国向けサービスは[中国語版](./README.zh-CN.md)または[英語版](./readme.md)を参照してください。
+**中国本土向けサービスの一覧は掲載していませんが、AMD Radeon Cloud Token FactoryとIndex-Translateは例外として収録しています。** その他の中国向けサービスは[中国語版](./README.zh-CN.md)または[英語版](./readme.md)を参照してください。
 
 <table align="center">
   <tr>
@@ -34,6 +34,7 @@ LLM をクラウド経由で試せるサービスをまとめました。**無�
 ## 目次
 
 - [AMD Radeon Cloud Token Factory（中国向け）](#amd-radeon-cloud-token-factory中国向け)
+- [Index-Translate（bilibili）](#index-translatebilibili)
 - [AMD AI Developer Program](#amd-ai-developer-program)
 - [Google Gemini / Gemma 4](#google-gemini--gemma-4)
 - [NVIDIA NIM](#nvidia-nim)
@@ -96,6 +97,24 @@ LLM をクラウド経由で試せるサービスをまとめました。**無�
 
 ---
 
+
+### Index-Translate（bilibili）
+
+> **更新日：2026年11月13日**
+
+**公式リンク：** [GitHubリポジトリ](https://github.com/bilibili/Index-Translate) · [無料APIの使い方](https://github.com/bilibili/Index-Translate#option-1-free-online-api-zero-gpu-setup) · [公式Pythonスクリプト](https://github.com/bilibili/Index-Translate/blob/main/inference/llm/call_api.py) · [オンラインデモ](https://index-translate.bilibili.com/)
+
+**APIエンドポイント（OpenAI互換）：** `https://index-translate.bilibili.com/v1`
+
+- **モデル：** 無料APIの標準モデルは `Index-Translate-35B-A3B`。公式スクリプトには `Index-Translate-2B` と `Index-Translate-9B` を使った画像翻訳の例もあります。実際に利用できるかはAPI側で確認してください。
+- **APIキー：** 公式の呼び出し例では本物のAPIキーは不要です。アプリで入力を求められる場合は、ダミーの文字列を設定できます。
+- **レート制限：** 通常は**約30 RPM（1分あたり約30リクエスト）**が目安です。**実利用に基づく参考値であり、公式に保証された上限ではありません。**
+- **できること：** 約**150言語**のテキスト翻訳、画像翻訳、用語集の指定、書式や翻訳ルールの指定に対応。**翻訳に特化したモデルで、汎用チャット向けではありません。**
+- **API形式：** OpenAI互換のChat Completions（`/v1/chat/completions`）とResponses（`/v1/responses`）。画像翻訳では `image_url` 形式を使います。
+- **ほかのアプリとの連携：** ブラウザー拡張から直接呼ぶと、CORSやWAFに阻まれる場合があります。公式の `python inference/llm/call_api.py --serve` でローカル中継サーバーを立ち上げ、`http://127.0.0.1:8080/v1` を使えばImmersive Translateなどと連携できます。直接呼ぶ際は、公式の画像翻訳ガイドで推奨されている `User-Agent: Index-Translate-Client/1.0` ヘッダーも参照してください。
+- **長文の注意点：** 公開35B APIへの長い入力で、訳文の繰り返し・途中終了・切り捨てが報告されています（[報告](https://github.com/bilibili/Index-Translate/issues/20)）。長文は分割して翻訳するのが無難です。個別テストで観測された上限を公式共通の制限とは扱わないでください。
+
+---
 
 ### AMD AI Developer Program
 
