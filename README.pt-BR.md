@@ -52,6 +52,7 @@ Este repositório reúne serviços que oferecem **inferência de modelos de ling
 - [SKT](#skt)
 - [IBM watsonx.ai](#ibm-watsonxai)
 - [Scaleway](#scaleway)
+- [cheapllm.shop](#cheapllmshop)
 - [Together AI (sem plano gratuito)](#together-ai-sem-plano-gratuito)
 - [Comparação de preços de API](#comparação-de-preços-de-api)
 
@@ -564,6 +565,23 @@ O nível gratuito para modelos de base tinha como referência **2 requisições/
 **Cota gratuita:** **1 milhão de tokens por conta, concedidos uma única vez**. O saldo não é renovado depois de usado.
 
 **Informações oficiais:** https://www.scaleway.com/en/docs/generative-apis/faq/#how-does-the-free-tier-work
+
+---
+
+### cheapllm.shop
+
+> Verificado em **15 de novembro de 2026**
+
+**Cota gratuita:** durante o beta, uso gratuito e **sem limite de taxa**. Depois do beta, cada conta mantém um **nível gratuito permanente**, renovado a cada hora.
+
+**Informações oficiais:** [Site](https://cheapllm.shop) · [Cadastro](https://cheapllm.shop/signup) · [Documentação](https://cheapllm.shop/docs) · [Nível gratuito](https://cheapllm.shop/docs#free-tier) · [Termos](https://cheapllm.shop/terms) · [Privacidade](https://cheapllm.shop/privacy)
+
+**API (compatível com OpenAI):** `https://cheapllm.shop/v1` (`/v1/chat/completions`, `/v1/responses`, `/v1/models`). Também aceita requisições no formato Anthropic Messages em `https://cheapllm.shop` (`/v1/messages`), com a mesma chave.
+
+- **Modelo:** apenas `deepseek-v4.1-flash-1017` (DeepSeek V4.1 Flash 1017). Entrada de texto e imagem, raciocínio, chamadas de ferramentas, saída JSON e streaming.
+- **Depois do beta:** nível gratuito permanente de **pelo menos 5.000 tokens de entrada + 1.000 tokens de saída por hora** por conta (hora móvel, somando todas as chaves). O uso acima disso é cobrado por token; nada é cobrado sem um método de pagamento cadastrado. O fim do beta é avisado antes por e-mail.
+- **Cadastro:** e-mail + senha, ou Google / GitHub / Discord. Sem cartão de crédito e sem telefone.
+- Hospedado na UE. Acesso a partir da China continental não testado. O serviço não armazena prompts e respostas, mas um provedor de reserva usado quando a capacidade principal está fora do ar pode guardá-los conforme os próprios termos (veja Privacidade).
 
 ---
 

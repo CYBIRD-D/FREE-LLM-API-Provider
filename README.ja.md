@@ -52,6 +52,7 @@ LLM をクラウド経由で試せるサービスをまとめました。**無�
 - [SKT](#skt)
 - [IBM watsonx.ai](#ibm-watsonxai)
 - [Scaleway](#scaleway)
+- [cheapllm.shop](#cheapllmshop)
 - [Together AI（無料枠終了）](#together-ai無料枠終了)
 - [LLM API料金比較表](#llm-api料金比較表)
 
@@ -564,6 +565,23 @@ z-ai/glm-5.3-flash
 **無料枠：** アカウントあたり**初回100万トークン**。使い切っても自動補充されません。
 
 **公式案内：** https://www.scaleway.com/en/docs/generative-apis/faq/#how-does-the-free-tier-work
+
+---
+
+### cheapllm.shop
+
+> 確認日：**2026年11月15日**
+
+**無料枠：** ベータ期間中は無料で**レート制限なし**。ベータ終了後も、アカウントごとに**恒久的な無料枠**（1時間ごとに回復）があります。
+
+**公式情報：** [サイト](https://cheapllm.shop) · [登録](https://cheapllm.shop/signup) · [ドキュメント](https://cheapllm.shop/docs) · [無料枠](https://cheapllm.shop/docs#free-tier) · [利用規約](https://cheapllm.shop/terms) · [プライバシー](https://cheapllm.shop/privacy)
+
+**API（OpenAI互換）：** `https://cheapllm.shop/v1`（`/v1/chat/completions`、`/v1/responses`、`/v1/models`）。Anthropic Messages形式にも `https://cheapllm.shop`（`/v1/messages`）で対応し、同じキーで使えます。
+
+- **モデル：** `deepseek-v4.1-flash-1017`（DeepSeek V4.1 Flash 1017）のみ。テキスト・画像入力、推論、ツール呼び出し、JSON出力、ストリーミングに対応。
+- **ベータ終了後：** アカウントごとに**1時間あたり入力5,000トークン以上＋出力1,000トークン以上**の恒久無料枠（直近1時間、全キー合計）。超過分はトークン単位の課金で、支払い方法を登録しない限り請求されません。ベータ終了は事前にメールで告知されます。
+- **登録：** メール＋パスワード、またはGoogle / GitHub / Discord。クレジットカード・電話番号は不要です。
+- EU内でホスト。中国本土からのアクセスは未検証。プロンプトと回答はサービス側で保存されませんが、主要な処理能力が停止した際に使われるバックアップ事業者は自社の規約に基づき保存する場合があります（プライバシー参照）。
 
 ---
 

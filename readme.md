@@ -66,6 +66,7 @@ You may also want to read my other posts:
   - [SKT](#skt)
   - [IBM](#ibm)
   - [Scaleway (1M free token/per account)](#scaleway-1m-free-tokenper-account-no-refresh)
+  - [cheapllm.shop](#cheapllmshop)
 - [中国大陆平台](#cn-platform)
   - [AMD Radeon Cloud Token Factory](#amd-radeon-cloud-token-factoryamd-免费模型-api)
   - [Index-Translate (bilibili)](#index-translate-bilibili)
@@ -617,6 +618,21 @@ https://www.ibm.com/products/watsonx-ai/pricing
 
 ### Scaleway (1M free token/per account-no refresh)
 https://www.scaleway.com/en/docs/generative-apis/faq/#how-does-the-free-tier-work
+
+--------
+
+
+### cheapllm.shop
+> Last checked: **2026-11-15**  
+> **Beta: free with no rate limit; after the beta, a permanent hourly free tier**
+
+- **Official links:** [Site](https://cheapllm.shop) · [Sign up](https://cheapllm.shop/signup) · [Docs](https://cheapllm.shop/docs) · [Free tier](https://cheapllm.shop/docs#free-tier) · [Terms](https://cheapllm.shop/terms) · [Privacy](https://cheapllm.shop/privacy)
+- **API base URL (OpenAI-compatible):** `https://cheapllm.shop/v1` (`/v1/chat/completions`, `/v1/responses`, `/v1/models`). Also supports Anthropic Messages requests at `https://cheapllm.shop` (`/v1/messages`). One key for both.
+- **Model:** `deepseek-v4.1-flash-1017` (DeepSeek V4.1 Flash 1017) only. Text + image input, reasoning, tool calls, JSON output, streaming.
+- **During the beta:** free, **no rate limit**. The end of the beta is announced by email beforehand.
+- **After the beta:** permanent free tier of **at least 5,000 input + 1,000 output tokens per hour** per account (rolling hour, all keys together). Usage beyond it is billed per token; nothing is charged unless a payment method is added.
+- **Sign-up:** email + password, or Google / GitHub / Discord. No credit card, no phone.
+- Hosted in the EU. Access from mainland China not tested. Prompts are not stored by the service, but a backup provider used when the main capacity is down may keep them under its own terms (see Privacy).
 
 --------
 
