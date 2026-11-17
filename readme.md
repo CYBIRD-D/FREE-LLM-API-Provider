@@ -52,6 +52,7 @@ You may also want to read my other posts:
   - [Google/Gemini & Gemma 4](#google-gemini--gemma-4)
     - [★AI Studio to API Adapter](https://github.com/iBUHub/AIStudioToAPI/blob/main/README_EN.md)
   - [★Nvidia(40RPM)](#nvidia)
+  - [★Index-Translate](#index-translate)
   - [~~Ollama~~](#ollama)
   - [★Groq](#groq)
   - [~~Cerebras~~](#cerebras)
@@ -276,6 +277,24 @@ z-ai/glm-5.3-flash
 </br>
 
 --------
+
+### Index-Translate
+
+> **Updated: November 13, 2026**
+
+**Official links:** [GitHub repository](https://github.com/bilibili/Index-Translate) · [Free API guide](https://github.com/bilibili/Index-Translate#option-1-free-online-api-zero-gpu-setup) · [Official Python client](https://github.com/bilibili/Index-Translate/blob/main/inference/llm/call_api.py) · [Online demo](https://index-translate.bilibili.com/)
+
+**API base URL (OpenAI-compatible):** `https://index-translate.bilibili.com/v1`
+
+- **Models:** `Index-Translate-35B-A3B` is the default free API model. The official script also shows image-translation requests for `Index-Translate-2B` and `Index-Translate-9B`; check actual endpoint availability.
+- **API key:** The official examples don't require a real API key. If your client insists on one, enter a placeholder.
+- **Rate limit:** Typically around **30 RPM** (an observed guideline, **not an officially guaranteed limit**).
+- **What it does:** Text translation across roughly **150 languages**, plus image translation, glossaries, formatting rules and translation instructions. **Built for translation, not general-purpose chat.**
+- **API formats:** OpenAI-compatible Chat Completions (`/v1/chat/completions`) and Responses (`/v1/responses`). Image translation uses the `image_url` format.
+- **Third-party apps:** Browser extensions may run into CORS or WAF restrictions. The official `python inference/llm/call_api.py --serve` command starts a local bridge at `http://127.0.0.1:8080/v1` for tools such as Immersive Translate. For direct requests, the image-translation guide recommends the `User-Agent: Index-Translate-Client/1.0` header.
+- **Long texts:** Users have reported repetition, premature endings and truncation with longer inputs to the public 35B API ([issue report](https://github.com/bilibili/Index-Translate/issues/20)). Splitting long documents into smaller chunks is safer; limits observed in individual tests are not official universal caps.
+
+----------
 
 ### ~~Ollama~~
 > ~~Last checked: **2026-11-13**~~
@@ -674,19 +693,21 @@ https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing
 
 ### Index-Translate (bilibili)
 
-> **Updated: November 13, 2026**
+> **更新日期：2026 年 11 月 13 日**
 
-**Official links:** [GitHub repository](https://github.com/bilibili/Index-Translate) · [Free API guide](https://github.com/bilibili/Index-Translate#option-1-free-online-api-zero-gpu-setup) · [Official Python client](https://github.com/bilibili/Index-Translate/blob/main/inference/llm/call_api.py) · [Online demo](https://index-translate.bilibili.com/)
+**官方资料：** [项目仓库](https://github.com/bilibili/Index-Translate) · [免费 API 使用说明](https://github.com/bilibili/Index-Translate#option-1-free-online-api-zero-gpu-setup) · [官方调用脚本](https://github.com/bilibili/Index-Translate/blob/main/inference/llm/call_api.py) · [在线体验](https://index-translate.bilibili.com/)
 
-**API base URL (OpenAI-compatible):** `https://index-translate.bilibili.com/v1`
+**API 地址（兼容 OpenAI）：** `https://index-translate.bilibili.com/v1`
 
-- **Models:** `Index-Translate-35B-A3B` is the default free API model. The official script also shows image-translation requests for `Index-Translate-2B` and `Index-Translate-9B`; check actual endpoint availability.
-- **API key:** The official examples don't require a real API key. If your client insists on one, enter a placeholder.
-- **Rate limit:** Typically around **30 RPM** (an observed guideline, **not an officially guaranteed limit**).
-- **What it does:** Text translation across roughly **150 languages**, plus image translation, glossaries, formatting rules and translation instructions. **Built for translation, not general-purpose chat.**
-- **API formats:** OpenAI-compatible Chat Completions (`/v1/chat/completions`) and Responses (`/v1/responses`). Image translation uses the `image_url` format.
-- **Third-party apps:** Browser extensions may run into CORS or WAF restrictions. The official `python inference/llm/call_api.py --serve` command starts a local bridge at `http://127.0.0.1:8080/v1` for tools such as Immersive Translate. For direct requests, the image-translation guide recommends the `User-Agent: Index-Translate-Client/1.0` header.
-- **Long texts:** Users have reported repetition, premature endings and truncation with longer inputs to the public 35B API ([issue report](https://github.com/bilibili/Index-Translate/issues/20)). Splitting long documents into smaller chunks is safer; limits observed in individual tests are not official universal caps.
+- **模型：** `Index-Translate-35B-A3B`（官方免费 API 默认模型）。官方脚本另提供 `Index-Translate-2B`、`Index-Translate-9B` 的图片翻译调用示例；可用性以实际接口为准。
+- **API Key：** 官方调用示例无需申请真实密钥；如果第三方客户端强制要求填写 API Key，可以使用占位字符串。
+- **调用限制：** 通常约 **30 RPM**（**经验参考值，并非官方公布的保证额度**）
+- **支持功能：** 面向约 **150 种语言**的文本翻译，并支持图片翻译、术语表、翻译格式和指令约束。**翻译专用模型，不是通用聊天模型。**
+- **接口格式：** 提供 OpenAI 兼容的 Chat Completions（`/v1/chat/completions`）及 Responses（`/v1/responses`）。图片翻译采用 `image_url` 格式。
+- **第三方软件：** 浏览器扩展可能遇到 CORS 或 WAF 限制。项目提供 `python inference/llm/call_api.py --serve` 本地代理，可通过 `http://127.0.0.1:8080/v1` 接入沉浸式翻译等工具。自行直接调用时，官方图片翻译文档建议添加请求头 `User-Agent: Index-Translate-Client/1.0`。
+- **长文本注意：** 有用户实测公共 35B API 处理较长文本时发生重复生成、提前停止或截断（[问题报告](https://github.com/bilibili/Index-Translate/issues/20)）。建议分段翻译；个别测试中的上下文/输出上限不应视为官方统一限制。
+
+
 
 
 ---
