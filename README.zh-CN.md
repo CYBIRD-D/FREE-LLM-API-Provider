@@ -65,6 +65,7 @@
 - [SKT](#skt)
 - [IBM watsonx.ai](#ibm-watsonxai)
 - [Scaleway](#scaleway)
+- [cheapllm.shop](#cheapllmshop)
 - [Together AI（已取消免费层）](#together-ai已取消免费层)
 - [LLM API 价格表](#llm-api-价格表)
 
@@ -706,6 +707,23 @@ watsonx.ai 基础模型免费层的参考限额为 **2 RPS，每月 300,000 Toke
 **免费方式：** 新账号提供**一次性 100 万 Token**免费体验，用完不自动续送。
 
 **官方说明：** https://www.scaleway.com/en/docs/generative-apis/faq/#how-does-the-free-tier-work
+
+---
+
+### cheapllm.shop
+
+> 最近核查：**2026 年 11 月 15 日**
+
+**免费方式：** 公测期间免费且**不限速**；公测结束后，每个账号保留**永久免费额度**（每小时刷新）。
+
+**官方资料：** [官网](https://cheapllm.shop) · [注册](https://cheapllm.shop/signup) · [文档](https://cheapllm.shop/docs) · [免费额度](https://cheapllm.shop/docs#free-tier) · [条款](https://cheapllm.shop/terms) · [隐私](https://cheapllm.shop/privacy)
+
+**API 地址（兼容 OpenAI）：** `https://cheapllm.shop/v1`（`/v1/chat/completions`、`/v1/responses`、`/v1/models`）；亦支持 Anthropic Messages 接口 `https://cheapllm.shop`（`/v1/messages`），同一个 Key 通用。
+
+- **模型：** 仅 `deepseek-v4.1-flash-1017`（DeepSeek V4.1 Flash 1017）。支持文本和图片输入、推理、工具调用、JSON 输出、流式输出。
+- **公测结束后：** 每个账号永久免费额度**每小时至少 5,000 输入 Token + 1,000 输出 Token**（滚动一小时，所有 Key 合计）。超出部分按 Token 计费；未添加支付方式不会扣费。公测结束前会邮件通知。
+- **注册：** 邮箱 + 密码，或 Google / GitHub / Discord 登录。无需信用卡、无需手机号。
+- 服务部署在欧盟；**中国大陆访问未测试**。服务本身不保存提示词和回答，但主算力不可用时可能使用备用提供商，其可能按自身条款保存（见隐私说明）。
 
 ---
 
