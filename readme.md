@@ -67,6 +67,7 @@ You may also want to read my other posts:
   - [SKT](#skt)
   - [IBM](#ibm)
   - [Scaleway (1M free token/per account)](#scaleway-1m-free-tokenper-account-no-refresh)
+  - [AxForge (3M free tokens every 30 days, EU)](#axforge-3m-free-tokens-every-30-days-eu)
 - [中国大陆平台](#cn-platform)
   - [AMD Radeon Cloud Token Factory](#amd-radeon-cloud-token-factoryamd-免费模型-api)
   - [Index-Translate (bilibili)](#index-translate-bilibili)
@@ -636,6 +637,25 @@ https://www.ibm.com/products/watsonx-ai/pricing
 
 ### Scaleway (1M free token/per account-no refresh)
 https://www.scaleway.com/en/docs/generative-apis/faq/#how-does-the-free-tier-work
+
+--------
+
+### AxForge (3M free tokens every 30 days, EU)
+> Last Check: **2026-11-16** </br>
+
+https://axforge.ai/pricing/ (FAQ: "Is there a free tier?") · Key: https://console.axforge.ai/ · Base URL: `https://api.axforge.ai/v1` (OpenAI-compatible)
+
+- **3M free tokens every 30 days**, counted across all its serverless models. Each 30-day cycle starts again at 3M (not one-time credit). **No credit card.**
+- Hosted in **Stockholm, Sweden** (EU), by AxForge LTD (Ireland). Prompts and completions are not stored, not logged, never used for training.
+- After the free tokens, calls are paid from a prepaid balance.
+- Model list without a key: https://api.axforge.ai/v1/public/models
+
+| Model                | Context | Max output | Input        |
+|----------------------|---------|------------|--------------|
+| qwen3.8-27b          | 262k    | 64k        | text, image (up to 16 concurrent, then queued) |
+| qwen3.8-flash-next   | 500k    | 64k        | text, image  |
+| glm-5.3-flash        | 500k    | 64k        | text         |
+| mimo-v2.6-flash      | 262k    | 64k        | text         |
 
 --------
 
